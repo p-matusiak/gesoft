@@ -1,0 +1,729 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "services": "Usługi",
+    "technologies": "Technologie",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "Laravel + Vue.js = Sukces",
+    "title1": "Tworzymy",
+    "title2": "nowoczesne",
+    "title3": "strony i aplikacje",
+    "subtitle": "Profesjonalne rozwiązania webowe dla Twojego biznesu. Od strony wizytówki po zaawansowane systemy CRM - zrealizujemy każdy projekt.",
+    "cta": "Rozpocznij projekt",
+    "ctaSecondary": "Zobacz portfolio",
+    "stats": {
+      "projects": "Zrealizowanych projektów",
+      "experience": "Lat doświadczenia",
+      "clients": "Zadowolonych klientów",
+      "support": "Wsparcie techniczne"
+    }
+  },
+  "home": {
+    "whyUs": {
+      "title": "Dlaczego",
+      "titleHighlight": "my?",
+      "subtitle": "Łączymy doświadczenie z nowoczesnymi technologiami, dostarczając rozwiązania na miarę XXI wieku.",
+      "fast": {
+        "title": "Szybka realizacja",
+        "description": "Dzięki sprawdzonym procesom i narzędziom dostarczamy projekty na czas."
+      },
+      "quality": {
+        "title": "Wysoka jakość",
+        "description": "Każdy projekt traktujemy indywidualnie, dbając o najdrobniejsze szczegóły."
+      },
+      "support": {
+        "title": "Pełne wsparcie",
+        "description": "Oferujemy kompleksowe wsparcie techniczne po zakończeniu projektu."
+      }
+    },
+    "services": {
+      "title": "Nasze",
+      "titleHighlight": "usługi",
+      "subtitle": "Kompleksowe rozwiązania webowe dopasowane do Twoich potrzeb biznesowych.",
+      "viewAll": "Zobacz wszystkie usługi",
+      "websites": {
+        "title": "Strony internetowe",
+        "description": "Nowoczesne, responsywne strony internetowe."
+      },
+      "webapps": {
+        "title": "Aplikacje webowe",
+        "description": "Zaawansowane aplikacje webowe."
+      },
+      "ecommerce": {
+        "title": "Sklepy internetowe",
+        "description": "Rozwiązania e-commerce."
+      }
+    },
+    "technologies": {
+      "title": "Technologie, które",
+      "titleHighlight": "kochamy",
+      "subtitle": "Wykorzystujemy sprawdzone i nowoczesne technologie, aby tworzyć najlepsze rozwiązania.",
+      "laravel": "Backend Framework",
+      "vue": "Frontend Framework",
+      "php": "Server-side",
+      "mysql": "Baza danych"
+    },
+    "cta": {
+      "title": "Gotowy na nowy projekt?",
+      "subtitle": "Skontaktuj się z nami i opowiedz o swoich potrzebach. Przygotujemy dla Ciebie bezpłatną wycenę.",
+      "button": "Wyślij zapytanie"
+    },
+    "testimonials": {
+      "title": "Co mówią",
+      "titleHighlight": "klienci",
+      "subtitle": "Opinie naszych zadowolonych klientów są dla nas najlepszą rekomendacją.",
+      "items": [
+        {
+          "name": "Jan Kowalski",
+          "company": "Tech Solutions Sp. z o.o.",
+          "text": "Współpraca z GESOFT to sama przyjemność. Profesjonalizm i terminowość na najwyższym poziomie."
+        },
+        {
+          "name": "Anna Nowak",
+          "company": "E-commerce Pro",
+          "text": "Dzięki GESOFT nasz sklep internetowy działa perfekcyjnie. Zwiększyliśmy sprzedaż o 150%!"
+        },
+        {
+          "name": "Piotr Wiśniewski",
+          "company": "Startup Hub",
+          "text": "System CRM stworzony przez GESOFT usprawnił nasze procesy biznesowe. Gorąco polecam!"
+        }
+      ]
+    }
+  },
+  "about": {
+    "header": {
+      "title1": "O",
+      "title2": "nas",
+      "subtitle": "Poznaj zespół, który stoi za GESOFT i dowiedz się więcej o naszej misji."
+    },
+    "story": {
+      "title": "Nasza",
+      "titleHighlight": "historia",
+      "content1": "GESOFT powstał z pasji do tworzenia oprogramowania i chęci dostarczania najwyższej jakości rozwiązań webowych dla firm różnej wielkości.",
+      "content2": "Od początku naszej działalności stawiamy na jakość, terminowość i długofalową współpracę z klientami. Każdy projekt traktujemy jak własny, dbając o każdy detal.",
+      "content3": "Dziś, po wielu latach doświadczenia, jesteśmy dumni z portfolio projektów i zadowolonych klientów, którzy polecają nas dalej.",
+      "codePassion": "Kod z pasją",
+      "codePassionDesc": "Każda linia kodu jest pisana z dbałością o jakość i wydajność. Używamy najlepszych praktyk i nowoczesnych technologii."
+    },
+    "mission": {
+      "title": "Nasza misja",
+      "content": "Dostarczać innowacyjne rozwiązania webowe, które pomagają firmom rozwijać się w cyfrowym świecie. Stawiamy na jakość, bezpieczeństwo i satysfakcję klienta."
+    },
+    "vision": {
+      "title": "Nasza wizja",
+      "content": "Stać się wiodącym partnerem technologicznym dla firm w Polsce, oferując kompleksowe usługi tworzenia i utrzymania systemów webowych."
+    },
+    "stats": {
+      "title": "GESOFT w",
+      "titleHighlight": "liczbach",
+      "projects": "Projektów",
+      "experience": "Lat doświadczenia",
+      "clients": "Klientów",
+      "satisfaction": "Satysfakcji"
+    },
+    "values": {
+      "title": "Nasze",
+      "titleHighlight": "wartości",
+      "quality": {
+        "title": "Jakość",
+        "description": "Stawiamy na najwyższą jakość kodu i rozwiązań."
+      },
+      "partnership": {
+        "title": "Partnerstwo",
+        "description": "Budujemy długotrwałe relacje z klientami."
+      },
+      "innovation": {
+        "title": "Innowacja",
+        "description": "Śledzimy trendy i wdrażamy nowoczesne rozwiązania."
+      },
+      "security": {
+        "title": "Bezpieczeństwo",
+        "description": "Dbamy o bezpieczeństwo danych i systemów."
+      }
+    },
+    "cta": {
+      "title": "Chcesz dowiedzieć się więcej?",
+      "subtitle": "Skontaktuj się z nami i porozmawiajmy o Twoim projekcie.",
+      "button": "Napisz do nas"
+    }
+  },
+  "services": {
+    "header": {
+      "title": "Nasze",
+      "titleHighlight": "usługi",
+      "subtitle": "Kompleksowe rozwiązania webowe dla Twojego biznesu."
+    },
+    "items": {
+      "websites": {
+        "title": "Strony internetowe",
+        "description": "Nowoczesne, responsywne strony internetowe dopasowane do Twoich potrzeb.",
+        "features": ["Responsywny design", "Optymalizacja SEO", "Szybkie ładowanie", "Panel administracyjny"]
+      },
+      "webapps": {
+        "title": "Aplikacje webowe",
+        "description": "Zaawansowane aplikacje webowe z wykorzystaniem Laravel i Vue.js.",
+        "features": ["Skalowalna architektura", "API REST", "Real-time funkcje", "Integracje zewnętrzne"]
+      },
+      "ecommerce": {
+        "title": "Sklepy internetowe",
+        "description": "Kompleksowe rozwiązania e-commerce z integracją płatności.",
+        "features": ["Integracja płatności", "Zarządzanie magazynem", "Raportowanie sprzedaży", "Wielojęzyczność"]
+      },
+      "crm": {
+        "title": "Systemy CRM/ERP",
+        "description": "Dedykowane systemy do zarządzania firmą i relacjami z klientami.",
+        "features": ["Automatyzacja procesów", "Raporty i analizy", "Zarządzanie kontaktami", "Integracja z email"]
+      },
+      "api": {
+        "title": "Integracje API",
+        "description": "Integracje z zewnętrznymi systemami i usługami przez API.",
+        "features": ["REST API", "Webhook", "OAuth 2.0", "Dokumentacja API"]
+      },
+      "support": {
+        "title": "Wsparcie i utrzymanie",
+        "description": "Profesjonalne wsparcie techniczne i utrzymanie systemów.",
+        "features": ["Monitoring 24/7", "Aktualizacje bezpieczeństwa", "Backup danych", "Optymalizacja wydajności"]
+      },
+      "photography": {
+        "title": "Fotografia",
+        "description": "Profesjonalne sesje zdjęciowe produktów, wnętrz i wydarzeń dla Twojej firmy.",
+        "features": ["Zdjęcia produktowe", "Fotografia eventowa", "Zdjęcia do stron www", "Obróbka i retusz"]
+      },
+      "drone": {
+        "title": "Ujęcia z drona",
+        "description": "Spektakularne ujęcia lotnicze nieruchomości, eventów i materiałów promocyjnych.",
+        "features": ["Zdjęcia lotnicze", "Wideo z drona", "Panoramy 360°", "Inspekcje obiektów"]
+      },
+      "seoAudit": {
+        "title": "Audyt SEO",
+        "description": "Kompleksowa analiza techniczna strony pod kątem optymalizacji dla wyszukiwarek.",
+        "features": ["Analiza kodu i znaczników", "Dobór słów kluczowych", "Raport z rekomendacjami", "Analiza konkurencji"]
+      }
+    },
+    "process": {
+      "title": "Jak",
+      "titleHighlight": "pracujemy",
+      "subtitle": "Nasz sprawdzony proces zapewnia sukces każdego projektu.",
+      "analysis": {
+        "title": "Analiza",
+        "description": "Poznajemy Twoje potrzeby i cele projektu."
+      },
+      "design": {
+        "title": "Projektowanie",
+        "description": "Tworzymy prototypy i projekty graficzne."
+      },
+      "development": {
+        "title": "Rozwój",
+        "description": "Implementujemy funkcjonalności i testujemy."
+      },
+      "deployment": {
+        "title": "Wdrożenie",
+        "description": "Uruchamiamy projekt i zapewniamy wsparcie."
+      }
+    },
+    "technologies": {
+      "title": "Technologie, z których",
+      "titleHighlight": "korzystamy"
+    },
+    "cta": {
+      "title": "Potrzebujesz wyceny?",
+      "subtitle": "Opisz swój projekt, a przygotujemy bezpłatną wycenę.",
+      "button": "Wyślij zapytanie"
+    }
+  },
+  "technologies": {
+    "header": {
+      "title": "Technologie",
+      "subtitle": "Poznaj technologie, które wykorzystujemy do tworzenia wydajnych, bezpiecznych i skalowalnych rozwiązań. Każdy wybór jest przemyślany i oparty na latach doświadczenia."
+    },
+    "mainStack": {
+      "title": "Główny",
+      "titleHighlight": "stack technologiczny",
+      "subtitle": "Fundamenty naszych projektów - sprawdzone, wydajne i bezpieczne rozwiązania."
+    },
+    "devops": {
+      "title": "DevOps i",
+      "titleHighlight": "infrastruktura",
+      "subtitle": "Nowoczesne narzędzia, które zapewniają stabilność, wydajność i bezpieczeństwo aplikacji."
+    },
+    "why": {
+      "title": "Dlaczego właśnie",
+      "titleHighlight": "ten stack?",
+      "subtitle": "Wybór technologii to nie kwestia mody czy osobistych preferencji. To strategiczna decyzja, która wpływa na sukces projektu przez lata.",
+      "performance": {
+        "title": "Wydajność",
+        "description": "PHP 8.3 z JIT, Vue 3 z Proxy-based reactivity, MySQL 8 z optymalizatorem zapytań - każdy element jest zoptymalizowany."
+      },
+      "security": {
+        "title": "Bezpieczeństwo",
+        "description": "Laravel ma wbudowaną ochronę przed najczęstszymi atakami. Regularne aktualizacje i aktywna społeczność."
+      },
+      "scalability": {
+        "title": "Skalowalność",
+        "description": "Od małej strony po aplikację obsługującą miliony użytkowników. Ten stack rośnie razem z Twoim biznesem."
+      },
+      "community": {
+        "title": "Społeczność",
+        "description": "Miliony developerów, tysiące pakietów, setki tutoriali. Zawsze znajdziesz rozwiązanie problemu."
+      }
+    },
+    "stats": {
+      "title": "Statystyki naszego stacku",
+      "laravelPopularity": "Laravel - popularność wśród PHP frameworks",
+      "vueSatisfaction": "Vue.js - satysfakcja developerów",
+      "mysqlShare": "MySQL - udział w rynku baz danych",
+      "tailwindGrowth": "TailwindCSS - wzrost popularności YoY"
+    },
+    "laravel": {
+      "title": "Laravel",
+      "description": "Laravel to najlepszy framework PHP na świecie - i nie mówimy tego bez pokrycia. To nasz główny wybór dla backendu z kilku kluczowych powodów:",
+      "eloquent": "Eloquent ORM",
+      "eloquentDesc": "intuicyjna praca z bazą danych bez pisania surowego SQL",
+      "artisan": "Artisan CLI",
+      "artisanDesc": "automatyzacja zadań i generowanie kodu",
+      "security": "Wbudowane bezpieczeństwo",
+      "securityDesc": "ochrona przed SQL injection, XSS, CSRF",
+      "queue": "Queue & Jobs",
+      "queueDesc": "wydajne przetwarzanie zadań w tle"
+    },
+    "vue": {
+      "title": "Vue.js 3",
+      "description": "Vue.js to progresywny framework JavaScript, który łączy prostotę z potężnymi możliwościami. Composition API w Vue 3 to przełom w organizacji kodu:",
+      "reactivity": "Reactivity System",
+      "reactivityDesc": "automatyczne śledzenie zmian i aktualizacja DOM",
+      "sfc": "Single File Components",
+      "sfcDesc": "HTML, CSS i JS w jednym pliku",
+      "pinia": "Pinia",
+      "piniaDesc": "nowoczesny state management z TypeScript support",
+      "size": "Mały rozmiar",
+      "sizeDesc": "~33KB gzipped, szybkie ładowanie"
+    },
+    "mysql": {
+      "title": "MySQL 8",
+      "description": "MySQL to sprawdzony i niezawodny system zarządzania bazą danych. Wersja 8 przyniosła rewolucyjne zmiany w wydajności i funkcjonalności:",
+      "window": "Window Functions",
+      "windowDesc": "zaawansowana analityka bez subqueries",
+      "json": "JSON Support",
+      "jsonDesc": "natywne operacje na dokumentach JSON",
+      "cluster": "InnoDB Cluster",
+      "clusterDesc": "wysoka dostępność i replikacja",
+      "acid": "Transakcje ACID",
+      "acidDesc": "gwarancja integralności danych"
+    },
+    "postgresql": {
+      "title": "PostgreSQL",
+      "description": "PostgreSQL to zaawansowany, obiektowo-relacyjny system zarządzania bazą danych. Znany z niezawodności, zgodności ze standardami i rozbudowanych funkcji:",
+      "advanced": "Zaawansowane typy danych",
+      "advancedDesc": "JSON, XML, tablice, zakresy i typy własne",
+      "fulltext": "Full-text Search",
+      "fulltextDesc": "wbudowane wyszukiwanie pełnotekstowe",
+      "extensions": "Rozszerzenia",
+      "extensionsDesc": "PostGIS, pgcrypto i setki innych",
+      "performance": "Wydajność",
+      "performanceDesc": "optymalizatory zapytań i indeksy zaawansowane"
+    },
+    "tailwind": {
+      "title": "TailwindCSS",
+      "description": "Tailwind zmienił sposób, w jaki myślimy o CSS. Utility-first approach pozwala budować unikalne interfejsy bez pisania custom CSS:",
+      "jit": "JIT Compiler",
+      "jitDesc": "generuje tylko używane klasy",
+      "design": "Design System",
+      "designDesc": "spójne kolory, spacing, typography",
+      "responsive": "Responsive",
+      "responsiveDesc": "mobile-first z breakpointami",
+      "dark": "Dark Mode",
+      "darkDesc": "wbudowane wsparcie dla ciemnego motywu"
+    },
+    "docker": {
+      "title": "Docker",
+      "description": "Konteneryzacja zapewnia identyczne środowisko na każdym etapie - od developmentu po produkcję. Koniec z \"u mnie działa\"."
+    },
+    "nginx": {
+      "title": "Nginx",
+      "description": "Wysokowydajny serwer HTTP i reverse proxy. Obsługuje tysiące połączeń jednocześnie przy minimalnym zużyciu zasobów."
+    },
+    "redis": {
+      "title": "Redis",
+      "description": "In-memory data store do cache'owania, sesji i kolejek. Drastycznie przyspiesza aplikacje poprzez redukcję zapytań do bazy."
+    },
+    "git": {
+      "title": "Git & GitHub",
+      "description": "Kontrola wersji to podstawa. Git pozwala śledzić każdą zmianę, współpracować w zespole i bezpiecznie wdrażać zmiany."
+    },
+    "linux": {
+      "title": "Linux",
+      "description": "Stabilny, bezpieczny i wydajny system operacyjny. 96% serwerów na świecie działa na Linuxie - my również go wybieramy."
+    },
+    "vite": {
+      "title": "Vite",
+      "description": "Błyskawiczny build tool nowej generacji. Hot Module Replacement w milisekundach - natychmiastowa informacja zwrotna podczas developmentu."
+    },
+    "cta": {
+      "title": "Gotowy wykorzystać moc tych technologii?",
+      "subtitle": "Skontaktuj się z nami i opowiedz o swoim projekcie. Dobierzemy optymalne rozwiązania.",
+      "button": "Rozpocznij projekt"
+    }
+  },
+  "portfolio": {
+    "header": {
+      "title": "Portfolio",
+      "subtitle": "Poznaj projekty, które zrealizowaliśmy dla naszych klientów."
+    },
+    "filters": {
+      "all": "Wszystkie",
+      "websites": "Strony WWW",
+      "webapps": "Aplikacje",
+      "ecommerce": "E-commerce",
+      "crm": "CRM/ERP"
+    },
+    "viewProject": "Zobacz szczegóły",
+    "noProjects": "Brak projektów w tej kategorii.",
+    "technologiesUsed": "Wykorzystane technologie",
+    "wantSimilar": "Chcę podobny projekt",
+    "cta": {
+      "title": "Masz pomysł na projekt?",
+      "subtitle": "Skontaktuj się z nami i zrealizujmy go razem!",
+      "button": "Rozpocznij współpracę"
+    },
+    "projects": {
+      "crm": {
+        "title": "System CRM dla firmy logistycznej",
+        "description": "Kompleksowy system zarządzania klientami i zamówieniami.",
+        "fullDescription": "Zrealizowaliśmy kompleksowy system CRM dla dużej firmy logistycznej. System umożliwia zarządzanie klientami, zamówieniami, śledzenie przesyłek oraz generowanie raportów."
+      },
+      "furniture": {
+        "title": "Sklep internetowy z meblami",
+        "description": "Nowoczesny sklep e-commerce z konfiguratorem produktów.",
+        "fullDescription": "Stworzyliśmy sklep internetowy z zaawansowanym konfiguratorem mebli, który pozwala klientom dostosować produkty do swoich potrzeb."
+      },
+      "medical": {
+        "title": "Portal dla branży medycznej",
+        "description": "System rezerwacji wizyt i zarządzania pacjentami.",
+        "fullDescription": "Platforma medyczna umożliwiająca rezerwację wizyt online, zarządzanie kartoteką pacjentów i komunikację między lekarzami."
+      },
+      "corporate": {
+        "title": "Strona korporacyjna",
+        "description": "Elegancka strona firmowa z systemem CMS.",
+        "fullDescription": "Nowoczesna strona korporacyjna dla międzynarodowej firmy konsultingowej. Wielojęzyczna, z rozbudowanym panelem CMS."
+      },
+      "projectMgmt": {
+        "title": "Aplikacja do zarządzania projektami",
+        "description": "Narzędzie do zarządzania projektami w metodyce Agile.",
+        "fullDescription": "Aplikacja typu project management z tablicami Kanban, śledzeniem czasu pracy, zarządzaniem zadaniami i raportowaniem."
+      },
+      "booking": {
+        "title": "System rezerwacji online",
+        "description": "Platforma rezerwacji dla hotelu z integracją kalendarza.",
+        "fullDescription": "System rezerwacji hotelowej z synchronizacją z Booking.com i Airbnb, zarządzaniem pokojami i automatycznymi powiadomieniami."
+      }
+    }
+  },
+  "contact": {
+    "header": {
+      "title": "Kontakt",
+      "subtitle": "Masz pytanie lub chcesz rozpocząć projekt? Napisz do nas!"
+    },
+    "form": {
+      "title": "Wyślij zapytanie",
+      "email": "Adres email",
+      "emailPlaceholder": "jan@przykład.pl",
+      "emailRequired": "Adres email jest wymagany.",
+      "emailInvalid": "Podaj prawidłowy adres email.",
+      "phone": "Telefon kontaktowy (opcjonalnie)",
+      "phonePlaceholder": "+48 123 456 789",
+      "message": "Treść wiadomości",
+      "messagePlaceholder": "Opisz swój projekt lub zadaj pytanie...",
+      "messageRequired": "Treść wiadomości jest wymagana.",
+      "messageMin": "Wiadomość musi zawierać co najmniej 10 znaków.",
+      "submit": "Wyślij wiadomość",
+      "submitting": "Wysyłanie...",
+      "success": "Dziękujemy za wiadomość! Skontaktujemy się wkrótce.",
+      "error": "Wystąpił błąd. Spróbuj ponownie później.",
+      "required": "*"
+    },
+    "info": {
+      "title": "Dane kontaktowe",
+      "email": "Email",
+      "phone": "Telefon",
+      "hours": "Godziny pracy",
+      "hoursValue": "Pon - Pt: 9:00 - 17:00",
+      "location": "Lokalizacja",
+      "locationValue": "Polska",
+      "invoice": "Faktury",
+      "invoiceValue": "Wystawiamy faktury VAT"
+    },
+    "faq": {
+      "title": "Najczesciej zadawane pytania",
+      "q1": "Jak dlugo trwa realizacja projektu?",
+      "a1": "Czas realizacji zalezy od zlozonosci projektu. Prosta strona internetowa to 2-4 tygodnie, aplikacja webowa 1-3 miesiace. Po analizie wymagan podajemy dokladny harmonogram.",
+      "q2": "Czy oferujecie wsparcie po zakonczeniu projektu?",
+      "a2": "Tak, kazdy projekt objety jest 6-miesieczna gwarancja. Dodatkowo oferujemy pakiety wsparcia technicznego i utrzymania systemow.",
+      "q3": "Jakie technologie wykorzystujecie?",
+      "a3": "Specjalizujemy sie w Laravel (PHP) i Vue.js. Wykorzystujemy takze MySQL, PostgreSQL, Redis, Docker i wiele innych sprawdzonych technologii.",
+      "q4": "Jaki jest koszt stworzenia strony/aplikacji?",
+      "a4": "Ceny zaczynaja sie od 2500 zl za prosta strone wizytowke. Kazdy projekt wyceniamy indywidualnie - przygotowujemy bezplatna wycene w ciagu 24h.",
+      "q5": "Czy moge zobaczyc wasza dotychczasowa prace?",
+      "a5": "Oczywiscie! Odwiedz nasza zakladke Portfolio, gdzie znajdziesz przyklady zrealizowanych projektow z roznych branz.",
+      "q6": "Czy podpisujecie umowe?",
+      "a6": "Tak, kazda wspolpraca rozpoczynamy od podpisania umowy, ktora chroni obie strony. Na zyczenie podpisujemy rowniez NDA."
+    }
+  },
+  "footer": {
+    "description": "Tworzymy nowoczesne strony i aplikacje webowe z wykorzystaniem najnowszych technologii. Laravel, Vue.js i pasja do kodu.",
+    "quickLinks": "Szybkie linki",
+    "contact": "Kontakt",
+    "copyright": "Wszelkie prawa zastrzeżone."
+  },
+  "common": {
+    "learnMore": "Dowiedz się więcej"
+  },
+  "notFound": {
+    "title": "Strona nie znaleziona",
+    "description": "Przepraszamy, strona której szukasz nie istnieje lub została przeniesiona.",
+    "backHome": "Wróć na stronę główną",
+    "contact": "Skontaktuj się z nami"
+  },
+  "trustedBy": {
+    "title": "Zaufali nam",
+    "subtitle": "Dołącz do grona zadowolonych klientów, którzy wybrali profesjonalne rozwiązania",
+    "clients": ["TechCorp", "InnovateLab", "DataFlow", "CloudSys", "SmartBiz", "DigiPro"]
+  },
+  "packages": {
+    "title": "Przejrzyste",
+    "titleHighlight": "pakiety cenowe",
+    "subtitle": "Wybierz pakiet dopasowany do Twoich potrzeb. Każdy zawiera pełne wsparcie i gwarancję jakości.",
+    "popular": "Najpopularniejszy",
+    "starter": {
+      "name": "Starter",
+      "description": "Idealny na start dla małych firm",
+      "price": "od 2 500",
+      "currency": "zł",
+      "features": [
+        "Responsywna strona do 5 podstron",
+        "Podstawowe SEO",
+        "Formularz kontaktowy",
+        "Certyfikat SSL",
+        "1 miesiąc wsparcia",
+        "Hosting na 12 miesięcy"
+      ],
+      "cta": "Wybierz Starter"
+    },
+    "business": {
+      "name": "Business",
+      "description": "Kompleksowe rozwiązanie dla rozwijających się firm",
+      "price": "od 6 000",
+      "currency": "zł",
+      "features": [
+        "Strona do 15 podstron",
+        "Zaawansowane SEO + analityka",
+        "Panel administracyjny CMS",
+        "Integracja z social media",
+        "Blog firmowy",
+        "3 miesiące wsparcia",
+        "Optymalizacja wydajności",
+        "Szkolenie z obsługi"
+      ],
+      "cta": "Wybierz Business"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Zaawansowane rozwiązania dla dużych projektów",
+      "price": "Wycena indywidualna",
+      "currency": "",
+      "features": [
+        "Aplikacja webowa na miarę",
+        "Dedykowane API",
+        "Integracje z systemami zewnętrznymi",
+        "Zaawansowana architektura",
+        "Priorytetowe wsparcie 24/7",
+        "SLA 99.9% uptime",
+        "Dedykowany opiekun projektu",
+        "Pełna dokumentacja techniczna"
+      ],
+      "cta": "Umów konsultację"
+    },
+    "note": "Wszystkie ceny są cenami netto. Dokładna wycena po analizie wymagań."
+  },
+  "guarantees": {
+    "title": "Gwarancje, które",
+    "titleHighlight": "dajemy",
+    "subtitle": "Twój sukces jest naszym priorytetem. Dlatego oferujemy konkretne gwarancje.",
+    "items": {
+      "satisfaction": {
+        "title": "Gwarancja satysfakcji",
+        "description": "Jeśli nie spełnimy Twoich oczekiwań w pierwszych 14 dniach - zwrócimy zaliczkę."
+      },
+      "deadline": {
+        "title": "Gwarancja terminu",
+        "description": "Dotrzymujemy ustalonych terminów. Za każdy dzień opóźnienia z naszej winy - 5% rabatu."
+      },
+      "quality": {
+        "title": "6 miesięcy gwarancji",
+        "description": "Pełna gwarancja na wykonane prace. Bezpłatne poprawki błędów przez 6 miesięcy."
+      },
+      "security": {
+        "title": "Bezpieczeństwo danych",
+        "description": "Podpisujemy NDA. Twoje dane i kod są w 100% bezpieczne i poufne."
+      },
+      "support": {
+        "title": "Stałe wsparcie",
+        "description": "Nie zostawiamy klientów samych. Zawsze możesz liczyć na naszą pomoc."
+      },
+      "transparency": {
+        "title": "Przejrzystość kosztów",
+        "description": "Żadnych ukrytych opłat. Wycena jest ostateczna i wiążąca."
+      }
+    }
+  },
+  "results": {
+    "title": "Wymierne",
+    "titleHighlight": "rezultaty",
+    "subtitle": "Nasze projekty przynoszą realne korzyści biznesowe dla klientów.",
+    "cases": [
+      {
+        "client": "Sklep z elektroniką",
+        "metric": "+247%",
+        "description": "wzrost sprzedaży online po wdrożeniu nowego sklepu",
+        "details": "Nowy sklep z szybkim ładowaniem i intuicyjnym UX"
+      },
+      {
+        "client": "Firma logistyczna",
+        "metric": "-60%",
+        "description": "redukcja czasu obsługi zamówień dzięki CRM",
+        "details": "Automatyzacja procesów i integracja z kurierami"
+      },
+      {
+        "client": "Kancelaria prawna",
+        "metric": "+180%",
+        "description": "więcej zapytań od klientów z nowej strony",
+        "details": "Optymalizacja SEO i nowy formularz kontaktowy"
+      },
+      {
+        "client": "Restauracja sieciowa",
+        "metric": "5x",
+        "description": "więcej zamówień online po wdrożeniu systemu",
+        "details": "System zamówień z integracją kuchni"
+      }
+    ]
+  },
+  "urgency": {
+    "badge": "Oferta limitowana",
+    "title": "Bezpłatna wycena + audyt SEO",
+    "subtitle": "Dla pierwszych 5 zgłoszeń w tym miesiącu dajemy dodatkowo darmowy audyt SEO o wartości 500 zł",
+    "cta": "Otrzymaj bezpłatną wycenę",
+    "spots": "Pozostało miejsc:",
+    "expires": "Oferta ważna do końca miesiąca"
+  },
+  "comparison": {
+    "title": "Dlaczego warto wybrać",
+    "titleHighlight": "profesjonalistów?",
+    "subtitle": "Porównaj i podejmij świadomą decyzję",
+    "headers": {
+      "feature": "Funkcja",
+      "amateur": "Amator / DIY",
+      "agency": "Zwykła agencja",
+      "gesoft": "GESOFT"
+    },
+    "features": [
+      {
+        "name": "Responsywność",
+        "amateur": "Częściowa",
+        "agency": "Tak",
+        "gesoft": "Mobile-first + testy na 50+ urządzeniach"
+      },
+      {
+        "name": "Wydajność",
+        "amateur": "Wolne ładowanie",
+        "agency": "Standardowa",
+        "gesoft": "< 2s ładowania, Core Web Vitals"
+      },
+      {
+        "name": "SEO",
+        "amateur": "Brak",
+        "agency": "Podstawowe",
+        "gesoft": "Zaawansowane + Schema.org"
+      },
+      {
+        "name": "Bezpieczeństwo",
+        "amateur": "Minimalne",
+        "agency": "Standardowe",
+        "gesoft": "Enterprise-grade + audyty"
+      },
+      {
+        "name": "Wsparcie",
+        "amateur": "Brak",
+        "agency": "Ograniczone",
+        "gesoft": "Dedykowany opiekun"
+      },
+      {
+        "name": "Skalowalność",
+        "amateur": "Brak",
+        "agency": "Ograniczona",
+        "gesoft": "Od MVP do enterprise"
+      }
+    ]
+  },
+  "freeQuote": {
+    "title": "Otrzymaj bezpłatną wycenę w 24h",
+    "subtitle": "Opisz swój projekt, a my przygotujemy szczegółową propozycję dopasowaną do Twoich potrzeb i budżetu.",
+    "benefits": [
+      "Szczegółowa wycena w ciągu 24 godzin",
+      "Propozycja rozwiązań technicznych",
+      "Harmonogram realizacji",
+      "Bez zobowiązań - decyzja należy do Ciebie"
+    ],
+    "cta": "Opisz swój projekt",
+    "or": "lub zadzwoń:",
+    "phone": "+48 517 123 374"
+  },
+  "techDetails": {
+    "title": "Szczegóły",
+    "titleHighlight": "techniczne",
+    "subtitle": "Transparentnie pokazujemy, jakich technologii używamy i dlaczego.",
+    "performance": {
+      "title": "Wydajność",
+      "metrics": [
+        { "label": "Czas ładowania", "value": "< 2s", "description": "Optymalizacja dla Core Web Vitals" },
+        { "label": "PageSpeed Score", "value": "95+", "description": "Zielone wyniki w Google PageSpeed" },
+        { "label": "Uptime", "value": "99.9%", "description": "Gwarantowana dostępność serwisu" }
+      ]
+    },
+    "security": {
+      "title": "Bezpieczeństwo",
+      "features": [
+        "Certyfikat SSL/TLS (HTTPS)",
+        "Ochrona przed SQL Injection",
+        "Ochrona przed XSS i CSRF",
+        "Regularne backupy",
+        "Szyfrowanie danych",
+        "Monitoring 24/7"
+      ]
+    },
+    "standards": {
+      "title": "Standardy",
+      "items": [
+        "Kod zgodny z PSR-12",
+        "Testy automatyczne",
+        "Dokumentacja API",
+        "Kontrola wersji Git",
+        "CI/CD pipeline",
+        "Code review"
+      ]
+    }
+  },
+  "floatingCta": {
+    "question": "Masz pytania?",
+    "cta": "Porozmawiajmy"
+  },
+  "socialProof": {
+    "rating": "4.9/5",
+    "reviews": "na podstawie 47 opinii",
+    "google": "Google",
+    "clutch": "Clutch"
+  }
+}

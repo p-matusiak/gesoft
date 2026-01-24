@@ -1,0 +1,42 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#1e3a8a"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="50%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+
+  <!-- Pattern overlay -->
+  <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.05)"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="150" cy="150" r="200" fill="rgba(96,165,250,0.1)" filter="blur(40px)"/>
+  <circle cx="1050" cy="480" r="200" fill="rgba(167,139,250,0.1)" filter="blur(40px)"/>
+
+  <!-- Logo text -->
+  <text x="600" y="250" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="120" font-weight="800" fill="white">GESOFT</text>
+
+  <!-- Tagline -->
+  <text x="600" y="340" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="36" fill="rgba(255,255,255,0.8)">Strony i aplikacje webowe</text>
+
+  <!-- Tech stack -->
+  <text x="600" y="420" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="url(#text-gradient)">Laravel + Vue.js + PHP + MySQL</text>
+
+  <!-- Contact info -->
+  <text x="600" y="520" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.6)">biuro@gesoft.pl | +48 517 123 374</text>
+
+  <!-- Website -->
+  <text x="600" y="570" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.4)">gesoft.pl</text>
+</svg>

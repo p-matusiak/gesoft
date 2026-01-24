@@ -1,0 +1,361 @@
+import { watch, onMounted, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+
+const BASE_URL = 'https://gesoft.pl'
+
+// SEO configuration for each page
+const seoConfig = {
+  home: {
+    pl: {
+      title: 'GESOFT - Profesjonalne strony i aplikacje webowe | Laravel & Vue.js',
+      description: 'Tworzymy nowoczesne strony internetowe i aplikacje webowe. Specjalizujemy się w Laravel, Vue.js, PHP i MySQL. Ponad 50 zrealizowanych projektów.',
+      keywords: 'strony internetowe, aplikacje webowe, Laravel, Vue.js, PHP, MySQL, tworzenie stron, programista, web developer, Polska'
+    },
+    en: {
+      title: 'GESOFT - Professional Websites & Web Applications | Laravel & Vue.js',
+      description: 'We create modern websites and web applications. Specializing in Laravel, Vue.js, PHP and MySQL. Over 50 completed projects.',
+      keywords: 'websites, web applications, Laravel, Vue.js, PHP, MySQL, web development, programmer, web developer, Poland'
+    }
+  },
+  about: {
+    pl: {
+      title: 'O nas - GESOFT | Poznaj nasz zespół',
+      description: 'Poznaj GESOFT - firmę z pasją do tworzenia oprogramowania. 8+ lat doświadczenia, 50+ projektów, 100% zadowolonych klientów.',
+      keywords: 'o nas, GESOFT, zespół, doświadczenie, firma programistyczna, web development'
+    },
+    en: {
+      title: 'About Us - GESOFT | Meet Our Team',
+      description: 'Meet GESOFT - a company with passion for software development. 8+ years of experience, 50+ projects, 100% satisfied clients.',
+      keywords: 'about us, GESOFT, team, experience, software company, web development'
+    }
+  },
+  services: {
+    pl: {
+      title: 'Usługi - GESOFT | Strony, aplikacje, sklepy, CRM',
+      description: 'Kompleksowe usługi webowe: strony internetowe, aplikacje webowe, sklepy e-commerce, systemy CRM/ERP, integracje API, fotografia, filmowanie dronem.',
+      keywords: 'usługi, strony internetowe, aplikacje webowe, sklepy online, CRM, ERP, API, fotografia, dron, SEO'
+    },
+    en: {
+      title: 'Services - GESOFT | Websites, Apps, E-commerce, CRM',
+      description: 'Comprehensive web services: websites, web applications, e-commerce stores, CRM/ERP systems, API integrations, photography, drone footage.',
+      keywords: 'services, websites, web applications, online stores, CRM, ERP, API, photography, drone, SEO'
+    }
+  },
+  technologies: {
+    pl: {
+      title: 'Technologie - GESOFT | Laravel, Vue.js, PHP, MySQL',
+      description: 'Poznaj technologie, których używamy: Laravel, Vue.js 3, PHP 8, MySQL 8, TailwindCSS, Docker, Redis, Nginx. Sprawdzone i wydajne rozwiązania.',
+      keywords: 'technologie, Laravel, Vue.js, PHP, MySQL, TailwindCSS, Docker, Redis, Nginx, stack technologiczny'
+    },
+    en: {
+      title: 'Technologies - GESOFT | Laravel, Vue.js, PHP, MySQL',
+      description: 'Discover our tech stack: Laravel, Vue.js 3, PHP 8, MySQL 8, TailwindCSS, Docker, Redis, Nginx. Proven and efficient solutions.',
+      keywords: 'technologies, Laravel, Vue.js, PHP, MySQL, TailwindCSS, Docker, Redis, Nginx, tech stack'
+    }
+  },
+  portfolio: {
+    pl: {
+      title: 'Portfolio - GESOFT | Nasze realizacje',
+      description: 'Zobacz nasze zrealizowane projekty: systemy CRM, sklepy internetowe, aplikacje webowe, strony firmowe. Ponad 50 zadowolonych klientów.',
+      keywords: 'portfolio, realizacje, projekty, CRM, sklepy internetowe, aplikacje, strony firmowe'
+    },
+    en: {
+      title: 'Portfolio - GESOFT | Our Projects',
+      description: 'See our completed projects: CRM systems, e-commerce stores, web applications, corporate websites. Over 50 satisfied clients.',
+      keywords: 'portfolio, projects, CRM, e-commerce, applications, corporate websites'
+    }
+  },
+  contact: {
+    pl: {
+      title: 'Kontakt - GESOFT | Napisz do nas',
+      description: 'Skontaktuj się z nami! Opisz swój projekt, a my przygotujemy bezpłatną wycenę. Email: biuro@gesoft.pl, Tel: +48 517 123 374.',
+      keywords: 'kontakt, GESOFT, wycena, projekt, email, telefon, formularz kontaktowy'
+    },
+    en: {
+      title: 'Contact - GESOFT | Get in Touch',
+      description: 'Contact us! Describe your project and we will prepare a free quote. Email: biuro@gesoft.pl, Phone: +48 517 123 374.',
+      keywords: 'contact, GESOFT, quote, project, email, phone, contact form'
+    }
+  }
+}
+
+// Route to SEO key mapping
+const routeToSeoKey = {
+  '/': 'home',
+  '/o-nas': 'about',
+  '/uslugi': 'services',
+  '/technologie': 'technologies',
+  '/portfolio': 'portfolio',
+  '/kontakt': 'contact'
+}
+
+function setMetaTag(name, content, isProperty = false) {
+  const attribute = isProperty ? 'property' : 'name'
+  let element = document.querySelector(`meta[${attribute}="${name}"]`)
+
+  if (!element) {
+    element = document.createElement('meta')
+    element.setAttribute(attribute, name)
+    document.head.appendChild(element)
+  }
+
+  element.setAttribute('content', content)
+}
+
+function setLinkTag(rel, href, hreflang = null) {
+  let selector = `link[rel="${rel}"]`
+  if (hreflang) {
+    selector = `link[rel="${rel}"][hreflang="${hreflang}"]`
+  }
+
+  let element = document.querySelector(selector)
+
+  if (!element) {
+    element = document.createElement('link')
+    element.setAttribute('rel', rel)
+    if (hreflang) {
+      element.setAttribute('hreflang', hreflang)
+    }
+    document.head.appendChild(element)
+  }
+
+  element.setAttribute('href', href)
+}
+
+function setJsonLd(data) {
+  let script = document.querySelector('script[type="application/ld+json"]')
+
+  if (!script) {
+    script = document.createElement('script')
+    script.type = 'application/ld+json'
+    document.head.appendChild(script)
+  }
+
+  script.textContent = JSON.stringify(data)
+}
+
+export function useSeo() {
+  const route = useRoute()
+  const { locale } = useI18n()
+
+  const updateSeo = () => {
+    const path = route.path
+    const seoKey = routeToSeoKey[path]
+    const lang = locale.value
+
+    // Skip admin routes
+    if (path.startsWith('/admin')) {
+      return
+    }
+
+    const config = seoKey ? seoConfig[seoKey]?.[lang] : null
+
+    if (!config) {
+      return
+    }
+
+    // Update document title
+    document.title = config.title
+
+    // Update HTML lang attribute
+    document.documentElement.lang = lang
+
+    // Basic meta tags
+    setMetaTag('description', config.description)
+    setMetaTag('keywords', config.keywords)
+    setMetaTag('author', 'GESOFT Paweł Matusiak')
+    setMetaTag('robots', 'index, follow')
+
+    // Open Graph tags
+    setMetaTag('og:title', config.title, true)
+    setMetaTag('og:description', config.description, true)
+    setMetaTag('og:type', 'website', true)
+    setMetaTag('og:url', `${BASE_URL}${path}`, true)
+    setMetaTag('og:image', `${BASE_URL}/og-image.svg`, true)
+    setMetaTag('og:site_name', 'GESOFT', true)
+    setMetaTag('og:locale', lang === 'pl' ? 'pl_PL' : 'en_US', true)
+
+    // Twitter Card tags
+    setMetaTag('twitter:card', 'summary_large_image')
+    setMetaTag('twitter:title', config.title)
+    setMetaTag('twitter:description', config.description)
+    setMetaTag('twitter:image', `${BASE_URL}/og-image.svg`)
+
+    // Canonical URL
+    setLinkTag('canonical', `${BASE_URL}${path}`)
+
+    // Hreflang tags
+    setLinkTag('alternate', `${BASE_URL}${path}`, 'pl')
+    setLinkTag('alternate', `${BASE_URL}${path}?lang=en`, 'en')
+    setLinkTag('alternate', `${BASE_URL}${path}`, 'x-default')
+
+    // JSON-LD Structured Data
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        // Organization
+        {
+          '@type': 'Organization',
+          '@id': `${BASE_URL}/#organization`,
+          'name': 'GESOFT',
+          'legalName': 'GESOFT Paweł Matusiak',
+          'url': BASE_URL,
+          'logo': `${BASE_URL}/logo.svg`,
+          'image': `${BASE_URL}/og-image.svg`,
+          'description': lang === 'pl'
+            ? 'Profesjonalne tworzenie stron i aplikacji webowych'
+            : 'Professional website and web application development',
+          'address': {
+            '@type': 'PostalAddress',
+            'addressCountry': 'PL'
+          },
+          'contactPoint': {
+            '@type': 'ContactPoint',
+            'telephone': '+48-517-123-374',
+            'email': 'biuro@gesoft.pl',
+            'contactType': 'customer service',
+            'availableLanguage': ['Polish', 'English']
+          },
+          'sameAs': []
+        },
+        // WebSite
+        {
+          '@type': 'WebSite',
+          '@id': `${BASE_URL}/#website`,
+          'url': BASE_URL,
+          'name': 'GESOFT',
+          'publisher': {
+            '@id': `${BASE_URL}/#organization`
+          },
+          'inLanguage': lang === 'pl' ? 'pl-PL' : 'en-US'
+        },
+        // WebPage
+        {
+          '@type': 'WebPage',
+          '@id': `${BASE_URL}${path}/#webpage`,
+          'url': `${BASE_URL}${path}`,
+          'name': config.title,
+          'description': config.description,
+          'isPartOf': {
+            '@id': `${BASE_URL}/#website`
+          },
+          'about': {
+            '@id': `${BASE_URL}/#organization`
+          },
+          'inLanguage': lang === 'pl' ? 'pl-PL' : 'en-US'
+        }
+      ]
+    }
+
+    // Add LocalBusiness for contact page
+    if (seoKey === 'contact' || seoKey === 'home') {
+      jsonLd['@graph'].push({
+        '@type': 'LocalBusiness',
+        '@id': `${BASE_URL}/#localbusiness`,
+        'name': 'GESOFT',
+        'image': `${BASE_URL}/logo.svg`,
+        'telephone': '+48-517-123-374',
+        'email': 'biuro@gesoft.pl',
+        'address': {
+          '@type': 'PostalAddress',
+          'addressCountry': 'PL'
+        },
+        'priceRange': '$$',
+        'openingHours': 'Mo-Fr 09:00-17:00',
+        'url': BASE_URL
+      })
+    }
+
+    // Add Service for services page
+    if (seoKey === 'services') {
+      const services = [
+        { name: lang === 'pl' ? 'Strony internetowe' : 'Websites', description: lang === 'pl' ? 'Nowoczesne, responsywne strony internetowe' : 'Modern, responsive websites' },
+        { name: lang === 'pl' ? 'Aplikacje webowe' : 'Web Applications', description: lang === 'pl' ? 'Zaawansowane aplikacje w Laravel i Vue.js' : 'Advanced applications in Laravel and Vue.js' },
+        { name: lang === 'pl' ? 'Sklepy internetowe' : 'E-commerce', description: lang === 'pl' ? 'Kompleksowe rozwiązania e-commerce' : 'Comprehensive e-commerce solutions' },
+        { name: lang === 'pl' ? 'Systemy CRM/ERP' : 'CRM/ERP Systems', description: lang === 'pl' ? 'Dedykowane systemy zarządzania' : 'Dedicated management systems' }
+      ]
+
+      services.forEach((service, index) => {
+        jsonLd['@graph'].push({
+          '@type': 'Service',
+          '@id': `${BASE_URL}/uslugi/#service-${index}`,
+          'name': service.name,
+          'description': service.description,
+          'provider': {
+            '@id': `${BASE_URL}/#organization`
+          }
+        })
+      })
+    }
+
+    // Add BreadcrumbList for all pages except home
+    if (seoKey !== 'home') {
+      const breadcrumbNames = {
+        about: { pl: 'O nas', en: 'About Us' },
+        services: { pl: 'Usługi', en: 'Services' },
+        technologies: { pl: 'Technologie', en: 'Technologies' },
+        portfolio: { pl: 'Portfolio', en: 'Portfolio' },
+        contact: { pl: 'Kontakt', en: 'Contact' }
+      }
+
+      jsonLd['@graph'].push({
+        '@type': 'BreadcrumbList',
+        '@id': `${BASE_URL}${path}/#breadcrumb`,
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'name': lang === 'pl' ? 'Strona główna' : 'Home',
+            'item': BASE_URL
+          },
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'name': breadcrumbNames[seoKey]?.[lang] || config.title,
+            'item': `${BASE_URL}${path}`
+          }
+        ]
+      })
+    }
+
+    // Add FAQPage for contact page
+    if (seoKey === 'contact') {
+      const faqItems = lang === 'pl' ? [
+        { question: 'Jak długo trwa realizacja projektu?', answer: 'Czas realizacji zależy od złożoności projektu. Prosta strona internetowa to 2-4 tygodnie, aplikacja webowa 1-3 miesiące.' },
+        { question: 'Czy oferujecie wsparcie po zakończeniu projektu?', answer: 'Tak, oferujemy pakiety wsparcia technicznego i utrzymania dla wszystkich naszych projektów.' },
+        { question: 'Jakich technologii używacie?', answer: 'Specjalizujemy się w Laravel (PHP) i Vue.js. Używamy również MySQL, Redis, Docker i wielu innych.' }
+      ] : [
+        { question: 'How long does project implementation take?', answer: 'Implementation time depends on project complexity. A simple website takes 2-4 weeks, a web application 1-3 months.' },
+        { question: 'Do you offer support after project completion?', answer: 'Yes, we offer technical support and maintenance packages for all our projects.' },
+        { question: 'What technologies do you use?', answer: 'We specialize in Laravel (PHP) and Vue.js. We also use MySQL, Redis, Docker and many others.' }
+      ]
+
+      jsonLd['@graph'].push({
+        '@type': 'FAQPage',
+        '@id': `${BASE_URL}/kontakt/#faq`,
+        'mainEntity': faqItems.map(item => ({
+          '@type': 'Question',
+          'name': item.question,
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': item.answer
+          }
+        }))
+      })
+    }
+
+    setJsonLd(jsonLd)
+  }
+
+  // Watch for route and locale changes
+  watch([() => route.path, locale], updateSeo, { immediate: true })
+
+  onMounted(() => {
+    updateSeo()
+  })
+
+  return {
+    updateSeo
+  }
+}

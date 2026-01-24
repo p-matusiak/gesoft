@@ -1,0 +1,18 @@
+# GESOFT - robots.txt
+# https://gesoft.pl
+
+User-agent: *
+Allow: /
+
+# Blokuj panel admina
+Disallow: /admin
+Disallow: /admin/
+
+# Blokuj pliki API
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://gesoft.pl/sitemap.xml
+
+# Crawl-delay (opcjonalnie)
+Crawl-delay: 1
