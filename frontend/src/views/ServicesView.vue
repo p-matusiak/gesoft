@@ -19,7 +19,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="service in services" :key="service.id" class="glass-card p-8 hover:border-primary-500/50 transition-all duration-300 group">
             <div class="w-16 h-16 bg-gradient-to-br from-primary-500/20 to-secondary-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-              <span class="text-3xl">{{ service.emoji }}</span>
+              <div v-html="service.icon" class="w-8 h-8 text-primary-400"></div>
             </div>
             <h3 class="text-2xl font-bold text-white mb-4">{{ $t(service.titleKey) }}</h3>
             <p class="text-dark-400 mb-6">{{ $t(service.descKey) }}</p>
@@ -188,16 +188,28 @@
 </template>
 
 <script setup>
+const icons = {
+  globe: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>',
+  code: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>',
+  cart: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>',
+  chart: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>',
+  link: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>',
+  wrench: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>',
+  camera: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>',
+  drone: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>',
+  search: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>'
+}
+
 const services = [
-  { id: 1, emoji: '🌐', titleKey: 'services.items.websites.title', descKey: 'services.items.websites.description', featuresKey: 'services.items.websites.features' },
-  { id: 2, emoji: '💻', titleKey: 'services.items.webapps.title', descKey: 'services.items.webapps.description', featuresKey: 'services.items.webapps.features' },
-  { id: 3, emoji: '🛒', titleKey: 'services.items.ecommerce.title', descKey: 'services.items.ecommerce.description', featuresKey: 'services.items.ecommerce.features' },
-  { id: 4, emoji: '📊', titleKey: 'services.items.crm.title', descKey: 'services.items.crm.description', featuresKey: 'services.items.crm.features' },
-  { id: 5, emoji: '🔗', titleKey: 'services.items.api.title', descKey: 'services.items.api.description', featuresKey: 'services.items.api.features' },
-  { id: 6, emoji: '🛠️', titleKey: 'services.items.support.title', descKey: 'services.items.support.description', featuresKey: 'services.items.support.features' },
-  { id: 7, emoji: '📷', titleKey: 'services.items.photography.title', descKey: 'services.items.photography.description', featuresKey: 'services.items.photography.features' },
-  { id: 8, emoji: '🚁', titleKey: 'services.items.drone.title', descKey: 'services.items.drone.description', featuresKey: 'services.items.drone.features' },
-  { id: 9, emoji: '🔍', titleKey: 'services.items.seoAudit.title', descKey: 'services.items.seoAudit.description', featuresKey: 'services.items.seoAudit.features' }
+  { id: 1, icon: icons.globe, titleKey: 'services.items.websites.title', descKey: 'services.items.websites.description', featuresKey: 'services.items.websites.features' },
+  { id: 2, icon: icons.code, titleKey: 'services.items.webapps.title', descKey: 'services.items.webapps.description', featuresKey: 'services.items.webapps.features' },
+  { id: 3, icon: icons.cart, titleKey: 'services.items.ecommerce.title', descKey: 'services.items.ecommerce.description', featuresKey: 'services.items.ecommerce.features' },
+  { id: 4, icon: icons.chart, titleKey: 'services.items.crm.title', descKey: 'services.items.crm.description', featuresKey: 'services.items.crm.features' },
+  { id: 5, icon: icons.link, titleKey: 'services.items.api.title', descKey: 'services.items.api.description', featuresKey: 'services.items.api.features' },
+  { id: 6, icon: icons.wrench, titleKey: 'services.items.support.title', descKey: 'services.items.support.description', featuresKey: 'services.items.support.features' },
+  { id: 7, icon: icons.camera, titleKey: 'services.items.photography.title', descKey: 'services.items.photography.description', featuresKey: 'services.items.photography.features' },
+  { id: 8, icon: icons.drone, titleKey: 'services.items.drone.title', descKey: 'services.items.drone.description', featuresKey: 'services.items.drone.features' },
+  { id: 9, icon: icons.search, titleKey: 'services.items.seoAudit.title', descKey: 'services.items.seoAudit.description', featuresKey: 'services.items.seoAudit.features' }
 ]
 
 const process = [
