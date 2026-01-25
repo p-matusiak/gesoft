@@ -2,11 +2,8 @@
   <footer class="bg-dark-950 border-t border-dark-800" role="contentinfo" aria-label="Stopka strony">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <!-- Logo & Description -->
+        <!-- Description -->
         <div class="md:col-span-2">
-          <router-link to="/" class="inline-block mb-4" aria-label="GESOFT - Strona główna">
-            <img src="/logo.svg" alt="GESOFT - Logo firmy tworzącej strony i aplikacje webowe" class="h-10 w-auto" width="120" height="40" loading="lazy" />
-          </router-link>
           <p class="text-white font-medium mb-1">GESOFT Paweł Matusiak</p>
           <p class="text-dark-400 text-sm mb-3">NIP: 9372553467</p>
           <p class="text-dark-400 mb-4 max-w-md">
