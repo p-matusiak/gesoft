@@ -3,19 +3,6 @@
     <!-- Hero Section -->
     <HeroSection />
 
-    <!-- Trusted By Section -->
-    <section class="py-12 bg-dark-950 border-y border-dark-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p class="text-center text-dark-400 text-sm mb-8">{{ $t('trustedBy.title') }}</p>
-        <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-60 hover:opacity-100 transition-opacity duration-500">
-          <div v-for="(client, index) in trustedClients" :key="index"
-               class="text-xl md:text-2xl font-bold text-dark-300 hover:text-primary-400 transition-colors cursor-default">
-            {{ client }}
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Why Us Section -->
     <section class="py-20 bg-dark-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -477,8 +464,6 @@ const { t, tm } = useI18n()
 
 const services = ref([])
 const spotsLeft = ref(3)
-
-const trustedClients = ['TechCorp', 'InnovateLab', 'DataFlow', 'CloudSys', 'SmartBiz', 'DigiPro']
 
 const resultsCases = computed(() => tm('results.cases'))
 
