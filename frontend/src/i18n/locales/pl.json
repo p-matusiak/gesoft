@@ -431,7 +431,7 @@
     "form": {
       "title": "Wyślij zapytanie",
       "email": "Adres email",
-      "emailPlaceholder": "jan@przykład.pl",
+      "emailPlaceholder": "jan{'@'}przyklad.pl",
       "emailRequired": "Adres email jest wymagany.",
       "emailInvalid": "Podaj prawidłowy adres email.",
       "phone": "Telefon kontaktowy (opcjonalnie)",
