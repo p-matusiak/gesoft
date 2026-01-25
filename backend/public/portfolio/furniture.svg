@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fafaf9"/>
+      <stop offset="100%" style="stop-color:#f5f5f4"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d97706"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg2)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="70" fill="white"/>
+  <rect x="0" y="69" width="800" height="1" fill="#e7e5e4"/>
+
+  <!-- Logo -->
+  <text x="40" y="42" fill="#292524" font-family="Arial" font-size="22" font-weight="bold">MEBLE</text>
+  <text x="110" y="42" fill="#d97706" font-family="Arial" font-size="22" font-weight="bold">DOM</text>
+
+  <!-- Navigation -->
+  <text x="250" y="42" fill="#57534e" font-family="Arial" font-size="13">Kanapy</text>
+  <text x="320" y="42" fill="#57534e" font-family="Arial" font-size="13">Krzesla</text>
+  <text x="390" y="42" fill="#57534e" font-family="Arial" font-size="13">Stoly</text>
+  <text x="450" y="42" fill="#57534e" font-family="Arial" font-size="13">Sypialnia</text>
+  <text x="530" y="42" fill="#57534e" font-family="Arial" font-size="13">Akcesoria</text>
+
+  <!-- Search & Cart -->
+  <rect x="640" y="22" width="100" height="30" rx="15" fill="#f5f5f4" stroke="#e7e5e4"/>
+  <text x="660" y="42" fill="#a8a29e" font-family="Arial" font-size="12">Szukaj...</text>
+  <circle cx="760" cy="37" r="15" fill="#f5f5f4" stroke="#e7e5e4"/>
+  <text x="760" y="42" text-anchor="middle" fill="#57534e" font-family="Arial" font-size="14">3</text>
+
+  <!-- Hero Banner -->
+  <rect x="30" y="90" width="360" height="200" rx="16" fill="#292524"/>
+  <text x="60" y="140" fill="#a8a29e" font-family="Arial" font-size="12">NOWOSCI 2024</text>
+  <text x="60" y="175" fill="white" font-family="Arial" font-size="26" font-weight="bold">Kolekcja</text>
+  <text x="60" y="205" fill="white" font-family="Arial" font-size="26" font-weight="bold">Skandynawska</text>
+  <rect x="60" y="235" width="120" height="36" rx="18" fill="url(#accent2)"/>
+  <text x="120" y="258" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">ZOBACZ WIECEJ</text>
+
+  <!-- Featured product -->
+  <rect x="410" y="90" width="180" height="200" rx="16" fill="white" stroke="#e7e5e4"/>
+  <rect x="420" y="100" width="160" height="120" rx="8" fill="#fafaf9"/>
+  <rect x="460" y="130" width="80" height="60" rx="4" fill="#d4d4d4"/>
+  <text x="420" y="245" fill="#292524" font-family="Arial" font-size="13" font-weight="bold">Sofa Malmo</text>
+  <text x="420" y="265" fill="#d97706" font-family="Arial" font-size="15" font-weight="bold">2 499 zl</text>
+  <text x="530" y="265" fill="#a8a29e" font-family="Arial" font-size="11" text-decoration="line-through">3 199 zl</text>
+
+  <!-- Featured product 2 -->
+  <rect x="610" y="90" width="160" height="200" rx="16" fill="white" stroke="#e7e5e4"/>
+  <rect x="620" y="100" width="140" height="120" rx="8" fill="#fafaf9"/>
+  <rect x="660" y="140" width="60" height="50" rx="4" fill="#d4d4d4"/>
+  <text x="620" y="245" fill="#292524" font-family="Arial" font-size="13" font-weight="bold">Fotel Oslo</text>
+  <text x="620" y="265" fill="#d97706" font-family="Arial" font-size="15" font-weight="bold">899 zl</text>
+
+  <!-- Categories -->
+  <text x="40" y="330" fill="#292524" font-family="Arial" font-size="18" font-weight="bold">Popularne kategorie</text>
+
+  <rect x="30" y="350" width="175" height="80" rx="12" fill="white" stroke="#e7e5e4"/>
+  <rect x="45" y="365" width="50" height="40" rx="6" fill="#fef3c7"/>
+  <text x="110" y="390" fill="#292524" font-family="Arial" font-size="12" font-weight="bold">Kanapy</text>
+  <text x="110" y="408" fill="#78716c" font-family="Arial" font-size="10">128 produktow</text>
+
+  <rect x="220" y="350" width="175" height="80" rx="12" fill="white" stroke="#e7e5e4"/>
+  <rect x="235" y="365" width="50" height="40" rx="6" fill="#dbeafe"/>
+  <text x="300" y="390" fill="#292524" font-family="Arial" font-size="12" font-weight="bold">Krzesla</text>
+  <text x="300" y="408" fill="#78716c" font-family="Arial" font-size="10">96 produktow</text>
+
+  <rect x="410" y="350" width="175" height="80" rx="12" fill="white" stroke="#e7e5e4"/>
+  <rect x="425" y="365" width="50" height="40" rx="6" fill="#dcfce7"/>
+  <text x="490" y="390" fill="#292524" font-family="Arial" font-size="12" font-weight="bold">Stoly</text>
+  <text x="490" y="408" fill="#78716c" font-family="Arial" font-size="10">74 produktow</text>
+
+  <rect x="600" y="350" width="175" height="80" rx="12" fill="white" stroke="#e7e5e4"/>
+  <rect x="615" y="365" width="50" height="40" rx="6" fill="#fce7f3"/>
+  <text x="680" y="390" fill="#292524" font-family="Arial" font-size="12" font-weight="bold">Sypialnia</text>
+  <text x="680" y="408" fill="#78716c" font-family="Arial" font-size="10">85 produktow</text>
+</svg>

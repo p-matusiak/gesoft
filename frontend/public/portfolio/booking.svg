@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="100%" style="stop-color:#0369a1"/>
+    </linearGradient>
+    <linearGradient id="accent6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#fb923c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg6)"/>
+
+  <!-- Hero image overlay pattern -->
+  <rect x="0" y="0" width="800" height="450" fill="url(#bg6)" opacity="0.9"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="70" fill="#0c4a6e" opacity="0.95"/>
+
+  <!-- Logo -->
+  <text x="40" y="42" fill="white" font-family="Arial" font-size="22" font-weight="bold">Hotel</text>
+  <text x="105" y="42" fill="#fb923c" font-family="Arial" font-size="22" font-weight="bold">Lux</text>
+
+  <!-- Navigation -->
+  <text x="280" y="42" fill="white" font-family="Arial" font-size="13">Pokoje</text>
+  <text x="350" y="42" fill="white" font-family="Arial" font-size="13">Restauracja</text>
+  <text x="450" y="42" fill="white" font-family="Arial" font-size="13">Spa</text>
+  <text x="500" y="42" fill="white" font-family="Arial" font-size="13">Galeria</text>
+  <text x="570" y="42" fill="white" font-family="Arial" font-size="13">Kontakt</text>
+
+  <!-- Book button -->
+  <rect x="670" y="18" width="100" height="36" rx="18" fill="url(#accent6)"/>
+  <text x="720" y="42" text-anchor="middle" fill="white" font-family="Arial" font-size="13" font-weight="bold">Rezerwuj</text>
+
+  <!-- Main booking widget -->
+  <rect x="50" y="100" width="700" height="140" rx="20" fill="white"/>
+
+  <!-- Check-in -->
+  <text x="90" y="135" fill="#64748b" font-family="Arial" font-size="11">ZAMELDOWANIE</text>
+  <text x="90" y="165" fill="#0c4a6e" font-family="Arial" font-size="18" font-weight="bold">24 Sty 2024</text>
+  <text x="90" y="185" fill="#94a3b8" font-family="Arial" font-size="12">Piatek</text>
+
+  <line x1="220" y1="115" x2="220" y2="215" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Check-out -->
+  <text x="260" y="135" fill="#64748b" font-family="Arial" font-size="11">WYMELDOWANIE</text>
+  <text x="260" y="165" fill="#0c4a6e" font-family="Arial" font-size="18" font-weight="bold">27 Sty 2024</text>
+  <text x="260" y="185" fill="#94a3b8" font-family="Arial" font-size="12">Poniedzialek</text>
+
+  <line x1="400" y1="115" x2="400" y2="215" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Guests -->
+  <text x="440" y="135" fill="#64748b" font-family="Arial" font-size="11">GOSCIE</text>
+  <text x="440" y="165" fill="#0c4a6e" font-family="Arial" font-size="18" font-weight="bold">2 Dorosli</text>
+  <text x="440" y="185" fill="#94a3b8" font-family="Arial" font-size="12">1 Pokoj</text>
+
+  <!-- Search button -->
+  <rect x="580" y="120" width="140" height="90" rx="12" fill="url(#accent6)"/>
+  <text x="650" y="160" text-anchor="middle" fill="white" font-family="Arial" font-size="14" font-weight="bold">Sprawdz</text>
+  <text x="650" y="180" text-anchor="middle" fill="white" font-family="Arial" font-size="14" font-weight="bold">dostepnosc</text>
+
+  <!-- Room cards -->
+  <text x="50" y="280" fill="white" font-family="Arial" font-size="18" font-weight="bold">Dostepne pokoje</text>
+
+  <!-- Room 1 -->
+  <rect x="50" y="300" width="220" height="130" rx="16" fill="white"/>
+  <rect x="60" y="310" width="200" height="60" rx="8" fill="#e0f2fe"/>
+  <text x="160" y="345" text-anchor="middle" fill="#0369a1" font-family="Arial" font-size="14">Pokoj Standard</text>
+  <text x="70" y="390" fill="#0c4a6e" font-family="Arial" font-size="12" font-weight="bold">Pokoj Standard</text>
+  <text x="70" y="408" fill="#f97316" font-family="Arial" font-size="14" font-weight="bold">299 zl</text>
+  <text x="120" y="408" fill="#94a3b8" font-family="Arial" font-size="10">/ noc</text>
+  <rect x="180" y="393" width="60" height="25" rx="6" fill="url(#accent6)"/>
+  <text x="210" y="410" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">Wybierz</text>
+
+  <!-- Room 2 -->
+  <rect x="290" y="300" width="220" height="130" rx="16" fill="white"/>
+  <rect x="300" y="310" width="200" height="60" rx="8" fill="#fef3c7"/>
+  <text x="400" y="345" text-anchor="middle" fill="#d97706" font-family="Arial" font-size="14">Pokoj Deluxe</text>
+  <rect x="420" y="310" width="70" height="20" rx="4" fill="#f97316"/>
+  <text x="455" y="324" text-anchor="middle" fill="white" font-family="Arial" font-size="9" font-weight="bold">POPULAR</text>
+  <text x="310" y="390" fill="#0c4a6e" font-family="Arial" font-size="12" font-weight="bold">Pokoj Deluxe</text>
+  <text x="310" y="408" fill="#f97316" font-family="Arial" font-size="14" font-weight="bold">449 zl</text>
+  <text x="360" y="408" fill="#94a3b8" font-family="Arial" font-size="10">/ noc</text>
+  <rect x="420" y="393" width="60" height="25" rx="6" fill="url(#accent6)"/>
+  <text x="450" y="410" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">Wybierz</text>
+
+  <!-- Room 3 -->
+  <rect x="530" y="300" width="220" height="130" rx="16" fill="white"/>
+  <rect x="540" y="310" width="200" height="60" rx="8" fill="#dbeafe"/>
+  <text x="640" y="345" text-anchor="middle" fill="#2563eb" font-family="Arial" font-size="14">Apartament</text>
+  <text x="550" y="390" fill="#0c4a6e" font-family="Arial" font-size="12" font-weight="bold">Apartament VIP</text>
+  <text x="550" y="408" fill="#f97316" font-family="Arial" font-size="14" font-weight="bold">799 zl</text>
+  <text x="600" y="408" fill="#94a3b8" font-family="Arial" font-size="10">/ noc</text>
+  <rect x="660" y="393" width="60" height="25" rx="6" fill="url(#accent6)"/>
+  <text x="690" y="410" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">Wybierz</text>
+
+  <!-- Trust badges -->
+  <text x="680" y="280" fill="white" font-family="Arial" font-size="10">★★★★★ 4.9</text>
+  <text x="730" y="280" fill="#94a3b8" font-family="Arial" font-size="10">(847)</text>
+</svg>

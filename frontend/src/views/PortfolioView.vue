@@ -70,9 +70,7 @@
               @click="openModal(project)"
             >
               <div class="aspect-video bg-gradient-to-br from-primary-900 to-secondary-900 relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <span class="text-6xl">{{ project.emoji }}</span>
-                </div>
+                <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
                 <!-- Metric Badge -->
                 <div v-if="project.metric" class="absolute top-4 right-4 bg-green-500/90 backdrop-blur-sm px-3 py-1 rounded-full">
                   <span class="text-white font-bold text-sm">{{ project.metric }}</span>
@@ -111,9 +109,7 @@
       <div v-if="selectedProject" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-900/80 backdrop-blur-sm" @click="closeModal">
         <div class="glass-card max-w-2xl w-full max-h-[90vh] overflow-y-auto" @click.stop>
           <div class="aspect-video bg-gradient-to-br from-primary-900 to-secondary-900 relative">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <span class="text-8xl">{{ selectedProject.emoji }}</span>
-            </div>
+            <img :src="selectedProject.image" :alt="selectedProject.title" class="w-full h-full object-cover" />
             <button @click="closeModal" class="absolute top-4 right-4 w-10 h-10 bg-dark-900/50 rounded-full flex items-center justify-center text-white hover:bg-dark-900 transition-colors">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -185,12 +181,12 @@ const categories = [
 ]
 
 const projectsData = [
-  { id: 1, key: 'crm', emoji: '📊', category: 'crm', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis'], metric: '-60%', metricLabel: 'czas obslugi' },
-  { id: 2, key: 'furniture', emoji: '🛋️', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL'], metric: '+247%', metricLabel: 'wzrost sprzedazy' },
-  { id: 3, key: 'medical', emoji: '🏥', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'Redis', 'WebSockets'], metric: '+180%', metricLabel: 'wiecej pacjentow' },
-  { id: 4, key: 'corporate', emoji: '🏢', category: 'website', technologies: ['Laravel', 'TailwindCSS', 'Alpine.js'], metric: '95+', metricLabel: 'PageSpeed' },
-  { id: 5, key: 'projectMgmt', emoji: '📋', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'WebSockets', 'PostgreSQL'], metric: '3x', metricLabel: 'produktywnosc' },
-  { id: 6, key: 'booking', emoji: '🏨', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'Google API', 'MySQL'], metric: '5x', metricLabel: 'wiecej rezerwacji' },
+  { id: 1, key: 'crm', image: '/portfolio/crm.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis'], metric: '-60%', metricLabel: 'czas obslugi' },
+  { id: 2, key: 'furniture', image: '/portfolio/furniture.svg', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL'], metric: '+247%', metricLabel: 'wzrost sprzedazy' },
+  { id: 3, key: 'medical', image: '/portfolio/medical.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'Redis', 'WebSockets'], metric: '+180%', metricLabel: 'wiecej pacjentow' },
+  { id: 4, key: 'corporate', image: '/portfolio/corporate.svg', category: 'website', technologies: ['Laravel', 'TailwindCSS', 'Alpine.js'], metric: '95+', metricLabel: 'PageSpeed' },
+  { id: 5, key: 'projectMgmt', image: '/portfolio/projectmgmt.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'WebSockets', 'PostgreSQL'], metric: '3x', metricLabel: 'produktywnosc' },
+  { id: 6, key: 'booking', image: '/portfolio/booking.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'Google API', 'MySQL'], metric: '5x', metricLabel: 'wiecej rezerwacji' },
 ]
 
 const projects = computed(() => {
