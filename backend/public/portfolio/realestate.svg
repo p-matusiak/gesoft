@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Top nav -->
+  <rect x="0" y="0" width="800" height="55" fill="#0f172a"/>
+  <rect x="0" y="54" width="800" height="1" fill="#334155"/>
+  <text x="30" y="34" fill="white" font-family="Arial" font-size="16" font-weight="bold">🏠 NieruchomosciPL</text>
+  <rect x="280" y="15" width="240" height="26" rx="13" fill="#1e293b"/>
+  <text x="400" y="32" text-anchor="middle" fill="#64748b" font-family="Arial" font-size="11">🔍  Miasto, dzielnica, kod pocztowy...</text>
+  <rect x="590" y="15" width="80" height="26" rx="6" fill="url(#accent)"/>
+  <text x="630" y="32" text-anchor="middle" fill="white" font-family="Arial" font-size="11">Szukaj</text>
+  <text x="700" y="32" fill="#64748b" font-family="Arial" font-size="12">Dodaj ogłoszenie</text>
+
+  <!-- Filters bar -->
+  <rect x="0" y="55" width="800" height="42" fill="#111827"/>
+  <rect x="15" y="68" width="80" height="22" rx="11" fill="#1e293b"/>
+  <text x="55" y="83" text-anchor="middle" fill="#64748b" font-family="Arial" font-size="10">Typ: Wszystkie</text>
+  <rect x="103" y="68" width="100" height="22" rx="11" fill="url(#accent)"/>
+  <text x="153" y="83" text-anchor="middle" fill="white" font-family="Arial" font-size="10">Sprzedaż (1,482)</text>
+  <rect x="211" y="68" width="75" height="22" rx="11" fill="#1e293b"/>
+  <text x="248" y="83" text-anchor="middle" fill="#64748b" font-family="Arial" font-size="10">Wynajem (634)</text>
+  <text x="310" y="83" fill="#64748b" font-family="Arial" font-size="10">|  Cena ▾  |  Pokoje ▾  |  Pow. ▾  |  Więcej filtrów</text>
+  <text x="680" y="83" fill="#64748b" font-family="Arial" font-size="10">Mapa  ·  Lista</text>
+
+  <!-- Property cards -->
+  <!-- Card 1 -->
+  <rect x="15" y="108" width="235" height="310" rx="12" fill="#1e293b"/>
+  <rect x="15" y="108" width="235" height="140" rx="12" fill="#374151"/>
+  <text x="127" y="185" text-anchor="middle" fill="#4b5563" font-family="Arial" font-size="32">🏢</text>
+  <rect x="25" y="118" width="70" height="20" rx="10" fill="#10b981"/>
+  <text x="60" y="132" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">NOWE</text>
+  <text x="25" y="270" fill="white" font-family="Arial" font-size="15" font-weight="bold">680 000 zł</text>
+  <text x="25" y="290" fill="#94a3b8" font-family="Arial" font-size="11">Mieszkanie · 3 pokoje · 68 m²</text>
+  <text x="25" y="308" fill="#64748b" font-family="Arial" font-size="10">📍 Warszawa, Mokotów</text>
+  <rect x="15" y="325" width="235" height="1" fill="#334155"/>
+  <text x="25" y="348" fill="#64748b" font-family="Arial" font-size="10">🏗 2023  ·  🅿 Tak  ·  🛗 Tak</text>
+  <rect x="25" y="360" width="105" height="26" rx="6" fill="url(#accent)"/>
+  <text x="77" y="377" text-anchor="middle" fill="white" font-family="Arial" font-size="10">Umów wizytę</text>
+  <text x="160" y="377" fill="#64748b" font-family="Arial" font-size="10">♡ Zapisz</text>
+
+  <!-- Card 2 -->
+  <rect x="265" y="108" width="235" height="310" rx="12" fill="#1e293b"/>
+  <rect x="265" y="108" width="235" height="140" rx="12" fill="#2d3748"/>
+  <text x="382" y="185" text-anchor="middle" fill="#4b5563" font-family="Arial" font-size="32">🏠</text>
+  <text x="275" y="270" fill="white" font-family="Arial" font-size="15" font-weight="bold">1 250 000 zł</text>
+  <text x="275" y="290" fill="#94a3b8" font-family="Arial" font-size="11">Dom · 5 pokoi · 180 m²</text>
+  <text x="275" y="308" fill="#64748b" font-family="Arial" font-size="10">📍 Kraków, Krowodrza</text>
+  <rect x="265" y="325" width="235" height="1" fill="#334155"/>
+  <text x="275" y="348" fill="#64748b" font-family="Arial" font-size="10">🏗 2018  ·  🏡 Ogród  ·  🅿 2 miejsca</text>
+  <rect x="275" y="360" width="105" height="26" rx="6" fill="url(#accent)"/>
+  <text x="327" y="377" text-anchor="middle" fill="white" font-family="Arial" font-size="10">Umów wizytę</text>
+  <text x="410" y="377" fill="#64748b" font-family="Arial" font-size="10">♡ Zapisz</text>
+
+  <!-- Card 3 -->
+  <rect x="515" y="108" width="235" height="310" rx="12" fill="#1e293b"/>
+  <rect x="515" y="108" width="235" height="140" rx="12" fill="#1a2744"/>
+  <text x="632" y="185" text-anchor="middle" fill="#4b5563" font-family="Arial" font-size="32">🏗</text>
+  <rect x="525" y="118" width="90" height="20" rx="10" fill="#f97316"/>
+  <text x="570" y="132" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">INWESTYCJA</text>
+  <text x="525" y="270" fill="white" font-family="Arial" font-size="15" font-weight="bold">420 000 zł</text>
+  <text x="525" y="290" fill="#94a3b8" font-family="Arial" font-size="11">Mieszkanie · 2 pokoje · 48 m²</text>
+  <text x="525" y="308" fill="#64748b" font-family="Arial" font-size="10">📍 Gdańsk, Wrzeszcz</text>
+  <rect x="515" y="325" width="235" height="1" fill="#334155"/>
+  <text x="525" y="348" fill="#64748b" font-family="Arial" font-size="10">🏗 2025 (deweloper)  ·  🛗 Tak</text>
+  <rect x="525" y="360" width="105" height="26" rx="6" fill="url(#accent)"/>
+  <text x="577" y="377" text-anchor="middle" fill="white" font-family="Arial" font-size="10">Umów wizytę</text>
+  <text x="660" y="377" fill="#64748b" font-family="Arial" font-size="10">♡ Zapisz</text>
+
+  <!-- Bottom stack info -->
+  <text x="400" y="432" text-anchor="middle" fill="#64748b" font-family="Arial" font-size="10">Stack: Laravel + Vue.js + MySQL + Algolia (wyszukiwanie) + Google Maps API + system ogłoszeń</text>
+</svg>

@@ -1,6 +1,6 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" role="navigation" aria-label="Nawigacja główna" :class="[
-    isScrolled ? 'bg-dark-900/95 backdrop-blur-lg shadow-lg' : 'bg-transparent'
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-200" role="navigation" aria-label="Nawigacja główna" :class="[
+    isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200' : 'bg-white border-b border-gray-100'
   ]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
@@ -15,8 +15,8 @@
             v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
-            class="text-dark-300 hover:text-white transition-colors duration-300 font-medium"
-            :class="{ 'text-white': $route.path === link.path }"
+            class="text-gray-700 hover:text-brand-600 transition-colors duration-200 font-medium"
+            :class="{ 'text-brand-600': $route.path === link.path }"
           >
             {{ $t(link.i18nKey) }}
           </router-link>
@@ -25,7 +25,7 @@
           <div class="relative">
             <button
               @click="isLangMenuOpen = !isLangMenuOpen"
-              class="flex items-center space-x-1 text-dark-300 hover:text-white transition-colors duration-300 font-medium"
+              class="flex items-center space-x-1 text-gray-700 hover:text-brand-600 transition-colors duration-200 font-medium"
             >
               <span>{{ currentLocale === 'pl' ? 'PL' : 'EN' }}</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -33,26 +33,26 @@
               </svg>
             </button>
             <transition
-              enter-active-class="transition-all duration-200 ease-out"
-              leave-active-class="transition-all duration-150 ease-in"
+              enter-active-class="transition-all duration-150 ease-out"
+              leave-active-class="transition-all duration-100 ease-in"
               enter-from-class="opacity-0 scale-95"
               leave-to-class="opacity-0 scale-95"
             >
               <div
                 v-if="isLangMenuOpen"
-                class="absolute right-0 mt-2 w-24 bg-dark-800 border border-dark-700 rounded-lg shadow-xl overflow-hidden"
+                class="absolute right-0 mt-2 w-28 bg-white border border-gray-200 rounded-md shadow-md overflow-hidden"
               >
                 <button
                   @click="changeLocale('pl')"
-                  class="w-full px-4 py-2 text-left text-dark-300 hover:text-white hover:bg-dark-700 transition-colors"
-                  :class="{ 'text-white bg-dark-700': currentLocale === 'pl' }"
+                  class="w-full px-4 py-2 text-left text-gray-700 hover:bg-gray-50 hover:text-brand-600 transition-colors"
+                  :class="{ 'text-brand-600 bg-gray-50': currentLocale === 'pl' }"
                 >
                   Polski
                 </button>
                 <button
                   @click="changeLocale('en')"
-                  class="w-full px-4 py-2 text-left text-dark-300 hover:text-white hover:bg-dark-700 transition-colors"
-                  :class="{ 'text-white bg-dark-700': currentLocale === 'en' }"
+                  class="w-full px-4 py-2 text-left text-gray-700 hover:bg-gray-50 hover:text-brand-600 transition-colors"
+                  :class="{ 'text-brand-600 bg-gray-50': currentLocale === 'en' }"
                 >
                   English
                 </button>
@@ -68,7 +68,7 @@
         <!-- Mobile Menu Button -->
         <button
           @click="isMobileMenuOpen = !isMobileMenuOpen"
-          class="md:hidden p-2 text-dark-300 hover:text-white"
+          class="md:hidden p-2 text-gray-700 hover:text-brand-600"
           :aria-expanded="isMobileMenuOpen"
           aria-controls="mobile-menu"
           aria-label="Otwórz menu nawigacji"
@@ -85,19 +85,19 @@
 
     <!-- Mobile Menu -->
     <transition
-      enter-active-class="transition-all duration-300 ease-out"
-      leave-active-class="transition-all duration-200 ease-in"
-      enter-from-class="opacity-0 -translate-y-4"
-      leave-to-class="opacity-0 -translate-y-4"
+      enter-active-class="transition-all duration-200 ease-out"
+      leave-active-class="transition-all duration-150 ease-in"
+      enter-from-class="opacity-0 -translate-y-2"
+      leave-to-class="opacity-0 -translate-y-2"
     >
-      <div v-if="isMobileMenuOpen" id="mobile-menu" class="md:hidden bg-dark-900/95 backdrop-blur-lg border-t border-dark-700">
-        <div class="px-4 py-4 space-y-3">
+      <div v-if="isMobileMenuOpen" id="mobile-menu" class="md:hidden bg-white border-t border-gray-200">
+        <div class="px-4 py-4 space-y-2">
           <router-link
             v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
-            class="block px-4 py-2 text-dark-300 hover:text-white hover:bg-dark-800 rounded-lg transition-colors"
-            :class="{ 'text-white bg-dark-800': $route.path === link.path }"
+            class="block px-4 py-2 text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md transition-colors"
+            :class="{ 'text-brand-600 bg-gray-50': $route.path === link.path }"
             @click="isMobileMenuOpen = false"
           >
             {{ $t(link.i18nKey) }}
@@ -108,14 +108,14 @@
             <button
               @click="changeLocale('pl'); isMobileMenuOpen = false"
               class="px-3 py-1 rounded text-sm transition-colors"
-              :class="currentLocale === 'pl' ? 'bg-primary-500 text-white' : 'bg-dark-800 text-dark-300 hover:text-white'"
+              :class="currentLocale === 'pl' ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700 hover:text-brand-600'"
             >
               PL
             </button>
             <button
               @click="changeLocale('en'); isMobileMenuOpen = false"
               class="px-3 py-1 rounded text-sm transition-colors"
-              :class="currentLocale === 'en' ? 'bg-primary-500 text-white' : 'bg-dark-800 text-dark-300 hover:text-white'"
+              :class="currentLocale === 'en' ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700 hover:text-brand-600'"
             >
               EN
             </button>

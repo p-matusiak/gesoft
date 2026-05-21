@@ -1,0 +1,43 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8fafc"/>
+  <rect width="400" height="40" fill="#4f46e5"/>
+  <text x="16" y="26" font-family="sans-serif" font-size="11" font-weight="700" fill="white">Rekrutacja ATS</text>
+  <rect x="310" y="10" width="76" height="20" rx="6" fill="white" opacity=".25"/>
+  <text x="348" y="24" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">+ Dodaj nowy</text>
+  <rect x="8" y="48" width="384" height="228" rx="6" fill="white"/>
+  <rect x="8" y="48" width="384" height="28" rx="6" fill="#f8fafc"/>
+  <text x="20" y="66" font-family="sans-serif" font-size="7" font-weight="600" fill="#64748b">Kandydat</text>
+  <text x="120" y="66" font-family="sans-serif" font-size="7" font-weight="600" fill="#64748b">Stanowisko</text>
+  <text x="220" y="66" font-family="sans-serif" font-size="7" font-weight="600" fill="#64748b">Etap</text>
+  <text x="310" y="66" font-family="sans-serif" font-size="7" font-weight="600" fill="#64748b">Status</text>
+  <rect x="8" y="76" width="384" height="1" fill="#e2e8f0"/>
+  <text x="20" y="95" font-family="sans-serif" font-size="8" fill="#1e293b">Anna Kowalska</text>
+  <text x="120" y="95" font-family="sans-serif" font-size="8" fill="#475569">Frontend Developer</text>
+  <text x="220" y="95" font-family="sans-serif" font-size="8" fill="#475569">Rozmowa HR</text>
+  <rect x="308" y="84" width="52" height="16" rx="8" fill="#f59e0b"/>
+  <text x="334" y="95" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">W toku</text>
+  <rect x="8" y="104" width="384" height="1" fill="#e2e8f0"/>
+  <text x="20" y="123" font-family="sans-serif" font-size="8" fill="#1e293b">Marek Nowak</text>
+  <text x="120" y="123" font-family="sans-serif" font-size="8" fill="#475569">Backend PHP</text>
+  <text x="220" y="123" font-family="sans-serif" font-size="8" fill="#475569">Test techniczny</text>
+  <rect x="308" y="112" width="52" height="16" rx="8" fill="#f59e0b"/>
+  <text x="334" y="123" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">Oczekuje</text>
+  <rect x="8" y="132" width="384" height="1" fill="#e2e8f0"/>
+  <text x="20" y="151" font-family="sans-serif" font-size="8" fill="#1e293b">Julia Wiśniewska</text>
+  <text x="120" y="151" font-family="sans-serif" font-size="8" fill="#475569">UI/UX Designer</text>
+  <text x="220" y="151" font-family="sans-serif" font-size="8" fill="#475569">Oferta pracy</text>
+  <rect x="308" y="140" width="52" height="16" rx="8" fill="#22c55e"/>
+  <text x="334" y="151" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">Nowy</text>
+  <rect x="8" y="160" width="384" height="1" fill="#e2e8f0"/>
+  <rect x="16" y="170" width="60" height="8" rx="3" fill="#4f46e5" opacity=".2"/>
+  <rect x="84" y="170" width="60" height="8" rx="3" fill="#e2e8f0"/>
+  <rect x="16" y="184" width="80" height="8" rx="3" fill="#e2e8f0"/>
+  <rect x="16" y="198" width="50" height="8" rx="3" fill="#4f46e5" opacity=".1"/>
+  <rect x="16" y="220" width="368" height="28" rx="6" fill="#4f46e5" opacity=".07"/>
+  <text x="200" y="238" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#4f46e5">Załaduj więcej wyników...</text>
+  <text x="16" y="268" font-family="sans-serif" font-size="6" fill="#94a3b8">Pokazuje 1–10 z 248 rekordów</text>
+  <rect x="320" y="258" width="20" height="16" rx="3" fill="#4f46e5" opacity=".15"/>
+  <rect x="346" y="258" width="20" height="16" rx="3" fill="#4f46e5"/>
+  <rect x="372" y="258" width="20" height="16" rx="3" fill="#4f46e5" opacity=".15"/>
+  <text x="356" y="269" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">2</text>
+</svg>

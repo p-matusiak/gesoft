@@ -1,0 +1,42 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8fafc"/>
+  <rect width="400" height="40" fill="#1d4ed8"/>
+  <text x="20" y="26" font-family="sans-serif" font-size="12" font-weight="700" fill="white">HurtHub</text>
+  <text x="180" y="26" font-family="sans-serif" font-size="7" fill="white">Elektronika</text>
+  <text x="240" y="26" font-family="sans-serif" font-size="7" fill="white">Chemia</text>
+  <text x="295" y="26" font-family="sans-serif" font-size="7" fill="white">Spożywcze</text>
+  <rect x="340" y="12" width="50" height="16" rx="8" fill="white" opacity=".3"/>
+  <text x="365" y="24" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">Koszyk</text>
+  <rect x="10" y="50" width="88" height="100" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="107" y="50" width="88" height="100" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="204" y="50" width="88" height="100" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="301" y="50" width="89" height="100" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="18" y="56" width="72" height="55" rx="4" fill="#1d4ed8" opacity=".1"/>
+  <rect x="115" y="56" width="72" height="55" rx="4" fill="#1d4ed8" opacity=".1"/>
+  <rect x="212" y="56" width="72" height="55" rx="4" fill="#1d4ed8" opacity=".1"/>
+  <rect x="309" y="56" width="73" height="55" rx="4" fill="#1d4ed8" opacity=".1"/>
+  <text x="54" y="125" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#1e293b">Kabel HDMI</text>
+  <text x="151" y="125" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#1e293b">Detergent 10L</text>
+  <text x="248" y="125" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#1e293b">Kawa 1kg</text>
+  <text x="345" y="125" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#1e293b">Baterie AA/100</text>
+  <rect x="18" y="132" width="40" height="8" rx="2" fill="#1d4ed8"/>
+  <rect x="115" y="132" width="40" height="8" rx="2" fill="#1d4ed8"/>
+  <rect x="212" y="132" width="40" height="8" rx="2" fill="#1d4ed8"/>
+  <rect x="309" y="132" width="40" height="8" rx="2" fill="#1d4ed8"/>
+  <text x="54" y="140" text-anchor="middle" font-family="sans-serif" font-size="5" fill="white">zł 129</text>
+  <text x="151" y="140" text-anchor="middle" font-family="sans-serif" font-size="5" fill="white">zł 249</text>
+  <text x="248" y="140" text-anchor="middle" font-family="sans-serif" font-size="5" fill="white">zł 89</text>
+  <text x="345" y="140" text-anchor="middle" font-family="sans-serif" font-size="5" fill="white">zł 399</text>
+  <rect x="10" y="162" width="88" height="100" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="107" y="162" width="88" height="100" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="204" y="162" width="88" height="100" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="301" y="162" width="89" height="100" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="18" y="168" width="72" height="55" rx="4" fill="#1d4ed8" opacity=".08"/>
+  <rect x="115" y="168" width="72" height="55" rx="4" fill="#1d4ed8" opacity=".08"/>
+  <rect x="212" y="168" width="72" height="55" rx="4" fill="#1d4ed8" opacity=".08"/>
+  <rect x="309" y="168" width="73" height="55" rx="4" fill="#1d4ed8" opacity=".08"/>
+  <rect x="18" y="244" width="40" height="8" rx="2" fill="#1d4ed8" opacity=".5"/>
+  <rect x="115" y="244" width="40" height="8" rx="2" fill="#1d4ed8" opacity=".5"/>
+  <rect x="212" y="244" width="40" height="8" rx="2" fill="#1d4ed8" opacity=".5"/>
+  <rect x="309" y="244" width="40" height="8" rx="2" fill="#1d4ed8" opacity=".5"/>
+</svg>

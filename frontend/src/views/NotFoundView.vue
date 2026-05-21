@@ -1,11 +1,11 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-dark-900 px-4">
+  <div class="min-h-screen flex items-center justify-center bg-white px-4">
     <div class="text-center">
-      <div class="text-9xl font-bold gradient-text mb-4">404</div>
-      <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+      <div class="text-8xl md:text-9xl font-bold text-brand-600 mb-4">404</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
         {{ $t('notFound.title') }}
       </h1>
-      <p class="text-dark-400 text-lg mb-8 max-w-md mx-auto">
+      <p class="text-gray-600 text-lg mb-8 max-w-md mx-auto">
         {{ $t('notFound.description') }}
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -24,7 +24,6 @@
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  // Set noindex for 404 page
   let robotsMeta = document.querySelector('meta[name="robots"]')
   if (robotsMeta) {
     robotsMeta.setAttribute('content', 'noindex, nofollow')

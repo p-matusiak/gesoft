@@ -3,57 +3,53 @@
     <Transition name="modal">
       <div
         v-if="isVisible"
-        class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-dark-900/90 backdrop-blur-sm"
+        class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-gray-900/50 backdrop-blur-sm"
         @click="close"
       >
         <div
-          class="glass-card max-w-lg w-full p-8 relative overflow-hidden border-2 border-primary-500/30"
+          class="bg-white border border-gray-200 rounded-lg shadow-xl max-w-lg w-full p-8 relative"
           @click.stop
         >
-          <!-- Decorative elements -->
-          <div class="absolute -top-20 -right-20 w-40 h-40 bg-primary-500/20 rounded-full blur-3xl"></div>
-          <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-secondary-500/20 rounded-full blur-3xl"></div>
-
           <!-- Close button -->
           <button
             @click="close"
-            class="absolute top-4 right-4 w-8 h-8 text-dark-400 hover:text-white transition-colors flex items-center justify-center"
+            class="absolute top-4 right-4 w-8 h-8 text-gray-500 hover:text-gray-900 transition-colors flex items-center justify-center"
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
             </svg>
           </button>
 
-          <div class="relative text-center">
+          <div class="text-center">
             <!-- Icon -->
-            <div class="w-16 h-16 mx-auto bg-gradient-to-br from-primary-500/20 to-secondary-500/20 rounded-full flex items-center justify-center mb-6">
-              <svg class="w-8 h-8 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-16 h-16 mx-auto bg-brand-50 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
 
-            <h2 class="text-2xl font-bold text-white mb-3">Zanim wyjdziesz...</h2>
-            <p class="text-dark-300 mb-6">
-              Odbierz <span class="text-primary-400 font-semibold">bezplatna wycene</span> swojego projektu!
+            <h2 class="text-2xl font-bold text-gray-900 mb-3">Zanim wyjdziesz...</h2>
+            <p class="text-gray-700 mb-6">
+              Odbierz <span class="text-brand-600 font-semibold">bezplatna wycene</span> swojego projektu!
               Odpowiemy w ciagu 24 godzin z szczegolowa propozycja.
             </p>
 
             <!-- Benefits -->
             <div class="flex flex-wrap justify-center gap-4 mb-6">
-              <div class="flex items-center gap-2 text-sm text-dark-300">
-                <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex items-center gap-2 text-sm text-gray-700">
+                <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                 </svg>
                 <span>Bez zobowiazan</span>
               </div>
-              <div class="flex items-center gap-2 text-sm text-dark-300">
-                <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex items-center gap-2 text-sm text-gray-700">
+                <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                 </svg>
                 <span>Odpowiedz 24h</span>
               </div>
-              <div class="flex items-center gap-2 text-sm text-dark-300">
-                <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex items-center gap-2 text-sm text-gray-700">
+                <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                 </svg>
                 <span>100% darmowo</span>
@@ -65,7 +61,7 @@
               <router-link
                 to="/kontakt"
                 @click="close"
-                class="btn-primary w-full py-4 text-lg"
+                class="btn-primary w-full py-3 text-base"
               >
                 Tak, chce bezplatna wycene
                 <svg class="w-5 h-5 ml-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -74,7 +70,7 @@
               </router-link>
               <button
                 @click="close"
-                class="w-full py-3 text-dark-400 hover:text-white transition-colors text-sm"
+                class="w-full py-3 text-gray-500 hover:text-gray-900 transition-colors text-sm"
               >
                 Nie teraz, dziekuje
               </button>

@@ -1,13 +1,12 @@
 <template>
   <div class="pt-20">
     <!-- Header -->
-    <section class="py-20 bg-hero-gradient relative overflow-hidden">
-      <div class="absolute inset-0 pattern-bg"></div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-          <span class="gradient-text">{{ $t('technologies.header.title') }}</span>
+    <section class="py-16 sm:py-20 bg-white border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-5">
+          <span class="text-brand-600">{{ $t('technologies.header.title') }}</span>
         </h1>
-        <p class="text-xl text-white/70 max-w-3xl mx-auto">
+        <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
           {{ $t('technologies.header.subtitle') }}
         </p>
       </div>
@@ -17,7 +16,7 @@
     <section class="py-20 bg-dark-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="section-title">{{ $t('technologies.mainStack.title') }} <span class="gradient-text">{{ $t('technologies.mainStack.titleHighlight') }}</span></h2>
+          <h2 class="section-title">{{ $t('technologies.mainStack.title') }} <span class="text-brand-600">{{ $t('technologies.mainStack.titleHighlight') }}</span></h2>
           <p class="section-subtitle">
             {{ $t('technologies.mainStack.subtitle') }}
           </p>
@@ -25,42 +24,40 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <!-- Laravel -->
-          <div class="glass-card p-8 hover:border-red-500/50 transition-all duration-300">
+          <div class="glass-card p-8 hover:border-red-300 transition-all duration-300">
             <div class="flex items-start gap-6">
-              <div class="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <svg class="w-10 h-10 text-red-400" viewBox="0 0 50 52" fill="currentColor">
-                  <path d="M49.626 11.564a.809.809 0 01.028.209v10.972a.8.8 0 01-.402.694l-9.209 5.302V39.25c0 .286-.152.55-.4.694L20.42 51.01c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 01-.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054L.402 39.944A.801.801 0 010 39.25V6.334c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 01.8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 01.028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 01.8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068z"/>
-                </svg>
+              <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.simpleicons.org/laravel" alt="Laravel" class="w-10 h-10" />
               </div>
               <div>
-                <h3 class="text-2xl font-bold text-white mb-3">{{ $t('technologies.laravel.title') }}</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ $t('technologies.laravel.title') }}</h3>
                 <p class="text-dark-300 mb-4">
                   {{ $t('technologies.laravel.description') }}
                 </p>
                 <ul class="space-y-2 text-dark-400">
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.laravel.eloquent') }}</strong> - {{ $t('technologies.laravel.eloquentDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.laravel.eloquent') }}</strong> - {{ $t('technologies.laravel.eloquentDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.laravel.artisan') }}</strong> - {{ $t('technologies.laravel.artisanDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.laravel.artisan') }}</strong> - {{ $t('technologies.laravel.artisanDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.laravel.security') }}</strong> - {{ $t('technologies.laravel.securityDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.laravel.security') }}</strong> - {{ $t('technologies.laravel.securityDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.laravel.queue') }}</strong> - {{ $t('technologies.laravel.queueDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.laravel.queue') }}</strong> - {{ $t('technologies.laravel.queueDesc') }}</span>
                   </li>
                 </ul>
               </div>
@@ -68,43 +65,40 @@
           </div>
 
           <!-- Vue.js -->
-          <div class="glass-card p-8 hover:border-green-500/50 transition-all duration-300">
+          <div class="glass-card p-8 hover:border-green-300 transition-all duration-300">
             <div class="flex items-start gap-6">
-              <div class="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <svg class="w-10 h-10 text-green-400" viewBox="0 0 256 221" fill="currentColor">
-                  <path d="M204.8 0H256L128 220.8 0 0h97.92L128 51.2 157.44 0h47.36z"/>
-                  <path d="M0 0l128 220.8L256 0h-51.2L128 132.48 51.2 0H0z" opacity="0.5"/>
-                </svg>
+              <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.simpleicons.org/vuedotjs" alt="Vue.js" class="w-10 h-10" />
               </div>
               <div>
-                <h3 class="text-2xl font-bold text-white mb-3">{{ $t('technologies.vue.title') }}</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ $t('technologies.vue.title') }}</h3>
                 <p class="text-dark-300 mb-4">
                   {{ $t('technologies.vue.description') }}
                 </p>
                 <ul class="space-y-2 text-dark-400">
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.vue.reactivity') }}</strong> - {{ $t('technologies.vue.reactivityDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.vue.reactivity') }}</strong> - {{ $t('technologies.vue.reactivityDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.vue.sfc') }}</strong> - {{ $t('technologies.vue.sfcDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.vue.sfc') }}</strong> - {{ $t('technologies.vue.sfcDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.vue.pinia') }}</strong> - {{ $t('technologies.vue.piniaDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.vue.pinia') }}</strong> - {{ $t('technologies.vue.piniaDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.vue.size') }}</strong> - {{ $t('technologies.vue.sizeDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.vue.size') }}</strong> - {{ $t('technologies.vue.sizeDesc') }}</span>
                   </li>
                 </ul>
               </div>
@@ -112,42 +106,40 @@
           </div>
 
           <!-- MySQL -->
-          <div class="glass-card p-8 hover:border-blue-500/50 transition-all duration-300">
+          <div class="glass-card p-8 hover:border-blue-300 transition-all duration-300">
             <div class="flex items-start gap-6">
-              <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <svg class="w-10 h-10" viewBox="0 0 128 128">
-                  <path fill="#00618A" d="M2.001 90.458h4.108V74.235l6.36 14.143c.75 1.712 1.777 2.317 3.792 2.317s3.003-.605 3.753-2.317l6.36-14.143v16.223h4.108V71.14c0-1.593-.83-2.396-2.33-2.396h-2.336c-1.54 0-2.25.525-2.887 1.99l-6.36 14.224-6.24-14.224c-.597-1.426-1.348-1.99-2.927-1.99h-2.296c-1.5 0-2.33.803-2.33 2.396v19.318zM33.899 77.252h4.108v8.705c-.04.71.12 1.417.459 2.038.678.965 2.146 1.505 3.912 1.505 2.245 0 3.752-.723 4.545-1.827.475-.703.716-1.555.678-2.418V77.252h4.108v8.586c.077 1.564-.318 3.117-1.14 4.437-1.422 2.116-4.347 3.161-8.112 3.161-3.006 0-5.49-.678-7.059-2.236-.996-1.08-1.538-2.49-1.5-3.943v-10.01zM73.981 82.346c-1.07-.682-2.206-1.257-3.393-1.714-1.387-.563-1.77-.844-1.77-1.545 0-.94.87-1.303 2.205-1.303 1.5.02 2.987.264 4.404.724l.595-3.199c-1.694-.508-3.456-.772-5.227-.781-4.505 0-6.324 2.236-6.324 4.953 0 1.707.514 2.81 3.122 4.152 1.19.6 2.432 1.09 3.713 1.466 1.427.523 1.81.883 1.81 1.545 0 1.142-1.146 1.466-2.6 1.466a15.466 15.466 0 01-5.227-.966l-.556 3.24a16.817 16.817 0 005.744.998c4.307 0 6.955-1.578 6.955-5.218.001-1.79-.674-3.093-3.445-4.518zM98.033 117.589c-1.872-.2-3.263-.392-4.818-.9-1.074-.346-2.236-.997-2.621-1.756-.198-.389-.345-1.327-.376-2.275-.02-.802-.02-1.773-.05-2.99-.098-2.078-.51-2.475-2.463-3.05-.77-.202-1.555-.347-2.348-.437.554-.247 1.09-.53 1.605-.846.87-.518 1.79-.942 2.088-1.904.238-.747.277-1.565.328-2.413.059-.986.069-2.14.079-3.058.02-1.268.158-2.293.594-2.705.396-.37 1.147-.683 2.67-.79.476-.033.981-.054 1.605-.074v-3.21c-.663 0-1.238.02-1.763.04-2.127.088-3.878.56-5.035 1.573-1.238 1.09-1.714 2.67-1.783 5.026-.03.926-.04 1.985-.06 2.843-.02.673-.068 1.3-.247 1.638-.238.46-.792.86-1.486 1.121-.645.237-1.486.395-2.384.505v3.052c.623.053 1.243.14 1.856.26.886.178 1.49.415 1.882.742.405.327.574.77.634 1.533.039.585.039 1.17.039 1.873.01 1.169.01 2.236.06 3.163.068 1.268.217 2.387.613 3.28.404.92 1.097 1.625 2.127 2.205 1.605.908 4.079 1.406 7.253 1.615zM100.093 90.48c.663 0 1.238-.02 1.763-.039 2.127-.089 3.878-.56 5.035-1.574 1.238-1.09 1.714-2.67 1.783-5.026.03-.926.04-1.985.06-2.843.02-.672.068-1.3.247-1.637.238-.46.792-.861 1.486-1.121.645-.238 1.486-.395 2.384-.505V74.67a10.922 10.922 0 01-1.856-.26c-.886-.177-1.49-.414-1.882-.742-.405-.327-.574-.77-.634-1.533-.039-.585-.039-1.17-.039-1.873-.01-1.169-.01-2.236-.059-3.163-.069-1.267-.218-2.387-.614-3.28-.404-.92-1.097-1.624-2.126-2.205-1.605-.907-4.089-1.406-7.253-1.614v3.21c1.872.198 3.263.392 4.818.898 1.074.347 2.235.998 2.621 1.757.197.389.345 1.327.375 2.275.02.801.02 1.773.05 2.989.099 2.078.51 2.476 2.463 3.05.77.203 1.555.348 2.348.438a9.85 9.85 0 01-1.604.846c-.87.519-1.79.943-2.088 1.905-.238.746-.277 1.565-.328 2.413-.06.986-.07 2.14-.08 3.058-.02 1.267-.157 2.293-.593 2.705-.396.37-1.147.682-2.671.79-.475.034-.98.054-1.605.074v3.21zM54.393 90.458h4.148V68.586h-4.148zM116.81 82.028c-.04-1.582-.792-3.24-2.65-4.28-1.18-.657-2.638-1.02-4.545-1.02-1.461-.026-2.912.239-4.267.781v3.24c1.261-.644 2.662-.985 4.089-1 2.125 0 3.194.82 3.194 2.236v1.462h-.753c-2.082 0-3.911.129-5.33.503-1.228.299-2.329.925-3.174 1.808-.792.888-1.188 2.114-1.188 3.443 0 1.626.554 2.91 1.585 3.757 1.03.847 2.413 1.3 4.108 1.3 1.447.024 2.87-.36 4.109-1.108l.198.869h3.87v-9.32c.001-.912-.079-1.705-.238-2.671zm-4.03 7.49c-.753.592-1.803.963-3.156.963-1.662 0-2.65-.721-2.65-2.035 0-.867.356-1.47 1.07-1.867.713-.396 1.82-.558 3.55-.558h1.186v3.498zM81.178 77.253l5.81 13.206h4.108l5.769-13.206h-4.108l-3.316 8.32c-.131.324-.253.768-.356 1.27-.11-.479-.237-.903-.357-1.188l-3.316-8.403h-4.227z"/>
-                </svg>
+              <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.simpleicons.org/mysql" alt="MySQL" class="w-10 h-10" />
               </div>
               <div>
-                <h3 class="text-2xl font-bold text-white mb-3">{{ $t('technologies.mysql.title') }}</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ $t('technologies.mysql.title') }}</h3>
                 <p class="text-dark-300 mb-4">
                   {{ $t('technologies.mysql.description') }}
                 </p>
                 <ul class="space-y-2 text-dark-400">
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.mysql.window') }}</strong> - {{ $t('technologies.mysql.windowDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.mysql.window') }}</strong> - {{ $t('technologies.mysql.windowDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.mysql.json') }}</strong> - {{ $t('technologies.mysql.jsonDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.mysql.json') }}</strong> - {{ $t('technologies.mysql.jsonDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.mysql.cluster') }}</strong> - {{ $t('technologies.mysql.clusterDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.mysql.cluster') }}</strong> - {{ $t('technologies.mysql.clusterDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.mysql.acid') }}</strong> - {{ $t('technologies.mysql.acidDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.mysql.acid') }}</strong> - {{ $t('technologies.mysql.acidDesc') }}</span>
                   </li>
                 </ul>
               </div>
@@ -155,44 +147,40 @@
           </div>
 
           <!-- PostgreSQL -->
-          <div class="glass-card p-8 hover:border-indigo-500/50 transition-all duration-300">
+          <div class="glass-card p-8 hover:border-indigo-300 transition-all duration-300">
             <div class="flex items-start gap-6">
-              <div class="w-16 h-16 bg-indigo-500/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <svg class="w-10 h-10" viewBox="0 0 128 128">
-                  <path d="M93.809 92.112c.785-6.533.55-7.492 5.416-6.433l1.235.108c3.742.17 8.637-.602 11.513-1.938 6.191-2.873 9.861-7.668 3.758-6.409-13.924 2.873-14.881-1.842-14.881-1.842 14.703-21.815 20.849-49.508 15.543-56.287-14.47-18.489-39.517-9.746-39.936-9.52l-.134.025c-2.751-.571-5.83-.912-9.289-.968-6.301-.104-11.082 1.652-14.535 4.41 0 0-44.193-18.203-42.153 22.917.434 8.747 12.468 66.249 26.82 48.907 5.239-6.326 10.297-11.66 10.297-11.66 2.512 1.665 5.52 2.509 8.697 2.2l.245-.021c-.075.738-.059 1.456.048 2.317-2.931 3.275-2.072 3.849-7.939 5.054-5.928 1.217-2.447 3.386-.173 3.953 2.728.679 9.037 1.642 13.301-4.297l-.215.665c1.432 1.148 2.432 7.462 2.262 13.19-.17 5.728.227 11.143.907 14.277.68 3.134 1.378 9.665 7.269 7.679 4.929-1.663 7.476-5.962 7.829-13.156.25-5.109.875-4.357.916-8.922l.478-2.396c.553-4.615.124-6.108 3.27-5.418l.773.098c2.94.134 6.79-.389 9.069-1.526 4.895-2.273 7.79-6.078 2.969-5.072z" fill="#336791"/>
-                  <path d="M66.509 129.545c-.269 0-.538-.014-.808-.042-2.313-.239-4.088-1.321-5.277-3.217-1.786-2.851-2.607-7.088-2.512-12.946.027-1.674-.09-4.091-.198-6.359-.146-3.078-.285-5.984-.045-8.081.059-.513.153-.996.276-1.452-1.793.06-4.288-.395-6.74-.914-2.145-.455-4.167-.884-5.595-.914-.429-.009-.836-.001-1.204.019-1.091.059-2.011.266-2.735.614-1.068.512-1.768 1.332-2.151 2.505-.645 1.978-.164 4.862 1.432 8.577 1.045 2.433 1.539 4.493 1.506 6.287-.027 1.443-.362 2.696-1.022 3.831-1.072 1.847-2.863 3.053-5.334 3.593-3.326.728-7.234-.038-10.063-2.05-1.738-1.236-3.174-2.856-4.29-4.815-3.076-5.401-4.869-12.775-5.668-23.261-.34-4.465.06-9.266 1.19-14.283 1.061-4.706 2.786-9.44 5.133-14.076 4.048-8 9.628-14.749 16.012-19.368 5.379-3.893 11.323-6.376 17.666-7.382l.057-.01c2.158-.36 4.412-.553 6.696-.553 5.136 0 10.037.864 14.534 2.493 1.17-.437 2.493-.813 3.927-1.11 3.741-.773 8.09-.939 12.209-.465 5.291.608 9.986 2.159 13.556 4.475 3.614 2.346 6.236 5.41 7.574 8.857 1.471 3.786 1.517 7.89.134 12.241-1.578 4.967-4.631 10.082-9.089 15.227-.646.745-1.309 1.49-1.971 2.219l-.003.003c-4.587 5.026-9.334 10.224-10.68 14.28-.369 1.112-.575 2.293-.61 3.506-.018.618.018 1.225.102 1.809.066.457.162.898.289 1.323 1.022.128 2.034.216 3.02.241.865.022 1.67.008 2.398-.048 4.004-.307 6.94-1.556 8.729-3.712 1.003-1.21 1.506-2.529 1.537-4.027.03-1.412-.372-2.889-1.194-4.396-.555-1.017-.833-2.052-.832-3.076.002-1.334.512-2.618 1.531-3.848.916-1.106 2.163-2.051 3.608-2.73 3.043-1.428 6.754-1.797 9.482-1.548 1.322.12 2.42.418 3.262.885 1.13.627 1.745 1.466 1.828 2.492.1 1.239-.566 2.676-1.981 4.279-3.093 3.503-6.801 5.593-11.026 6.214-2.206.324-4.325.273-6.303-.138-1.088.916-2.205 1.659-3.328 2.223-2.162 1.085-4.469 1.729-6.853 1.916-.88.069-1.783.089-2.682.061-.879-.028-1.773-.09-2.663-.189-.044.182-.089.365-.135.545-.354 1.39-.562 2.923-.619 4.567-.072 2.071.047 4.406.354 6.95.247 2.049.413 3.829.5 5.288.127 2.121.038 3.78-.274 5.14-.363 1.579-1.022 2.792-2.014 3.716-1.167 1.089-2.698 1.778-4.549 2.052-.59.087-1.205.131-1.833.131z" fill="#fff"/>
-                  <path d="M93.412 107.678c-1.073-.003-2.164-.078-3.229-.209-.004.166-.009.335-.012.498-.044 2.076.028 4.268.255 6.517.246 2.446.488 3.856.581 4.393l.005.024.003.024c.091.642.126 1.313.104 1.989-.036 1.103-.276 2.141-.714 3.091-.495 1.076-1.225 2.007-2.175 2.771-1.1.886-2.48 1.527-4.097 1.907-1.029.242-2.12.364-3.246.364-.541 0-1.091-.027-1.635-.082-2.578-.26-4.561-1.503-5.9-3.702-1.888-3.1-2.74-7.533-2.607-13.561.035-1.574-.088-3.942-.194-6.193-.115-2.44-.226-4.749-.146-6.706a16.93 16.93 0 00-.098-2.314c-.012-.083-.026-.165-.039-.246-.264.036-.527.069-.786.094-2.683.271-5.245-.093-7.637-1.085l-.067-.028-.062-.036c-.2-.114-.401-.234-.6-.358l-.235-.148-.041.125c-.127.386-.232.793-.312 1.223-.153.824-.219 1.768-.209 2.878.011 1.187.111 2.581.296 4.099.255 2.083.427 3.934.511 5.509.131 2.456-.007 4.262-.423 5.523-.525 1.59-1.39 2.746-2.649 3.538-1.402.882-3.193 1.301-5.326 1.247-1.556-.04-3.735-.396-6.032-.883-2.497-.529-4.796-.998-6.376-.795-.465.059-.878.148-1.229.267-.402.137-.741.305-1.011.497-.345.246-.598.514-.764.811-.092.163-.155.326-.192.494-.055.247-.063.502-.029.775.12.96.701 2.107 1.726 3.413 1.063 1.353 2.039 2.319 2.902 2.87 2.082 1.33 5.251 2.109 8.146 1.542 1.863-.365 3.151-1.272 3.825-2.696.429-.907.598-1.928.504-3.037-.078-.923-.311-1.898-.694-2.9-.546-1.428-.738-2.771-.57-3.993.16-1.167.636-2.179 1.418-3.01.721-.768 1.664-1.349 2.802-1.729 1.327-.444 2.847-.619 4.519-.52 1.17.069 2.287.244 3.317.488l.027.006.028.003c.112.013.226.026.339.039 1.056.123 2.083.158 3.084.103l.116-.006.115-.003c.87-.027 1.739.016 2.587.128 0 0 .003 0 .003.003h.013c.786.105 1.554.278 2.297.513 1.069.339 2.079.811 3.012 1.41.908.583 1.739 1.286 2.48 2.1.716.787 1.343 1.678 1.87 2.66.474.884.86 1.825 1.149 2.806.367 1.242.558 2.541.568 3.859.007.942-.076 1.876-.25 2.775-.168.87-.415 1.69-.737 2.447-.365.862-.829 1.636-1.383 2.305-.545.658-1.181 1.199-1.898 1.613-.781.451-1.662.76-2.627.923-.731.123-1.52.177-2.35.163-2.024-.035-4.093-.466-6.024-1.263-1.899-.783-3.65-1.871-5.084-3.168-.687-.62-1.302-1.295-1.836-2.014l-1.062 2.169c.64.819 1.377 1.568 2.196 2.233 1.586 1.286 3.497 2.358 5.564 3.13 2.145.8 4.416 1.245 6.666 1.284.983.016 1.929-.04 2.818-.169 1.17-.169 2.239-.521 3.191-1.049.905-.502 1.713-1.169 2.405-1.983.705-.831 1.296-1.802 1.755-2.888.378-.895.67-1.864.872-2.88.209-1.05.313-2.148.305-3.263-.011-1.516-.232-3.007-.658-4.439-.332-1.117-.77-2.19-1.304-3.198-.587-1.108-1.302-2.118-2.129-3.006-.858-.922-1.838-1.74-2.917-2.436-1.049-.676-2.187-1.224-3.393-1.634-.827-.281-1.685-.5-2.567-.657a10.36 10.36 0 00-.356-.055c1.019-.237 2.045-.59 3.075-1.069a18.26 18.26 0 002.86-1.744c.177.046.355.089.535.127 2.206.474 4.528.532 6.919.174 4.549-.668 8.569-2.932 11.957-6.734 1.034-1.162 1.62-2.301 1.745-3.398.047-.413.033-.811-.047-1.189-.088-.422-.253-.818-.498-1.179-.309-.455-.724-.856-1.243-1.194-.586-.381-1.284-.68-2.083-.895-.81-.218-1.718-.349-2.7-.392-2.497-.109-5.754.124-8.394 1.363-1.222.574-2.255 1.321-3.003 2.175-.729.83-1.086 1.743-1.088 2.712-.001.665.182 1.373.559 2.099.961 1.85 1.39 3.669 1.275 5.413-.095 1.44-.594 2.812-1.479 4.074l-.003.003c-2.067 2.937-5.695 4.376-10.775 4.275-1.08-.021-2.205-.108-3.356-.257-.135-.575-.228-1.157-.283-1.739-.084-.894-.063-1.795.06-2.692.143-1.037.406-2.043.779-2.993.577-1.471 1.431-2.979 2.526-4.462l.04-.054.043-.051c3.652-4.354 7.605-8.742 11.457-13.018 4.137-4.596 6.925-9.354 8.293-14.147 1.191-4.172 1.136-8.04-.165-11.494-1.16-3.079-3.414-5.744-6.699-7.926-3.126-2.075-7.251-3.451-12.262-4.094-4.049-.519-8.328-.41-12.014.308-1.299.253-2.503.578-3.59.96.026-.002.052-.003.078-.005 6.186-.403 12.31.87 17.14 3.522 4.102 2.253 7.138 5.492 8.61 9.181 1.31 3.283 1.425 6.949.345 10.925-1.204 4.429-3.776 8.916-7.648 13.343-4.005 4.582-7.782 8.717-11.235 12.296l-.033.039-.035.038c-1.154 1.312-2.102 2.652-2.829 3.993.185-.021.37-.04.558-.059 1.965-.191 4.174.24 6.556.741 2.403.505 4.668.89 6.327.933 1.755.046 3.05-.256 4.05-.89.893-.566 1.507-1.387 1.876-2.508.318-.966.427-2.518.302-4.619-.083-1.398-.252-3.237-.505-5.466-.186-1.518-.285-2.925-.295-4.19-.012-1.354.067-2.45.241-3.434.143-.808.363-1.5.651-2.075.346-.688.787-1.217 1.358-1.627.519-.372 1.145-.632 1.893-.795.665-.145 1.428-.197 2.306-.153 1.593.081 3.758.508 6.125.969 2.477.482 4.773.904 6.532.854.479-.014.935-.054 1.36-.12 1.095-.17 1.989-.489 2.681-.954.712-.48 1.171-1.078 1.401-1.844.231-.772.22-1.692-.037-2.782-.316-1.338-.933-2.81-1.839-4.377-1.056-1.828-2.483-3.504-4.246-4.986-1.799-1.512-3.933-2.8-6.345-3.836-3.101-1.333-6.588-2.191-10.369-2.551-4.124-.393-8.416-.225-12.414.486-4.146.738-7.979 2.003-11.404 3.764-3.413 1.756-6.459 3.983-9.052 6.62-2.595 2.64-4.752 5.676-6.412 9.02-2.163 4.357-3.663 9.016-4.462 13.854-.687 4.163-.831 8.41-.429 12.631.793 8.323 2.936 15.455 6.373 21.227.867 1.456 1.85 2.795 2.931 3.993 1.045 1.158 2.199 2.181 3.444 3.054 2.399 1.684 5.499 2.509 8.305 1.943 1.853-.374 3.273-1.235 4.22-2.564.533-.748.893-1.609.966-2.613.042-.573-.008-1.196-.155-1.88-.175-.815-.495-1.706-.954-2.656-1.411-2.922-2.098-5.654-2.039-8.12.039-1.619.43-3.088 1.166-4.372.688-1.2 1.657-2.214 2.881-3.013 1.247-.815 2.753-1.387 4.474-1.703l.063-.011.062-.015c.764-.187 1.543-.334 2.33-.441.879-.12 1.77-.188 2.659-.2 1.632-.024 3.249.107 4.809.383l.042.008.042.005c1.046.12 2.109.174 3.171.161 1.179-.015 2.347-.111 3.476-.285.992-.154 1.945-.37 2.847-.645l.04.08c.44.878.74 1.8.896 2.742.176 1.062.182 2.153.019 3.24-.148.985-.447 1.951-.889 2.865-.472.977-1.12 1.881-1.925 2.686-.813.812-1.79 1.522-2.903 2.111-1.122.594-2.394 1.06-3.788 1.386-.758.177-1.554.31-2.374.394 1.098.091 2.215.125 3.33.104z" fill="#336791"/>
-                </svg>
+              <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" class="w-10 h-10" />
               </div>
               <div>
-                <h3 class="text-2xl font-bold text-white mb-3">{{ $t('technologies.postgresql.title') }}</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ $t('technologies.postgresql.title') }}</h3>
                 <p class="text-dark-300 mb-4">
                   {{ $t('technologies.postgresql.description') }}
                 </p>
                 <ul class="space-y-2 text-dark-400">
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-indigo-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.postgresql.advanced') }}</strong> - {{ $t('technologies.postgresql.advancedDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.postgresql.advanced') }}</strong> - {{ $t('technologies.postgresql.advancedDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-indigo-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.postgresql.fulltext') }}</strong> - {{ $t('technologies.postgresql.fulltextDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.postgresql.fulltext') }}</strong> - {{ $t('technologies.postgresql.fulltextDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-indigo-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.postgresql.extensions') }}</strong> - {{ $t('technologies.postgresql.extensionsDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.postgresql.extensions') }}</strong> - {{ $t('technologies.postgresql.extensionsDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-indigo-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.postgresql.performance') }}</strong> - {{ $t('technologies.postgresql.performanceDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.postgresql.performance') }}</strong> - {{ $t('technologies.postgresql.performanceDesc') }}</span>
                   </li>
                 </ul>
               </div>
@@ -200,42 +188,40 @@
           </div>
 
           <!-- TailwindCSS -->
-          <div class="glass-card p-8 hover:border-cyan-500/50 transition-all duration-300">
+          <div class="glass-card p-8 hover:border-cyan-300 transition-all duration-300">
             <div class="flex items-start gap-6">
-              <div class="w-16 h-16 bg-cyan-500/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <svg class="w-10 h-10 text-cyan-400" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/>
-                </svg>
+              <div class="w-16 h-16 bg-cyan-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.simpleicons.org/tailwindcss" alt="TailwindCSS" class="w-10 h-10" />
               </div>
               <div>
-                <h3 class="text-2xl font-bold text-white mb-3">{{ $t('technologies.tailwind.title') }}</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ $t('technologies.tailwind.title') }}</h3>
                 <p class="text-dark-300 mb-4">
                   {{ $t('technologies.tailwind.description') }}
                 </p>
                 <ul class="space-y-2 text-dark-400">
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.tailwind.jit') }}</strong> - {{ $t('technologies.tailwind.jitDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.tailwind.jit') }}</strong> - {{ $t('technologies.tailwind.jitDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.tailwind.design') }}</strong> - {{ $t('technologies.tailwind.designDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.tailwind.design') }}</strong> - {{ $t('technologies.tailwind.designDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.tailwind.responsive') }}</strong> - {{ $t('technologies.tailwind.responsiveDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.tailwind.responsive') }}</strong> - {{ $t('technologies.tailwind.responsiveDesc') }}</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <svg class="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong class="text-white">{{ $t('technologies.tailwind.dark') }}</strong> - {{ $t('technologies.tailwind.darkDesc') }}</span>
+                    <span><strong class="text-gray-900">{{ $t('technologies.tailwind.dark') }}</strong> - {{ $t('technologies.tailwind.darkDesc') }}</span>
                   </li>
                 </ul>
               </div>
@@ -245,11 +231,189 @@
       </div>
     </section>
 
+    <!-- Android Mobile Stack -->
+    <section class="py-20 bg-white border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 bg-green-50 border border-green-200 rounded-full px-4 py-1.5 mb-4">
+            <img src="https://cdn.simpleicons.org/android" alt="Android" class="w-4 h-4" />
+            <span class="text-green-700 text-sm font-medium">{{ $t('technologies.android.badge') }}</span>
+          </div>
+          <h2 class="section-title">{{ $t('technologies.android.sectionTitle') }} <span class="text-brand-600">{{ $t('technologies.android.sectionTitleHighlight') }}</span></h2>
+          <p class="section-subtitle">{{ $t('technologies.android.sectionSubtitle') }}</p>
+        </div>
+
+        <!-- Kotlin + Compose -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+          <!-- Kotlin -->
+          <div class="glass-card p-8 hover:border-purple-300 transition-all duration-300">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.simpleicons.org/kotlin" alt="Kotlin" class="w-10 h-10" />
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ $t('technologies.android.kotlin.title') }}</h3>
+                <p class="text-dark-300 mb-4">{{ $t('technologies.android.kotlin.description') }}</p>
+                <ul class="space-y-2 text-dark-400">
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong class="text-gray-900">{{ $t('technologies.android.kotlin.nullSafety') }}</strong> - {{ $t('technologies.android.kotlin.nullSafetyDesc') }}</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong class="text-gray-900">{{ $t('technologies.android.kotlin.coroutines') }}</strong> - {{ $t('technologies.android.kotlin.coroutinesDesc') }}</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong class="text-gray-900">{{ $t('technologies.android.kotlin.extensions') }}</strong> - {{ $t('technologies.android.kotlin.extensionsDesc') }}</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong class="text-gray-900">{{ $t('technologies.android.kotlin.interop') }}</strong> - {{ $t('technologies.android.kotlin.interopDesc') }}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jetpack Compose -->
+          <div class="glass-card p-8 hover:border-teal-300 transition-all duration-300">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.simpleicons.org/jetpackcompose" alt="Jetpack Compose" class="w-10 h-10" />
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ $t('technologies.android.compose.title') }}</h3>
+                <p class="text-dark-300 mb-4">{{ $t('technologies.android.compose.description') }}</p>
+                <ul class="space-y-2 text-dark-400">
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong class="text-gray-900">{{ $t('technologies.android.compose.declarative') }}</strong> - {{ $t('technologies.android.compose.declarativeDesc') }}</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong class="text-gray-900">{{ $t('technologies.android.compose.state') }}</strong> - {{ $t('technologies.android.compose.stateDesc') }}</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong class="text-gray-900">{{ $t('technologies.android.compose.animation') }}</strong> - {{ $t('technologies.android.compose.animationDesc') }}</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span><strong class="text-gray-900">{{ $t('technologies.android.compose.preview') }}</strong> - {{ $t('technologies.android.compose.previewDesc') }}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Material Design 3 - full width featured card -->
+        <div class="glass-card p-8 hover:border-brand-300 transition-all duration-300 mb-8">
+          <div class="flex items-start gap-6">
+            <div class="w-16 h-16 bg-brand-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <img src="https://cdn.simpleicons.org/materialdesign" alt="Material Design" class="w-10 h-10" />
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ $t('technologies.android.material3.title') }}</h3>
+              <p class="text-dark-300 mb-6">{{ $t('technologies.android.material3.description') }}</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                  <div class="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center mb-2">
+                    <svg class="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+                  </div>
+                  <h4 class="text-gray-900 font-semibold text-sm mb-1">{{ $t('technologies.android.material3.dynamicColor') }}</h4>
+                  <p class="text-gray-500 text-xs">{{ $t('technologies.android.material3.dynamicColorDesc') }}</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                  <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mb-2">
+                    <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm0 8a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zm12 0a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+                  </div>
+                  <h4 class="text-gray-900 font-semibold text-sm mb-1">{{ $t('technologies.android.material3.components') }}</h4>
+                  <p class="text-gray-500 text-xs">{{ $t('technologies.android.material3.componentsDesc') }}</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                  <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mb-2">
+                    <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                  </div>
+                  <h4 class="text-gray-900 font-semibold text-sm mb-1">{{ $t('technologies.android.material3.theming') }}</h4>
+                  <p class="text-gray-500 text-xs">{{ $t('technologies.android.material3.themingDesc') }}</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                  <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mb-2">
+                    <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                  </div>
+                  <h4 class="text-gray-900 font-semibold text-sm mb-1">{{ $t('technologies.android.material3.accessibility') }}</h4>
+                  <p class="text-gray-500 text-xs">{{ $t('technologies.android.material3.accessibilityDesc') }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Android ecosystem small cards -->
+        <div class="text-center mb-8">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $t('technologies.android.ecosystem.title') }}</h3>
+          <p class="text-gray-500 text-sm">{{ $t('technologies.android.ecosystem.subtitle') }}</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <!-- Firebase -->
+          <div class="glass-card p-4 hover:border-amber-300 transition-all duration-300 text-center">
+            <div class="w-10 h-10 bg-amber-50 rounded-xl flex items-center justify-center mb-3 mx-auto">
+              <img src="https://cdn.simpleicons.org/firebase" alt="Firebase" class="w-6 h-6" />
+            </div>
+            <h4 class="text-sm font-bold text-gray-900 mb-1">{{ $t('technologies.android.ecosystem.firebase.title') }}</h4>
+            <p class="text-xs text-gray-500">{{ $t('technologies.android.ecosystem.firebase.desc') }}</p>
+          </div>
+          <!-- Google Maps -->
+          <div class="glass-card p-4 hover:border-green-300 transition-all duration-300 text-center">
+            <div class="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center mb-3 mx-auto">
+              <img src="https://cdn.simpleicons.org/googlemaps" alt="Google Maps" class="w-6 h-6" />
+            </div>
+            <h4 class="text-sm font-bold text-gray-900 mb-1">{{ $t('technologies.android.ecosystem.maps.title') }}</h4>
+            <p class="text-xs text-gray-500">{{ $t('technologies.android.ecosystem.maps.desc') }}</p>
+          </div>
+          <!-- Room -->
+          <div class="glass-card p-4 hover:border-blue-300 transition-all duration-300 text-center">
+            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-3 mx-auto">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>
+            </div>
+            <h4 class="text-sm font-bold text-gray-900 mb-1">{{ $t('technologies.android.ecosystem.room.title') }}</h4>
+            <p class="text-xs text-gray-500">{{ $t('technologies.android.ecosystem.room.desc') }}</p>
+          </div>
+          <!-- Retrofit -->
+          <div class="glass-card p-4 hover:border-orange-300 transition-all duration-300 text-center">
+            <div class="w-10 h-10 bg-orange-50 rounded-xl flex items-center justify-center mb-3 mx-auto">
+              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <h4 class="text-sm font-bold text-gray-900 mb-1">{{ $t('technologies.android.ecosystem.retrofit.title') }}</h4>
+            <p class="text-xs text-gray-500">{{ $t('technologies.android.ecosystem.retrofit.desc') }}</p>
+          </div>
+          <!-- Hilt -->
+          <div class="glass-card p-4 hover:border-red-300 transition-all duration-300 text-center">
+            <div class="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center mb-3 mx-auto">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </div>
+            <h4 class="text-sm font-bold text-gray-900 mb-1">{{ $t('technologies.android.ecosystem.hilt.title') }}</h4>
+            <p class="text-xs text-gray-500">{{ $t('technologies.android.ecosystem.hilt.desc') }}</p>
+          </div>
+          <!-- WorkManager -->
+          <div class="glass-card p-4 hover:border-indigo-300 transition-all duration-300 text-center">
+            <div class="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center mb-3 mx-auto">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h4 class="text-sm font-bold text-gray-900 mb-1">{{ $t('technologies.android.ecosystem.workmanager.title') }}</h4>
+            <p class="text-xs text-gray-500">{{ $t('technologies.android.ecosystem.workmanager.desc') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- DevOps & Infrastructure -->
     <section class="py-20 bg-dark-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="section-title">{{ $t('technologies.devops.title') }} <span class="gradient-text">{{ $t('technologies.devops.titleHighlight') }}</span></h2>
+          <h2 class="section-title">{{ $t('technologies.devops.title') }} <span class="text-brand-600">{{ $t('technologies.devops.titleHighlight') }}</span></h2>
           <p class="section-subtitle">
             {{ $t('technologies.devops.subtitle') }}
           </p>
@@ -257,89 +421,66 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Docker -->
-          <div class="glass-card p-6 hover:border-blue-400/50 transition-all duration-300">
-            <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-7 h-7 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.186m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288z"/>
-              </svg>
+          <div class="glass-card p-6 hover:border-blue-300 transition-all duration-300">
+            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+              <img src="https://cdn.simpleicons.org/docker" alt="Docker" class="w-7 h-7" />
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">{{ $t('technologies.docker.title') }}</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $t('technologies.docker.title') }}</h3>
             <p class="text-dark-400 text-sm">
               {{ $t('technologies.docker.description') }}
             </p>
           </div>
 
           <!-- Nginx -->
-          <div class="glass-card p-6 hover:border-green-400/50 transition-all duration-300">
-            <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-7 h-7 text-green-400" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0L1.605 6v12L12 24l10.395-6V6L12 0zm6 16.59c0 .705-.646 1.29-1.529 1.29-.631 0-1.351-.255-1.801-.81l-6-7.141v6.66c0 .721-.57 1.29-1.274 1.29H7.32c-.721 0-1.29-.6-1.29-1.29V7.41c0-.705.63-1.29 1.5-1.29.646 0 1.38.255 1.83.81l5.97 7.141V7.41c0-.721.6-1.29 1.29-1.29h.075c.72 0 1.29.6 1.29 1.29v9.18h.015z"/>
-              </svg>
+          <div class="glass-card p-6 hover:border-green-300 transition-all duration-300">
+            <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-4">
+              <img src="https://cdn.simpleicons.org/nginx" alt="Nginx" class="w-7 h-7" />
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">{{ $t('technologies.nginx.title') }}</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $t('technologies.nginx.title') }}</h3>
             <p class="text-dark-400 text-sm">
               {{ $t('technologies.nginx.description') }}
             </p>
           </div>
 
           <!-- Redis -->
-          <div class="glass-card p-6 hover:border-red-400/50 transition-all duration-300">
-            <div class="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-7 h-7 text-red-400" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M10.5 2.661l.54.997-1.797.644 2.409.218.748 1.246.467-1.412 2.409.218-1.796-.645.54-.997-1.536.718zm8.112 4.183l-1.373-.234-.235 1.373.942-1.139zM3.56 8.157l1.372.233.236-1.373-.943 1.14zM12 19.62l-7.14-3.536v-4.97L12 14.65v4.97zm.561-5.726L5.142 10.49l2.275-.837 6.462 2.564-.318.677zm6.862-.472l-6.421 3.183v4.97l7.141-3.536v-4.97l-.72.353zm-5.791-2.932l2.258.857 2.22-.817-2.258-.857-2.22.817zM10.5 7.933l2.258.858 2.22-.817L12.72 7.116l-2.22.817z"/>
-              </svg>
+          <div class="glass-card p-6 hover:border-red-300 transition-all duration-300">
+            <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-4">
+              <img src="https://cdn.simpleicons.org/redis" alt="Redis" class="w-7 h-7" />
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">{{ $t('technologies.redis.title') }}</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $t('technologies.redis.title') }}</h3>
             <p class="text-dark-400 text-sm">
               {{ $t('technologies.redis.description') }}
             </p>
           </div>
 
           <!-- Git -->
-          <div class="glass-card p-6 hover:border-orange-400/50 transition-all duration-300">
-            <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-7 h-7 text-orange-400" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
-              </svg>
+          <div class="glass-card p-6 hover:border-orange-300 transition-all duration-300">
+            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-4">
+              <img src="https://cdn.simpleicons.org/git" alt="Git" class="w-7 h-7" />
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">{{ $t('technologies.git.title') }}</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $t('technologies.git.title') }}</h3>
             <p class="text-dark-400 text-sm">
               {{ $t('technologies.git.description') }}
             </p>
           </div>
 
           <!-- Linux -->
-          <div class="glass-card p-6 hover:border-yellow-400/50 transition-all duration-300">
-            <div class="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-7 h-7 text-yellow-400" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.424.424 0 00-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071.771-.06 1.592-.536 2.257-1.306.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.357.357 0 00-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139z"/>
-              </svg>
+          <div class="glass-card p-6 hover:border-yellow-300 transition-all duration-300">
+            <div class="w-12 h-12 bg-yellow-50 rounded-xl flex items-center justify-center mb-4">
+              <img src="https://cdn.simpleicons.org/linux" alt="Linux" class="w-7 h-7" />
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">{{ $t('technologies.linux.title') }}</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $t('technologies.linux.title') }}</h3>
             <p class="text-dark-400 text-sm">
               {{ $t('technologies.linux.description') }}
             </p>
           </div>
 
           <!-- Vite -->
-          <div class="glass-card p-6 hover:border-purple-400/50 transition-all duration-300">
-            <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-7 h-7" viewBox="0 0 410 404" fill="none">
-                <path d="M399.641 59.5246L215.643 388.545C211.844 395.338 202.084 395.378 198.228 388.618L10.5817 59.5563C6.38087 52.1896 12.6802 43.2665 21.0281 44.7586L205.223 77.6824C206.398 77.8924 207.601 77.8904 208.776 77.6763L389.119 44.8058C397.439 43.2894 403.768 52.1434 399.641 59.5246Z" fill="url(#paint0_linear)"/>
-                <path d="M292.965 1.5744L156.801 28.2552C154.563 28.6937 152.906 30.5903 152.771 32.8664L144.395 167.601C144.198 170.873 147.258 173.373 150.378 172.572L198.426 160.323C201.899 159.432 204.835 162.655 203.603 166.038L185.182 215.849C183.932 219.282 186.961 222.548 190.474 221.52L220.153 212.616C223.696 211.579 226.733 214.911 225.419 218.369L196.07 295.988C194.264 300.782 201.056 303.808 203.996 299.575L206.047 296.511L315.135 69.6998C316.751 66.3455 313.566 62.7286 310.008 63.8635L259.956 79.7077C256.096 80.9377 252.721 77.2441 254.318 73.5445L292.865 12.7888C294.461 9.08915 291.086 5.39555 287.226 6.62548L292.965 1.5744Z" fill="url(#paint1_linear)"/>
-                <defs>
-                  <linearGradient id="paint0_linear" x1="6.00017" y1="32.9999" x2="235" y2="344" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#41D1FF"/>
-                    <stop offset="1" stop-color="#BD34FE"/>
-                  </linearGradient>
-                  <linearGradient id="paint1_linear" x1="194.651" y1="8.81818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#FFBD4F"/>
-                    <stop offset="1" stop-color="#FF980E"/>
-                  </linearGradient>
-                </defs>
-              </svg>
+          <div class="glass-card p-6 hover:border-purple-300 transition-all duration-300">
+            <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-4">
+              <img src="https://cdn.simpleicons.org/vite" alt="Vite" class="w-7 h-7" />
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">{{ $t('technologies.vite.title') }}</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $t('technologies.vite.title') }}</h3>
             <p class="text-dark-400 text-sm">
               {{ $t('technologies.vite.description') }}
             </p>
@@ -353,94 +494,94 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 class="section-title mb-6">{{ $t('technologies.why.title') }} <span class="gradient-text">{{ $t('technologies.why.titleHighlight') }}</span></h2>
+            <h2 class="section-title mb-6">{{ $t('technologies.why.title') }} <span class="text-brand-600">{{ $t('technologies.why.titleHighlight') }}</span></h2>
             <p class="text-dark-300 mb-6">
               {{ $t('technologies.why.subtitle') }}
             </p>
             <div class="space-y-4">
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-primary-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-white font-semibold mb-1">{{ $t('technologies.why.performance.title') }}</h4>
+                  <h4 class="text-gray-900 font-semibold mb-1">{{ $t('technologies.why.performance.title') }}</h4>
                   <p class="text-dark-400 text-sm">{{ $t('technologies.why.performance.description') }}</p>
                 </div>
               </div>
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-white font-semibold mb-1">{{ $t('technologies.why.security.title') }}</h4>
+                  <h4 class="text-gray-900 font-semibold mb-1">{{ $t('technologies.why.security.title') }}</h4>
                   <p class="text-dark-400 text-sm">{{ $t('technologies.why.security.description') }}</p>
                 </div>
               </div>
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-secondary-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-white font-semibold mb-1">{{ $t('technologies.why.scalability.title') }}</h4>
+                  <h4 class="text-gray-900 font-semibold mb-1">{{ $t('technologies.why.scalability.title') }}</h4>
                   <p class="text-dark-400 text-sm">{{ $t('technologies.why.scalability.description') }}</p>
                 </div>
               </div>
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-accent-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-10 h-10 bg-yellow-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-white font-semibold mb-1">{{ $t('technologies.why.community.title') }}</h4>
+                  <h4 class="text-gray-900 font-semibold mb-1">{{ $t('technologies.why.community.title') }}</h4>
                   <p class="text-dark-400 text-sm">{{ $t('technologies.why.community.description') }}</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="glass-card p-8">
-            <h3 class="text-xl font-bold text-white mb-6">{{ $t('technologies.stats.title') }}</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-6">{{ $t('technologies.stats.title') }}</h3>
             <div class="space-y-6">
               <div>
                 <div class="flex justify-between text-sm mb-2">
                   <span class="text-dark-300">{{ $t('technologies.stats.laravelPopularity') }}</span>
-                  <span class="text-primary-400 font-semibold">78%</span>
+                  <span class="text-brand-600 font-semibold">78%</span>
                 </div>
-                <div class="h-2 bg-dark-700 rounded-full overflow-hidden">
-                  <div class="h-full bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full" style="width: 78%"></div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div class="h-full bg-brand-600 rounded-full" style="width: 78%"></div>
                 </div>
               </div>
               <div>
                 <div class="flex justify-between text-sm mb-2">
                   <span class="text-dark-300">{{ $t('technologies.stats.vueSatisfaction') }}</span>
-                  <span class="text-green-400 font-semibold">92%</span>
+                  <span class="text-green-600 font-semibold">92%</span>
                 </div>
-                <div class="h-2 bg-dark-700 rounded-full overflow-hidden">
-                  <div class="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full" style="width: 92%"></div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div class="h-full bg-green-600 rounded-full" style="width: 92%"></div>
                 </div>
               </div>
               <div>
                 <div class="flex justify-between text-sm mb-2">
                   <span class="text-dark-300">{{ $t('technologies.stats.mysqlShare') }}</span>
-                  <span class="text-blue-400 font-semibold">43%</span>
+                  <span class="text-blue-600 font-semibold">43%</span>
                 </div>
-                <div class="h-2 bg-dark-700 rounded-full overflow-hidden">
-                  <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full" style="width: 43%"></div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div class="h-full bg-blue-600 rounded-full" style="width: 43%"></div>
                 </div>
               </div>
               <div>
                 <div class="flex justify-between text-sm mb-2">
                   <span class="text-dark-300">{{ $t('technologies.stats.tailwindGrowth') }}</span>
-                  <span class="text-cyan-400 font-semibold">156%</span>
+                  <span class="text-cyan-600 font-semibold">156%</span>
                 </div>
-                <div class="h-2 bg-dark-700 rounded-full overflow-hidden">
-                  <div class="h-full bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full" style="width: 100%"></div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div class="h-full bg-cyan-600 rounded-full" style="width: 100%"></div>
                 </div>
               </div>
             </div>
@@ -450,15 +591,15 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-primary-900 to-secondary-900">
+    <section class="py-20 bg-gray-900">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-5">
           {{ $t('technologies.cta.title') }}
         </h2>
-        <p class="text-xl text-white/70 mb-8">
+        <p class="text-lg text-gray-300 mb-8">
           {{ $t('technologies.cta.subtitle') }}
         </p>
-        <router-link to="/kontakt" class="btn-primary px-10 py-4 text-lg">
+        <router-link to="/kontakt" class="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-brand-700 bg-white rounded-md hover:bg-gray-100 transition-colors duration-200">
           {{ $t('technologies.cta.button') }}
         </router-link>
       </div>

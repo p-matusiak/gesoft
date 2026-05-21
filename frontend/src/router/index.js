@@ -30,7 +30,7 @@ const routes = [
     path: '/portfolio',
     name: 'portfolio',
     component: () => import('@/views/PortfolioView.vue'),
-    meta: { title: 'Portfolio - GESOFT' }
+    meta: { title: 'Inspiracje - GESOFT' }
   },
   {
     path: '/kontakt',

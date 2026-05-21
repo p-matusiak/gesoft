@@ -1,10 +1,10 @@
 <template>
-  <div class="glass-card p-6 hover:border-primary-500/50 transition-all duration-300 group">
-    <div class="w-14 h-14 bg-gradient-to-br from-primary-500/20 to-secondary-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-      <component :is="iconComponent" class="w-7 h-7 text-primary-400" />
+  <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-200">
+    <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-4">
+      <component :is="iconComponent" class="w-6 h-6 text-brand-600" />
     </div>
-    <h3 class="text-xl font-semibold text-white mb-2">{{ title }}</h3>
-    <p class="text-dark-400">{{ description }}</p>
+    <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ title }}</h3>
+    <p class="text-gray-600">{{ description }}</p>
   </div>
 </template>
 

@@ -4,46 +4,46 @@
     "about": "About",
     "services": "Services",
     "technologies": "Technologies",
-    "portfolio": "Portfolio",
+    "portfolio": "Inspirations",
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Laravel + Vue.js = Success",
-    "title1": "We create",
+    "badge": "Laravel + Vue.js + Android",
+    "title1": "We build",
     "title2": "modern",
-    "title3": "websites & apps",
-    "subtitle": "Professional web solutions for your business. From business cards to advanced CRM systems - we'll deliver any project.",
-    "cta": "Start a project",
-    "ctaSecondary": "View portfolio",
-    "stats": {
-      "projects": "Completed projects",
-      "experience": "Years of experience",
-      "clients": "Satisfied clients",
-      "support": "Technical support"
+    "title3": "web & mobile apps",
+    "subtitle": "We specialize in web applications built with Laravel and Vue.js, and native Android apps. Clean code, clear architecture, honest pricing.",
+    "cta": "Describe your project",
+    "ctaSecondary": "Inspirations",
+    "stack": {
+      "laravel": "Backend",
+      "vue": "Frontend",
+      "php": "Server-side",
+      "android": "Mobile"
     }
   },
   "home": {
     "whyUs": {
       "title": "Why",
       "titleHighlight": "us?",
-      "subtitle": "We combine experience with modern technologies, delivering solutions for the 21st century.",
+      "subtitle": "A specific tech stack, a predictable process, honest communication.",
       "fast": {
         "title": "Fast delivery",
-        "description": "Thanks to proven processes and tools, we deliver projects on time."
+        "description": "Proven process: analysis → prototype → development → deployment. Timeline agreed before we start."
       },
       "quality": {
-        "title": "High quality",
-        "description": "We treat each project individually, paying attention to the smallest details."
+        "title": "Clean code",
+        "description": "PSR-12, automated tests, code review, API documentation. Code that can be developed for years."
       },
       "support": {
-        "title": "Full support",
-        "description": "We offer comprehensive technical support after project completion."
+        "title": "6 months warranty",
+        "description": "Every project comes with a 6-month warranty. We fix bugs for free."
       }
     },
     "services": {
       "title": "Our",
       "titleHighlight": "services",
-      "subtitle": "Comprehensive web solutions tailored to your business needs.",
+      "subtitle": "Web and mobile applications built on a proven technology stack.",
       "viewAll": "View all services",
       "websites": {
         "title": "Websites",
@@ -60,71 +60,110 @@
     },
     "technologies": {
       "title": "Technologies we",
-      "titleHighlight": "love",
-      "subtitle": "We use proven and modern technologies to create the best solutions.",
+      "titleHighlight": "use",
+      "subtitle": "Every project is built on the same proven stack - no experimenting at the client's expense.",
       "laravel": "Backend Framework",
       "vue": "Frontend Framework",
       "php": "Server-side",
       "mysql": "Database"
     },
-    "cta": {
-      "title": "Ready for a new project?",
-      "subtitle": "Contact us and tell us about your needs. We'll prepare a free quote for you.",
-      "button": "Send inquiry"
-    },
-    "testimonials": {
-      "title": "What our",
-      "titleHighlight": "clients say",
-      "subtitle": "Our satisfied clients' opinions are the best recommendation for us.",
+    "whatWeBuild": {
+      "title": "What we can",
+      "titleHighlight": "build for you",
+      "subtitle": "Example project types we deliver - from simple websites to complex systems.",
       "items": [
         {
-          "name": "John Smith",
-          "company": "Tech Solutions Ltd.",
-          "text": "Working with GESOFT is a pleasure. Professionalism and punctuality at the highest level."
+          "title": "CRM / ERP Systems",
+          "description": "Custom systems for managing customers, orders and business processes.",
+          "icon": "crm"
         },
         {
-          "name": "Anna Johnson",
-          "company": "E-commerce Pro",
-          "text": "Thanks to GESOFT, our online store works perfectly. We increased sales by 150%!"
+          "title": "Online stores",
+          "description": "E-commerce platforms with payment integration, inventory management and reporting.",
+          "icon": "ecommerce"
         },
         {
-          "name": "Peter Williams",
-          "company": "Startup Hub",
-          "text": "The CRM system created by GESOFT streamlined our business processes. Highly recommend!"
+          "title": "Android mobile apps",
+          "description": "Native Android apps in Kotlin/Java with REST API integration.",
+          "icon": "android"
+        },
+        {
+          "title": "Web portals & SaaS",
+          "description": "Multi-user platforms with client dashboards, subscriptions and API.",
+          "icon": "portal"
+        },
+        {
+          "title": "API integrations",
+          "description": "Connecting external systems: payments, couriers, ERP, SMS gateways.",
+          "icon": "api"
+        },
+        {
+          "title": "Booking systems",
+          "description": "Calendars, online bookings, synchronization with external services.",
+          "icon": "booking"
         }
       ]
+    },
+    "cta": {
+      "title": "Ready for a new project?",
+      "subtitle": "Contact us and tell us about your needs. We'll prepare a free quote within 24h.",
+      "button": "Send inquiry"
+    },
+    "ctaBanner": {
+      "title": "Free technical consultation",
+      "subtitle": "Describe the problem or idea - we'll propose a solution and quote the project. No obligations.",
+      "cta": "Write to us",
+      "secondary": "or call: +48 517 123 374"
     }
   },
   "about": {
     "header": {
       "title1": "About",
       "title2": "us",
-      "subtitle": "Meet the team behind GESOFT and learn more about our mission."
+      "subtitle": "GESOFT is a boutique software house specializing in web applications (Laravel + Vue.js) and mobile apps (Android)."
     },
     "story": {
       "title": "Our",
       "titleHighlight": "story",
-      "content1": "GESOFT was born from a passion for software development and the desire to deliver the highest quality web solutions for companies of all sizes.",
-      "content2": "From the beginning, we have focused on quality, timeliness and long-term cooperation with clients. We treat each project as our own, paying attention to every detail.",
-      "content3": "Today, after many years of experience, we are proud of our portfolio of projects and satisfied clients who recommend us further.",
+      "content1": "GESOFT was born from a passion for building solid software. We specialize in Laravel, Vue.js and native Android - technologies we know in depth.",
+      "content2": "We treat each project individually. Before writing the first line of code - we understand the business problem we're solving.",
+      "content3": "We operate as a focused software house - a dedicated developer per project means full accountability and direct communication.",
       "codePassion": "Code with passion",
       "codePassionDesc": "Every line of code is written with care for quality and performance. We use best practices and modern technologies."
     },
     "mission": {
       "title": "Our mission",
-      "content": "To deliver innovative web solutions that help companies grow in the digital world. We focus on quality, security and customer satisfaction."
+      "content": "To deliver solid, well-documented web and mobile software - without shortcuts, without legacy code, with full transparency in the process."
     },
     "vision": {
       "title": "Our vision",
-      "content": "To become the leading technology partner for companies in Poland, offering comprehensive web system development and maintenance services."
+      "content": "To be a trusted technical partner for small and medium businesses in Poland - from the first project to long-term maintenance and system expansion."
     },
-    "stats": {
-      "title": "GESOFT in",
-      "titleHighlight": "numbers",
-      "projects": "Projects",
-      "experience": "Years of experience",
-      "clients": "Clients",
-      "satisfaction": "Satisfaction"
+    "capabilities": {
+      "title": "What we",
+      "titleHighlight": "offer",
+      "items": [
+        {
+          "icon": "web",
+          "title": "Laravel + Vue.js",
+          "description": "Web applications on a proven PHP/JS stack"
+        },
+        {
+          "icon": "android",
+          "title": "Android (Kotlin)",
+          "description": "Native apps on Google Play"
+        },
+        {
+          "icon": "warranty",
+          "title": "6 months warranty",
+          "description": "Free bug fixes after deployment"
+        },
+        {
+          "icon": "nda",
+          "title": "NDA on request",
+          "description": "Full confidentiality of code and project data"
+        }
+      ]
     },
     "values": {
       "title": "Our",
@@ -147,8 +186,8 @@
       }
     },
     "cta": {
-      "title": "Want to learn more?",
-      "subtitle": "Contact us and let's talk about your project.",
+      "title": "Let's talk about your project",
+      "subtitle": "Describe what you need - we'll respond with a concrete solution proposal and quote.",
       "button": "Contact us"
     }
   },
@@ -156,59 +195,114 @@
     "header": {
       "title": "Our",
       "titleHighlight": "services",
-      "subtitle": "Comprehensive web solutions for your business."
+      "subtitle": "Comprehensive web and mobile solutions for your business."
     },
     "items": {
       "websites": {
         "title": "Websites",
         "description": "Modern, responsive websites tailored to your needs.",
-        "features": ["Responsive design", "SEO optimization", "Fast loading", "Admin panel"]
+        "features": [
+          "Responsive design",
+          "SEO optimization",
+          "Fast loading",
+          "Admin panel"
+        ]
       },
       "webapps": {
         "title": "Web applications",
         "description": "Advanced web applications using Laravel and Vue.js.",
-        "features": ["Scalable architecture", "REST API", "Real-time features", "External integrations"]
+        "features": [
+          "Scalable architecture",
+          "REST API",
+          "Real-time features",
+          "External integrations"
+        ]
       },
       "ecommerce": {
         "title": "Online stores",
         "description": "Comprehensive e-commerce solutions with payment integration.",
-        "features": ["Payment integration", "Inventory management", "Sales reporting", "Multilingual"]
+        "features": [
+          "Payment integration",
+          "Inventory management",
+          "Sales reporting",
+          "Multilingual"
+        ]
       },
       "crm": {
         "title": "CRM/ERP Systems",
         "description": "Dedicated systems for managing company and customer relationships.",
-        "features": ["Process automation", "Reports and analytics", "Contact management", "Email integration"]
+        "features": [
+          "Process automation",
+          "Reports and analytics",
+          "Contact management",
+          "Email integration"
+        ]
+      },
+      "android": {
+        "title": "Android mobile apps",
+        "description": "Native Android apps in Kotlin/Java with REST API integration and Laravel backend.",
+        "features": [
+          "Native Android (Kotlin/Java)",
+          "Laravel API integration",
+          "Google Play publication",
+          "Push notifications (FCM)"
+        ]
       },
       "api": {
         "title": "API Integrations",
         "description": "Integrations with external systems and services via API.",
-        "features": ["REST API", "Webhook", "OAuth 2.0", "API Documentation"]
+        "features": [
+          "REST API",
+          "Webhook",
+          "OAuth 2.0",
+          "API Documentation"
+        ]
       },
       "support": {
         "title": "Support & maintenance",
         "description": "Professional technical support and system maintenance.",
-        "features": ["24/7 Monitoring", "Security updates", "Data backup", "Performance optimization"]
+        "features": [
+          "Monitoring",
+          "Security updates",
+          "Data backup",
+          "Performance optimization"
+        ]
       },
       "photography": {
         "title": "Photography",
         "description": "Professional photo sessions of products, interiors and events for your company.",
-        "features": ["Product photos", "Event photography", "Website photos", "Editing and retouching"]
+        "features": [
+          "Product photos",
+          "Event photography",
+          "Website photos",
+          "Editing and retouching"
+        ]
       },
       "drone": {
         "title": "Drone footage",
         "description": "Spectacular aerial shots of real estate, events and promotional materials.",
-        "features": ["Aerial photos", "Drone video", "360° Panoramas", "Object inspections"]
+        "features": [
+          "Aerial photos",
+          "Drone video",
+          "360° Panoramas",
+          "Object inspections"
+        ]
       },
       "seoAudit": {
         "title": "SEO Audit",
         "description": "Comprehensive technical analysis of the website for search engine optimization.",
-        "features": ["Code and markup analysis", "Keyword research", "Recommendation report", "Competitor analysis"]
+        "features": [
+          "Code and markup analysis",
+          "Keyword research",
+          "Recommendation report",
+          "Competitor analysis"
+        ]
       }
     },
     "process": {
       "title": "How we",
       "titleHighlight": "work",
-      "subtitle": "Our proven process ensures the success of every project.",
+      "subtitle": "A clear, four-stage process - you know what's happening at every step.",
       "analysis": {
         "title": "Analysis",
         "description": "We learn about your needs and project goals."
@@ -232,14 +326,57 @@
     },
     "cta": {
       "title": "Need a quote?",
-      "subtitle": "Describe your project and we'll prepare a free quote.",
+      "subtitle": "Describe your project and we'll prepare a free quote within 24h.",
       "button": "Send inquiry"
+    },
+    "deployment": {
+      "title": "Deployment and",
+      "titleHighlight": "code delivery",
+      "subtitle": "After development is complete, we hand over a fully working system — deployed, configured, and ready to use. Here's how it works.",
+      "included": {
+        "badge": "Included in project price",
+        "title": "Standard deployment",
+        "description": "Every project ends with a complete deployment on the client's server. No extra costs, no surprises.",
+        "items": [
+          "Uploading the application to the client's server (VPS, dedicated, cloud)",
+          "Production environment configuration (PHP, MySQL, Redis)",
+          "Nginx configuration and SSL certificate (Let's Encrypt)",
+          "Domain connection and test launch",
+          "Database migrations and seed data",
+          "Delivery of .env file with environment configuration",
+          "Brief launch documentation and environment variables guide"
+        ]
+      },
+      "addon": {
+        "badge": "Additional service",
+        "title": "Advanced DevOps deployment",
+        "description": "For clients requiring higher standards of infrastructure, automation and security.",
+        "items": [
+          "Docker + Docker Compose containerization (isolated environment)",
+          "CI/CD pipeline (GitHub Actions / GitLab CI) — automatic deploy on push",
+          "Staging and production environment setup (dev → staging → prod)",
+          "Server and application monitoring (uptime, email/SMS alerts)",
+          "Automated database backups (cron + S3/external storage)",
+          "Server hardening: firewall, fail2ban, SSH key-only access",
+          "Reverse proxy and load balancer configuration"
+        ]
+      },
+      "code": {
+        "title": "Source code access",
+        "description": "After project completion and payment, the client receives full ownership access to the Git repository with complete source code.",
+        "items": [
+          "Private GitHub or GitLab repository — owner access",
+          "Full commit history with change descriptions",
+          "README with installation and launch instructions",
+          "Code written to standards (PSR-12, ESLint) — readable by any developer"
+        ]
+      }
     }
   },
   "technologies": {
     "header": {
       "title": "Technologies",
-      "subtitle": "Discover the technologies we use to create efficient, secure and scalable solutions. Every choice is thought through and based on years of experience."
+      "subtitle": "Discover the technologies we use to create efficient, secure and scalable solutions. Every choice is deliberate and based on practical experience."
     },
     "mainStack": {
       "title": "Main",
@@ -254,7 +391,7 @@
     "why": {
       "title": "Why this",
       "titleHighlight": "stack?",
-      "subtitle": "Choosing technology is not a matter of fashion or personal preference. It's a strategic decision that affects the success of the project for years.",
+      "subtitle": "Choosing technology is not a matter of fashion. It's a strategic decision that affects maintenance costs and development possibilities for years.",
       "performance": {
         "title": "Performance",
         "description": "PHP 8.3 with JIT, Vue 3 with Proxy-based reactivity, MySQL 8 with query optimizer - every element is optimized."
@@ -265,11 +402,11 @@
       },
       "scalability": {
         "title": "Scalability",
-        "description": "From a small website to an application serving millions of users. This stack grows with your business."
+        "description": "From a small website to an application serving thousands of users. This stack grows with your business."
       },
       "community": {
         "title": "Community",
-        "description": "Millions of developers, thousands of packages, hundreds of tutorials. You'll always find a solution to the problem."
+        "description": "Millions of developers, thousands of packages, hundreds of tutorials. An actively developed and maintained ecosystem."
       }
     },
     "stats": {
@@ -281,7 +418,7 @@
     },
     "laravel": {
       "title": "Laravel",
-      "description": "Laravel is the best PHP framework in the world - and we don't say that without reason. It's our main backend choice for several key reasons:",
+      "description": "Laravel is our main backend choice - a stable framework with a mature ecosystem and active community:",
       "eloquent": "Eloquent ORM",
       "eloquentDesc": "intuitive database work without writing raw SQL",
       "artisan": "Artisan CLI",
@@ -293,7 +430,7 @@
     },
     "vue": {
       "title": "Vue.js 3",
-      "description": "Vue.js is a progressive JavaScript framework that combines simplicity with powerful capabilities. Composition API in Vue 3 is a breakthrough in code organization:",
+      "description": "Vue.js is a progressive JavaScript framework that combines simplicity with powerful capabilities. Composition API in Vue 3 simplifies code organization:",
       "reactivity": "Reactivity System",
       "reactivityDesc": "automatic change tracking and DOM update",
       "sfc": "Single File Components",
@@ -305,7 +442,7 @@
     },
     "mysql": {
       "title": "MySQL 8",
-      "description": "MySQL is a proven and reliable database management system. Version 8 brought revolutionary changes in performance and functionality:",
+      "description": "MySQL is a proven and reliable database management system. Version 8 brought significant improvements in performance and functionality:",
       "window": "Window Functions",
       "windowDesc": "advanced analytics without subqueries",
       "json": "JSON Support",
@@ -345,11 +482,11 @@
     },
     "nginx": {
       "title": "Nginx",
-      "description": "High-performance HTTP server and reverse proxy. Handles thousands of connections simultaneously with minimal resource usage."
+      "description": "High-performance HTTP server and reverse proxy. Handles many connections simultaneously with minimal resource usage."
     },
     "redis": {
       "title": "Redis",
-      "description": "In-memory data store for caching, sessions and queues. Dramatically speeds up applications by reducing database queries."
+      "description": "In-memory data store for caching, sessions and queues. Speeds up applications by reducing database queries."
     },
     "git": {
       "title": "Git & GitHub",
@@ -357,11 +494,81 @@
     },
     "linux": {
       "title": "Linux",
-      "description": "Stable, secure and efficient operating system. 96% of servers worldwide run on Linux - we also choose it."
+      "description": "Stable, secure and efficient operating system for production servers."
     },
     "vite": {
       "title": "Vite",
       "description": "Lightning-fast next-generation build tool. Hot Module Replacement in milliseconds - instant feedback during development."
+    },
+    "android": {
+      "badge": "Native Android",
+      "sectionTitle": "Android",
+      "sectionTitleHighlight": "mobile apps",
+      "sectionSubtitle": "We build native Android apps in Kotlin with modern UI based on Jetpack Compose and Material Design 3 — fast, elegant and available on billions of devices.",
+      "kotlin": {
+        "title": "Kotlin",
+        "description": "Kotlin is the official programming language for Android recommended by Google. It combines concise syntax with full type safety and great interoperability with the Java ecosystem:",
+        "nullSafety": "Null Safety",
+        "nullSafetyDesc": "the compiler eliminates NullPointerException — the most common source of app crashes",
+        "coroutines": "Coroutines & Flow",
+        "coroutinesDesc": "asynchronous operations (network, database) without blocking the UI thread",
+        "extensions": "Extension Functions",
+        "extensionsDesc": "readable, concise code — data classes, sealed classes, lambdas",
+        "interop": "Java Interoperability",
+        "interopDesc": "full access to Java libraries and the entire Android SDK ecosystem"
+      },
+      "compose": {
+        "title": "Jetpack Compose",
+        "description": "Jetpack Compose is Google's modern declarative UI toolkit for Android. It replaces traditional XML layouts with pure Kotlin code — less code, more power:",
+        "declarative": "Declarative UI",
+        "declarativeDesc": "you describe how the screen should look for a given state — Compose updates the UI automatically",
+        "state": "State & ViewModel",
+        "stateDesc": "reactive state management — the screen refreshes automatically when data changes",
+        "animation": "Animations & Transitions",
+        "animationDesc": "smooth animations and screen transitions in a single line of code",
+        "preview": "{'@'}Preview Live",
+        "previewDesc": "UI component preview in Android Studio without running the app"
+      },
+      "material3": {
+        "title": "Material Design 3",
+        "description": "Material Design 3 (Material You) is Google's latest design system. It defines a consistent visual language for Android apps — from typography through components to adaptive colors. Our apps look native on every device and comply with Google Play guidelines:",
+        "dynamicColor": "Dynamic Color",
+        "dynamicColorDesc": "color palette adapts automatically to the system wallpaper (Android 12+)",
+        "components": "Ready-made Components",
+        "componentsDesc": "TopAppBar, NavigationBar, FAB, Card, Dialog, TextField and dozens more",
+        "theming": "Token-based Theming",
+        "themingDesc": "consistent design throughout the app via a color and typography token system",
+        "accessibility": "Accessibility (a11y)",
+        "accessibilityDesc": "built-in support for TalkBack, contrast requirements and system font sizes"
+      },
+      "ecosystem": {
+        "title": "Jetpack & Tools Ecosystem",
+        "subtitle": "Proven libraries we use in every Android project",
+        "firebase": {
+          "title": "Firebase",
+          "desc": "Push (FCM), Crashlytics, Analytics, Remote Config"
+        },
+        "maps": {
+          "title": "Google Maps SDK",
+          "desc": "Maps, routes, geolocation, Places API"
+        },
+        "room": {
+          "title": "Room Database",
+          "desc": "Local SQLite with Flow support and migrations"
+        },
+        "retrofit": {
+          "title": "Retrofit + OkHttp",
+          "desc": "REST API communication (Laravel backend)"
+        },
+        "hilt": {
+          "title": "Hilt / DI",
+          "desc": "Dependency Injection — testable, modular code"
+        },
+        "workmanager": {
+          "title": "WorkManager",
+          "desc": "Background tasks: sync, upload, scheduled notifications"
+        }
+      }
     },
     "cta": {
       "title": "Ready to leverage these technologies?",
@@ -371,55 +578,332 @@
   },
   "portfolio": {
     "header": {
-      "title": "Portfolio",
-      "subtitle": "See our completed projects."
+      "title": "Inspirations",
+      "subtitle": "Project examples we can build — find an idea that fits your business."
     },
     "filters": {
       "all": "All",
+      "mobile": "Mobile Apps",
       "websites": "Websites",
-      "webapps": "Applications",
+      "webapps": "Web Apps",
       "ecommerce": "E-commerce",
       "crm": "CRM/ERP"
     },
-    "viewProject": "View project",
+    "viewProject": "View details",
     "noProjects": "No projects in this category.",
-    "technologiesUsed": "Technologies used",
-    "wantSimilar": "I want a similar project",
+    "technologiesUsed": "Technology stack",
+    "wantSimilar": "I want this project",
+    "mobileBackendNote": "A mobile app requires a backend — an API server (Laravel) that manages data, business logic and database communication. We build both the Android app and the backend as one complete project.",
     "cta": {
-      "title": "Have a project idea?",
-      "subtitle": "Contact us and let's make it happen!",
-      "button": "Start cooperation"
+      "title": "See something similar to your idea?",
+      "subtitle": "Describe your project — we'll prepare a free quote within 24h.",
+      "button": "Describe your project"
     },
     "projects": {
       "crm": {
-        "title": "CRM System for Logistics Company",
-        "description": "Comprehensive customer and order management system.",
-        "fullDescription": "We developed a comprehensive CRM system for a large logistics company. The system enables customer management, order processing, shipment tracking and report generation. Integrated with payment systems and carrier APIs."
+        "title": "CRM / Customer Management System",
+        "description": "We can build a system for managing clients, orders and business processes.",
+        "fullDescription": "This type of system can include: customer and contact database management, order handling and status tracking, sales reports and analytics, email and notification integration. Stack: Laravel + Vue.js + MySQL/Redis."
       },
       "furniture": {
-        "title": "Furniture Online Store",
-        "description": "Modern e-commerce store with product configurator.",
-        "fullDescription": "We created an online store with an advanced furniture configurator that allows customers to customize products to their needs. Integrated with warehouse management and payment gateways."
+        "title": "Online Store with Configurator",
+        "description": "We can build an e-commerce store with an advanced product configurator.",
+        "fullDescription": "This type of store can include: a live product configurator, payment gateway integration (Stripe, PayPal), inventory and order management, admin panel. Stack: Laravel + Vue.js + Stripe."
       },
       "medical": {
-        "title": "Medical Industry Portal",
-        "description": "Appointment booking and patient management system.",
-        "fullDescription": "Medical platform enabling online appointment booking, patient record management and communication between doctors. Compliant with GDPR and medical data security requirements."
+        "title": "Booking & Scheduling Portal",
+        "description": "We can build an online booking system with real-time availability management.",
+        "fullDescription": "This type of portal can include: online appointment/service booking, real-time availability management, automatic email/SMS notifications, staff and client panels. GDPR compliant. Stack: Laravel + Vue.js + WebSockets."
       },
       "corporate": {
-        "title": "Corporate Website",
-        "description": "Elegant company website with CMS system.",
-        "fullDescription": "Modern corporate website for an international consulting firm. Multilingual, with an extensive CMS panel and SEO optimized."
+        "title": "Corporate Website with CMS",
+        "description": "We can build a professional company website with a custom CMS.",
+        "fullDescription": "This type of website can include: a multilingual CMS panel for self-editing content, blog/news section, contact form, SEO and PageSpeed optimization. Stack: Laravel + Vue.js + TailwindCSS."
       },
       "projectMgmt": {
-        "title": "Project Management Application",
-        "description": "Agile methodology project management tool.",
-        "fullDescription": "Project management application with Kanban boards, time tracking, task management and reporting. Ideal for remote teams."
+        "title": "Task & Project Management App",
+        "description": "We can build a tool for managing projects and team tasks.",
+        "fullDescription": "This type of app can include: Kanban boards and task lists, task assignment to team members, time tracking, progress reports and notifications. Stack: Laravel + Vue.js + WebSockets + PostgreSQL."
       },
       "booking": {
-        "title": "Online Booking System",
-        "description": "Hotel booking platform with calendar integration.",
-        "fullDescription": "Hotel booking system with Booking.com and Airbnb synchronization, room management, automatic notifications and occupancy reports."
+        "title": "Reservation & Schedule System",
+        "description": "We can build a booking platform with Google Calendar integration.",
+        "fullDescription": "This type of system can include: online bookings with Google Calendar sync, resource availability management, automatic reminders, client and admin panels. Stack: Laravel + Vue.js + Google API."
+      },
+      "delivery": {
+        "title": "Courier / Delivery App",
+        "description": "Android for couriers — GPS route tracking, job list, delivery confirmation.",
+        "fullDescription": "Android mobile app for courier and logistics companies. Can include: real-time GPS route tracking, prioritized job list, delivery confirmation with photo, push notifications (Firebase FCM), offline mode with sync.\n\nImportant: every mobile app requires a backend — an API server (Laravel + MySQL) that manages jobs, courier data and communicates with the app. We build the backend and Android app together as a complete solution.\n\nStack: Android (Kotlin) + Laravel REST API + MySQL + Firebase FCM + Google Maps."
+      },
+      "fieldService": {
+        "title": "Field Service / Technician App",
+        "description": "Android for field workers — job orders, checklists, service protocols.",
+        "fullDescription": "Android mobile app for service and maintenance companies. Can include: daily job schedule, checklists and service protocols with client signature, photos from job site, service history, work time reporting.\n\nImportant: the mobile app communicates with a backend (Laravel server) that stores job orders, client data and service history. The backend also provides a web panel for dispatchers.\n\nStack: Android (Kotlin) + Laravel REST API + MySQL + Firebase (notifications)."
+      },
+      "restaurant": {
+        "title": "Restaurant Management System",
+        "description": "We can build a platform with online menu, orders and kitchen display.",
+        "fullDescription": "This type of system can include: online menu with categories and product photos, order management for dine-in, delivery and takeaway, real-time kitchen display system (KDS), table reservation module, sales reports. Stack: Laravel + Vue.js + MySQL + WebSockets."
+      },
+      "realEstate": {
+        "title": "Real Estate Listings Portal",
+        "description": "We can build a property listings site with search, filters and map.",
+        "fullDescription": "This type of portal can include: property listing management, advanced search with filters (price, area, location), Google Maps integration, accounts for agents and private sellers, notifications for new listings. Stack: Laravel + Vue.js + MySQL + Google Maps API."
+      },
+      "hr": {
+        "title": "HR / Employee Management System",
+        "description": "We can build a platform for managing staff, schedules and leave requests.",
+        "fullDescription": "This type of HR system can include: employee database with documents and employment history, work schedule and shift planning, leave request module with approval workflow, training and certificate tracking, HR reports. Stack: Laravel + Vue.js + PostgreSQL + Redis."
+      },
+      "fitness": {
+        "title": "Fitness & Training App",
+        "description": "Mobile app for tracking workouts, calories, sleep, and health progress.",
+        "fullDescription": "The app can include: workout and calorie tracking, training and diet plans, sleep and health monitoring, Google Fit / Health Connect integration, workout and supplement reminders. Stack: Android (Kotlin) + Jetpack Compose + Laravel API."
+      },
+      "parking": {
+        "title": "Smart Parking Finder App",
+        "description": "Mobile app showing available parking spots in real time.",
+        "fullDescription": "The system can include: parking map with real-time availability, advance spot reservations, mobile parking payments, navigation to chosen spot, parking history and receipts. Stack: Android (Kotlin) + Google Maps SDK + Laravel API."
+      },
+      "pharmacy": {
+        "title": "Pharmacy & Medication App",
+        "description": "App for managing medications, dose reminders and pharmacy orders.",
+        "fullDescription": "The app can include: medication schedule with push reminders, barcode scanning of packaging, purchase and prescription history, nearby pharmacy locator, e-prescription integration. Stack: Android (Kotlin) + Room Database + Laravel API."
+      },
+      "fleet": {
+        "title": "Vehicle Fleet Management App",
+        "description": "Mobile app for drivers with route tracking and dispatching.",
+        "fullDescription": "The app can include: active orders and route display, GPS navigation with route optimization, driver working time log, breakdown and fuel reports, dispatcher communication. Stack: Android (Kotlin) + Google Maps + Firebase FCM + Laravel API."
+      },
+      "schoolapp": {
+        "title": "School–Parent Communication App",
+        "description": "Mobile app connecting parents with the school: grades, timetable, messages.",
+        "fullDescription": "The app can include: viewing child grades and attendance, messages from teachers and management, timetable and test schedule, excusing absences, parent surveys and voting. Stack: Android (Kotlin) + Firebase Messaging + Laravel API."
+      },
+      "warehousemobile": {
+        "title": "Warehouse Scanner App",
+        "description": "Mobile app for warehouse stock taking with QR/EAN barcode scanning.",
+        "fullDescription": "The app can include: QR and barcode scanning, goods receipt and dispatch, stocktaking and verification, product shelf locations, ERP system synchronization. Stack: Android (Kotlin) + CameraX + Room Database + Laravel API."
+      },
+      "taxiapp": {
+        "title": "Taxi Booking App",
+        "description": "Mobile app for ordering rides with real-time driver tracking on a map.",
+        "fullDescription": "The app can include: ride ordering from A to B, driver tracking on a live map, driver and ride rating system, card and BLIK payments, ride history with invoices. Stack: Android (Kotlin) + Google Maps + Firebase + Laravel API."
+      },
+      "eventsapp": {
+        "title": "Events & Ticket App",
+        "description": "App for buying event tickets and scanning entry passes.",
+        "fullDescription": "The app can include: browsing events and buying tickets, ticket wallet with QR codes, ticket scanner for event staff, seat maps and seat selection, upcoming event notifications. Stack: Android (Kotlin) + Jetpack Compose + Laravel API + Stripe."
+      },
+      "cosmetics": {
+        "title": "Online Cosmetics Shop",
+        "description": "E-commerce store for cosmetics and beauty products with an AR try-on.",
+        "fullDescription": "The store can include: product catalogue filtered by skin type, AR makeup virtual try-on, loyalty program with points, beauty box subscriptions, reviews and skincare tips. Stack: Laravel + Vue.js + Stripe + MySQL."
+      },
+      "electronics": {
+        "title": "Electronics & Gadgets Store",
+        "description": "Online store for electronics, smartphones and tech accessories.",
+        "fullDescription": "The store can include: product spec comparator, PC and studio bundle configurator, instalments and financing, warranty service and returns, trade-in buyback program. Stack: Laravel + Vue.js + Stripe + MySQL + Redis."
+      },
+      "foodshop": {
+        "title": "Food Ordering Platform",
+        "description": "Web app for ordering food from restaurants and grocery stores.",
+        "fullDescription": "The platform can include: local restaurant and store catalogue, order tracking on a map, estimated delivery time, restaurant ratings and reviews, free-delivery subscription. Stack: Laravel + Vue.js + Google Maps API + Stripe + MySQL."
+      },
+      "autoparts": {
+        "title": "Auto Parts Store",
+        "description": "E-commerce for automotive with a part search by vehicle model.",
+        "fullDescription": "The store can include: part search by make, model and year, VIN compatibility verification, bulk purchasing for workshops, technical catalogues and diagrams, workshop delivery. Stack: Laravel + Vue.js + MySQL + Redis."
+      },
+      "bookstore": {
+        "title": "Online Bookstore",
+        "description": "Bookstore for printed books and e-books with a recommendation engine.",
+        "fullDescription": "The bookstore can include: catalogue with full-text search, DRM-protected e-book sales, in-browser online reader, audiobook subscription, reading club and reading lists. Stack: Laravel + Vue.js + Stripe + MySQL + Elasticsearch."
+      },
+      "sportsstore": {
+        "title": "Sports Equipment Store",
+        "description": "E-commerce with sports gear and clothing, including a bicycle configurator.",
+        "fullDescription": "The store can include: bicycle and ski configurator with size fitting, online equipment rental, cycling routes and trail integration, service program with repair history, BMI and equipment sizing calculator. Stack: Laravel + Vue.js + Stripe + MySQL."
+      },
+      "wholesale": {
+        "title": "B2B Wholesale Platform",
+        "description": "Wholesale B2B system with company pricing, discounts and bulk orders.",
+        "fullDescription": "The platform can include: individual price lists for B2B clients, minimum order quantities and discount thresholds, VAT invoices and pro-forma invoices, delivery schedules, ERP system integration. Stack: Laravel + Vue.js + MySQL + Redis."
+      },
+      "invoicing": {
+        "title": "Invoicing & Payments System",
+        "description": "App for issuing VAT invoices, pro-formas and managing payments.",
+        "fullDescription": "The system can include: VAT invoice and pro-forma generation, PDF delivery to clients by email, Stripe and PayU integration, payment due date monitoring, revenue and VAT reports, export to accounting software. Stack: Laravel + Vue.js + MySQL + Stripe."
+      },
+      "inventory": {
+        "title": "Warehouse Management System",
+        "description": "Web app for managing stock levels, deliveries and multiple warehouses.",
+        "fullDescription": "The system can include: real-time stock tracking, automatic reordering at minimum levels, multi-warehouse management, goods-in and goods-out documents, stocktaking, rotation analysis. Stack: Laravel + Vue.js + MySQL + Redis."
+      },
+      "rental": {
+        "title": "Equipment Rental System",
+        "description": "App for managing rental companies: reservations, returns and contracts.",
+        "fullDescription": "The system can include: equipment catalogue with availability, online reservations, rental contract PDF generation, deposits and payments, repair and service history, calendar integration. Stack: Laravel + Vue.js + Stripe + MySQL."
+      },
+      "dental": {
+        "title": "Dental Practice Software",
+        "description": "Clinic management system for dentists with patient records and scheduling.",
+        "fullDescription": "The system can include: patient records with treatment history, procedure planning and scheduling, X-ray and documentation, automated SMS/email reminders, e-prescriptions and referrals, NHS billing. Stack: Laravel + Vue.js + MySQL."
+      },
+      "lawcrm": {
+        "title": "CRM for Law Firms",
+        "description": "Case and client management system with document handling for lawyers.",
+        "fullDescription": "The system can include: client and case records, court hearing schedules, document management with versioning, time tracking and billing, statutory deadlines and alerts, secure NDAs and digital signatures. Stack: Laravel + Vue.js + PostgreSQL + Redis."
+      },
+      "hotel": {
+        "title": "Hotel Management System (PMS)",
+        "description": "Property management software for hotels with reservations and housekeeping.",
+        "fullDescription": "The system can include: online reservations from an availability calendar, check-in and check-out, room and housekeeping management, Booking.com and Airbnb integration, occupancy and revenue reports, restaurant and spa management. Stack: Laravel + Vue.js + MySQL + WebSockets."
+      },
+      "construction": {
+        "title": "Construction Project Management",
+        "description": "ERP system for construction firms with schedules, estimates and crews.",
+        "fullDescription": "The system can include: construction schedules with Gantt charts, estimates and budget control, subcontractor and crew management, health & safety documentation and handovers, material ordering, investor reports. Stack: Laravel + Vue.js + MySQL + Redis."
+      },
+      "saloncrm": {
+        "title": "Beauty Salon Management System",
+        "description": "Software for hair salons, beauty salons and spas with online bookings.",
+        "fullDescription": "The system can include: online bookings with service and staff selection, staff and cabin schedules, client history cards, loyalty program, automatic SMS reminders, product sales. Stack: Laravel + Vue.js + MySQL + Twilio SMS."
+      },
+      "elearning": {
+        "title": "E-Learning Platform",
+        "description": "LMS system for creating and selling online courses with certificates.",
+        "fullDescription": "The platform can include: video and interactive course creation, quizzes and tests with auto-grading, completion certificates, live webinars and Q&A, payment and subscription systems, progress reporting. Stack: Laravel + Vue.js + MySQL + Stripe + WebSockets."
+      },
+      "survey": {
+        "title": "Survey & Form Builder",
+        "description": "App for creating advanced online forms, surveys and exams.",
+        "fullDescription": "The system can include: drag-and-drop form builder, various question types (scales, matrices, ratings), conditional logic and branching, anonymous data collection, results analysis with charts, CSV/Excel export. Stack: Laravel + Vue.js + MySQL."
+      },
+      "logistics": {
+        "title": "Shipment Tracking System",
+        "description": "Logistics platform for managing transport orders and tracking.",
+        "fullDescription": "The system can include: transport orders with driver assignment, GPS parcel tracking in real time, automatic notifications for sender and recipient, proof of delivery with signature, fleet efficiency reports. Stack: Laravel + Vue.js + Google Maps + MySQL + WebSockets."
+      },
+      "helpdesk": {
+        "title": "IT Helpdesk System",
+        "description": "Application for managing support tickets and technical support requests.",
+        "fullDescription": "The system can include: user ticket portal, ticket categorisation and priorities, technician assignment and escalation, FAQ knowledge base, SLA and response time monitoring, email and Slack integration. Stack: Laravel + Vue.js + MySQL + Redis + WebSockets."
+      },
+      "timesheet": {
+        "title": "Timesheet & Work Hours Tracker",
+        "description": "App for logging work hours by project and generating HR reports.",
+        "fullDescription": "The system can include: work time logging by project, holiday and absence requests, timesheets and monthly summaries, Google Calendar integration, payroll system export, manager reports. Stack: Laravel + Vue.js + MySQL."
+      },
+      "monitoring": {
+        "title": "Server Monitoring Dashboard",
+        "description": "Dashboard for monitoring server health, applications and databases.",
+        "fullDescription": "The system can include: CPU, RAM, disk and network monitoring, threshold breach alerts, real-time application logs, external uptime monitoring, daily availability reports, PagerDuty and Slack integration. Stack: Laravel + Vue.js + Redis + WebSockets."
+      },
+      "recruitment": {
+        "title": "Recruitment ATS System",
+        "description": "Recruitment platform for managing job listings and applicants.",
+        "fullDescription": "The system can include: job posting to website and portals, online application forms, candidate pipeline with stages, recruiter notes and scores, tests and recruitment tasks, automated candidate messages. Stack: Laravel + Vue.js + MySQL + Redis."
+      },
+      "subscription": {
+        "title": "SaaS Subscription Management",
+        "description": "Dashboard for managing subscription plans, payments and churn.",
+        "fullDescription": "The system can include: subscription plans and pricing, automatic renewals and trial periods, cancellation and downgrade management, MRR, ARR and churn analytics, automatic invoices and receipts, Stripe Billing integration. Stack: Laravel + Vue.js + MySQL + Stripe."
+      },
+      "analyticsapp": {
+        "title": "Business Analytics Dashboard",
+        "description": "App for analysing business data with charts, KPIs and reports.",
+        "fullDescription": "The system can include: data import from multiple sources (CSV, API, SQL), interactive charts and dashboards, anomaly alerts, automated email reports, data filtering and segmentation, PDF/Excel export. Stack: Laravel + Vue.js + PostgreSQL + Redis."
+      },
+      "chat": {
+        "title": "Team Communication Platform",
+        "description": "Internal company chat with channels, file sharing and project integration.",
+        "fullDescription": "The system can include: topic channels and direct messages, file and document sharing, task management system integration, emoji reactions and threads, push and web notifications, chat history search. Stack: Laravel + Vue.js + WebSockets + Redis."
+      },
+      "agencyweb": {
+        "title": "Creative Agency Website",
+        "description": "Professional website for a marketing or design agency with a portfolio.",
+        "fullDescription": "The site can include: portfolio presentation with category filters, animated services section, team and competencies section, project brief form, blog and case studies, SEO and Core Web Vitals optimisation. Stack: Laravel + Vue.js + TailwindCSS."
+      },
+      "constructionweb": {
+        "title": "Construction Company Website",
+        "description": "Business website for a construction firm with project gallery and quote form.",
+        "fullDescription": "The site can include: project gallery filtered by type (houses, commercial, renovations), online quote form, building certificates and accreditations, service area map, FAQ section, Google Maps integration. Stack: Laravel + TailwindCSS + Alpine.js."
+      },
+      "clinicweb": {
+        "title": "Medical Clinic Website",
+        "description": "Website for a clinic or GP practice with online appointment booking.",
+        "fullDescription": "The site can include: specialist list with profiles and timetable, online booking without registration, test information and price list, test results for logged-in patients, GDPR and privacy policy, location and hours. Stack: Laravel + Vue.js + MySQL."
+      },
+      "lawweb": {
+        "title": "Law Firm Website",
+        "description": "Prestigious website for a law firm with a legal blog and consultation form.",
+        "fullDescription": "The site can include: lawyer profiles and specialisations, SEO legal blog with articles, free consultation form, anonymised case outcomes section, bar association memberships, Polish-English bilingual version. Stack: Laravel + TailwindCSS + Vue.js."
+      },
+      "eventweb": {
+        "title": "Conference or Event Website",
+        "description": "Landing page for an industry conference with registration and speaker agenda.",
+        "fullDescription": "The site can include: event agenda with schedule, speaker and sponsor profiles, online registration, live streaming and post-event VOD, interactive venue/stage map, attendee networking and matchmaking. Stack: Laravel + Vue.js + Stripe + MySQL."
+      },
+      "gymweb": {
+        "title": "Gym or Fitness Centre Website",
+        "description": "Website for a gym, fitness club or CrossFit box with membership pricing.",
+        "fullDescription": "The site can include: membership pricing with online purchase, group class timetable, trainer profiles, facility and equipment gallery, free trial session form, member reviews. Stack: Laravel + Vue.js + Stripe + MySQL."
+      },
+      "portfolioweb": {
+        "title": "Photographer or Creator Portfolio",
+        "description": "Elegant portfolio for a photographer, videographer or designer with gallery.",
+        "fullDescription": "The site can include: photo gallery with lightbox, category split (wedding, commercial, portrait), quote request form, blog with tips and behind-the-scenes, Instagram integration, local SEO. Stack: Laravel + Vue.js + TailwindCSS."
+      },
+      "marketplace": {
+        "title": "C2C / B2C Marketplace Platform",
+        "description": "Multi-vendor marketplace for products sold by third-party sellers.",
+        "fullDescription": "The platform can include: seller panel with products and orders, seller commissions and payouts, buyer–seller rating system, secure escrow payments, dispute and return management, product search and filters. Stack: Laravel + Vue.js + Stripe Connect + MySQL."
+      },
+      "posystem": {
+        "title": "POS System (Point of Sale)",
+        "description": "Online cash register for restaurants, shops or cafes with reports.",
+        "fullDescription": "The system can include: cashier interface on a tablet, fiscal printer integration, menu and product management, real-time stock levels, daily and weekly sales reports, online order and delivery integration. Stack: Laravel + Vue.js + MySQL + WebSockets."
+      },
+      "telemedicine": {
+        "title": "Telemedicine Platform",
+        "description": "Online doctor consultation system with e-prescriptions and patient records.",
+        "fullDescription": "The platform can include: video consultations with specialist doctors, e-prescriptions and e-referrals, patient health record with visit history, lab and test result integration, specialist chat, private billing. Stack: Laravel + Vue.js + WebRTC + MySQL."
+      },
+      "gymmanagement": {
+        "title": "Gym Management System",
+        "description": "Software for gyms with memberships, class schedules and access control.",
+        "fullDescription": "The system can include: membership and class package sales, group class timetable with sign-ups, card or app access control, member records with measurements, personal trainer billing, mobile app for clients. Stack: Laravel + Vue.js + Android + MySQL."
+      },
+      "property": {
+        "title": "Property Management System",
+        "description": "System for property managers, housing communities and landlords.",
+        "fullDescription": "The system can include: unit and tenant records, rent and utility billing, payment demand generation, tenant fault reports, contract and document management, financial reports for owners. Stack: Laravel + Vue.js + MySQL + Twilio SMS."
+      },
+      "schoollms": {
+        "title": "School Education Platform",
+        "description": "LMS for schools with electronic register, homework, and grades.",
+        "fullDescription": "The platform can include: electronic register with grades and attendance, homework and deadlines, educational materials and videos, online tests and exams, teacher–parent communication, timetable and substitute teacher management. Stack: Laravel + Vue.js + MySQL + WebSockets."
+      },
+      "insurance": {
+        "title": "Insurance Portal",
+        "description": "System for selling and managing insurance policies online.",
+        "fullDescription": "The portal can include: premium calculator with offer comparison, online policy purchase with e-signature, claim reporting with photo upload, claim status tracking, policy expiry reminders, insurer database integration. Stack: Laravel + Vue.js + MySQL + Redis."
+      },
+      "freelancer": {
+        "title": "Freelancer Platform",
+        "description": "Service connecting freelancers with clients: job listings and project quotes.",
+        "fullDescription": "The platform can include: freelancer profiles with portfolio and reviews, job posting by companies, bidding and price negotiation, escrow for secure payments, online contracts and invoices, post-project ratings. Stack: Laravel + Vue.js + Stripe + MySQL."
+      },
+      "eventmgmt": {
+        "title": "Event Management System",
+        "description": "Comprehensive event organisation platform with ticketing and accreditation.",
+        "fullDescription": "The system can include: event creation with agenda and speakers, ticket sales in multiple categories, QR code accreditation at entry, event page with registration, sponsor and exhibitor management, mobile app for attendees. Stack: Laravel + Vue.js + Android + Stripe + MySQL."
+      },
+      "transport": {
+        "title": "CRM for Transport Companies",
+        "description": "System for managing transport orders, fleet and drivers.",
+        "fullDescription": "The system can include: client and shipper database, full truck load and groupage order management, driver and vehicle assignment, GPS fleet tracking, CMR and transport documents, driver and client billing, freight exchange integration. Stack: Laravel + Vue.js + Google Maps + MySQL + Redis."
       }
     }
   },
@@ -464,17 +948,17 @@
       "q2": "Do you offer support after project completion?",
       "a2": "Yes, every project comes with a 6-month warranty. We also offer technical support and system maintenance packages.",
       "q3": "What technologies do you use?",
-      "a3": "We specialize in Laravel (PHP) and Vue.js. We also use MySQL, PostgreSQL, Redis, Docker and many other proven technologies.",
+      "a3": "We specialize in Laravel (PHP), Vue.js and native Android (Kotlin/Java). We also use MySQL, PostgreSQL, Redis, Docker and many other proven technologies.",
       "q4": "How much does it cost to create a website/application?",
       "a4": "Prices start from 2500 PLN for a simple business card website. Each project is priced individually - we prepare a free quote within 24 hours.",
-      "q5": "Can I see your previous work?",
-      "a5": "Of course! Visit our Portfolio section where you'll find examples of completed projects from various industries.",
+      "q5": "Can I see examples of your work?",
+      "a5": "Of course! Visit our Inspirations section where you'll find examples of what we can build — websites, web apps, CRM systems and Android mobile apps.",
       "q6": "Do you sign a contract?",
       "a6": "Yes, we start every collaboration with a contract that protects both parties. Upon request, we also sign NDAs."
     }
   },
   "footer": {
-    "description": "We create modern websites and web applications using the latest technologies. Laravel, Vue.js and passion for code.",
+    "description": "We build web applications (Laravel + Vue.js) and mobile apps (Android). Clean code, clear process, honest pricing.",
     "quickLinks": "Quick links",
     "contact": "Contact",
     "copyright": "All rights reserved."
@@ -488,19 +972,14 @@
     "backHome": "Back to homepage",
     "contact": "Contact us"
   },
-  "trustedBy": {
-    "title": "Trusted by",
-    "subtitle": "Join the group of satisfied clients who chose professional solutions",
-    "clients": ["TechCorp", "InnovateLab", "DataFlow", "CloudSys", "SmartBiz", "DigiPro"]
-  },
   "packages": {
     "title": "Transparent",
     "titleHighlight": "pricing packages",
-    "subtitle": "Choose a package tailored to your needs. Each includes full support and quality guarantee.",
+    "subtitle": "Indicative price ranges. Each project is quoted individually after requirements analysis.",
     "popular": "Most popular",
     "starter": {
       "name": "Starter",
-      "description": "Perfect for small businesses getting started",
+      "description": "Business card website for small companies",
       "price": "from 2,500",
       "currency": "PLN",
       "features": [
@@ -511,39 +990,37 @@
         "1 month support",
         "12 months hosting"
       ],
-      "cta": "Choose Starter"
+      "cta": "Request a quote"
     },
     "business": {
       "name": "Business",
-      "description": "Complete solution for growing companies",
+      "description": "Extended website or small web application",
       "price": "from 6,000",
       "currency": "PLN",
       "features": [
-        "Website up to 15 pages",
+        "Website up to 15 pages or application",
         "Advanced SEO + analytics",
         "CMS admin panel",
-        "Social media integration",
         "Company blog",
         "3 months support",
         "Performance optimization",
         "Training session"
       ],
-      "cta": "Choose Business"
+      "cta": "Request a quote"
     },
     "enterprise": {
       "name": "Enterprise",
-      "description": "Advanced solutions for large projects",
+      "description": "Complex web systems or mobile applications",
       "price": "Custom quote",
       "currency": "",
       "features": [
-        "Custom web application",
-        "Dedicated API",
+        "Custom web or mobile application",
+        "Dedicated REST API",
         "External system integrations",
         "Advanced architecture",
-        "Priority 24/7 support",
-        "SLA 99.9% uptime",
-        "Dedicated project manager",
-        "Full technical documentation"
+        "Priority support",
+        "Full technical documentation",
+        "Dedicated project manager"
       ],
       "cta": "Schedule consultation"
     },
@@ -552,7 +1029,7 @@
   "guarantees": {
     "title": "Guarantees we",
     "titleHighlight": "provide",
-    "subtitle": "Your success is our priority. That's why we offer concrete guarantees.",
+    "subtitle": "Concrete commitments, not marketing slogans.",
     "items": {
       "satisfaction": {
         "title": "Satisfaction guarantee",
@@ -580,45 +1057,6 @@
       }
     }
   },
-  "results": {
-    "title": "Measurable",
-    "titleHighlight": "results",
-    "subtitle": "Our projects bring real business benefits to clients.",
-    "cases": [
-      {
-        "client": "Electronics store",
-        "metric": "+247%",
-        "description": "online sales increase after new store launch",
-        "details": "New store with fast loading and intuitive UX"
-      },
-      {
-        "client": "Logistics company",
-        "metric": "-60%",
-        "description": "order processing time reduction thanks to CRM",
-        "details": "Process automation and courier integration"
-      },
-      {
-        "client": "Law firm",
-        "metric": "+180%",
-        "description": "more client inquiries from new website",
-        "details": "SEO optimization and new contact form"
-      },
-      {
-        "client": "Restaurant chain",
-        "metric": "5x",
-        "description": "more online orders after system implementation",
-        "details": "Order system with kitchen integration"
-      }
-    ]
-  },
-  "urgency": {
-    "badge": "Limited offer",
-    "title": "Free quote + SEO audit",
-    "subtitle": "For the first 5 inquiries this month we provide a free SEO audit worth 500 PLN",
-    "cta": "Get free quote",
-    "spots": "Spots remaining:",
-    "expires": "Offer valid until end of month"
-  },
   "comparison": {
     "title": "Why choose",
     "titleHighlight": "professionals?",
@@ -634,13 +1072,13 @@
         "name": "Responsiveness",
         "amateur": "Partial",
         "agency": "Yes",
-        "gesoft": "Mobile-first + tested on 50+ devices"
+        "gesoft": "Mobile-first, tested on devices"
       },
       {
         "name": "Performance",
         "amateur": "Slow loading",
         "agency": "Standard",
-        "gesoft": "< 2s loading, Core Web Vitals"
+        "gesoft": "Core Web Vitals optimization"
       },
       {
         "name": "SEO",
@@ -652,19 +1090,19 @@
         "name": "Security",
         "amateur": "Minimal",
         "agency": "Standard",
-        "gesoft": "Enterprise-grade + audits"
+        "gesoft": "OWASP Top 10 + regular audits"
       },
       {
-        "name": "Support",
+        "name": "Post-launch support",
         "amateur": "None",
         "agency": "Limited",
-        "gesoft": "Dedicated manager"
+        "gesoft": "6 months warranty"
       },
       {
-        "name": "Scalability",
-        "amateur": "None",
-        "agency": "Limited",
-        "gesoft": "From MVP to enterprise"
+        "name": "Source code",
+        "amateur": "Usually no access",
+        "agency": "Depends on contract",
+        "gesoft": "Full code ownership"
       }
     ]
   },
@@ -688,9 +1126,21 @@
     "performance": {
       "title": "Performance",
       "metrics": [
-        { "label": "Loading time", "value": "< 2s", "description": "Optimized for Core Web Vitals" },
-        { "label": "PageSpeed Score", "value": "95+", "description": "Green results in Google PageSpeed" },
-        { "label": "Uptime", "value": "99.9%", "description": "Guaranteed service availability" }
+        {
+          "label": "Loading time",
+          "value": "< 2s",
+          "description": "Optimized for Core Web Vitals"
+        },
+        {
+          "label": "PageSpeed Score",
+          "value": "95+",
+          "description": "Green results in Google PageSpeed"
+        },
+        {
+          "label": "Uptime",
+          "value": "99.9%",
+          "description": "Guaranteed service availability"
+        }
       ]
     },
     "security": {
@@ -701,7 +1151,7 @@
         "XSS and CSRF protection",
         "Regular backups",
         "Data encryption",
-        "24/7 Monitoring"
+        "Monitoring"
       ]
     },
     "standards": {
@@ -719,11 +1169,5 @@
   "floatingCta": {
     "question": "Have questions?",
     "cta": "Let's talk"
-  },
-  "socialProof": {
-    "rating": "4.9/5",
-    "reviews": "based on 47 reviews",
-    "google": "Google",
-    "clutch": "Clutch"
   }
 }

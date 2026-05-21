@@ -1,0 +1,46 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  <rect width="400" height="28" fill="white"/>
+  <circle cx="14" cy="14" r="5" fill="#ef4444"/>
+  <circle cx="28" cy="14" r="5" fill="#f59e0b"/>
+  <circle cx="42" cy="14" r="5" fill="#22c55e"/>
+  <rect x="60" y="6" width="200" height="16" rx="8" fill="#f1f5f9"/>
+  <rect width="70" height="272" y="28" fill="#0284c7"/>
+  <text x="35" y="53" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="700" fill="white">Dentysta</text>
+  <rect x="8" y="62" width="54" height="18" rx="4" fill="white" opacity=".2"/>
+  <rect x="8" y="86" width="54" height="18" rx="4" fill="white" opacity=".15"/>
+  <rect x="8" y="110" width="54" height="18" rx="4" fill="white" opacity=".15"/>
+  <rect x="8" y="134" width="54" height="18" rx="4" fill="white" opacity=".15"/>
+  <rect x="8" y="158" width="54" height="18" rx="4" fill="white" opacity=".15"/>
+  <text x="35" y="75" text-anchor="middle" font-family="sans-serif" font-size="6" fill="white">Pulpit</text>
+  <text x="35" y="99" text-anchor="middle" font-family="sans-serif" font-size="6" fill="white" opacity=".8">Klienci</text>
+  <text x="35" y="123" text-anchor="middle" font-family="sans-serif" font-size="6" fill="white" opacity=".8">Raporty</text>
+  <text x="35" y="147" text-anchor="middle" font-family="sans-serif" font-size="6" fill="white" opacity=".8">Zadania</text>
+  <text x="35" y="171" text-anchor="middle" font-family="sans-serif" font-size="6" fill="white" opacity=".8">Ustawienia</text>
+  <rect x="78" y="36" width="114" height="50" rx="6" fill="white"/>
+  <rect x="200" y="36" width="88" height="50" rx="6" fill="white"/>
+  <rect x="296" y="36" width="96" height="50" rx="6" fill="white"/>
+  <text x="90" y="52" font-family="sans-serif" font-size="7" fill="#64748b">Pacjenci</text>
+  <text x="90" y="68" font-family="sans-serif" font-size="14" font-weight="700" fill="#0284c7">892</text>
+  <text x="212" y="52" font-family="sans-serif" font-size="7" fill="#64748b">Wizyty dziś</text>
+  <text x="212" y="68" font-family="sans-serif" font-size="14" font-weight="700" fill="#0284c7">14</text>
+  <text x="308" y="52" font-family="sans-serif" font-size="7" fill="#64748b">Zaplanowane</text>
+  <text x="308" y="68" font-family="sans-serif" font-size="14" font-weight="700" fill="#0284c7">67</text>
+  <rect x="78" y="94" width="314" height="120" rx="6" fill="white"/>
+  <rect x="88" y="102" width="60" height="7" rx="3" fill="#0284c7" opacity=".3"/>
+  <rect x="88" y="116" width="294" height="1" fill="#e2e8f0"/>
+  <text x="88" y="130" font-family="sans-serif" font-size="7" fill="#475569">Kowalski Jan — 10:00 — Leczenie kanałowe</text>
+  <rect x="88" y="136" width="294" height="1" fill="#e2e8f0"/>
+  <text x="88" y="150" font-family="sans-serif" font-size="7" fill="#475569">Nowak Anna — 11:30 — Kontrola / czyszczenie</text>
+  <rect x="88" y="156" width="294" height="1" fill="#e2e8f0"/>
+  <text x="88" y="170" font-family="sans-serif" font-size="7" fill="#475569">Wiśniewska E. — 13:00 — Wybielanie</text>
+  <rect x="78" y="222" width="150" height="50" rx="6" fill="white"/>
+  <rect x="236" y="222" width="156" height="50" rx="6" fill="white"/>
+  <rect x="88" y="232" width="100" height="6" rx="3" fill="#0284c7" opacity=".5"/>
+  <rect x="88" y="244" width="80" height="16" rx="2" fill="#0284c7" opacity=".15"/>
+  <rect x="88" y="252" width="80" height="8" rx="2" fill="#0284c7"/>
+  <rect x="246" y="232" width="100" height="6" rx="3" fill="#0284c7" opacity=".5"/>
+  <rect x="246" y="244" width="130" height="18" rx="3" fill="#f1f5f9"/>
+  <rect x="246" y="248" width="120" height="6" rx="3" fill="#0284c7" opacity=".3"/>
+  <rect x="246" y="260" width="100" height="6" rx="3" fill="#0284c7" opacity=".2"/>
+</svg>

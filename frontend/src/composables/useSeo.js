@@ -56,14 +56,14 @@ const seoConfig = {
   },
   portfolio: {
     pl: {
-      title: 'Portfolio - GESOFT | Nasze realizacje',
-      description: 'Zobacz nasze zrealizowane projekty: systemy CRM, sklepy internetowe, aplikacje webowe, strony firmowe. Ponad 50 zadowolonych klientów.',
-      keywords: 'portfolio, realizacje, projekty, CRM, sklepy internetowe, aplikacje, strony firmowe'
+      title: 'Inspiracje - GESOFT | Przykłady projektów',
+      description: 'Przykłady projektów które możemy zbudować: systemy CRM, sklepy internetowe, aplikacje webowe, strony firmowe, aplikacje mobilne Android.',
+      keywords: 'inspiracje, przykłady projektów, CRM, sklepy internetowe, aplikacje webowe, aplikacje Android, strony firmowe'
     },
     en: {
-      title: 'Portfolio - GESOFT | Our Projects',
-      description: 'See our completed projects: CRM systems, e-commerce stores, web applications, corporate websites. Over 50 satisfied clients.',
-      keywords: 'portfolio, projects, CRM, e-commerce, applications, corporate websites'
+      title: 'Inspirations - GESOFT | Project Examples',
+      description: 'Project examples we can build: CRM systems, e-commerce stores, web applications, corporate websites, Android mobile apps.',
+      keywords: 'inspirations, project examples, CRM, e-commerce, web apps, Android apps, corporate websites'
     }
   },
   contact: {
@@ -295,7 +295,7 @@ export function useSeo() {
         about: { pl: 'O nas', en: 'About Us' },
         services: { pl: 'Usługi', en: 'Services' },
         technologies: { pl: 'Technologie', en: 'Technologies' },
-        portfolio: { pl: 'Portfolio', en: 'Portfolio' },
+        portfolio: { pl: 'Inspiracje', en: 'Inspirations' },
         contact: { pl: 'Kontakt', en: 'Contact' }
       }
 
