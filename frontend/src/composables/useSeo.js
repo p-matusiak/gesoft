@@ -201,7 +201,7 @@ export function useSeo() {
           'name': 'GESOFT',
           'legalName': 'GESOFT Paweł Matusiak',
           'url': BASE_URL,
-          'logo': `${BASE_URL}/logo.svg`,
+          'logo': `${BASE_URL}/logo.png`,
           'image': `${BASE_URL}/og-image.svg`,
           'description': lang === 'pl'
             ? 'Profesjonalne tworzenie stron i aplikacji webowych'
@@ -254,7 +254,7 @@ export function useSeo() {
         '@type': 'LocalBusiness',
         '@id': `${BASE_URL}/#localbusiness`,
         'name': 'GESOFT',
-        'image': `${BASE_URL}/logo.svg`,
+        'image': `${BASE_URL}/logo.png`,
         'telephone': '+48-517-123-374',
         'email': 'biuro@gesoft.pl',
         'address': {

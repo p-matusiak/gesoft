@@ -6,7 +6,7 @@
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <router-link to="/" class="flex items-center">
-          <img src="/logo.svg" alt="GESOFT - Strony i aplikacje webowe" class="h-6 sm:h-7 md:h-8 w-auto" width="120" height="32" />
+          <img src="/logo.png" alt="GESOFT - Strony i aplikacje webowe" class="h-6 sm:h-7 md:h-8 w-auto" width="160" height="32" />
         </router-link>
 
         <!-- Desktop Navigation -->

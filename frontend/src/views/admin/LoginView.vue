@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="text-center mb-8">
         <router-link to="/" class="inline-block">
-          <img src="/logo.svg" alt="GESOFT" class="h-12 w-auto mx-auto" width="200" height="48" />
+          <img src="/logo.png" alt="GESOFT" class="h-12 w-auto mx-auto" width="240" height="48" />
         </router-link>
         <h1 class="text-2xl font-bold text-gray-900 mt-6">Panel Administracyjny</h1>
         <p class="text-dark-400 mt-2">Zaloguj się, aby zarządzać zapytaniami</p>

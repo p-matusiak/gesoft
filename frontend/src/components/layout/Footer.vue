@@ -5,7 +5,7 @@
         <!-- Description -->
         <div class="md:col-span-2">
           <router-link to="/" class="inline-block mb-4">
-            <img src="/logo.svg" alt="GESOFT" class="h-10 w-auto" width="180" height="40" />
+            <img src="/logo.png" alt="GESOFT" class="h-10 w-auto" width="200" height="40" />
           </router-link>
           <p class="text-gray-900 font-semibold mb-1">GESOFT Paweł Matusiak</p>
           <p class="text-gray-500 text-sm mb-3">NIP: 9372553467</p>

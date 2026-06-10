@@ -4,10 +4,10 @@
       <!-- Logo -->
       <div class="mb-8 flex items-center justify-center">
         <img
-          src="/logo.svg"
+          src="/logo.png"
           alt="GESOFT"
           class="h-8 sm:h-10 md:h-12 w-auto"
-          width="200"
+          width="240"
           height="48"
         />
       </div>
