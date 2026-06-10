@@ -107,9 +107,9 @@
                 {{ tech }}
               </span>
             </div>
-            <router-link to="/kontakt" class="btn-primary w-full text-center">
+            <button @click="goToContact(selectedProject)" class="btn-primary w-full text-center">
               {{ $t('portfolio.wantSimilar') }}
-            </router-link>
+            </button>
           </div>
         </div>
       </div>
@@ -135,8 +135,10 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 
 const { t } = useI18n()
+const router = useRouter()
 
 const activeCategory = ref('all')
 const selectedProject = ref(null)
@@ -249,6 +251,12 @@ const openModal = (project) => {
 const closeModal = () => {
   selectedProject.value = null
   document.body.style.overflow = ''
+}
+
+const goToContact = (project) => {
+  selectedProject.value = null
+  document.body.style.overflow = ''
+  router.push({ path: '/kontakt', query: { projekt: project.title } })
 }
 </script>
 

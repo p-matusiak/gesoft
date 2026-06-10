@@ -364,11 +364,13 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 import axios from 'axios'
 
 const { t } = useI18n()
+const route = useRoute()
 
 const form = reactive({
   email: '',
@@ -384,6 +386,13 @@ const errors = reactive({
 const isSubmitting = ref(false)
 const successMessage = ref('')
 const errorMessage = ref('')
+
+onMounted(() => {
+  const projekt = route.query.projekt
+  if (projekt) {
+    form.message = `Dzień dobry,\nJestem zainteresowany/a projektem: "${projekt}"\n\n`
+  }
+})
 
 const faq1Open = ref(false)
 const faq2Open = ref(false)
