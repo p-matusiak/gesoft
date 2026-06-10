@@ -1,6 +1,17 @@
 <template>
   <section class="relative bg-white pt-32 pb-16 sm:pt-36 sm:pb-20 border-b border-gray-200">
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <!-- Logo -->
+      <div class="mb-8 flex items-center justify-center">
+        <img
+          src="/logo.svg"
+          alt="GESOFT"
+          class="h-8 sm:h-10 md:h-12 w-auto"
+          width="200"
+          height="48"
+        />
+      </div>
+
       <!-- Tech Badge -->
       <div class="mb-6 flex items-center justify-center">
         <span class="inline-block px-3 py-1.5 bg-gray-100 rounded-full text-xs sm:text-sm font-medium text-gray-700 border border-gray-200">

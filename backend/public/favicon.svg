@@ -1,105 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 130">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" role="img" aria-label="GESOFT">
   <defs>
-    <!-- Enhanced vibrant gradient -->
-    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#06d6a0"/>
-      <stop offset="50%" style="stop-color:#0ea5e9"/>
-      <stop offset="100%" style="stop-color:#6366f1"/>
+    <linearGradient id="gGrad" x1="12" y1="12" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e8001d"/>
+      <stop offset="100%" stop-color="#7a000c"/>
     </linearGradient>
-    
-    <!-- Subtle highlight for 3D effect -->
-    <linearGradient id="pixelHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(255,255,255,0.3)"/>
-      <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
-    </linearGradient>
-    
-    <!-- Shadow filter -->
-    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#0ea5e9" flood-opacity="0.3"/>
-    </filter>
-    
-    <!-- Text shadow -->
-    <filter id="textGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.1"/>
-    </filter>
   </defs>
-  
-  <!-- Icon: Enhanced 3D pixel G -->
-  <g transform="translate(18, 18)" filter="url(#softShadow)">
-    <!-- Pixel grid forming G - with layered 3D effect -->
-    
-    <!-- Row 1 -->
-    <g transform="translate(20, 0)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    <g transform="translate(42, 0)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    <g transform="translate(64, 0)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    
-    <!-- Row 2 -->
-    <g transform="translate(0, 22)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    
-    <!-- Row 3 - middle -->
-    <g transform="translate(0, 44)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    <g transform="translate(42, 44)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)" opacity="0.6"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    <g transform="translate(64, 44)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    
-    <!-- Row 4 -->
-    <g transform="translate(0, 66)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    <g transform="translate(64, 66)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    
-    <!-- Row 5 - bottom -->
-    <g transform="translate(20, 88)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    <g transform="translate(42, 88)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-    <g transform="translate(64, 88)">
-      <rect width="17" height="17" rx="3" fill="url(#mainGradient)"/>
-      <rect width="17" height="8" rx="3" fill="url(#pixelHighlight)"/>
-    </g>
-  </g>
-  
-  <!-- Connecting accent line -->
-  <rect x="115" y="62" width="4" height="28" rx="2" fill="url(#mainGradient)" opacity="0.4"/>
-  
-  <!-- Company name - premium typography -->
-  <g filter="url(#textGlow)">
-    <text x="130" y="78" font-family="Arial Black, Helvetica, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">
-      <tspan fill="url(#mainGradient)">GE</tspan><tspan fill="#1a1a2e">SOFT</tspan>
-    </text>
-  </g>
-  
-  <!-- Tagline with accent dot -->
-  <circle cx="133" cy="100" r="3" fill="url(#mainGradient)"/>
-  <text x="145" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#64748b" letter-spacing="2" font-weight="500">
-    BUILDING DIGITAL FUTURE
-  </text>
+  <!-- G icon scaled to 140×140: center (70,70), outer r=58, inner r=35, opening ~65° at upper-right -->
+  <path
+    d="M 128,70 A 58,58 0 1,1 95,17 L 85,38 A 35,35 0 1,0 105,70 Z"
+    fill="url(#gGrad)"
+  />
 </svg>

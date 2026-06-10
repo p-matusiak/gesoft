@@ -15,14 +15,14 @@
               <router-link
                 to="/admin/dashboard"
                 class="px-3 py-2 rounded-lg text-sm font-medium transition-colors"
-                :class="$route.name === 'admin-dashboard' ? 'bg-dark-700 text-white' : 'text-dark-400 hover:text-white'"
+                :class="$route.name === 'admin-dashboard' ? 'bg-dark-700 text-gray-900' : 'text-dark-400 hover:text-gray-900'"
               >
                 Dashboard
               </router-link>
               <router-link
                 to="/admin/requests"
                 class="px-3 py-2 rounded-lg text-sm font-medium transition-colors"
-                :class="$route.name === 'admin-requests' ? 'bg-dark-700 text-white' : 'text-dark-400 hover:text-white'"
+                :class="$route.name === 'admin-requests' ? 'bg-dark-700 text-gray-900' : 'text-dark-400 hover:text-gray-900'"
               >
                 Zapytania
               </router-link>
@@ -32,7 +32,7 @@
             <span class="text-dark-400 text-sm hidden sm:block">{{ authStore.user?.email }}</span>
             <button
               @click="handleLogout"
-              class="px-4 py-2 bg-dark-700 text-dark-300 rounded-lg hover:bg-dark-600 hover:text-white transition-colors text-sm"
+              class="px-4 py-2 bg-dark-700 text-dark-300 rounded-lg hover:bg-dark-600 hover:text-gray-900 transition-colors text-sm"
             >
               Wyloguj
             </button>
@@ -44,7 +44,7 @@
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div class="mb-8">
-        <h1 class="text-3xl font-bold text-white">Dashboard</h1>
+        <h1 class="text-3xl font-bold text-gray-900">Dashboard</h1>
         <p class="text-dark-400 mt-1">Przegląd zapytań ofertowych</p>
       </div>
 
@@ -54,7 +54,7 @@
           <div class="flex items-center justify-between">
             <div>
               <p class="text-dark-400 text-sm">Wszystkie zapytania</p>
-              <p class="text-3xl font-bold text-white mt-1">{{ stats.total }}</p>
+              <p class="text-3xl font-bold text-gray-900 mt-1">{{ stats.total }}</p>
             </div>
             <div class="w-12 h-12 bg-primary-500/20 rounded-xl flex items-center justify-center">
               <svg class="w-6 h-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@
           <div class="flex items-center justify-between">
             <div>
               <p class="text-dark-400 text-sm">Nowe</p>
-              <p class="text-3xl font-bold text-white mt-1">{{ stats.new }}</p>
+              <p class="text-3xl font-bold text-gray-900 mt-1">{{ stats.new }}</p>
             </div>
             <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
               <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,7 +82,7 @@
           <div class="flex items-center justify-between">
             <div>
               <p class="text-dark-400 text-sm">Przeczytane</p>
-              <p class="text-3xl font-bold text-white mt-1">{{ stats.read }}</p>
+              <p class="text-3xl font-bold text-gray-900 mt-1">{{ stats.read }}</p>
             </div>
             <div class="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center">
               <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,7 +97,7 @@
           <div class="flex items-center justify-between">
             <div>
               <p class="text-dark-400 text-sm">Obsłużone</p>
-              <p class="text-3xl font-bold text-white mt-1">{{ stats.responded }}</p>
+              <p class="text-3xl font-bold text-gray-900 mt-1">{{ stats.responded }}</p>
             </div>
             <div class="w-12 h-12 bg-secondary-500/20 rounded-xl flex items-center justify-center">
               <svg class="w-6 h-6 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,7 +111,7 @@
       <!-- Recent Requests -->
       <div class="glass-card overflow-hidden">
         <div class="px-6 py-4 border-b border-dark-700 flex items-center justify-between">
-          <h2 class="text-lg font-semibold text-white">Ostatnie zapytania</h2>
+          <h2 class="text-lg font-semibold text-gray-900">Ostatnie zapytania</h2>
           <router-link to="/admin/requests" class="text-primary-400 hover:text-primary-300 text-sm">
             Zobacz wszystkie →
           </router-link>
@@ -138,7 +138,7 @@
                   {{ request.email.charAt(0).toUpperCase() }}
                 </div>
                 <div>
-                  <p class="text-white font-medium">{{ request.email }}</p>
+                  <p class="text-gray-900 font-medium">{{ request.email }}</p>
                   <p class="text-dark-400 text-sm truncate max-w-md">{{ request.message }}</p>
                 </div>
               </div>

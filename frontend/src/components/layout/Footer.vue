@@ -4,6 +4,9 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Description -->
         <div class="md:col-span-2">
+          <router-link to="/" class="inline-block mb-4">
+            <img src="/logo.svg" alt="GESOFT" class="h-10 w-auto" width="180" height="40" />
+          </router-link>
           <p class="text-gray-900 font-semibold mb-1">GESOFT Paweł Matusiak</p>
           <p class="text-gray-500 text-sm mb-3">NIP: 9372553467</p>
           <p class="text-gray-600 mb-4 max-w-md">

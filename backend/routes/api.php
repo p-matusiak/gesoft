@@ -21,4 +21,5 @@ Route::middleware('auth:sanctum')->prefix('admin')->group(function () {
     Route::get('/requests', [RequestController::class, 'index']);
     Route::get('/requests/{contactRequest}', [RequestController::class, 'show']);
     Route::patch('/requests/{contactRequest}', [RequestController::class, 'update']);
+    Route::post('/requests/{contactRequest}/reply', [RequestController::class, 'reply']);
 });

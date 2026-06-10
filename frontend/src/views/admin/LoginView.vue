@@ -3,13 +3,10 @@
     <div class="w-full max-w-md">
       <!-- Logo -->
       <div class="text-center mb-8">
-        <router-link to="/" class="inline-flex items-center space-x-2">
-          <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center">
-            <span class="text-white font-bold text-2xl">G</span>
-          </div>
-          <span class="text-2xl font-bold gradient-text">GESOFT</span>
+        <router-link to="/" class="inline-block">
+          <img src="/logo.svg" alt="GESOFT" class="h-12 w-auto mx-auto" width="200" height="48" />
         </router-link>
-        <h1 class="text-2xl font-bold text-white mt-6">Panel Administracyjny</h1>
+        <h1 class="text-2xl font-bold text-gray-900 mt-6">Panel Administracyjny</h1>
         <p class="text-dark-400 mt-2">Zaloguj się, aby zarządzać zapytaniami</p>
       </div>
 
@@ -70,18 +67,12 @@
         </form>
 
         <div class="mt-6 text-center">
-          <router-link to="/" class="text-dark-400 hover:text-white text-sm transition-colors">
+          <router-link to="/" class="text-dark-400 hover:text-gray-900 text-sm transition-colors">
             ← Powrót do strony głównej
           </router-link>
         </div>
       </div>
 
-      <!-- Demo credentials -->
-      <div class="mt-6 glass-card p-4 text-center">
-        <p class="text-dark-400 text-sm">
-          <strong class="text-dark-300">Demo:</strong> admin@gesoft.pl / password
-        </p>
-      </div>
     </div>
   </div>
 </template>

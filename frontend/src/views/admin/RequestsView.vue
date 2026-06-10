@@ -15,14 +15,14 @@
               <router-link
                 to="/admin/dashboard"
                 class="px-3 py-2 rounded-lg text-sm font-medium transition-colors"
-                :class="$route.name === 'admin-dashboard' ? 'bg-dark-700 text-white' : 'text-dark-400 hover:text-white'"
+                :class="$route.name === 'admin-dashboard' ? 'bg-dark-700 text-gray-900' : 'text-dark-400 hover:text-gray-900'"
               >
                 Dashboard
               </router-link>
               <router-link
                 to="/admin/requests"
                 class="px-3 py-2 rounded-lg text-sm font-medium transition-colors"
-                :class="$route.name === 'admin-requests' ? 'bg-dark-700 text-white' : 'text-dark-400 hover:text-white'"
+                :class="$route.name === 'admin-requests' ? 'bg-dark-700 text-gray-900' : 'text-dark-400 hover:text-gray-900'"
               >
                 Zapytania
               </router-link>
@@ -32,7 +32,7 @@
             <span class="text-dark-400 text-sm hidden sm:block">{{ authStore.user?.email }}</span>
             <button
               @click="handleLogout"
-              class="px-4 py-2 bg-dark-700 text-dark-300 rounded-lg hover:bg-dark-600 hover:text-white transition-colors text-sm"
+              class="px-4 py-2 bg-dark-700 text-dark-300 rounded-lg hover:bg-dark-600 hover:text-gray-900 transition-colors text-sm"
             >
               Wyloguj
             </button>
@@ -45,7 +45,7 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div class="mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 class="text-3xl font-bold text-white">Zapytania ofertowe</h1>
+          <h1 class="text-3xl font-bold text-gray-900">Zapytania ofertowe</h1>
           <p class="text-dark-400 mt-1">Zarządzaj zapytaniami od klientów</p>
         </div>
         <div class="flex gap-2">
@@ -54,7 +54,7 @@
             :key="filter.value"
             @click="currentFilter = filter.value"
             class="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-            :class="currentFilter === filter.value ? 'bg-primary-500 text-white' : 'bg-dark-800 text-dark-400 hover:text-white'"
+            :class="currentFilter === filter.value ? 'bg-primary-500 text-white' : 'bg-dark-800 text-dark-400 hover:text-gray-900'"
           >
             {{ filter.label }}
           </button>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center gap-2 flex-wrap">
-                    <p class="text-white font-medium">{{ request.email }}</p>
+                    <p class="text-gray-900 font-medium">{{ request.email }}</p>
                     <span
                       class="px-2 py-0.5 rounded-full text-xs font-medium"
                       :class="getStatusClass(request.status)"
@@ -132,11 +132,11 @@
 
     <!-- Detail Modal -->
     <transition name="modal">
-      <div v-if="selectedRequest" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-900/80 backdrop-blur-sm" @click="closeDetail">
+      <div v-if="selectedRequest" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-gray-900/60 backdrop-blur-sm" @click="closeDetail">
         <div class="glass-card max-w-2xl w-full max-h-[90vh] overflow-y-auto" @click.stop>
           <div class="px-6 py-4 border-b border-dark-700 flex items-center justify-between">
-            <h2 class="text-xl font-bold text-white">Szczegóły zapytania</h2>
-            <button @click="closeDetail" class="text-dark-400 hover:text-white">
+            <h2 class="text-xl font-bold text-gray-900">Szczegóły zapytania</h2>
+            <button @click="closeDetail" class="text-dark-400 hover:text-gray-600">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
               </svg>
@@ -146,19 +146,19 @@
             <div class="space-y-4">
               <div>
                 <label class="text-dark-400 text-sm">Email</label>
-                <p class="text-white">{{ selectedRequest.email }}</p>
+                <p class="text-gray-900">{{ selectedRequest.email }}</p>
               </div>
               <div v-if="selectedRequest.phone">
                 <label class="text-dark-400 text-sm">Telefon</label>
-                <p class="text-white">{{ selectedRequest.phone }}</p>
+                <p class="text-gray-900">{{ selectedRequest.phone }}</p>
               </div>
               <div>
                 <label class="text-dark-400 text-sm">Wiadomość</label>
-                <p class="text-white whitespace-pre-wrap">{{ selectedRequest.message }}</p>
+                <p class="text-gray-900 whitespace-pre-wrap">{{ selectedRequest.message }}</p>
               </div>
               <div>
                 <label class="text-dark-400 text-sm">Data</label>
-                <p class="text-white">{{ formatDateFull(selectedRequest.created_at) }}</p>
+                <p class="text-gray-900">{{ formatDateFull(selectedRequest.created_at) }}</p>
               </div>
               <div>
                 <label class="text-dark-400 text-sm mb-2 block">Status</label>
@@ -168,10 +168,51 @@
                     :key="status.value"
                     @click="updateStatus(selectedRequest.id, status.value)"
                     class="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                    :class="selectedRequest.status === status.value ? status.activeClass : 'bg-dark-700 text-dark-400 hover:text-white'"
+                    :class="selectedRequest.status === status.value ? status.activeClass : 'bg-dark-700 text-dark-400 hover:text-gray-900'"
                   >
                     {{ status.label }}
                   </button>
+                </div>
+              </div>
+
+              <!-- Poprzednia odpowiedź -->
+              <div v-if="selectedRequest.admin_reply" class="border border-dark-600 rounded-lg p-4 bg-dark-800/50">
+                <label class="text-dark-400 text-sm block mb-1">Wysłana odpowiedź <span class="text-dark-500">({{ formatDateFull(selectedRequest.replied_at) }})</span></label>
+                <p class="text-dark-300 whitespace-pre-wrap text-sm">{{ selectedRequest.admin_reply }}</p>
+              </div>
+
+              <!-- Formularz odpowiedzi -->
+              <div class="border-t border-dark-700 pt-4">
+                <label class="text-dark-400 text-sm mb-2 block">
+                  {{ selectedRequest.admin_reply ? 'Wyślij ponowną odpowiedź' : 'Odpowiedz klientowi' }}
+                </label>
+                <textarea
+                  v-model="replyText"
+                  rows="5"
+                  class="w-full bg-dark-800 border border-dark-600 text-gray-900 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary-500 resize-none placeholder-gray-400"
+                  placeholder="Wpisz odpowiedź dla klienta..."
+                ></textarea>
+                <div v-if="replyMessage" class="mt-2 text-sm" :class="replySuccess ? 'text-green-400' : 'text-red-400'">
+                  {{ replyMessage }}
+                </div>
+                <div class="mt-3 flex items-center gap-3">
+                  <button
+                    @click="sendReply(selectedRequest.id)"
+                    :disabled="isSendingReply || !replyText.trim()"
+                    class="px-5 py-2 bg-primary-600 hover:bg-primary-500 text-white rounded-lg text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                  >
+                    <svg v-if="isSendingReply" class="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
+                      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <svg v-else class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                    </svg>
+                    {{ isSendingReply ? 'Wysyłanie...' : 'Wyślij odpowiedź' }}
+                  </button>
+                  <span v-if="selectedRequest.phone" class="text-dark-400 text-xs">
+                    📱 SMS zostanie wysłany na {{ selectedRequest.phone }}
+                  </span>
                 </div>
               </div>
             </div>
@@ -195,6 +236,10 @@ const isLoading = ref(true)
 const requests = ref([])
 const selectedRequest = ref(null)
 const currentFilter = ref('all')
+const replyText = ref('')
+const isSendingReply = ref(false)
+const replyMessage = ref('')
+const replySuccess = ref(false)
 
 const pagination = reactive({
   currentPage: 1,
@@ -253,12 +298,40 @@ const goToPage = (page) => {
 
 const openDetail = (request) => {
   selectedRequest.value = { ...request }
+  replyText.value = ''
+  replyMessage.value = ''
+  replySuccess.value = false
   document.body.style.overflow = 'hidden'
+  if (request.status === 'new') {
+    updateStatus(request.id, 'read')
+  }
 }
 
 const closeDetail = () => {
   selectedRequest.value = null
+  replyText.value = ''
+  replyMessage.value = ''
   document.body.style.overflow = ''
+}
+
+const sendReply = async (id) => {
+  if (!replyText.value.trim()) return
+  isSendingReply.value = true
+  replyMessage.value = ''
+  try {
+    const response = await axios.post(`/api/admin/requests/${id}/reply`, { reply: replyText.value })
+    replySuccess.value = true
+    replyMessage.value = response.data.message
+    selectedRequest.value = response.data.data
+    replyText.value = ''
+    const index = requests.value.findIndex(r => r.id === id)
+    if (index !== -1) requests.value[index] = response.data.data
+  } catch (error) {
+    replySuccess.value = false
+    replyMessage.value = error.response?.data?.message || 'Błąd wysyłania odpowiedzi.'
+  } finally {
+    isSendingReply.value = false
+  }
 }
 
 const updateStatus = async (id, status) => {

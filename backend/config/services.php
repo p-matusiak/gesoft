@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'smsapi' => [
+        'token'  => env('SMSAPI_TOKEN'),
+        'sender' => env('SMSAPI_SENDER', 'GESOFT'),
+    ],
+
 ];

@@ -11,10 +11,13 @@ class ContactRequest extends Model
         'phone',
         'message',
         'status',
+        'admin_reply',
+        'replied_at',
     ];
 
     protected $casts = [
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
+        'replied_at' => 'datetime',
     ];
 }
