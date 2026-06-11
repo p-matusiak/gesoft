@@ -144,6 +144,66 @@
       </div>
     </section>
 
+    <!-- Od pomysłu do gotowej aplikacji -->
+    <section class="py-20 bg-gray-50 border-y border-gray-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+          <h2 class="section-title">Od pomysłu do <span class="text-brand-600">gotowej aplikacji</span></h2>
+          <p class="section-subtitle mt-4">Nie musisz przygotowywać szczegółowej dokumentacji ani znać technologii. Wystarczy, że opowiesz nam o swoim pomyśle i celu biznesowym.</p>
+        </div>
+
+        <div class="space-y-6">
+
+          <!-- Krok 1 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-7 flex gap-6 items-start">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-600 flex items-center justify-center text-white font-bold text-lg">1</div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Bezpłatna konsultacja</h3>
+              <p class="text-gray-600 leading-relaxed">Na początku organizujemy krótkie spotkanie, podczas którego poznajemy Twój pomysł, potrzeby oraz oczekiwania. Na tej podstawie możemy określić, czy projekt jest możliwy do realizacji oraz oszacować jego zakres.</p>
+            </div>
+          </div>
+
+          <!-- Krok 2 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-7 flex gap-6 items-start">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-600 flex items-center justify-center text-white font-bold text-lg">2</div>
+            <div class="w-full">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Warsztaty i analiza projektu</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">Jeżeli projekt wymaga dokładniejszego zaplanowania, przechodzimy do etapu analityczno-projektowego. W jego ramach:</p>
+              <ul class="space-y-2">
+                <li v-for="item in workshopItems" :key="item" class="flex items-center gap-3 text-gray-600">
+                  <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span>{{ item }}</span>
+                </li>
+              </ul>
+              <p class="text-gray-500 text-sm mt-4 border-t border-gray-100 pt-4">Jest to osobna usługa, dzięki której otrzymujesz kompletny plan realizacji aplikacji oraz szczegółową wycenę wdrożenia.</p>
+            </div>
+          </div>
+
+          <!-- Krok 3 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-7 flex gap-6 items-start">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-600 flex items-center justify-center text-white font-bold text-lg">3</div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Realizacja</h3>
+              <p class="text-gray-600 leading-relaxed">Po zaakceptowaniu specyfikacji rozpoczynamy programowanie zgodnie z ustalonym zakresem prac. Dzięki wcześniejszej analizie minimalizujemy ryzyko nieporozumień, nieprzewidzianych kosztów oraz zmian wpływających na termin realizacji.</p>
+            </div>
+          </div>
+
+          <!-- Krok 4 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-7 flex gap-6 items-start">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-600 flex items-center justify-center text-white font-bold text-lg">4</div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Jasne zasady współpracy</h3>
+              <p class="text-gray-600 leading-relaxed">Wszystkie funkcjonalności realizowane są na podstawie zaakceptowanej specyfikacji. Nowe funkcje lub zmiany zgłaszane w trakcie projektu są wyceniane indywidualnie przed rozpoczęciem prac.</p>
+              <p class="text-gray-600 leading-relaxed mt-3">Takie podejście zapewnia przejrzystość projektu, kontrolę budżetu oraz przewidywalny proces realizacji dla obu stron.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Technologies Section -->
     <section class="py-20 bg-white border-y border-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -279,6 +339,14 @@ const icons = {
   search: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>',
   android: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>'
 }
+
+const workshopItems = [
+  'analizujemy potrzeby biznesowe',
+  'określamy zakres funkcjonalności',
+  'projektujemy ścieżki użytkowników',
+  'przygotowujemy makiety lub schematy działania',
+  'opracowujemy specyfikację projektu',
+]
 
 const services = [
   { id: 1, icon: icons.globe, titleKey: 'services.items.websites.title', descKey: 'services.items.websites.description', featuresKey: 'services.items.websites.features' },
