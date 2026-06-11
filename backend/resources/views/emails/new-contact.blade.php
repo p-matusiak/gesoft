@@ -18,9 +18,9 @@
           <!-- ── HEADER / LOGO ── -->
           <tr>
             <td style="padding:28px 40px 24px 40px;border-bottom:1px solid #e2e8f0;">
-              <img src="https://gesoft.pl/logo-email.png"
-                   srcset="https://gesoft.pl/logo-email@2x.png 2x"
-                   width="190" height="40"
+              <img src="https://gesoft.pl/logo-email-v2.png"
+                   srcset="https://gesoft.pl/logo-email-v2@2x.png 2x"
+                   width="190" height="50"
                    alt="GESOFT"
                    style="display:block;border:0;outline:none;text-decoration:none;">
             </td>
