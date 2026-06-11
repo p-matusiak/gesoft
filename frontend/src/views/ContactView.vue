@@ -95,17 +95,7 @@
                 <span v-else>{{ $t('contact.form.submit') }}</span>
               </button>
 
-              <!-- Success Message -->
-              <transition name="fade">
-                <div v-if="successMessage" class="p-4 bg-green-50 border border-green-200 rounded-md">
-                  <p class="text-green-700 flex items-center">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    {{ successMessage }}
-                  </p>
-                </div>
-              </transition>
+              <!-- Success Message (inline hidden, handled by modal) -->
 
               <!-- Error Message -->
               <transition name="fade">
@@ -317,6 +307,44 @@
       </div>
     </section>
 
+    <!-- Success Modal -->
+    <transition name="modal-fade">
+      <div v-if="showSuccessModal" class="fixed inset-0 z-50 flex items-center justify-center p-4" style="background:rgba(15,15,15,0.7);backdrop-filter:blur(4px);">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 text-center">
+
+          <!-- Ikona sukcesu -->
+          <div class="mx-auto mb-6 w-20 h-20 rounded-full bg-brand-50 flex items-center justify-center">
+            <div class="w-14 h-14 rounded-full bg-brand-600 flex items-center justify-center">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Tytuł -->
+          <h2 class="text-2xl font-bold text-gray-900 mb-3">Wiadomość wysłana!</h2>
+
+          <!-- Opis -->
+          <p class="text-gray-600 mb-2 leading-relaxed">
+            Dziękujemy za kontakt. Otrzymaliśmy Twoje zgłoszenie i skontaktujemy się z&nbsp;Tobą w&nbsp;ciągu <strong class="text-gray-900">24&nbsp;godzin</strong>.
+          </p>
+
+          <!-- Email -->
+          <div class="my-5 px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg">
+            <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-1">Potwierdzenie wysłano na</p>
+            <p class="text-brand-600 font-semibold break-all">{{ submittedEmail }}</p>
+          </div>
+
+          <p class="text-sm text-gray-400 mb-6">Sprawdź również folder spam, jeśli wiadomość nie pojawi się w skrzynce odbiorczej.</p>
+
+          <!-- Przycisk OK -->
+          <button @click="showSuccessModal = false" class="btn-primary w-full text-base py-3">
+            OK, rozumiem
+          </button>
+        </div>
+      </div>
+    </transition>
+
     <!-- Trust Section -->
     <section class="py-12 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -386,6 +414,8 @@ const errors = reactive({
 const isSubmitting = ref(false)
 const successMessage = ref('')
 const errorMessage = ref('')
+const showSuccessModal = ref(false)
+const submittedEmail = ref('')
 
 onMounted(() => {
   const projekt = route.query.projekt
@@ -440,6 +470,8 @@ const submitForm = async () => {
       message: form.message
     })
 
+    submittedEmail.value = form.email
+    showSuccessModal.value = true
     successMessage.value = response.data.message || t('contact.form.success')
     form.email = ''
     form.phone = ''
@@ -478,5 +510,28 @@ const submitForm = async () => {
 .slide-leave-to {
   opacity: 0;
   max-height: 0;
+}
+
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.modal-fade-enter-active .bg-white,
+.modal-fade-leave-active .bg-white {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.modal-fade-enter-from,
+.modal-fade-leave-to {
+  opacity: 0;
+}
+
+.modal-fade-enter-from .bg-white {
+  transform: scale(0.95) translateY(8px);
+}
+
+.modal-fade-leave-to .bg-white {
+  transform: scale(0.95) translateY(8px);
 }
 </style>
