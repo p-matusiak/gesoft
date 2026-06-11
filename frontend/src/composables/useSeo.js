@@ -172,7 +172,7 @@ export function useSeo() {
     setMetaTag('og:description', config.description, true)
     setMetaTag('og:type', 'website', true)
     setMetaTag('og:url', `${BASE_URL}${path}`, true)
-    setMetaTag('og:image', `${BASE_URL}/og-image.svg`, true)
+    setMetaTag('og:image', `${BASE_URL}/og-image.png`, true)
     setMetaTag('og:site_name', 'GESOFT', true)
     setMetaTag('og:locale', lang === 'pl' ? 'pl_PL' : 'en_US', true)
 
@@ -180,7 +180,7 @@ export function useSeo() {
     setMetaTag('twitter:card', 'summary_large_image')
     setMetaTag('twitter:title', config.title)
     setMetaTag('twitter:description', config.description)
-    setMetaTag('twitter:image', `${BASE_URL}/og-image.svg`)
+    setMetaTag('twitter:image', `${BASE_URL}/og-image.png`)
 
     // Canonical URL
     setLinkTag('canonical', `${BASE_URL}${path}`)
@@ -202,7 +202,7 @@ export function useSeo() {
           'legalName': 'GESOFT Paweł Matusiak',
           'url': BASE_URL,
           'logo': `${BASE_URL}/logo.png`,
-          'image': `${BASE_URL}/og-image.svg`,
+          'image': `${BASE_URL}/og-image.png`,
           'description': lang === 'pl'
             ? 'Profesjonalne tworzenie stron i aplikacji webowych'
             : 'Professional website and web application development',
