@@ -29,6 +29,7 @@
             <li><router-link to="/o-nas" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.about') }}</router-link></li>
             <li><router-link to="/uslugi" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.services') }}</router-link></li>
             <li><router-link to="/portfolio" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.portfolio') }}</router-link></li>
+            <li><router-link to="/artykuly" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.articles') }}</router-link></li>
             <li><router-link to="/kontakt" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.contact') }}</router-link></li>
           </ul>
         </nav>

@@ -39,6 +39,18 @@ const routes = [
     meta: { title: 'Kontakt - GESOFT' }
   },
   {
+    path: '/artykuly',
+    name: 'articles',
+    component: () => import('@/views/ArticlesView.vue'),
+    meta: { title: 'Artykuły - GESOFT' }
+  },
+  {
+    path: '/artykuly/:slug',
+    name: 'article',
+    component: () => import('@/views/ArticleView.vue'),
+    meta: { title: 'Artykuł - GESOFT' }
+  },
+  {
     path: '/admin',
     name: 'admin-login',
     component: () => import('@/views/admin/LoginView.vue'),

@@ -2,7 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Strona główna -->
   <url>
     <loc>https://gesoft.pl/</loc>
     <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/"/>
@@ -13,54 +12,684 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- O nas -->
   <url>
     <loc>https://gesoft.pl/o-nas</loc>
     <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/o-nas"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/o-nas?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/o-nas"/>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Usługi -->
   <url>
     <loc>https://gesoft.pl/uslugi</loc>
     <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/uslugi"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/uslugi?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/uslugi"/>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Technologie -->
   <url>
     <loc>https://gesoft.pl/technologie</loc>
     <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/technologie"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/technologie?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/technologie"/>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Portfolio -->
   <url>
     <loc>https://gesoft.pl/portfolio</loc>
     <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/portfolio"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/portfolio?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/portfolio"/>
     <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Kontakt -->
   <url>
     <loc>https://gesoft.pl/kontakt</loc>
     <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/kontakt"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/kontakt?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/kontakt"/>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ewidencja-umow-cywilnoprawnych-pip-agencja</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ewidencja-umow-cywilnoprawnych-pip-agencja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ewidencja-umow-cywilnoprawnych-pip-agencja?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ewidencja-umow-cywilnoprawnych-pip-agencja"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-sprzedazy-biletow-online</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-sprzedazy-biletow-online"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-sprzedazy-biletow-online?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-sprzedazy-biletow-online"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-pralni</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-pralni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-pralni?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-pralni"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-komisu-samochodowego</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-komisu-samochodowego"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-komisu-samochodowego?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-komisu-samochodowego"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-dietetyka</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-dietetyka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-dietetyka?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-dietetyka"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-groomera</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-groomera"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-groomera?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-groomera"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-logopedy</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-logopedy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-logopedy?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-logopedy"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-rezerwacji-escape-room</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-rezerwacji-escape-room"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-rezerwacji-escape-room?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-rezerwacji-escape-room"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/bdo-ewidencja-odpadow-w-firmie</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/bdo-ewidencja-odpadow-w-firmie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/bdo-ewidencja-odpadow-w-firmie?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/bdo-ewidencja-odpadow-w-firmie"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-rezerwacji-stolikow-online-restauracja</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-rezerwacji-stolikow-online-restauracja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-rezerwacji-stolikow-online-restauracja?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-rezerwacji-stolikow-online-restauracja"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-rezerwacji-online-salon-fryzjerski</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-rezerwacji-online-salon-fryzjerski"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-rezerwacji-online-salon-fryzjerski?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-rezerwacji-online-salon-fryzjerski"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/menu-qr-zamowienia-do-stolika</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/menu-qr-zamowienia-do-stolika"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/menu-qr-zamowienia-do-stolika?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/menu-qr-zamowienia-do-stolika"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-do-salonu-kosmetycznego</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-do-salonu-kosmetycznego"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-do-salonu-kosmetycznego?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-do-salonu-kosmetycznego"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/wlasny-system-zamowien-online-restauracja</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/wlasny-system-zamowien-online-restauracja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/wlasny-system-zamowien-online-restauracja?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/wlasny-system-zamowien-online-restauracja"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-umawiania-wizyt-gabinet-lekarski</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-umawiania-wizyt-gabinet-lekarski"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-umawiania-wizyt-gabinet-lekarski?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-umawiania-wizyt-gabinet-lekarski"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/audyt-bezpieczenstwa-aplikacji-php</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/audyt-bezpieczenstwa-aplikacji-php"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/audyt-bezpieczenstwa-aplikacji-php?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/audyt-bezpieczenstwa-aplikacji-php"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-do-warsztatu-samochodowego</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-do-warsztatu-samochodowego"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-do-warsztatu-samochodowego?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-do-warsztatu-samochodowego"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-lojalnosciowy-dla-restauracji</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-lojalnosciowy-dla-restauracji"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-lojalnosciowy-dla-restauracji?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-lojalnosciowy-dla-restauracji"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/oprogramowanie-gabinet-stomatologiczny</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/oprogramowanie-gabinet-stomatologiczny"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/oprogramowanie-gabinet-stomatologiczny?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/oprogramowanie-gabinet-stomatologiczny"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-karnetow-i-zajec-silownia</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-karnetow-i-zajec-silownia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-karnetow-i-zajec-silownia?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-karnetow-i-zajec-silownia"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-rezerwacji-online-hotel-pensjonat</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-rezerwacji-online-hotel-pensjonat"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-rezerwacji-online-hotel-pensjonat?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-rezerwacji-online-hotel-pensjonat"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/crm-dla-kancelarii-prawnej</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/crm-dla-kancelarii-prawnej"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/crm-dla-kancelarii-prawnej?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/crm-dla-kancelarii-prawnej"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/panel-b2b-dla-hurtowni</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/panel-b2b-dla-hurtowni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/panel-b2b-dla-hurtowni?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/panel-b2b-dla-hurtowni"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/crm-nieruchomosci-dla-dewelopera</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/crm-nieruchomosci-dla-dewelopera"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/crm-nieruchomosci-dla-dewelopera?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/crm-nieruchomosci-dla-dewelopera"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/aplikacja-dla-serwisu-terenowego</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/aplikacja-dla-serwisu-terenowego"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/aplikacja-dla-serwisu-terenowego?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/aplikacja-dla-serwisu-terenowego"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/system-zapisow-na-kursy-szkola</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/system-zapisow-na-kursy-szkola"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/system-zapisow-na-kursy-szkola?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/system-zapisow-na-kursy-szkola"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-budowlanej</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-budowlanej"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-budowlanej?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-budowlanej"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/sklep-internetowy-dla-lokalnego-biznesu</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/sklep-internetowy-dla-lokalnego-biznesu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/sklep-internetowy-dla-lokalnego-biznesu?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/sklep-internetowy-dla-lokalnego-biznesu"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/gotowy-program-czy-oprogramowanie-na-zamowienie</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/gotowy-program-czy-oprogramowanie-na-zamowienie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/gotowy-program-czy-oprogramowanie-na-zamowienie?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/gotowy-program-czy-oprogramowanie-na-zamowienie"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/laravel-vue-crm-panele</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/laravel-vue-crm-panele"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/laravel-vue-crm-panele?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/laravel-vue-crm-panele"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/uwierzytelnianie-2fa-laravel</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/uwierzytelnianie-2fa-laravel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/uwierzytelnianie-2fa-laravel?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/uwierzytelnianie-2fa-laravel"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/rodo-w-aplikacjach-webowych</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/rodo-w-aplikacjach-webowych"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/rodo-w-aplikacjach-webowych?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/rodo-w-aplikacjach-webowych"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ile-kosztuje-aplikacja-laravel</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ile-kosztuje-aplikacja-laravel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ile-kosztuje-aplikacja-laravel?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ile-kosztuje-aplikacja-laravel"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/bezpieczenstwo-aplikacji-laravel</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/bezpieczenstwo-aplikacji-laravel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/bezpieczenstwo-aplikacji-laravel?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/bezpieczenstwo-aplikacji-laravel"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/dlaczego-laravel-na-aplikacje-biznesowe</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/dlaczego-laravel-na-aplikacje-biznesowe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/dlaczego-laravel-na-aplikacje-biznesowe?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/dlaczego-laravel-na-aplikacje-biznesowe"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/wordpress-vs-laravel</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/wordpress-vs-laravel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/wordpress-vs-laravel?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/wordpress-vs-laravel"/>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

@@ -11,8 +11,5 @@ Disallow: /admin/
 # Blokuj pliki API
 Disallow: /api/
 
-# Sitemap
+# Sitemap (wszystkie artykuły + strony)
 Sitemap: https://gesoft.pl/sitemap.xml
-
-# Crawl-delay (opcjonalnie)
-Crawl-delay: 1

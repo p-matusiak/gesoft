@@ -1,6 +1,8 @@
-import { watch, onMounted, onUnmounted } from 'vue'
+import { watch, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { getArticleFaqs } from '@/data/articles-format'
+import { getCachedArticle, getCachedArticles } from '@/composables/useArticles'
 
 const BASE_URL = 'https://gesoft.pl'
 
@@ -8,25 +10,25 @@ const BASE_URL = 'https://gesoft.pl'
 const seoConfig = {
   home: {
     pl: {
-      title: 'GESOFT - Profesjonalne strony i aplikacje webowe | Laravel & Vue.js',
-      description: 'Tworzymy nowoczesne strony internetowe i aplikacje webowe. Specjalizujemy się w Laravel, Vue.js, PHP i MySQL. Ponad 50 zrealizowanych projektów.',
-      keywords: 'strony internetowe, aplikacje webowe, Laravel, Vue.js, PHP, MySQL, tworzenie stron, programista, web developer, Polska'
+      title: 'GESOFT — aplikacje webowe i Android dla firm | wycena 24h',
+      description: 'Software house Pawła Matusiaka. Aplikacje Laravel i Vue.js, Android, rezerwacje, KSeF. Bezpłatna wycena w 24 godziny, 6 miesięcy gwarancji.',
+      keywords: 'aplikacje webowe, oprogramowanie dla firm, Laravel, Vue.js, Android, KSeF, system rezerwacji, GESOFT, wycena'
     },
     en: {
-      title: 'GESOFT - Professional Websites & Web Applications | Laravel & Vue.js',
-      description: 'We create modern websites and web applications. Specializing in Laravel, Vue.js, PHP and MySQL. Over 50 completed projects.',
-      keywords: 'websites, web applications, Laravel, Vue.js, PHP, MySQL, web development, programmer, web developer, Poland'
+      title: 'GESOFT — web and Android apps for companies | quote in 24h',
+      description: 'Paweł Matusiak’s software house. Laravel and Vue.js apps, Android, bookings, KSeF. Free quote within 24 hours, 6-month warranty.',
+      keywords: 'web applications, software for companies, Laravel, Vue.js, Android, KSeF, booking system, GESOFT, quote'
     }
   },
   about: {
     pl: {
-      title: 'O nas - GESOFT | Poznaj nasz zespół',
-      description: 'Poznaj GESOFT - firmę z pasją do tworzenia oprogramowania. 8+ lat doświadczenia, 50+ projektów, 100% zadowolonych klientów.',
+      title: 'O nas - GESOFT | Paweł Matusiak',
+      description: 'Jednoosobowy software house Pawła Matusiaka. Aplikacje Laravel i Vue.js, Android, wycena w 24 godziny, 6 miesięcy gwarancji.',
       keywords: 'o nas, GESOFT, zespół, doświadczenie, firma programistyczna, web development'
     },
     en: {
-      title: 'About Us - GESOFT | Meet Our Team',
-      description: 'Meet GESOFT - a company with passion for software development. 8+ years of experience, 50+ projects, 100% satisfied clients.',
+      title: 'About - GESOFT | Paweł Matusiak',
+      description: 'Paweł Matusiak’s one-person software house. Laravel and Vue.js apps, Android, quote in 24 hours, 6-month warranty.',
       keywords: 'about us, GESOFT, team, experience, software company, web development'
     }
   },
@@ -77,6 +79,18 @@ const seoConfig = {
       description: 'Contact us! Describe your project and we will prepare a free quote. Email: biuro@gesoft.pl, Phone: +48 517 123 374.',
       keywords: 'contact, GESOFT, quote, project, email, phone, contact form'
     }
+  },
+  articles: {
+    pl: {
+      title: 'Artykuły: system rezerwacji, restauracja, salon, gabinet | GESOFT',
+      description: 'Artykuły dla właścicieli firm: system rezerwacji stolików, zamówienia online bez prowizji, program do salonu, e-rejestracja, warsztat, panel B2B. Jak aplikacja rozwiązuje konkretny problem i kiedy się spłaca.',
+      keywords: 'system rezerwacji online, program do restauracji, salon fryzjerski, gabinet lekarski, panel B2B, oprogramowanie na zamówienie, GESOFT'
+    },
+    en: {
+      title: 'Articles: booking systems, restaurants, salons, clinics | GESOFT',
+      description: 'Articles for business owners: table booking, commission-free online orders, salon software, clinic e-registration, workshops, B2B portals. How an app solves a real problem and when it pays back.',
+      keywords: 'online booking system, restaurant software, hair salon, medical clinic, B2B portal, custom software, GESOFT'
+    }
   }
 }
 
@@ -87,7 +101,8 @@ const routeToSeoKey = {
   '/uslugi': 'services',
   '/technologie': 'technologies',
   '/portfolio': 'portfolio',
-  '/kontakt': 'contact'
+  '/kontakt': 'contact',
+  '/artykuly': 'articles'
 }
 
 function setMetaTag(name, content, isProperty = false) {
@@ -141,7 +156,6 @@ export function useSeo() {
 
   const updateSeo = () => {
     const path = route.path
-    const seoKey = routeToSeoKey[path]
     const lang = locale.value
 
     // Skip admin routes
@@ -149,7 +163,38 @@ export function useSeo() {
       return
     }
 
-    const config = seoKey ? seoConfig[seoKey]?.[lang] : null
+    let seoKey = routeToSeoKey[path]
+    let config = seoKey ? seoConfig[seoKey]?.[lang] : null
+    let article = null
+
+    if (path === '/artykuly' && route.query.kategoria) {
+      const labels = {
+        industry: lang === 'pl' ? 'branża' : 'industry',
+        laravel: 'Laravel',
+        security: lang === 'pl' ? 'bezpieczeństwo' : 'security',
+        business: lang === 'pl' ? 'biznes' : 'business'
+      }
+      const label = labels[route.query.kategoria]
+      if (config && label) {
+        config = {
+          ...config,
+          title: lang === 'pl' ? `Artykuły: ${label} - GESOFT` : `Articles: ${label} - GESOFT`
+        }
+      }
+    }
+
+    if (path.startsWith('/artykuly/') && route.params.slug) {
+      article = getCachedArticle(route.params.slug, lang)
+      if (!article) {
+        return
+      }
+      seoKey = 'article'
+      config = {
+        title: article.seoTitle,
+        description: article.seoDescription,
+        keywords: article.keywords
+      }
+    }
 
     if (!config) {
       return
@@ -170,11 +215,17 @@ export function useSeo() {
     // Open Graph tags
     setMetaTag('og:title', config.title, true)
     setMetaTag('og:description', config.description, true)
-    setMetaTag('og:type', 'website', true)
+    setMetaTag('og:type', article ? 'article' : 'website', true)
     setMetaTag('og:url', `${BASE_URL}${path}`, true)
     setMetaTag('og:image', `${BASE_URL}/og-image.png`, true)
     setMetaTag('og:site_name', 'GESOFT', true)
     setMetaTag('og:locale', lang === 'pl' ? 'pl_PL' : 'en_US', true)
+    if (article) {
+      setMetaTag('article:published_time', article.publishedAt, true)
+      setMetaTag('article:modified_time', article.updatedAt, true)
+      setMetaTag('article:author', 'GESOFT Paweł Matusiak', true)
+      setMetaTag('article:section', article.category, true)
+    }
 
     // Twitter Card tags
     setMetaTag('twitter:card', 'summary_large_image')
@@ -296,27 +347,106 @@ export function useSeo() {
         services: { pl: 'Usługi', en: 'Services' },
         technologies: { pl: 'Technologie', en: 'Technologies' },
         portfolio: { pl: 'Inspiracje', en: 'Inspirations' },
-        contact: { pl: 'Kontakt', en: 'Contact' }
+        contact: { pl: 'Kontakt', en: 'Contact' },
+        articles: { pl: 'Artykuły', en: 'Articles' }
+      }
+
+      const breadcrumbItems = [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': lang === 'pl' ? 'Strona główna' : 'Home',
+          'item': BASE_URL
+        }
+      ]
+
+      if (seoKey === 'article') {
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          'position': 2,
+          'name': lang === 'pl' ? 'Artykuły' : 'Articles',
+          'item': `${BASE_URL}/artykuly`
+        })
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          'position': 3,
+          'name': article.title,
+          'item': `${BASE_URL}${path}`
+        })
+      } else {
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          'position': 2,
+          'name': breadcrumbNames[seoKey]?.[lang] || config.title,
+          'item': `${BASE_URL}${path}`
+        })
       }
 
       jsonLd['@graph'].push({
         '@type': 'BreadcrumbList',
         '@id': `${BASE_URL}${path}/#breadcrumb`,
-        'itemListElement': [
-          {
-            '@type': 'ListItem',
-            'position': 1,
-            'name': lang === 'pl' ? 'Strona główna' : 'Home',
-            'item': BASE_URL
-          },
-          {
-            '@type': 'ListItem',
-            'position': 2,
-            'name': breadcrumbNames[seoKey]?.[lang] || config.title,
-            'item': `${BASE_URL}${path}`
-          }
-        ]
+        'itemListElement': breadcrumbItems
       })
+    }
+
+    if (seoKey === 'articles') {
+      const listed = getCachedArticles(lang)
+      jsonLd['@graph'].push({
+        '@type': 'Blog',
+        '@id': `${BASE_URL}/artykuly/#blog`,
+        'name': config.title,
+        'description': config.description,
+        'url': `${BASE_URL}/artykuly`,
+        'publisher': {
+          '@id': `${BASE_URL}/#organization`
+        },
+        'inLanguage': lang === 'pl' ? 'pl-PL' : 'en-US',
+        'blogPost': listed.map((item) => ({
+          '@type': 'BlogPosting',
+          '@id': `${BASE_URL}/artykuly/${item.slug}/#article`,
+          'headline': item.title,
+          'url': `${BASE_URL}/artykuly/${item.slug}`
+        }))
+      })
+    }
+
+    if (seoKey === 'article' && article) {
+      jsonLd['@graph'].push({
+        '@type': 'BlogPosting',
+        '@id': `${BASE_URL}${path}/#article`,
+        'headline': article.title,
+        'description': article.seoDescription,
+        'datePublished': article.publishedAt,
+        'dateModified': article.updatedAt,
+        'inLanguage': lang === 'pl' ? 'pl-PL' : 'en-US',
+        'image': `${BASE_URL}/og-image.png`,
+        'author': {
+          '@id': `${BASE_URL}/#organization`
+        },
+        'publisher': {
+          '@id': `${BASE_URL}/#organization`
+        },
+        'mainEntityOfPage': {
+          '@id': `${BASE_URL}${path}/#webpage`
+        },
+        'keywords': article.keywords
+      })
+
+      const articleFaqs = getArticleFaqs(article)
+      if (articleFaqs.length) {
+        jsonLd['@graph'].push({
+          '@type': 'FAQPage',
+          '@id': `${BASE_URL}${path}/#faq`,
+          'mainEntity': articleFaqs.map((item) => ({
+            '@type': 'Question',
+            'name': item.q,
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': item.a
+            }
+          }))
+        })
+      }
     }
 
     // Add FAQPage for contact page
@@ -349,7 +479,7 @@ export function useSeo() {
   }
 
   // Watch for route and locale changes
-  watch([() => route.path, locale], updateSeo, { immediate: true })
+  watch([() => route.path, () => route.params.slug, () => route.query.kategoria, locale], updateSeo, { immediate: true })
 
   onMounted(() => {
     updateSeo()

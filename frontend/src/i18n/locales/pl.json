@@ -5,24 +5,66 @@
     "services": "Usługi",
     "technologies": "Technologie",
     "portfolio": "Inspiracje",
+    "articles": "Artykuły",
     "contact": "Kontakt"
   },
   "hero": {
-    "badge": "Laravel + Vue.js + Android",
-    "title1": "Tworzymy",
-    "title2": "nowoczesne",
-    "title3": "aplikacje webowe i mobilne",
-    "subtitle": "Specjalizujemy się w aplikacjach webowych na Laravel i Vue.js oraz natywnych aplikacjach Android. Solidny kod, czytelna architektura, uczciwe wyceny.",
+    "badge": "GESOFT · Paweł Matusiak",
+    "title": "System dla Twojej firmy. Jeden programista od wyceny do wdrożenia.",
+    "subtitle": "Aplikacje webowe, panele, rezerwacje, KSeF i Android. Piszesz jak jest — dostajesz wycenę w 24 godziny, bez pośrednika i bez ukrytych godzin.",
     "cta": "Opisz projekt",
-    "ctaSecondary": "Inspiracje",
-    "stack": {
-      "laravel": "Backend",
-      "vue": "Frontend",
-      "php": "Server-side",
-      "android": "Mobile"
-    }
+    "ctaSecondary": "Zobacz przykłady",
+    "stackLine": "Laravel, Vue.js, Android — bez eksperymentów na Twoim budżecie.",
+    "trust": [
+      "Wycena w 24 godziny",
+      "6 miesięcy gwarancji",
+      "Rozmawiasz od razu z programistą"
+    ]
   },
   "home": {
+    "work": {
+      "title": "Przykłady systemów",
+      "subtitle": "To inspiracje zakresu, nie katalog gotowców. Każdy projekt wyceniam pod Twoje procesy.",
+      "viewAll": "Wszystkie inspiracje"
+    },
+    "process": {
+      "title": "Jak wygląda współpraca",
+      "subtitle": "Krótko, konkretnie, bez agencyjnego procesu na dwanaście etapów.",
+      "steps": [
+        {
+          "title": "Opisujesz problem",
+          "description": "Mail, telefon albo formularz. W 24 godziny wracam z propozycją zakresu i ceną netto — albo mówię wprost, że to nie mój temat."
+        },
+        {
+          "title": "Buduję i pokazuję postęp",
+          "description": "Widzisz kolejne etapy, nie gotowiec w ostatnim tygodniu. Harmonogram ustalamy przed startem i trzymamy się go."
+        },
+        {
+          "title": "Wdrażam i zostaję na gwarancji",
+          "description": "Uruchomienie, krótkie wdrożenie i 6 miesięcy na błędy. Kod i dostęp zostają u Ciebie."
+        }
+      ]
+    },
+    "promises": [
+      {
+        "title": "14 dni na zaliczkę",
+        "description": "Jeśli w pierwszych dwóch tygodniach współpraca nie zaskoczy — zwracam zaliczkę."
+      },
+      {
+        "title": "Termin z konsekwencją",
+        "description": "Za każdy dzień opóźnienia z mojej winy: 5% rabatu od umówionej kwoty."
+      },
+      {
+        "title": "Cena z oferty jest ceną",
+        "description": "Wycena po analizie jest wiążąca. Bez dopłat za „nieprzewidziane godziny”."
+      }
+    ],
+    "topics": [
+      { "label": "Prowizje Glovo i Pyszne", "to": "/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats" },
+      { "label": "Rezerwacje online", "to": "/artykuly/system-rezerwacji-online-dla-uslug" },
+      { "label": "KSeF 2026", "to": "/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej" },
+      { "label": "No-show w salonie", "to": "/artykuly/no-show-ile-kosztuje-pusta-godzina" }
+    ],
     "whyUs": {
       "title": "Dlaczego",
       "titleHighlight": "my?",
@@ -105,9 +147,10 @@
       ]
     },
     "cta": {
-      "title": "Gotowy na nowy projekt?",
-      "subtitle": "Skontaktuj się z nami i opowiedz o swoich potrzebach. Przygotujemy dla Ciebie bezpłatną wycenę w ciągu 24h.",
-      "button": "Wyślij zapytanie"
+      "title": "Napisz, co Cię blokuje w firmie.",
+      "subtitle": "Dostaniesz wycenę w 24 godziny — albo szczerą odpowiedź, że lepiej wziąć gotowy program.",
+      "button": "Wyślij zapytanie",
+      "phone": "albo zadzwoń: +48 517 123 374"
     },
     "ctaBanner": {
       "title": "Bezpłatna konsultacja techniczna",
@@ -118,12 +161,28 @@
   },
   "about": {
     "header": {
+      "title": "O GESOFT",
       "title1": "O",
       "title2": "nas",
-      "subtitle": "GESOFT to boutique software house specjalizujący się w aplikacjach webowych (Laravel + Vue.js) i mobilnych (Android)."
+      "subtitle": "Jednoosobowy software house Pawła Matusiaka. Aplikacje webowe, panele i Android — bez pośrednika."
     },
+    "factsTitle": "Jak to wygląda w praktyce",
+    "facts": [
+      {
+        "title": "Jeden programista",
+        "description": "Nie ma account managera ani rotacji zespołu. Od wyceny do wdrożenia rozmawiasz ze mną."
+      },
+      {
+        "title": "Laravel, Vue.js, Android",
+        "description": "Tych technologii używam na co dzień. Nie eksperymentuję nowym frameworkiem na Twoim budżecie."
+      },
+      {
+        "title": "Kod i dostęp zostają u Ciebie",
+        "description": "Repozytorium, dokumentacja, 6 miesięcy na błędy. NDA na życzenie."
+      }
+    ],
     "story": {
-      "title": "Nasza",
+      "title": "Kto robi projekty",
       "titleHighlight": "historia",
       "content1": "GESOFT powstał z pasji do tworzenia solidnego oprogramowania. Specjalizujemy się w Laravel, Vue.js i natywnym Androidzie - technologiach, które znamy dogłębnie.",
       "content2": "Każdy projekt traktujemy indywidualnie. Zanim napiszemy pierwszą linię kodu - rozumiemy problem biznesowy, który rozwiązujemy.",
@@ -186,16 +245,16 @@
       }
     },
     "cta": {
-      "title": "Porozmawiajmy o projekcie",
-      "subtitle": "Opisz czego potrzebujesz - odpowiemy konkretną propozycją rozwiązania i wyceną.",
+      "title": "Napisz, nad czym się zastanawiasz.",
+      "subtitle": "Dostaniesz wycenę w 24 godziny albo szczerą odpowiedź, że to nie mój temat.",
       "button": "Napisz do nas"
     }
   },
   "services": {
     "header": {
-      "title": "Nasze",
+      "title": "Usługi",
       "titleHighlight": "usługi",
-      "subtitle": "Kompleksowe rozwiązania webowe i mobilne dla Twojego biznesu."
+      "subtitle": "Strony, panele, sklepy, Android i integracje. Zakres ustalamy po Twoim procesie, nie z katalogu."
     },
     "items": {
       "websites": {
@@ -300,9 +359,9 @@
       }
     },
     "process": {
-      "title": "Jak",
+      "title": "Jak wygląda współpraca",
       "titleHighlight": "pracujemy",
-      "subtitle": "Przejrzysty, czteroetapowy proces - wiesz co się dzieje na każdym kroku.",
+      "subtitle": "Krótko i konkretnie. Harmonogram ustalamy przed startem.",
       "analysis": {
         "title": "Analiza",
         "description": "Poznajemy Twoje potrzeby i cele projektu."
@@ -326,11 +385,11 @@
     },
     "cta": {
       "title": "Potrzebujesz wyceny?",
-      "subtitle": "Opisz swój projekt, a przygotujemy bezpłatną wycenę w ciągu 24h.",
+      "subtitle": "Opisz zakres. W 24 godziny wracam z ceną netto albo mówię, że to nie mój temat.",
       "button": "Wyślij zapytanie"
     },
     "deployment": {
-      "title": "Wdrożenie i",
+      "title": "Wdrożenie i kod",
       "titleHighlight": "dostarczenie kodu",
       "subtitle": "Po zakończeniu developmentu przenosimy aplikację na serwer docelowy. Zakres wdrożenia zależy od umowy — część usług jest w cenie projektu, część realizujemy jako płatny dodatek.",
       "included": {
@@ -376,12 +435,38 @@
   "technologies": {
     "header": {
       "title": "Technologie",
-      "subtitle": "Poznaj technologie, które wykorzystujemy do tworzenia wydajnych, bezpiecznych i skalowalnych rozwiązań. Każdy wybór jest przemyślany i oparty na praktycznym doświadczeniu."
+      "subtitle": "Ten sam, sprawdzony stack na każdym zleceniu. Bez eksperymentów na Twoim budżecie."
     },
+    "groups": [
+      {
+        "title": "Aplikacje webowe",
+        "items": [
+          { "name": "Laravel", "description": "Backend, panele, API, kolejki, uprawnienia." },
+          { "name": "Vue.js", "description": "Interfejsy, koszyki, kalendarze, pulpity." },
+          { "name": "PHP i MySQL / PostgreSQL", "description": "Stabilny serwer i baza, którą da się utrzymać." }
+        ]
+      },
+      {
+        "title": "Android",
+        "items": [
+          { "name": "Kotlin", "description": "Natywne aplikacje, nie opakowany widok strony." },
+          { "name": "REST API", "description": "Telefon rozmawia z backendem Laravel — dane i logika są na serwerze." },
+          { "name": "Powiadomienia", "description": "Firebase / FCM, gdy zlecenie albo rezerwacja nie może czekać." }
+        ]
+      },
+      {
+        "title": "Uruchomienie",
+        "items": [
+          { "name": "Linux, Nginx, Docker", "description": "Środowisko, które da się odtworzyć i przekazać." },
+          { "name": "Git", "description": "Historia zmian i dostęp do kodu po odbiorze." },
+          { "name": "Redis", "description": "Kolejki i cache tam, gdzie naprawdę jest potrzebny." }
+        ]
+      }
+    ],
     "mainStack": {
-      "title": "Główny",
+      "title": "Czego używam",
       "titleHighlight": "stack technologiczny",
-      "subtitle": "Fundamenty naszych projektów - sprawdzone, wydajne i bezpieczne rozwiązania."
+      "subtitle": "Nie mieszam stosów. Łatwiej utrzymać, łatwiej rozwinąć, łatwiej oddać kod."
     },
     "devops": {
       "title": "DevOps i",
@@ -389,9 +474,10 @@
       "subtitle": "Nowoczesne narzędzia, które zapewniają stabilność, wydajność i bezpieczeństwo aplikacji."
     },
     "why": {
-      "title": "Dlaczego właśnie",
+      "title": "Dlaczego ten stack",
       "titleHighlight": "ten stack?",
-      "subtitle": "Wybór technologii to nie kwestia mody. To strategiczna decyzja, która wpływa na koszt utrzymania i możliwości rozwoju projektu przez lata.",
+      "subtitle": "Znam go od lat. Koszt utrzymania jest przewidywalny, a kolejny programista nie musi się uczyć eksperymentu.",
+      "note": "Nie obiecuję „najnowszego frameworka roku”. Obiecuję kod, który da się rozwijać po wdrożeniu.",
       "performance": {
         "title": "Wydajność",
         "description": "PHP 8.3 z JIT, Vue 3 z Proxy-based reactivity, MySQL 8 z optymalizatorem zapytań - każdy element jest zoptymalizowany."
@@ -571,9 +657,9 @@
       }
     },
     "cta": {
-      "title": "Gotowy wykorzystać moc tych technologii?",
-      "subtitle": "Skontaktuj się z nami i opowiedz o swoim projekcie. Dobierzemy optymalne rozwiązania.",
-      "button": "Rozpocznij projekt"
+      "title": "Masz już konkretny problem do ogarnięcia?",
+      "subtitle": "Napisz, co ma działać. Powiem, czy Laravel i Android wystarczą, czy lepiej wziąć gotowy program.",
+      "button": "Opisz projekt"
     }
   },
   "portfolio": {
@@ -910,10 +996,17 @@
   "contact": {
     "header": {
       "title": "Kontakt",
-      "subtitle": "Masz pytanie lub chcesz rozpocząć projekt? Napisz do nas!"
+      "subtitle": "Opisz, co Cię blokuje. W 24 godziny wracam z wyceną albo szczerą odpowiedzią."
+    },
+    "success": {
+      "title": "Wiadomość wyszła.",
+      "body": "Odezwę się w ciągu 24 godzin w dniach roboczych. Sprawdź też folder spam.",
+      "sentTo": "Potwierdzenie poszło na",
+      "ok": "OK"
     },
     "form": {
-      "title": "Wyślij zapytanie",
+      "title": "Napisz",
+      "replyNote": "Odpowiadam na wszystkie wiadomości w ciągu 24 godzin w dniach roboczych.",
       "email": "Adres email",
       "emailPlaceholder": "jan{'@'}przyklad.pl",
       "emailRequired": "Adres email jest wymagany.",
@@ -942,19 +1035,60 @@
       "invoiceValue": "Wystawiamy faktury VAT"
     },
     "faq": {
-      "title": "Najczesciej zadawane pytania",
-      "q1": "Jak dlugo trwa realizacja projektu?",
-      "a1": "Czas realizacji zalezy od zlozonosci projektu. Prosta strona internetowa to 2-4 tygodnie, aplikacja webowa 1-3 miesiace. Po analizie wymagan podajemy dokladny harmonogram.",
-      "q2": "Czy oferujecie wsparcie po zakonczeniu projektu?",
-      "a2": "Tak, kazdy projekt objety jest 6-miesieczna gwarancja. Dodatkowo oferujemy pakiety wsparcia technicznego i utrzymania systemow.",
-      "q3": "Jakie technologie wykorzystujecie?",
-      "a3": "Specjalizujemy sie w Laravel (PHP) i Vue.js oraz natywnym Androidzie (Kotlin/Java). Wykorzystujemy takze MySQL, PostgreSQL, Redis, Docker i wiele innych sprawdzonych technologii.",
-      "q4": "Jaki jest koszt stworzenia strony/aplikacji?",
-      "a4": "Ceny zaczynaja sie od 2500 zl za prosta strone wizytowke. Kazdy projekt wyceniamy indywidualnie - przygotowujemy bezplatna wycene w ciagu 24h.",
-      "q5": "Czy moge zobaczyc wasza dotychczasowa prace?",
-      "a5": "Oczywiscie! Odwiedz zakladke Inspiracje, gdzie znajdziesz przyklady typow projektow ktore mozemy zbudowac — strony, aplikacje webowe, CRM-y i aplikacje mobilne Android.",
-      "q6": "Czy podpisujecie umowe?",
-      "a6": "Tak, kazda wspolpraca rozpoczynamy od podpisania umowy, ktora chroni obie strony. Na zyczenie podpisujemy rowniez NDA."
+      "title": "Najczęstsze pytania",
+      "q1": "Jak długo trwa realizacja?",
+      "a1": "Prosta strona to zwykle 2–4 tygodnie, aplikacja webowa 1–3 miesiące. Po analizie podaję konkretny harmonogram.",
+      "q2": "Co po wdrożeniu?",
+      "a2": "Każdy projekt ma 6 miesięcy gwarancji na błędy. Utrzymanie i rozwój wyceniam osobno, jeśli są potrzebne.",
+      "q3": "Jakie technologie?",
+      "a3": "Laravel, Vue.js i natywny Android. Do tego MySQL albo PostgreSQL, Redis i Docker — gdy są naprawdę potrzebne.",
+      "q4": "Od jakiej kwoty?",
+      "a4": "Od 2 500 zł netto za stronę-wizytówkę. Reszta po opisie zakresu. Wycena w 24 godziny.",
+      "q5": "Gdzie zobaczę przykłady?",
+      "a5": "W zakładce Inspiracje są przykłady zakresu, nie katalog gotowców. Każdy projekt i tak wyceniam pod Twoje procesy.",
+      "q6": "Czy jest umowa?",
+      "a6": "Tak. Na życzenie też NDA. Kod i dostęp po odbiorze zostają u Ciebie."
+    }
+  },
+  "articles": {
+    "header": {
+      "title": "Artykuły",
+      "subtitle": "Rozwiązania problemów, których szukają właściciele firm: rezerwacje, zamówienia, gabinety, warsztat, B2B. Bez żargonu, z myślą o zleceniu, które się spłaca."
+    },
+    "filters": {
+      "all": "Wszystkie",
+      "industry": "Branże",
+      "laravel": "Laravel",
+      "security": "Bezpieczeństwo",
+      "business": "Biznes"
+    },
+    "categories": {
+      "industry": "Branże",
+      "laravel": "Laravel",
+      "security": "Bezpieczeństwo",
+      "business": "Biznes"
+    },
+    "readTime": "min czytania",
+    "faqTitle": "Najczęstsze pytania",
+    "toc": "W tym artykule",
+    "readMore": "Czytaj dalej",
+    "related": "Powiązane artykuły",
+    "relatedProjects": "Takie systemy możemy zbudować",
+    "relatedProjectsSubtitle": "Przykłady z inspiracji GESOFT — kliknij kartę, żeby zobaczyć zakres i stack.",
+    "viewAllProjects": "Wszystkie inspiracje",
+    "back": "Wszystkie artykuły",
+    "homeTitle": "Artykuły o problemach, które firmy naprawdę szukają",
+    "homeHighlight": "GESOFT",
+    "homeSubtitle": "Rezerwacje, prowizje platform, KSeF, gabinet, warsztat — teksty pod konkretne zapytania, nie pod Laravel.",
+    "viewAll": "Zobacz wszystkie artykuły",
+    "cta": {
+      "title": "Masz ten problem u siebie?",
+      "subtitle": "Opisz lokal, gabinet, magazyn albo proces. Powiemy szczerze: gotowy program, własne MVP albo etapowanie — wycena w 24 godziny.",
+      "button": "Opisz projekt"
+    },
+    "notFound": {
+      "title": "Nie znaleziono artykułu",
+      "description": "Ten artykuł nie istnieje albo został przeniesiony. Wróć do listy albo napisz, czego szukasz."
     }
   },
   "footer": {
@@ -1020,7 +1154,7 @@
         "Zaawansowana architektura",
         "Priorytetowe wsparcie",
         "Pełna dokumentacja techniczna",
-        "Dedykowany opiekun projektu"
+        "Bezpośredni kontakt z programistą"
       ],
       "cta": "Umów konsultację"
     },

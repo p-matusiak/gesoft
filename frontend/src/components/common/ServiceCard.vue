@@ -3,7 +3,7 @@
     <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-4">
       <component :is="iconComponent" class="w-6 h-6 text-brand-600" />
     </div>
-    <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ title }}</h3>
+    <h3 class="heading-3 text-gray-900 mb-2">{{ title }}</h3>
     <p class="text-gray-600">{{ description }}</p>
   </div>
 </template>

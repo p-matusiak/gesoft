@@ -2,12 +2,15 @@
 
 use App\Http\Controllers\Api\Admin\AuthController;
 use App\Http\Controllers\Api\Admin\RequestController;
+use App\Http\Controllers\Api\ArticleController;
 use App\Http\Controllers\Api\ContactController;
 use Illuminate\Support\Facades\Route;
 
 // Public routes
 Route::get('/services', [ContactController::class, 'services']);
 Route::get('/portfolio', [ContactController::class, 'portfolio']);
+Route::get('/articles', [ArticleController::class, 'index']);
+Route::get('/articles/{slug}', [ArticleController::class, 'show']);
 Route::post('/contact', [ContactController::class, 'store']);
 
 // Auth routes

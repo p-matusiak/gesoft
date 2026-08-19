@@ -40,4 +40,10 @@ return [
         'sender' => env('SMSAPI_SENDER', 'GESOFT'),
     ],
 
+    'xai' => [
+        'key' => env('XAI_API_KEY'),
+        'model' => env('XAI_MODEL', 'grok-4.6'),
+        'base_url' => env('XAI_BASE_URL', 'https://api.x.ai/v1'),
+    ],
+
 ];

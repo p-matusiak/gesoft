@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "export-content": "node scripts/export-content.mjs",
     "build": "vite build",
     "preview": "vite preview"
   },

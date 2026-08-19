@@ -5,24 +5,66 @@
     "services": "Services",
     "technologies": "Technologies",
     "portfolio": "Inspirations",
+    "articles": "Articles",
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Laravel + Vue.js + Android",
-    "title1": "We build",
-    "title2": "modern",
-    "title3": "web & mobile apps",
-    "subtitle": "We specialize in web applications built with Laravel and Vue.js, and native Android apps. Clean code, clear architecture, honest pricing.",
+    "badge": "GESOFT · Paweł Matusiak",
+    "title": "Software for your company. One developer from quote to launch.",
+    "subtitle": "Web apps, admin panels, bookings, KSeF and Android. You describe the problem — you get a quote within 24 hours, no account manager in between.",
     "cta": "Describe your project",
-    "ctaSecondary": "Inspirations",
-    "stack": {
-      "laravel": "Backend",
-      "vue": "Frontend",
-      "php": "Server-side",
-      "android": "Mobile"
-    }
+    "ctaSecondary": "See examples",
+    "stackLine": "Laravel, Vue.js, Android — no experiments on your budget.",
+    "trust": [
+      "Quote within 24 hours",
+      "6-month warranty",
+      "You talk to the developer"
+    ]
   },
   "home": {
+    "work": {
+      "title": "Example systems",
+      "subtitle": "These are scope inspirations, not off-the-shelf products. Every project is quoted for your processes.",
+      "viewAll": "All inspirations"
+    },
+    "process": {
+      "title": "How we work",
+      "subtitle": "Short and concrete. No twelve-step agency process.",
+      "steps": [
+        {
+          "title": "You describe the problem",
+          "description": "Email, phone or the form. Within 24 hours I come back with a scope and a net price — or I say straight that it is not my work."
+        },
+        {
+          "title": "I build and show progress",
+          "description": "You see stages along the way, not a surprise in the last week. We agree the timeline before we start and we keep it."
+        },
+        {
+          "title": "I launch and stay on warranty",
+          "description": "Go-live, a short handover and 6 months for defects. The code and access stay with you."
+        }
+      ]
+    },
+    "promises": [
+      {
+        "title": "14 days on the deposit",
+        "description": "If the first two weeks do not work out, I refund the deposit."
+      },
+      {
+        "title": "Deadline with a consequence",
+        "description": "For every day of delay on my side: 5% off the agreed amount."
+      },
+      {
+        "title": "The quoted price is the price",
+        "description": "The quote after analysis is binding. No extras for “unforeseen hours”."
+      }
+    ],
+    "topics": [
+      { "label": "Glovo and Pyszne fees", "to": "/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats" },
+      { "label": "Online booking", "to": "/artykuly/system-rezerwacji-online-dla-uslug" },
+      { "label": "KSeF 2026", "to": "/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej" },
+      { "label": "No-shows at salons", "to": "/artykuly/no-show-ile-kosztuje-pusta-godzina" }
+    ],
     "whyUs": {
       "title": "Why",
       "titleHighlight": "us?",
@@ -105,9 +147,10 @@
       ]
     },
     "cta": {
-      "title": "Ready for a new project?",
-      "subtitle": "Contact us and tell us about your needs. We'll prepare a free quote within 24h.",
-      "button": "Send inquiry"
+      "title": "Tell me what is slowing the company down.",
+      "subtitle": "You get a quote within 24 hours — or an honest answer that a ready-made product is the better fit.",
+      "button": "Send inquiry",
+      "phone": "or call: +48 517 123 374"
     },
     "ctaBanner": {
       "title": "Free technical consultation",
@@ -118,12 +161,28 @@
   },
   "about": {
     "header": {
+      "title": "About GESOFT",
       "title1": "About",
       "title2": "us",
-      "subtitle": "GESOFT is a boutique software house specializing in web applications (Laravel + Vue.js) and mobile apps (Android)."
+      "subtitle": "Paweł Matusiak’s one-person software house. Web apps, admin panels and Android — no account manager in between."
     },
+    "factsTitle": "How it works in practice",
+    "facts": [
+      {
+        "title": "One developer",
+        "description": "No account manager and no rotating team. From quote to launch you talk to me."
+      },
+      {
+        "title": "Laravel, Vue.js, Android",
+        "description": "These are the tools I use every day. I do not try a new framework on your budget."
+      },
+      {
+        "title": "The code stays with you",
+        "description": "Repository, documentation, 6 months for defects. NDA on request."
+      }
+    ],
     "story": {
-      "title": "Our",
+      "title": "Who builds the projects",
       "titleHighlight": "story",
       "content1": "GESOFT was born from a passion for building solid software. We specialize in Laravel, Vue.js and native Android - technologies we know in depth.",
       "content2": "We treat each project individually. Before writing the first line of code - we understand the business problem we're solving.",
@@ -186,16 +245,16 @@
       }
     },
     "cta": {
-      "title": "Let's talk about your project",
-      "subtitle": "Describe what you need - we'll respond with a concrete solution proposal and quote.",
+      "title": "Write what you are stuck on.",
+      "subtitle": "You get a quote within 24 hours, or an honest answer that this is not my work.",
       "button": "Contact us"
     }
   },
   "services": {
     "header": {
-      "title": "Our",
+      "title": "Services",
       "titleHighlight": "services",
-      "subtitle": "Comprehensive web and mobile solutions for your business."
+      "subtitle": "Sites, admin panels, stores, Android and integrations. Scope is quoted for your process, not from a catalogue."
     },
     "items": {
       "websites": {
@@ -300,9 +359,9 @@
       }
     },
     "process": {
-      "title": "How we",
+      "title": "How we work",
       "titleHighlight": "work",
-      "subtitle": "A clear, four-stage process - you know what's happening at every step.",
+      "subtitle": "Short and concrete. We agree the timeline before we start.",
       "analysis": {
         "title": "Analysis",
         "description": "We learn about your needs and project goals."
@@ -330,7 +389,7 @@
       "button": "Send inquiry"
     },
     "deployment": {
-      "title": "Deployment and",
+      "title": "Launch and code",
       "titleHighlight": "code delivery",
       "subtitle": "After development is complete, we hand over a fully working system — deployed, configured, and ready to use. Here's how it works.",
       "included": {
@@ -376,12 +435,38 @@
   "technologies": {
     "header": {
       "title": "Technologies",
-      "subtitle": "Discover the technologies we use to create efficient, secure and scalable solutions. Every choice is deliberate and based on practical experience."
+      "subtitle": "The same proven stack on every job. No experiments on your budget."
     },
+    "groups": [
+      {
+        "title": "Web applications",
+        "items": [
+          { "name": "Laravel", "description": "Backend, admin panels, APIs, queues, permissions." },
+          { "name": "Vue.js", "description": "Interfaces, carts, calendars, dashboards." },
+          { "name": "PHP and MySQL / PostgreSQL", "description": "A stable server and a database you can actually maintain." }
+        ]
+      },
+      {
+        "title": "Android",
+        "items": [
+          { "name": "Kotlin", "description": "Native apps, not a website wrapped in a WebView." },
+          { "name": "REST API", "description": "The phone talks to a Laravel backend — data and logic live on the server." },
+          { "name": "Notifications", "description": "Firebase / FCM when a job or booking cannot wait." }
+        ]
+      },
+      {
+        "title": "Launch",
+        "items": [
+          { "name": "Linux, Nginx, Docker", "description": "An environment that can be reproduced and handed over." },
+          { "name": "Git", "description": "Change history and access to the code after handover." },
+          { "name": "Redis", "description": "Queues and cache when they are actually needed." }
+        ]
+      }
+    ],
     "mainStack": {
-      "title": "Main",
+      "title": "What I use",
       "titleHighlight": "tech stack",
-      "subtitle": "The foundations of our projects - proven, efficient and secure solutions."
+      "subtitle": "I do not mix stacks. Easier to maintain, easier to extend, easier to hand over."
     },
     "devops": {
       "title": "DevOps and",
@@ -389,9 +474,10 @@
       "subtitle": "Modern tools that ensure stability, performance and application security."
     },
     "why": {
-      "title": "Why this",
+      "title": "Why this stack",
       "titleHighlight": "stack?",
-      "subtitle": "Choosing technology is not a matter of fashion. It's a strategic decision that affects maintenance costs and development possibilities for years.",
+      "subtitle": "I have used it for years. Maintenance cost is predictable, and the next developer does not have to learn an experiment.",
+      "note": "I do not promise “this year’s hottest framework”. I promise code that can still be extended after launch.",
       "performance": {
         "title": "Performance",
         "description": "PHP 8.3 with JIT, Vue 3 with Proxy-based reactivity, MySQL 8 with query optimizer - every element is optimized."
@@ -571,9 +657,9 @@
       }
     },
     "cta": {
-      "title": "Ready to leverage these technologies?",
-      "subtitle": "Contact us and tell us about your project. We'll select the optimal solutions.",
-      "button": "Start a project"
+      "title": "Already have a concrete problem to solve?",
+      "subtitle": "Write what needs to work. I will say whether Laravel and Android are enough, or a ready-made product is the better fit.",
+      "button": "Describe your project"
     }
   },
   "portfolio": {
@@ -910,10 +996,17 @@
   "contact": {
     "header": {
       "title": "Contact",
-      "subtitle": "Have a question or want to start a project? Write to us!"
+      "subtitle": "Describe what is blocking you. Within 24 hours I come back with a quote or an honest answer."
+    },
+    "success": {
+      "title": "Message sent.",
+      "body": "I will reply within 24 hours on business days. Check spam as well.",
+      "sentTo": "Confirmation went to",
+      "ok": "OK"
     },
     "form": {
-      "title": "Send inquiry",
+      "title": "Write",
+      "replyNote": "I reply to every message within 24 hours on business days.",
       "email": "Email address",
       "emailPlaceholder": "john{'@'}example.com",
       "emailRequired": "Email address is required.",
@@ -942,19 +1035,60 @@
       "invoiceValue": "We issue VAT invoices"
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "How long does project implementation take?",
-      "a1": "Implementation time depends on project complexity. A simple website takes 2-4 weeks, a web application 1-3 months. After requirements analysis, we provide an exact timeline.",
-      "q2": "Do you offer support after project completion?",
-      "a2": "Yes, every project comes with a 6-month warranty. We also offer technical support and system maintenance packages.",
-      "q3": "What technologies do you use?",
-      "a3": "We specialize in Laravel (PHP), Vue.js and native Android (Kotlin/Java). We also use MySQL, PostgreSQL, Redis, Docker and many other proven technologies.",
-      "q4": "How much does it cost to create a website/application?",
-      "a4": "Prices start from 2500 PLN for a simple business card website. Each project is priced individually - we prepare a free quote within 24 hours.",
-      "q5": "Can I see examples of your work?",
-      "a5": "Of course! Visit our Inspirations section where you'll find examples of what we can build — websites, web apps, CRM systems and Android mobile apps.",
-      "q6": "Do you sign a contract?",
-      "a6": "Yes, we start every collaboration with a contract that protects both parties. Upon request, we also sign NDAs."
+      "title": "Common questions",
+      "q1": "How long does it take?",
+      "a1": "A simple site is usually 2–4 weeks, a web app 1–3 months. After the analysis I give a concrete timeline.",
+      "q2": "What happens after launch?",
+      "a2": "Every project has 6 months of warranty for defects. Maintenance and further work are quoted separately if needed.",
+      "q3": "Which technologies?",
+      "a3": "Laravel, Vue.js and native Android. Plus MySQL or PostgreSQL, Redis and Docker — when they are actually needed.",
+      "q4": "From what price?",
+      "a4": "From PLN 2,500 net for a simple brochure site. The rest after we know the scope. Quote within 24 hours.",
+      "q5": "Where can I see examples?",
+      "a5": "The Inspirations page shows scope examples, not off-the-shelf products. Every project is still quoted for your processes.",
+      "q6": "Is there a contract?",
+      "a6": "Yes. NDA on request. After handover the code and access stay with you."
+    }
+  },
+  "articles": {
+    "header": {
+      "title": "Articles",
+      "subtitle": "Solutions to problems business owners actually search for: bookings, orders, clinics, workshops, B2B. No jargon — written so the project pays for itself."
+    },
+    "filters": {
+      "all": "All",
+      "industry": "Industries",
+      "laravel": "Laravel",
+      "security": "Security",
+      "business": "Business"
+    },
+    "categories": {
+      "industry": "Industries",
+      "laravel": "Laravel",
+      "security": "Security",
+      "business": "Business"
+    },
+    "readTime": "min read",
+    "faqTitle": "Frequently asked questions",
+    "toc": "In this article",
+    "readMore": "Read more",
+    "related": "Related articles",
+    "relatedProjects": "Systems we can build",
+    "relatedProjectsSubtitle": "Examples from GESOFT inspirations — open a card to see scope and stack.",
+    "viewAllProjects": "All inspirations",
+    "back": "All articles",
+    "homeTitle": "Articles about problems companies actually search for",
+    "homeHighlight": "blog",
+    "homeSubtitle": "Bookings, platform fees, KSeF, clinics, workshops — written for real queries, not for Laravel.",
+    "viewAll": "See all articles",
+    "cta": {
+      "title": "Is this your problem?",
+      "subtitle": "Describe the venue, clinic, warehouse or process. We will say honestly: a ready-made tool, a custom MVP, or staging — a quote within 24 hours.",
+      "button": "Describe your project"
+    },
+    "notFound": {
+      "title": "Article not found",
+      "description": "This article does not exist or has been moved. Go back to the list or tell us what you were looking for."
     }
   },
   "footer": {
@@ -1020,7 +1154,7 @@
         "Advanced architecture",
         "Priority support",
         "Full technical documentation",
-        "Dedicated project manager"
+        "Direct contact with the developer"
       ],
       "cta": "Schedule consultation"
     },

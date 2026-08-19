@@ -1,71 +1,46 @@
 <template>
-  <div class="pt-20">
-    <!-- Header -->
-    <section class="py-16 sm:py-20 bg-white border-b border-gray-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-5">
-          <span class="text-brand-600">{{ $t('portfolio.header.title') }}</span>
-        </h1>
-        <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-          {{ $t('portfolio.header.subtitle') }}
-        </p>
-      </div>
-    </section>
+  <div>
+    <PageHero
+      :title="$t('portfolio.header.title')"
+      :subtitle="$t('portfolio.header.subtitle')"
+    />
 
-    <!-- Filter -->
-    <section class="py-8 bg-white border-b border-gray-200">
+    <section class="py-8 bg-white border-b border-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-wrap justify-center gap-3">
-          <button
-            v-for="category in categories"
-            :key="category.value"
-            @click="activeCategory = category.value"
-            class="px-5 py-2 rounded-full font-medium text-sm transition-colors duration-200"
-            :class="[
-              activeCategory === category.value
-                ? 'bg-brand-600 text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-            ]"
-          >
-            {{ $t(category.labelKey) }}
-          </button>
-        </div>
+        <FilterPills
+          :items="filterItems"
+          :model-value="activeCategory"
+          @update:model-value="setCategory"
+        />
       </div>
     </section>
 
     <!-- Stats Banner -->
     <!-- Portfolio Grid -->
-    <section class="py-20 bg-white">
+    <section class="py-16 sm:py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <transition-group name="fade">
-            <div
+            <ProjectCard
               v-for="project in filteredProjects"
               :key="project.id"
-              class="bg-white border border-gray-200 rounded-lg overflow-hidden group cursor-pointer hover:shadow-md transition-shadow duration-200"
-              @click="openModal(project)"
+              :project="project"
+              :title="project.title"
+              :description="project.description"
+              :category-label="getCategoryLabel(project.category)"
+              :overlay="$t('portfolio.viewProject')"
+              @select="openModal(project)"
             >
-              <div class="aspect-video bg-gray-100 relative overflow-hidden">
-                <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
-                <div class="absolute inset-0 bg-gray-900/70 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
-                  <span class="text-white font-medium">{{ $t('portfolio.viewProject') }}</span>
-                </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  v-for="tech in project.technologies"
+                  :key="tech"
+                  class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded"
+                >
+                  {{ tech }}
+                </span>
               </div>
-              <div class="p-6">
-                <span class="text-xs text-brand-600 uppercase tracking-wider font-semibold">{{ getCategoryLabel(project.category) }}</span>
-                <h3 class="text-xl font-semibold text-gray-900 mt-2 mb-2">{{ project.title }}</h3>
-                <p class="text-gray-600 text-sm mb-4">{{ project.description }}</p>
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    v-for="tech in project.technologies"
-                    :key="tech"
-                    class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded"
-                  >
-                    {{ tech }}
-                  </span>
-                </div>
-              </div>
-            </div>
+            </ProjectCard>
           </transition-group>
         </div>
 
@@ -115,29 +90,27 @@
       </div>
     </transition>
 
-    <!-- CTA Section -->
-    <section class="py-20 bg-gray-900">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-5">
-          {{ $t('portfolio.cta.title') }}
-        </h2>
-        <p class="text-lg text-gray-300 mb-8">
-          {{ $t('portfolio.cta.subtitle') }}
-        </p>
-        <router-link to="/kontakt" class="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-brand-700 bg-white rounded-md hover:bg-gray-100 transition-colors duration-200">
-          {{ $t('portfolio.cta.button') }}
-        </router-link>
-      </div>
-    </section>
+    <PageCta
+      :title="$t('portfolio.cta.title')"
+      :subtitle="$t('portfolio.cta.subtitle')"
+      :button-label="$t('portfolio.cta.button')"
+      :phone="$t('home.cta.phone')"
+    />
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
+import { projectsData } from '@/data/projects'
+import ProjectCard from '@/components/common/ProjectCard.vue'
+import PageHero from '@/components/common/PageHero.vue'
+import PageCta from '@/components/common/PageCta.vue'
+import FilterPills from '@/components/common/FilterPills.vue'
 
 const { t } = useI18n()
+const route = useRoute()
 const router = useRouter()
 
 const activeCategory = ref('all')
@@ -152,75 +125,23 @@ const categories = [
   { value: 'crm', labelKey: 'portfolio.filters.crm' },
 ]
 
-const projectsData = [
-  { id: 1, key: 'crm', image: '/portfolio/crm.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis'] },
-  { id: 2, key: 'furniture', image: '/portfolio/furniture.svg', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL'] },
-  { id: 3, key: 'medical', image: '/portfolio/medical.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'Redis', 'WebSockets'] },
-  { id: 4, key: 'corporate', image: '/portfolio/corporate.svg', category: 'website', technologies: ['Laravel', 'TailwindCSS', 'Alpine.js'] },
-  { id: 5, key: 'projectMgmt', image: '/portfolio/projectmgmt.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'WebSockets', 'PostgreSQL'] },
-  { id: 6, key: 'booking', image: '/portfolio/booking.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'Google API', 'MySQL'] },
-  { id: 7, key: 'delivery', image: '/portfolio/delivery.svg', category: 'mobile', technologies: ['Android (Kotlin)', 'Laravel API', 'MySQL', 'Firebase FCM', 'Google Maps'] },
-  { id: 8, key: 'fieldService', image: '/portfolio/fieldservice.svg', category: 'mobile', technologies: ['Android (Kotlin)', 'Laravel API', 'MySQL', 'Firebase FCM'] },
-  { id: 9, key: 'restaurant', image: '/portfolio/restaurant.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'MySQL', 'WebSockets'] },
-  { id: 10, key: 'realEstate', image: '/portfolio/realestate.svg', category: 'website', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Google Maps API'] },
-  { id: 11, key: 'hr', image: '/portfolio/hr.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'PostgreSQL', 'Redis'] },
-  // Mobile apps
-  { id: 12, key: 'fitness', image: '/portfolio/fitness.svg', category: 'mobile', technologies: ['Android (Kotlin)', 'Jetpack Compose', 'Laravel API', 'Health Connect'] },
-  { id: 13, key: 'parking', image: '/portfolio/parking.svg', category: 'mobile', technologies: ['Android (Kotlin)', 'Google Maps SDK', 'Laravel API', 'Stripe'] },
-  { id: 14, key: 'pharmacy', image: '/portfolio/pharmacy.svg', category: 'mobile', technologies: ['Android (Kotlin)', 'Room Database', 'Laravel API', 'Firebase FCM'] },
-  { id: 15, key: 'fleet', image: '/portfolio/fleet.svg', category: 'mobile', technologies: ['Android (Kotlin)', 'Google Maps', 'Laravel API', 'Firebase FCM'] },
-  { id: 16, key: 'schoolapp', image: '/portfolio/schoolapp.svg', category: 'mobile', technologies: ['Android (Kotlin)', 'Firebase Messaging', 'Laravel API', 'MySQL'] },
-  { id: 17, key: 'warehousemobile', image: '/portfolio/warehousemobile.svg', category: 'mobile', technologies: ['Android (Kotlin)', 'CameraX', 'Room Database', 'Laravel API'] },
-  { id: 18, key: 'taxiapp', image: '/portfolio/taxiapp.svg', category: 'mobile', technologies: ['Android (Kotlin)', 'Google Maps', 'Firebase', 'Laravel API', 'Stripe'] },
-  { id: 19, key: 'eventsapp', image: '/portfolio/eventsapp.svg', category: 'mobile', technologies: ['Android (Kotlin)', 'Jetpack Compose', 'Laravel API', 'Stripe'] },
-  // E-commerce
-  { id: 20, key: 'cosmetics', image: '/portfolio/cosmetics.svg', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL'] },
-  { id: 21, key: 'electronics', image: '/portfolio/electronics.svg', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL', 'Redis'] },
-  { id: 22, key: 'foodshop', image: '/portfolio/foodshop.svg', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'Google Maps API', 'Stripe', 'MySQL'] },
-  { id: 23, key: 'autoparts', image: '/portfolio/autoparts.svg', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis'] },
-  { id: 24, key: 'bookstore', image: '/portfolio/bookstore.svg', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL', 'Elasticsearch'] },
-  { id: 25, key: 'sportsstore', image: '/portfolio/sportsstore.svg', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL'] },
-  { id: 26, key: 'wholesale', image: '/portfolio/wholesale.svg', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis'] },
-  // CRM / ERP
-  { id: 27, key: 'invoicing', image: '/portfolio/invoicing.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Stripe'] },
-  { id: 28, key: 'inventory', image: '/portfolio/inventory.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis'] },
-  { id: 29, key: 'rental', image: '/portfolio/rental.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL'] },
-  { id: 30, key: 'dental', image: '/portfolio/dental.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'MySQL'] },
-  { id: 31, key: 'lawcrm', image: '/portfolio/lawcrm.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'PostgreSQL', 'Redis'] },
-  { id: 32, key: 'hotel', image: '/portfolio/hotel.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'MySQL', 'WebSockets'] },
-  { id: 33, key: 'construction', image: '/portfolio/construction.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis'] },
-  { id: 34, key: 'saloncrm', image: '/portfolio/saloncrm.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Twilio SMS'] },
-  // Web apps
-  { id: 35, key: 'elearning', image: '/portfolio/elearning.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Stripe', 'WebSockets'] },
-  { id: 36, key: 'survey', image: '/portfolio/survey.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'MySQL'] },
-  { id: 37, key: 'logistics', image: '/portfolio/logistics.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'Google Maps', 'MySQL', 'WebSockets'] },
-  { id: 38, key: 'helpdesk', image: '/portfolio/helpdesk.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis', 'WebSockets'] },
-  { id: 39, key: 'timesheet', image: '/portfolio/timesheet.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'MySQL'] },
-  { id: 40, key: 'monitoring', image: '/portfolio/monitoring.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'Redis', 'WebSockets'] },
-  { id: 41, key: 'recruitment', image: '/portfolio/recruitment.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis'] },
-  { id: 42, key: 'subscription', image: '/portfolio/subscription.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Stripe'] },
-  { id: 43, key: 'analyticsapp', image: '/portfolio/analyticsapp.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'PostgreSQL', 'Redis'] },
-  { id: 44, key: 'chat', image: '/portfolio/chat.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'WebSockets', 'Redis'] },
-  // Websites
-  { id: 45, key: 'agencyweb', image: '/portfolio/agencyweb.svg', category: 'website', technologies: ['Laravel', 'Vue.js', 'TailwindCSS'] },
-  { id: 46, key: 'constructionweb', image: '/portfolio/constructionweb.svg', category: 'website', technologies: ['Laravel', 'TailwindCSS', 'Alpine.js'] },
-  { id: 47, key: 'clinicweb', image: '/portfolio/clinicweb.svg', category: 'website', technologies: ['Laravel', 'Vue.js', 'MySQL'] },
-  { id: 48, key: 'lawweb', image: '/portfolio/lawweb.svg', category: 'website', technologies: ['Laravel', 'TailwindCSS', 'Vue.js'] },
-  { id: 49, key: 'eventweb', image: '/portfolio/eventweb.svg', category: 'website', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL'] },
-  { id: 50, key: 'gymweb', image: '/portfolio/gymweb.svg', category: 'website', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL'] },
-  { id: 51, key: 'portfolioweb', image: '/portfolio/portfolioweb.svg', category: 'website', technologies: ['Laravel', 'Vue.js', 'TailwindCSS'] },
-  // Platforms / SaaS
-  { id: 52, key: 'marketplace', image: '/portfolio/marketplace.svg', category: 'ecommerce', technologies: ['Laravel', 'Vue.js', 'Stripe Connect', 'MySQL'] },
-  { id: 53, key: 'posystem', image: '/portfolio/posystem.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'MySQL', 'WebSockets'] },
-  { id: 54, key: 'telemedicine', image: '/portfolio/telemedicine.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'WebRTC', 'MySQL'] },
-  { id: 55, key: 'gymmanagement', image: '/portfolio/gymmanagement.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'Android', 'MySQL'] },
-  { id: 56, key: 'property', image: '/portfolio/property.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Twilio SMS'] },
-  { id: 57, key: 'schoollms', image: '/portfolio/schoollms.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'MySQL', 'WebSockets'] },
-  { id: 58, key: 'insurance', image: '/portfolio/insurance.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis'] },
-  { id: 59, key: 'freelancer', image: '/portfolio/freelancer.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'Stripe', 'MySQL'] },
-  { id: 60, key: 'eventmgmt', image: '/portfolio/eventmgmt.svg', category: 'webapp', technologies: ['Laravel', 'Vue.js', 'Android', 'Stripe', 'MySQL'] },
-  { id: 61, key: 'transport', image: '/portfolio/transport.svg', category: 'crm', technologies: ['Laravel', 'Vue.js', 'Google Maps', 'MySQL', 'Redis'] },
-]
+const filterItems = computed(() =>
+  categories.map((category) => ({
+    id: category.value,
+    label: t(category.labelKey)
+  }))
+)
+
+const setCategory = (value) => {
+  activeCategory.value = value
+  const query = { ...route.query }
+  if (value === 'all') {
+    delete query.kategoria
+  } else {
+    query.kategoria = value
+  }
+  router.replace({ query })
+}
 
 const projects = computed(() => {
   return projectsData.map(p => ({
@@ -243,15 +164,51 @@ const getCategoryLabel = (value) => {
   return category ? t(category.labelKey) : value
 }
 
-const openModal = (project) => {
+const showProject = (project) => {
   selectedProject.value = project
   document.body.style.overflow = 'hidden'
+}
+
+const openModal = (project) => {
+  showProject(project)
+  if (route.query.projekt !== project.key) {
+    router.replace({ query: { ...route.query, projekt: project.key } })
+  }
 }
 
 const closeModal = () => {
   selectedProject.value = null
   document.body.style.overflow = ''
+  if (route.query.projekt) {
+    const query = { ...route.query }
+    delete query.projekt
+    router.replace({ query })
+  }
 }
+
+watch(
+  () => route.query.kategoria,
+  (value) => {
+    if (value && categories.some((category) => category.value === value)) {
+      activeCategory.value = value
+    }
+  },
+  { immediate: true }
+)
+
+watch(
+  [() => route.query.projekt, projects],
+  ([key]) => {
+    if (!key) {
+      return
+    }
+    const project = projects.value.find((item) => item.key === key)
+    if (project && selectedProject.value?.key !== project.key) {
+      showProject(project)
+    }
+  },
+  { immediate: true }
+)
 
 const goToContact = (project) => {
   selectedProject.value = null

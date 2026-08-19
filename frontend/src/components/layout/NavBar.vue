@@ -10,13 +10,13 @@
         </router-link>
 
         <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
           <router-link
             v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
             class="text-gray-700 hover:text-brand-600 transition-colors duration-200 font-medium"
-            :class="{ 'text-brand-600': $route.path === link.path }"
+            :class="{ 'text-brand-600': isActive(link.path) }"
           >
             {{ $t(link.i18nKey) }}
           </router-link>
@@ -68,7 +68,7 @@
         <!-- Mobile Menu Button -->
         <button
           @click="isMobileMenuOpen = !isMobileMenuOpen"
-          class="md:hidden p-2 text-gray-700 hover:text-brand-600"
+          class="lg:hidden p-2 text-gray-700 hover:text-brand-600"
           :aria-expanded="isMobileMenuOpen"
           aria-controls="mobile-menu"
           aria-label="Otwórz menu nawigacji"
@@ -90,14 +90,14 @@
       enter-from-class="opacity-0 -translate-y-2"
       leave-to-class="opacity-0 -translate-y-2"
     >
-      <div v-if="isMobileMenuOpen" id="mobile-menu" class="md:hidden bg-white border-t border-gray-200">
+      <div v-if="isMobileMenuOpen" id="mobile-menu" class="lg:hidden bg-white border-t border-gray-200">
         <div class="px-4 py-4 space-y-2">
           <router-link
             v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
             class="block px-4 py-2 text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md transition-colors"
-            :class="{ 'text-brand-600 bg-gray-50': $route.path === link.path }"
+            :class="{ 'text-brand-600 bg-gray-50': isActive(link.path) }"
             @click="isMobileMenuOpen = false"
           >
             {{ $t(link.i18nKey) }}
@@ -137,8 +137,11 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
 
 const { locale } = useI18n()
+const route = useRoute()
+const router = useRouter()
 
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
@@ -152,12 +155,27 @@ const navLinks = [
   { i18nKey: 'nav.services', path: '/uslugi' },
   { i18nKey: 'nav.technologies', path: '/technologie' },
   { i18nKey: 'nav.portfolio', path: '/portfolio' },
+  { i18nKey: 'nav.articles', path: '/artykuly' },
 ]
+
+const isActive = (path) => {
+  if (path === '/') {
+    return route.path === '/'
+  }
+  return route.path === path || route.path.startsWith(`${path}/`)
+}
 
 const changeLocale = (newLocale) => {
   locale.value = newLocale
   localStorage.setItem('locale', newLocale)
   isLangMenuOpen.value = false
+  const query = { ...route.query }
+  if (newLocale === 'en') {
+    query.lang = 'en'
+  } else {
+    delete query.lang
+  }
+  router.replace({ path: route.path, query })
 }
 
 const handleScroll = () => {

@@ -1,0 +1,331 @@
+<?php
+
+namespace App\Services\Seo;
+
+use App\Services\Content\ArticleRepository;
+use Illuminate\Http\Request;
+
+class SpaSeoInjector
+{
+    private const BASE_URL = 'https://gesoft.pl';
+
+    public function __construct(private ArticleRepository $articles)
+    {
+    }
+
+    public function inject(string $html, Request $request): array
+    {
+        $locale = $request->query('lang') === 'en' ? 'en' : 'pl';
+        $path = '/'.ltrim($request->path(), '/');
+        if ($path === '/index.php') {
+            $path = '/';
+        }
+
+        $seo = $this->resolve($path, $locale, $request->query('kategoria'));
+
+        if ($seo === null) {
+            return [$html, 200];
+        }
+
+        $html = $this->replaceTitle($html, $seo['title']);
+        $html = preg_replace('/<html lang="[^"]*">/', '<html lang="'.$locale.'">', $html, 1) ?? $html;
+        $html = $this->replaceMeta($html, 'description', $seo['description']);
+        $html = $this->replaceMeta($html, 'keywords', $seo['keywords']);
+        $html = $this->replaceMeta($html, 'robots', $seo['robots']);
+        $html = $this->replaceMeta($html, 'og:title', $seo['title'], true);
+        $html = $this->replaceMeta($html, 'og:description', $seo['description'], true);
+        $html = $this->replaceMeta($html, 'og:type', $seo['ogType'], true);
+        $html = $this->replaceMeta($html, 'og:url', $seo['url'], true);
+        $html = $this->replaceMeta($html, 'twitter:title', $seo['title']);
+        $html = $this->replaceMeta($html, 'twitter:description', $seo['description']);
+        $html = $this->replaceLink($html, 'canonical', $seo['url']);
+        $html = $this->replaceHreflang($html, $seo['path']);
+        $html = $this->replaceJsonLd($html, $seo['jsonLd']);
+        $html = $this->replaceNoscript($html, $seo['noscript']);
+
+        return [$html, $seo['status']];
+    }
+
+    private function resolve(string $path, string $locale, mixed $category): ?array
+    {
+        $defaults = $this->pageSeo('/artykuly', $locale);
+        $defaults['path'] = $path;
+        $defaults['url'] = self::BASE_URL.$path;
+        $defaults['ogType'] = 'website';
+        $defaults['robots'] = 'index, follow';
+        $defaults['status'] = 200;
+        $defaults['jsonLd'] = $this->organizationJsonLd($locale);
+        $defaults['noscript'] = $this->defaultNoscript($locale);
+
+        if ($path === '/artykuly') {
+            return $this->listingSeo($defaults, $locale, is_string($category) ? $category : null);
+        }
+
+        if (preg_match('#^/artykuly/([a-z0-9-]+)$#', $path, $matches)) {
+            return $this->articleSeo($defaults, $matches[1], $locale);
+        }
+
+        return null;
+    }
+
+    private function listingSeo(array $defaults, string $locale, ?string $category): array
+    {
+        $allowed = ['industry', 'laravel', 'security', 'business'];
+        $category = in_array($category, $allowed, true) ? $category : null;
+        $listed = $this->articles->listed($locale, $category);
+
+        $labels = [
+            'industry' => $locale === 'en' ? 'industry' : 'branża',
+            'laravel' => 'Laravel',
+            'security' => $locale === 'en' ? 'security' : 'bezpieczeństwo',
+            'business' => $locale === 'en' ? 'business' : 'biznes',
+        ];
+
+        if ($category) {
+            $defaults['title'] = $locale === 'en'
+                ? 'Articles: '.$labels[$category].' - GESOFT'
+                : 'Artykuły: '.$labels[$category].' - GESOFT';
+        }
+
+        $defaults['jsonLd'] = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Blog',
+            'name' => $defaults['title'],
+            'description' => $defaults['description'],
+            'url' => self::BASE_URL.'/artykuly',
+            'inLanguage' => $locale === 'en' ? 'en-US' : 'pl-PL',
+            'publisher' => ['@type' => 'Organization', 'name' => 'GESOFT', 'url' => self::BASE_URL],
+            'blogPost' => array_map(fn (array $article) => [
+                '@type' => 'BlogPosting',
+                'headline' => $article['title'] ?? '',
+                'url' => self::BASE_URL.'/artykuly/'.($article['slug'] ?? ''),
+                'datePublished' => $article['publishedAt'] ?? null,
+            ], $listed),
+        ];
+
+        $defaults['noscript'] = view('seo.noscript-listing', [
+            'title' => $defaults['title'],
+            'description' => $defaults['description'],
+            'articles' => $listed,
+            'locale' => $locale,
+        ])->render();
+
+        return $defaults;
+    }
+
+    private function articleSeo(array $defaults, string $slug, string $locale): array
+    {
+        $raw = $this->articles->find($slug);
+
+        if (! $raw) {
+            $defaults['status'] = 404;
+            $defaults['robots'] = 'noindex, nofollow';
+            $defaults['title'] = $locale === 'en' ? 'Article not found | GESOFT' : 'Nie znaleziono artykułu | GESOFT';
+            $defaults['description'] = $locale === 'en'
+                ? 'This article does not exist or has been moved.'
+                : 'Ten artykuł nie istnieje albo został przeniesiony.';
+            $defaults['keywords'] = 'GESOFT';
+            $defaults['noscript'] = view('seo.noscript-missing', ['locale' => $locale])->render();
+
+            return $defaults;
+        }
+
+        $article = $this->articles->localized($raw, $locale);
+        $url = self::BASE_URL.'/artykuly/'.$slug;
+
+        $defaults['title'] = $article['seoTitle'] ?? $article['title'];
+        $defaults['description'] = $article['seoDescription'] ?? $article['excerpt'] ?? '';
+        $defaults['keywords'] = $article['keywords'] ?? 'Laravel, GESOFT';
+        $defaults['url'] = $url;
+        $defaults['ogType'] = 'article';
+        $defaults['jsonLd'] = [
+            '@context' => 'https://schema.org',
+            '@type' => 'BlogPosting',
+            'headline' => $article['title'] ?? '',
+            'description' => $defaults['description'],
+            'datePublished' => $article['publishedAt'] ?? null,
+            'dateModified' => $article['updatedAt'] ?? $article['publishedAt'] ?? null,
+            'inLanguage' => $locale === 'en' ? 'en-US' : 'pl-PL',
+            'image' => self::BASE_URL.'/og-image.png',
+            'author' => ['@type' => 'Organization', 'name' => 'GESOFT Paweł Matusiak'],
+            'publisher' => [
+                '@type' => 'Organization',
+                'name' => 'GESOFT',
+                'logo' => ['@type' => 'ImageObject', 'url' => self::BASE_URL.'/logo.png'],
+            ],
+            'mainEntityOfPage' => $url,
+            'keywords' => $defaults['keywords'],
+        ];
+
+        $faqs = [];
+        foreach ($article['content'] ?? [] as $block) {
+            if (($block['type'] ?? '') === 'faq') {
+                foreach ($block['items'] ?? [] as $item) {
+                    if (! empty($item['q']) && ! empty($item['a'])) {
+                        $faqs[] = $item;
+                    }
+                }
+            }
+        }
+
+        if ($faqs !== []) {
+            $defaults['jsonLd'] = [
+                '@context' => 'https://schema.org',
+                '@graph' => [
+                    $defaults['jsonLd'],
+                    [
+                        '@type' => 'FAQPage',
+                        'mainEntity' => array_map(fn (array $item) => [
+                            '@type' => 'Question',
+                            'name' => $item['q'],
+                            'acceptedAnswer' => [
+                                '@type' => 'Answer',
+                                'text' => $item['a'],
+                            ],
+                        ], $faqs),
+                    ],
+                ],
+            ];
+        }
+
+        $defaults['noscript'] = view('seo.noscript-article', [
+            'article' => $article,
+            'bodyHtml' => $this->blocksToHtml($article['content'] ?? [], $locale),
+            'locale' => $locale,
+        ])->render();
+
+        return $defaults;
+    }
+
+    private function pageSeo(string $path, string $locale): array
+    {
+        $pages = [
+            '/' => [
+                'pl' => ['title' => 'GESOFT — aplikacje webowe i Android dla firm | wycena 24h', 'description' => 'Software house Pawła Matusiaka. Aplikacje Laravel i Vue.js, Android, rezerwacje, KSeF. Bezpłatna wycena w 24 godziny, 6 miesięcy gwarancji.', 'keywords' => 'aplikacje webowe, oprogramowanie dla firm, Laravel, Vue.js, Android, KSeF, GESOFT'],
+                'en' => ['title' => 'GESOFT — web and Android apps for companies | quote in 24h', 'description' => 'Paweł Matusiak’s software house. Laravel and Vue.js apps, Android, bookings, KSeF. Free quote within 24 hours, 6-month warranty.', 'keywords' => 'web applications, software for companies, Laravel, Vue.js, Android, KSeF, GESOFT'],
+            ],
+            '/artykuly' => [
+                'pl' => ['title' => 'Artykuły: system rezerwacji, restauracja, salon, gabinet | GESOFT', 'description' => 'Artykuły dla właścicieli firm: system rezerwacji stolików, zamówienia online bez prowizji, program do salonu, e-rejestracja, warsztat, panel B2B.', 'keywords' => 'system rezerwacji online, program do restauracji, salon fryzjerski, gabinet lekarski, panel B2B, oprogramowanie na zamówienie, GESOFT'],
+                'en' => ['title' => 'Articles: booking systems, restaurants, salons, clinics | GESOFT', 'description' => 'Articles for business owners: table booking, commission-free online orders, salon software, clinic e-registration, workshops, B2B portals.', 'keywords' => 'online booking system, restaurant software, hair salon, medical clinic, B2B portal, custom software, GESOFT'],
+            ],
+        ];
+
+        return $pages[$path][$locale] ?? $pages['/'][$locale];
+    }
+
+    private function organizationJsonLd(string $locale): array
+    {
+        return [
+            '@context' => 'https://schema.org',
+            '@type' => 'Organization',
+            'name' => 'GESOFT',
+            'legalName' => 'GESOFT Paweł Matusiak',
+            'url' => self::BASE_URL,
+            'logo' => self::BASE_URL.'/logo.png',
+            'description' => $locale === 'en'
+                ? 'Professional website and web application development'
+                : 'Profesjonalne tworzenie stron i aplikacji webowych',
+        ];
+    }
+
+    private function defaultNoscript(string $locale): string
+    {
+        return view('seo.noscript-default', ['locale' => $locale])->render();
+    }
+
+    private function blocksToHtml(array $blocks, string $locale = 'pl'): string
+    {
+        $html = '';
+        $faqHeading = $locale === 'en' ? 'Frequently asked questions' : 'Najczęściej zadawane pytania';
+
+        foreach ($blocks as $block) {
+            $type = $block['type'] ?? '';
+            $html .= match ($type) {
+                'h2' => '<h2>'.e($block['text'] ?? '').'</h2>',
+                'h3' => '<h3>'.e($block['text'] ?? '').'</h3>',
+                'p' => '<p>'.$this->inline((string) ($block['text'] ?? '')).'</p>',
+                'ul' => '<ul>'.collect($block['items'] ?? [])->map(fn ($item) => '<li>'.$this->inline((string) $item).'</li>')->implode('').'</ul>',
+                'ol' => '<ol>'.collect($block['items'] ?? [])->map(fn ($item) => '<li>'.$this->inline((string) $item).'</li>')->implode('').'</ol>',
+                'callout' => '<aside><p><strong>'.e($block['title'] ?? '').'</strong></p><p>'.$this->inline((string) ($block['text'] ?? '')).'</p></aside>',
+                'faq' => '<section><h2>'.e($block['title'] ?? $faqHeading).'</h2><dl>'.collect($block['items'] ?? [])->map(fn ($item) => '<dt>'.e($item['q'] ?? '').'</dt><dd>'.$this->inline((string) ($item['a'] ?? '')).'</dd>')->implode('').'</dl></section>',
+                default => '',
+            };
+        }
+
+        return $html;
+    }
+
+    private function inline(string $text): string
+    {
+        $escaped = e($text);
+        $escaped = (string) preg_replace('/\*\*(.+?)\*\*/', '<strong>$1</strong>', $escaped);
+        $escaped = (string) preg_replace('/\+\+(.+?)\+\+/', '<u>$1</u>', $escaped);
+        $escaped = (string) preg_replace('/\*(.+?)\*/', '<em>$1</em>', $escaped);
+
+        return (string) preg_replace_callback(
+            '/\[([^\]]+)\]\((\/[^)\s]+|https?:\/\/[^)\s]+)\)/',
+            function (array $match) {
+                return '<a href="'.e($match[2]).'">'.$match[1].'</a>';
+            },
+            $escaped
+        );
+    }
+
+    private function replaceTitle(string $html, string $title): string
+    {
+        return (string) preg_replace('/<title>.*?<\/title>/s', '<title>'.e($title).'</title>', $html, 1);
+    }
+
+    private function replaceMeta(string $html, string $name, string $content, bool $property = false): string
+    {
+        $attribute = $property ? 'property' : 'name';
+        $pattern = '/<meta '.$attribute.'="'.preg_quote($name, '/').'" content="[^"]*">/';
+        $tag = '<meta '.$attribute.'="'.e($name).'" content="'.e($content).'">';
+
+        if (preg_match($pattern, $html)) {
+            return (string) preg_replace($pattern, $tag, $html, 1);
+        }
+
+        return str_replace('</head>', '    '.$tag."\n    </head>", $html);
+    }
+
+    private function replaceLink(string $html, string $rel, string $href): string
+    {
+        $pattern = '/<link rel="'.preg_quote($rel, '/').'" href="[^"]*">/';
+        $tag = '<link rel="'.e($rel).'" href="'.e($href).'">';
+
+        if (preg_match($pattern, $html)) {
+            return (string) preg_replace($pattern, $tag, $html, 1);
+        }
+
+        return str_replace('</head>', '    '.$tag."\n    </head>", $html);
+    }
+
+    private function replaceHreflang(string $html, string $path): string
+    {
+        $url = self::BASE_URL.($path === '/' ? '/' : $path);
+        $html = (string) preg_replace('/<link rel="alternate" hreflang="pl" href="[^"]*">/', '<link rel="alternate" hreflang="pl" href="'.e($url).'">', $html, 1);
+        $html = (string) preg_replace('/<link rel="alternate" hreflang="en" href="[^"]*">/', '<link rel="alternate" hreflang="en" href="'.e($url).'?lang=en">', $html, 1);
+        $html = (string) preg_replace('/<link rel="alternate" hreflang="x-default" href="[^"]*">/', '<link rel="alternate" hreflang="x-default" href="'.e($url).'">', $html, 1);
+
+        return $html;
+    }
+
+    private function replaceJsonLd(string $html, array $data): string
+    {
+        $json = json_encode($data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+        $replacement = '<script type="application/ld+json">'."\n    ".$json."\n    ".'</script>';
+
+        return (string) preg_replace(
+            '/<script type="application\/ld\+json">.*?<\/script>/s',
+            $replacement,
+            $html,
+            1
+        );
+    }
+
+    private function replaceNoscript(string $html, string $inner): string
+    {
+        return (string) preg_replace('/<noscript>.*?<\/noscript>/s', '<noscript>'.$inner.'</noscript>', $html, 1);
+    }
+}
