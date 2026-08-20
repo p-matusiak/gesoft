@@ -7,7 +7,15 @@
     @click="!to && $emit('select')"
   >
     <div class="aspect-video bg-gray-100 relative overflow-hidden">
-      <img :src="project.image" :alt="title" class="w-full h-full object-cover" width="640" height="360" />
+      <img
+        :src="project.image"
+        :alt="title"
+        class="w-full h-full object-cover"
+        width="640"
+        height="360"
+        loading="lazy"
+        decoding="async"
+      />
       <div
         v-if="overlay"
         class="absolute inset-0 bg-gray-900/70 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center"
