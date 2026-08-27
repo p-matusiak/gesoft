@@ -33,6 +33,12 @@ const routes = [
     meta: { title: 'Inspiracje - GESOFT' }
   },
   {
+    path: '/portfolio/:key',
+    name: 'inspiration',
+    component: () => import('@/views/InspirationView.vue'),
+    meta: { title: 'Inspiracje - GESOFT' }
+  },
+  {
     path: '/kontakt',
     name: 'contact',
     component: () => import('@/views/ContactView.vue'),

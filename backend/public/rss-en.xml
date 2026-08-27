@@ -5,329 +5,14 @@
     <link>https://gesoft.pl/artykuly</link>
     <description><![CDATA[Expert articles for business owners: processes, software and when custom IT is worth it.]]></description>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 27 Aug 2026 21:55:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 22:23:23 +0000</lastBuildDate>
     <atom:link href="https://gesoft.pl/rss-en.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[Law-firm correspondence register after the NSA e-Tax Office ruling]]></title>
-      <link>https://gesoft.pl/artykuly/rejestr-korespondencji-kancelaria-e-us?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/rejestr-korespondencji-kancelaria-e-us?lang=en</guid>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A seven-judge NSA panel: a document in the e-Tax Office is served only when it is actually collected, not after 14 days on the account. Time limits run from the channel, the collection date and the address on the power of attorney.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Tourist Cheque stays cannot go through Booking.com: a direct room calendar]]></title>
-      <link>https://gesoft.pl/artykuly/rezerwacja-bezposrednia-czek-turystyczny-pensjonat?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/rezerwacja-bezposrednia-czek-turystyczny-pensjonat?lang=en</guid>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Warmia-Masuria Tourist Cheque: 300 zł, two nights minimum, booking only with the property. The list is due in mid-September; first round 29 September. A guesthouse without its own calendar cannot take the code.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[PV installation records after Moje IRE: matching the meter, the DSO notice and CSIRE]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-instalacji-pv-moje-ire-csire?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-instalacji-pv-moje-ire-csire?lang=en</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[On 21 August 2026 Moje IRE opened CSIRE contract, meter and metering data to customers. An OZE installer is not a user of that system. They need a fitting card that lines up the DSO notice with device serials before the customer compares the offer with a CSIRE export.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Salon booking diaries versus B2B contracts after Poland’s labour inspectorate reform]]></title>
-      <link>https://gesoft.pl/artykuly/kalendarz-rezerwacji-salon-b2b-pip?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/kalendarz-rezerwacji-salon-b2b-pip?lang=en</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[On 18 August 2026 PIP published the first figures after the civil-contract reform: 121 orders and seven Chief Inspector interpretations. On 25 August Business Insider set out the 30-question self-check. In a hair or beauty salon those questions land on the chair, the diary hours and who issues the invoice.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Service charges due by the 10th: recording advances and votes after bill UD312]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-zaliczek-uchwal-wspolnota-ud312?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-zaliczek-uchwal-wspolnota-ud312?lang=en</guid>
-      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[On 18 August 2026 Infor described bill UD312: utility advances and waste fees by the 10th of the month, meters as common property, electronic voting, and the management report due by the end of April. Version 2.0 sat in the government’s work list on 17 August. A managing agent needs a register that can hold those fields before the text reaches the Journal of Laws.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[KSeF penalties from 1 January 2027: invoice records your accountancy firm should keep]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-faktur-ksef-kary-2027?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-faktur-ksef-kary-2027?lang=en</guid>
-      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[The Ministry of Finance has confirmed that administrative fines for the National e-Invoicing System start on 1 January 2027 and may reach 100% of the VAT on an invoice. Your accountancy firm needs a record of the KSeF number, offline24 status and permissions before the head of the tax office asks for a named document.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Nursery image ban after the childcare amendment: photos, carer training and the register]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-zlobka-zakaz-wizerunku?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-zlobka-zakaz-wizerunku?lang=en</guid>
-      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[The President has signed the amendment to the Act on childcare for children under three. A nursery, children’s club or day-care point may not publish a child’s image publicly, even with a parent’s consent. This article sets out what nursery software should hold: photos, carer training, group limits and register data.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Reimbursed e-prescriptions from 13 September 2026: treatment duration and RPL packs in clinic software]]></title>
-      <link>https://gesoft.pl/artykuly/program-do-gabinetu-recepty-refundowane-p1?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-do-gabinetu-recepty-refundowane-p1?lang=en</guid>
-      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[On 13 September 2026 Centrum e-Zdrowia will switch on blocking validation for reimbursed prescriptions. Without duration of treatment, structured dosing and a pack size that matches the medicinal products register, P1 will refuse the document. This article sets out the fields your clinic software should hold before a queue stalls on an error message.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[General spatial plans from 1 September 2026: a construction firm’s register of plots, WZ decisions and permits]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-inwestycji-decyzji-wz-plan-ogolny?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-inwestycji-decyzji-wz-plan-ogolny?lang=en</guid>
-      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[On 17 August 2026 Rzeczpospolita described the rush to file development-conditions (WZ) applications before 31 August. Forsal followed on 19 August with Ministry of Development and Technology figures from early August: only about 19 per cent of gminas had adopted a general plan. From 1 September, in a gmina with neither a general plan nor a local spatial plan, a new WZ application will not proceed. This piece sets out the fields a construction firm should keep on each job before a crew reaches the plot and before accounts issue an advance invoice.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Sunday trading after the Supreme Court ruling: a shop, warehouse and web-shop schedule PIP can inspect]]></title>
-      <link>https://gesoft.pl/artykuly/grafik-niedziel-handlowych-sklep-magazyn?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/grafik-niedziel-handlowych-sklep-magazyn?lang=en</guid>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[On 21 August 2026 the Polish Labour Inspectorate confirmed that a reading corner does not exempt a store from the Sunday trading ban. The next lawful trading Sunday is 30 August. Every other Sunday this year — December aside — also covers warehousing and stocktakes. This article sets out the Sunday trading schedule that keeps shop floor, wholesale depot and online orders apart when an inspector asks who was on site, and on what legal basis.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[BDO API from 1 January 2027: KPO records that will not die on the old endpoint]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-kpo-api-bdo-2027?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-kpo-api-bdo-2027?lang=en</guid>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[On 21 August 2026 IOŚ–NRI announced on bdo.mos.gov.pl API changes for KPO and KPOK from 1 January 2027: endpoints, status enums, the year field, means of transport, rejection reasons. The day before, BDO.gov maintenance was set for 25 August 19:00–22:00. A waste-hauling firm does not need a circular-economy slide. It needs a bridge from the job to the authority that will survive a new HTTP contract.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[The 12-tonne driving ban: an exemption register that will not lie to your dispatcher at Friday 18:00]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-wyjatkow-zakaz-ruchu-12-ton?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-wyjatkow-zakaz-ruchu-12-ton?lang=en</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[On 21 August 2026 the Minister of Infrastructure’s ordinance (Journal of Laws item 1110) entered into force: three new exemptions from the ban on combinations above 12 tonnes — foreign armed forces, civilian carriage of military equipment, and driving instruction or the state test with no commercial load. A week earlier the ministry restated the hours around 15 August. A haulage firm does not need a compliance slide. It needs an exemption register and a latch in dispatch.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Heat in the kitchen and on the floor: a temperature, break and drinks log that survives a labour inspection]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-temperatury-przerw-horeca-pip?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-temperatury-przerw-horeca-pip?lang=en</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[On 11 August 2026 the Polish National Labour Inspectorate published the first results of heat-wave workplace checks: about 300 complaints by 7 August, gastronomy venues on the list, readings above 30°C and sometimes 35°C. A restaurant, caterer or hotel kitchen does not need another BHP slide. It needs a temperature, break, drinks and rota record you can open in front of an inspector.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[When PIP reclassifies a contract of mandate: a staffing register your firm can defend]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-umow-cywilnoprawnych-pip-agencja?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-umow-cywilnoprawnych-pip-agencja?lang=en</guid>
+      <title><![CDATA[Transport company software: one record for the job, the truck and the document]]></title>
+      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej?lang=en</guid>
       <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[On 18 August 2026 Poland's National Labour Inspectorate published the first numbers after 8 July: 690 complaints, more than 100 inspections, 121 written orders and 201 voluntary conversions from a civil-law contract to an employment contract. Your staffing agency does not need another compliance slide. You need a register of mandates, hours and instructions you can put in front of an inspector.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Online booking system for local services — a calendar that works for you]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Hairdresser, physio, workshop, room, advisor — the same pain: calls during work and no-shows. An online booking system takes reservations 24/7, guards resources and reminds the client before they forget.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Online ticket sales for events — without a ticketing-platform cut]]></title>
-      <link>https://gesoft.pl/artykuly/system-sprzedazy-biletow-online?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-sprzedazy-biletow-online?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Going, Eventim and peers take a cut of the ticket and keep your audience. Your own ticketing for a concert, conference, amateur match or workshop leaves the margin and an email list you have consent for.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Cleaning company app: site rotas, checklists, after photos]]></title>
-      <link>https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A crew will not fill in a spreadsheet after eight sites. A cleaning app shows today’s list, a washroom checklist and a photo after the job — the B2B client sees a report, and you see which contract still has margin.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Nursery and kindergarten software: enrolment, attendance, fees, parent app]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A parent asks the group chat whether the child ate lunch. The head chases fees in Excel. Kindergarten software collects intake, attendance and messaging — with the GDPR bar a child’s file needs.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Driving school software: course sign-up, lessons, payments, test dates]]></title>
-      <link>https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[The pupil does not know how many hours are left. The instructor keeps the rota in their head. The office chases instalments. Driving-school software ties theory, yard hours and the test — instead of three spreadsheets and a Facebook group.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Online booking system for car washes and detailing studios]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A detailing bay is 2–8 hours you cannot sell twice. A Messenger queue and “I’ll drop by after work” end as an empty box and a complaint. An online calendar with a deposit and SMS guards the bay the same way it guards a salon chair.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Veterinary clinic software: patient cards, vaccines, appointments]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A clinic has several animals per owner, vaccine and drug history, and bookings at 10 pm. Off-the-shelf tools (VetFile, Veterinaro, lecznica.eu) can be free at the start. A custom system makes sense when the protocol, drug stock and a second site do not fit a subscription.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Google Business Profile or your own website? What a local firm needs in 2026]]></title>
-      <link>https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A Google Business Profile is mandatory if people type “hairdresser nearby”. It does not replace a site with a calendar, a price list and a GDPR consent. Facebook is not your customer database — the algorithm can bury a post overnight.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Mandatory KSeF 2026 in a company app: who must comply and how to wire invoices]]></title>
-      <link>https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[From 1 February 2026 KSeF is mandatory for large taxpayers (2024 sales over PLN 200 million gross); from 1 April 2026 for other firms. An off-the-shelf accounts tool may be enough. A custom B2B panel, CRM or wholesale system must issue a structured invoice, not a PDF in email.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[No-shows: what an empty hour costs in a salon, clinic and restaurant]]></title>
-      <link>https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Hair and beauty trade benchmarks put no-shows around 14–15% of visits, medical clinics around 18%, restaurants without a deposit often 5–20% of bookings. That is not bad luck. It is missing reminders, deposits and a waitlist.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[What Glovo, Pyszne.pl and Uber Eats commission really costs — run the numbers]]></title>
-      <link>https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Polish trade round-ups for 2026 put aggregator commissions roughly between 10–15% (pickup / own courier) and 25–35% with the platform’s rider. At 40 orders a day that is not “a few zloty” — it is a cook’s wage or the rent.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Roadside and tow-truck app: jobs on a map, status, photos]]></title>
-      <link>https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[The dispatcher is on the phone, the driver does not know which job is closer, the customer asks where you are. An app: a map pin, ETA, tow photos, payment. Android in the cab, a panel at base — not a WhatsApp group.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Dry-cleaner and laundry software: intake, status, pickup, delivery]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-pralni?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-pralni?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[The customer asks if the suit is ready. Staff hunt a bag by a paper number. Laundry software: intake with a photo, SMS status, pay on collection or online, a B2B pickup route — instead of a notebook and three calls a day from the same hotel.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Soft-play and kids’ birthday booking: rooms, packages, deposits]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Saturday at 3 pm is one slot, not “we will squeeze a second group”. Soft play lives on birthdays and weekends. A room calendar, a package (host, cake, hours) and a deposit — instead of Facebook and two bookings on the same room.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Used-car lot software: stock, reservations, commission, contracts]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-komisu-samochodowego?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-komisu-samochodowego?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A consignment lot is not a classified ad. It is a contract with the owner, a commission, a reservation with a deposit and a log of who viewed the VIN. A spreadsheet mixes “ours” with “on consignment” and will not lock a car that already has a deposit.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Equipment rental software: bookings, deposits, returns, damage]]></title>
-      <link>https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Skis, bikes, tools, racks, dresses, PA — the same problem: an item cannot go out twice on the same weekend. A spreadsheet will not watch deposits, service and a late return. A resource calendar with a deposit and a photo protocol.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Physiotherapy booking system: clinic, treatment courses, home visits]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Physio sells a course of 5–10 visits and a table, not “a free hour”. Patients vanish after the third session; home visits scramble the diary. A calendar with courses, rooms and travel plus SMS — instead of two Google Calendars and a WhatsApp group.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Dietitian software: visits, meal plans, measurements, patient portal]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-dietetyka?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-dietetyka?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A nutrition practice lives on a course, not a one-off consult. Spreadsheet calories and a PDF in email die on the third patient of the day. A system: calendar, card, plan, weight in an app — or the patient “lost the file” and does not return.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Tattoo studio booking system: deposit, consents, artist portfolio]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A 4–8 hour session and a design the artist prepped at night. A no-show without a deposit is a whole day gone. A calendar with a deposit, a consent form and a reference photo is a studio tool, not a “nice website”.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Dog groomer software: bookings, pet cards, SMS]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-groomera?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-groomera?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Grooming is not a 30-minute haircut. Breed, coat and nails are 2–4 hours on the table. An online calendar, a dog card and a Saturday deposit — or Messenger and a no-show that eats the whole bay.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Meal-prep and diet-catering software: orders, menus, delivery routes]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A subscription meal box is not a 20-SKU shop. It is calorie variants, skipped days, allergens, tomorrow’s production and a courier with 40 stops. Niche tools (MasterLife CRM, x-catering, SOT) can work. A custom app — when your diet and logistics do not fit the template.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Speech-therapist software: booking, child cards, exercises, payments]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-logopedy?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-logopedy?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A speech clinic lives on a course and on parents asking about progress. A notebook and a Messenger group will not watch attendance, homework and instalments. Speech-therapy software: a calendar, a child card, a parent portal, SMS, lesson packs.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Solar and renewable-installer app: leads, installs, service]]></title>
-      <link>https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Solar, heat pumps and batteries are a funnel + a crew on a roof + a service visit in two years. A spreadsheet will not watch permits, panel deliveries and a handover protocol. A PV installer app: CRM, install schedule, a phone checklist, field service.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Optician and optical shop software: exams, prescriptions, frame orders]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[An optical shop is a clinic + stock + a workshop. The prescription, frames, lenses and pickup get lost between a notebook and the lab. Optician software: eye-test booking, a client card, order status and an SMS when the glasses are ready.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Escape room booking system: rooms, slots, deposits, online tickets]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-escape-room?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-escape-room?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[An escape room sells a specific hour in a specific room. Two bookings for “Hospital 6 pm” is a disaster. An escape-room booking system, room calendar, online tickets and a deposit — instead of Messenger and Excel.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Software for a volunteer fire brigade and a sports club: dues, timetable, kit]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A volunteer fire brigade and a sports club share the same pain: a member register, dues, duty and a facility calendar. OSP and club software instead of Excel and Facebook.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Property-manager software: defects, walk-throughs, TBS, administrator app]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A community, a TBS and a tenement will not fit Excel after the fifth address. Property-manager software holds the building card, defect tickets and walk-throughs — with an administrator app in a basement with no signal.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Association and foundation software: members, dues, OPP, a portal]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A board is not looking for a generic CRM. It needs a member register, dues, a portal, and order before the AGM and the public-benefit report. Association software and foundation software — instead of Excel, a Messenger group, and three truths about the same person.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Housing-cooperative software: unit register, utilities, members’ portal, resolutions]]></title>
-      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A cooperative board does not buy “an IT system”. It buys one truth about the unit, the advance, the repair fund and the ticket. Housing-cooperative software instead of three spreadsheets, a caretaker’s notebook and the president’s inbox.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Housing-community software: advances, utilities, resolutions and a resident portal]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A Polish housing community (wspólnota) is created by law, not by a spreadsheet. Software for a community ties together unit files, maintenance advances, utility billing, owner resolutions and a resident portal. Packaged SaaS is often enough. A custom system — when the process, brand or portfolio does not fit a template. Software does not replace a licensed property manager.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Employment-agency software: ATS, temporary-worker records, hours, GDPR]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[You are not buying an ATS from the valley. You are buying one card for the candidate and the temporary worker that will survive a labour inspection and a GDPR access request. Employment-agency software instead of Excel, Telegram and three unconnected SaaS tools.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Accounting-office software: client portal, KSeF, e-Deliveries]]></title>
-      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego?lang=en</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[You are not buying a VAT engine. You are buying one client file that does not vanish between mail, WhatsApp and a USB stick. Accounting-office software is a portal, a workflow and a mailbox — not another ledger.]]></description>
+      <description><![CDATA[A dispatcher does not buy “an IT system”. They buy one truth about the haulage job, the vehicle, the driver and the document. Transport company software instead of a spreadsheet, a WhatsApp group and three versions of the freight rate.]]></description>
     </item>
     <item>
       <title><![CDATA[BDO and waste records in a Polish company: KPO, KEO and a panel that does not lie at a WIOŚ inspection]]></title>
@@ -337,11 +22,228 @@
       <description><![CDATA[You are not buying a green certificate. You are buying one waste card and a KPO that does not lie when the inspectorate arrives. Official BDO is mandatory — GESOFT does not replace it. We build the operating layer: on-site waste stock, scale, photo, handover, reminders and an export under your MOS account.]]></description>
     </item>
     <item>
-      <title><![CDATA[Transport company software: one record for the job, the truck and the document]]></title>
-      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej?lang=en</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej?lang=en</guid>
+      <title><![CDATA[Accounting-office software: client portal, KSeF, e-Deliveries]]></title>
+      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego?lang=en</guid>
       <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[A dispatcher does not buy “an IT system”. They buy one truth about the haulage job, the vehicle, the driver and the document. Transport company software instead of a spreadsheet, a WhatsApp group and three versions of the freight rate.]]></description>
+      <description><![CDATA[You are not buying a VAT engine. You are buying one client file that does not vanish between mail, WhatsApp and a USB stick. Accounting-office software is a portal, a workflow and a mailbox — not another ledger.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Employment-agency software: ATS, temporary-worker records, hours, GDPR]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[You are not buying an ATS from the valley. You are buying one card for the candidate and the temporary worker that will survive a labour inspection and a GDPR access request. Employment-agency software instead of Excel, Telegram and three unconnected SaaS tools.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Housing-community software: advances, utilities, resolutions and a resident portal]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A Polish housing community (wspólnota) is created by law, not by a spreadsheet. Software for a community ties together unit files, maintenance advances, utility billing, owner resolutions and a resident portal. Packaged SaaS is often enough. A custom system — when the process, brand or portfolio does not fit a template. Software does not replace a licensed property manager.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Housing-cooperative software: unit register, utilities, members’ portal, resolutions]]></title>
+      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A cooperative board does not buy “an IT system”. It buys one truth about the unit, the advance, the repair fund and the ticket. Housing-cooperative software instead of three spreadsheets, a caretaker’s notebook and the president’s inbox.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Association and foundation software: members, dues, OPP, a portal]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A board is not looking for a generic CRM. It needs a member register, dues, a portal, and order before the AGM and the public-benefit report. Association software and foundation software — instead of Excel, a Messenger group, and three truths about the same person.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Property-manager software: defects, walk-throughs, TBS, administrator app]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A community, a TBS and a tenement will not fit Excel after the fifth address. Property-manager software holds the building card, defect tickets and walk-throughs — with an administrator app in a basement with no signal.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Software for a volunteer fire brigade and a sports club: dues, timetable, kit]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A volunteer fire brigade and a sports club share the same pain: a member register, dues, duty and a facility calendar. OSP and club software instead of Excel and Facebook.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Escape room booking system: rooms, slots, deposits, online tickets]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-escape-room?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-escape-room?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[An escape room sells a specific hour in a specific room. Two bookings for “Hospital 6 pm” is a disaster. An escape-room booking system, room calendar, online tickets and a deposit — instead of Messenger and Excel.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Optician and optical shop software: exams, prescriptions, frame orders]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[An optical shop is a clinic + stock + a workshop. The prescription, frames, lenses and pickup get lost between a notebook and the lab. Optician software: eye-test booking, a client card, order status and an SMS when the glasses are ready.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Solar and renewable-installer app: leads, installs, service]]></title>
+      <link>https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Solar, heat pumps and batteries are a funnel + a crew on a roof + a service visit in two years. A spreadsheet will not watch permits, panel deliveries and a handover protocol. A PV installer app: CRM, install schedule, a phone checklist, field service.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Speech-therapist software: booking, child cards, exercises, payments]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-logopedy?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-logopedy?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A speech clinic lives on a course and on parents asking about progress. A notebook and a Messenger group will not watch attendance, homework and instalments. Speech-therapy software: a calendar, a child card, a parent portal, SMS, lesson packs.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Meal-prep and diet-catering software: orders, menus, delivery routes]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A subscription meal box is not a 20-SKU shop. It is calorie variants, skipped days, allergens, tomorrow’s production and a courier with 40 stops. Niche tools (MasterLife CRM, x-catering, SOT) can work. A custom app — when your diet and logistics do not fit the template.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Dog groomer software: bookings, pet cards, SMS]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-groomera?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-groomera?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Grooming is not a 30-minute haircut. Breed, coat and nails are 2–4 hours on the table. An online calendar, a dog card and a Saturday deposit — or Messenger and a no-show that eats the whole bay.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Tattoo studio booking system: deposit, consents, artist portfolio]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A 4–8 hour session and a design the artist prepped at night. A no-show without a deposit is a whole day gone. A calendar with a deposit, a consent form and a reference photo is a studio tool, not a “nice website”.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Dietitian software: visits, meal plans, measurements, patient portal]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-dietetyka?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-dietetyka?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A nutrition practice lives on a course, not a one-off consult. Spreadsheet calories and a PDF in email die on the third patient of the day. A system: calendar, card, plan, weight in an app — or the patient “lost the file” and does not return.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Physiotherapy booking system: clinic, treatment courses, home visits]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Physio sells a course of 5–10 visits and a table, not “a free hour”. Patients vanish after the third session; home visits scramble the diary. A calendar with courses, rooms and travel plus SMS — instead of two Google Calendars and a WhatsApp group.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Equipment rental software: bookings, deposits, returns, damage]]></title>
+      <link>https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Skis, bikes, tools, racks, dresses, PA — the same problem: an item cannot go out twice on the same weekend. A spreadsheet will not watch deposits, service and a late return. A resource calendar with a deposit and a photo protocol.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Used-car lot software: stock, reservations, commission, contracts]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-komisu-samochodowego?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-komisu-samochodowego?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A consignment lot is not a classified ad. It is a contract with the owner, a commission, a reservation with a deposit and a log of who viewed the VIN. A spreadsheet mixes “ours” with “on consignment” and will not lock a car that already has a deposit.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Soft-play and kids’ birthday booking: rooms, packages, deposits]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Saturday at 3 pm is one slot, not “we will squeeze a second group”. Soft play lives on birthdays and weekends. A room calendar, a package (host, cake, hours) and a deposit — instead of Facebook and two bookings on the same room.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Dry-cleaner and laundry software: intake, status, pickup, delivery]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-pralni?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-pralni?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[The customer asks if the suit is ready. Staff hunt a bag by a paper number. Laundry software: intake with a photo, SMS status, pay on collection or online, a B2B pickup route — instead of a notebook and three calls a day from the same hotel.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Roadside and tow-truck app: jobs on a map, status, photos]]></title>
+      <link>https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[The dispatcher is on the phone, the driver does not know which job is closer, the customer asks where you are. An app: a map pin, ETA, tow photos, payment. Android in the cab, a panel at base — not a WhatsApp group.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[What Glovo, Pyszne.pl and Uber Eats commission really costs — run the numbers]]></title>
+      <link>https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Polish trade round-ups for 2026 put aggregator commissions roughly between 10–15% (pickup / own courier) and 25–35% with the platform’s rider. At 40 orders a day that is not “a few zloty” — it is a cook’s wage or the rent.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[No-shows: what an empty hour costs in a salon, clinic and restaurant]]></title>
+      <link>https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Hair and beauty trade benchmarks put no-shows around 14–15% of visits, medical clinics around 18%, restaurants without a deposit often 5–20% of bookings. That is not bad luck. It is missing reminders, deposits and a waitlist.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Mandatory KSeF 2026 in a company app: who must comply and how to wire invoices]]></title>
+      <link>https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[From 1 February 2026 KSeF is mandatory for large taxpayers (2024 sales over PLN 200 million gross); from 1 April 2026 for other firms. An off-the-shelf accounts tool may be enough. A custom B2B panel, CRM or wholesale system must issue a structured invoice, not a PDF in email.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Google Business Profile or your own website? What a local firm needs in 2026]]></title>
+      <link>https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A Google Business Profile is mandatory if people type “hairdresser nearby”. It does not replace a site with a calendar, a price list and a GDPR consent. Facebook is not your customer database — the algorithm can bury a post overnight.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Veterinary clinic software: patient cards, vaccines, appointments]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A clinic has several animals per owner, vaccine and drug history, and bookings at 10 pm. Off-the-shelf tools (VetFile, Veterinaro, lecznica.eu) can be free at the start. A custom system makes sense when the protocol, drug stock and a second site do not fit a subscription.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Online booking system for car washes and detailing studios]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A detailing bay is 2–8 hours you cannot sell twice. A Messenger queue and “I’ll drop by after work” end as an empty box and a complaint. An online calendar with a deposit and SMS guards the bay the same way it guards a salon chair.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Driving school software: course sign-up, lessons, payments, test dates]]></title>
+      <link>https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[The pupil does not know how many hours are left. The instructor keeps the rota in their head. The office chases instalments. Driving-school software ties theory, yard hours and the test — instead of three spreadsheets and a Facebook group.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Nursery and kindergarten software: enrolment, attendance, fees, parent app]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A parent asks the group chat whether the child ate lunch. The head chases fees in Excel. Kindergarten software collects intake, attendance and messaging — with the GDPR bar a child’s file needs.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Cleaning company app: site rotas, checklists, after photos]]></title>
+      <link>https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A crew will not fill in a spreadsheet after eight sites. A cleaning app shows today’s list, a washroom checklist and a photo after the job — the B2B client sees a report, and you see which contract still has margin.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Online ticket sales for events — without a ticketing-platform cut]]></title>
+      <link>https://gesoft.pl/artykuly/system-sprzedazy-biletow-online?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-sprzedazy-biletow-online?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Going, Eventim and peers take a cut of the ticket and keep your audience. Your own ticketing for a concert, conference, amateur match or workshop leaves the margin and an email list you have consent for.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Online booking system for local services — a calendar that works for you]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug?lang=en</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Hairdresser, physio, workshop, room, advisor — the same pain: calls during work and no-shows. An online booking system takes reservations 24/7, guards resources and reminds the client before they forget.]]></description>
     </item>
     <item>
       <title><![CDATA[Online table booking system for restaurants — fewer calls, more guests]]></title>
@@ -356,6 +258,104 @@
       <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-online-salon-fryzjerski?lang=en</guid>
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
       <description><![CDATA[A client who cannot get through on Saturday books the competitor. An online calendar takes bookings 24/7, sends SMS reminders and tracks who is free — the stylist cuts instead of answering the phone. Fewer no-shows, more chairs earning.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[QR menu and table ordering: faster service, higher bills]]></title>
+      <link>https://gesoft.pl/artykuly/menu-qr-zamowienia-do-stolika?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/menu-qr-zamowienia-do-stolika?lang=en</guid>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[The guest scans a code, sees a live menu, orders and adds extras without waiting for a waiter. The kitchen gets the ticket immediately. You stop reprinting 200 menus after every price change and pay no platform cut.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Beauty salon software: bookings, treatment cards and stock]]></title>
+      <link>https://gesoft.pl/artykuly/program-do-salonu-kosmetycznego?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-do-salonu-kosmetycznego?lang=en</guid>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A beauty clinic lives on return visits and skin history, not a one-off appointment. Cosmetics salon software holds the client card, treatment protocol, consent and the next date — instead of a binder and one therapist’s memory. Fewer no-shows on 60–90 minute slots.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Your own restaurant online ordering system — no aggregator commission]]></title>
+      <link>https://gesoft.pl/artykuly/wlasny-system-zamowien-online-restauracja?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/wlasny-system-zamowien-online-restauracja?lang=en</guid>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[An aggregator takes 20–30% of every order and keeps the customer in its app. Your own ordering site, payment and delivery leave the margin in the venue and build a list nobody can switch off.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Online appointment system for GP practices and clinics]]></title>
+      <link>https://gesoft.pl/artykuly/system-umawiania-wizyt-gabinet-lekarski?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-umawiania-wizyt-gabinet-lekarski?lang=en</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Phone booking bursts in the morning and goes quiet in the afternoon. Online registration takes appointments 24/7, cuts no-shows and leaves reception time for patients who really need to call. Health data — privacy by design, not a GDPR sticker.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Workshop software: jobs, vehicle history, parts]]></title>
+      <link>https://gesoft.pl/artykuly/program-do-warsztatu-samochodowego?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-do-warsztatu-samochodowego?lang=en</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A reception notebook and “car ready” texts do not scale past the third bay. Workshop software holds the job from check-in to invoice, VIN history and parts stock — the mechanic knows what to do and the customer stops calling every hour.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[PHP application security audit: what we check before it is too late]]></title>
+      <link>https://gesoft.pl/artykuly/audyt-bezpieczenstwa-aplikacji-php?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/audyt-bezpieczenstwa-aplikacji-php?lang=en</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Most leaks in small and mid-size companies come from old PHP panels that everyone knows still work. An audit is not an accusation — it is a list of risks you can close before someone uses them.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[A restaurant and café loyalty programme that actually brings guests back]]></title>
+      <link>https://gesoft.pl/artykuly/program-lojalnosciowy-dla-restauracji?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-lojalnosciowy-dla-restauracji?lang=en</guid>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Paper stamp cards get lost. An aggregator app awards points to them, not you. Your own loyalty programme — points, stamps, birthday coupons — keeps the guest in your venue and gives a reason to order again.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Dental practice software: appointments, treatment plans, the chair]]></title>
+      <link>https://gesoft.pl/artykuly/oprogramowanie-gabinet-stomatologiczny?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-gabinet-stomatologiczny?lang=en</guid>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[In dentistry an empty chair-hour hurts more than in most services. Dental software runs the diary, the treatment plan, deposits and recall reminders — so the chair earns and the patient returns. Average dental no-show sits around 12%.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Membership and class booking system for gyms and fitness clubs]]></title>
+      <link>https://gesoft.pl/artykuly/system-karnetow-i-zajec-silownia?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-karnetow-i-zajec-silownia?lang=en</guid>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A spreadsheet of check-ins breaks at peak hour. A club app shows pass validity, open spots in yoga and reminds people before the membership lapses — before they leave for a chain. Churn is won in the first 90 days, not in December.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Online booking system for hotels and guesthouses without OTA commission]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-online-hotel-pensjonat?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-online-hotel-pensjonat?lang=en</guid>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Booking and Airbnb take a cut and put you next to twenty other properties. Your own booking engine on the hotel site keeps the guest with you: room calendar, deposit, seasons and a channel nobody can switch off.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[CRM for law firms: matters, deadlines, time, billing]]></title>
+      <link>https://gesoft.pl/artykuly/crm-dla-kancelarii-prawnej?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/crm-dla-kancelarii-prawnej?lang=en</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[The matter in email, deadlines in Google Calendar, time in Excel, the invoice in another tool. A law-firm CRM puts the client, the matter and billable hours in one place — with the permissions professional secrecy needs.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[B2B portal for wholesalers: private prices, orders, stock]]></title>
+      <link>https://gesoft.pl/artykuly/panel-b2b-dla-hurtowni?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/panel-b2b-dla-hurtowni?lang=en</guid>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[The sales rep in Excel, stock in the warehouse, an order by email at 9 pm. A B2B portal lets trade customers order at their price, credit limit and live stock — no call to the office, no discount mistakes.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Property CRM and unit reservations for developers and agencies]]></title>
+      <link>https://gesoft.pl/artykuly/crm-nieruchomosci-dla-dewelopera?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/crm-nieruchomosci-dla-dewelopera?lang=en</guid>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[A spreadsheet of stock is stale after the first call. A property CRM shows which units are free, reserved and sold, who owns the client and which contract stage you are in — without three truths in three files.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Field service app: jobs, visit report, van stock]]></title>
+      <link>https://gesoft.pl/artykuly/aplikacja-dla-serwisu-terenowego?lang=en</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-dla-serwisu-terenowego?lang=en</guid>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Crews in the field will not fill in a spreadsheet after they get back. A technician app shows today’s jobs, navigation, a checklist and visit photos — the office sees live status, the customer gets a report without waiting for paper.]]></description>
     </item>
   </channel>
 </rss>

@@ -679,6 +679,7 @@
     "noProjects": "No projects in this category.",
     "technologiesUsed": "Technology stack",
     "wantSimilar": "I want this project",
+    "related": "Similar inspirations",
     "mobileBackendNote": "A mobile app requires a backend — an API server (Laravel) that manages data, business logic and database communication. We build both the Android app and the backend as one complete project.",
     "cta": {
       "title": "See something similar to your idea?",

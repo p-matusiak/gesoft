@@ -18,7 +18,7 @@
           :title="project.title"
           :description="project.description"
           :category-label="project.categoryLabel"
-          :to="{ path: '/portfolio', query: { projekt: project.key } }"
+          :to="'/portfolio/' + project.key"
           compact
         />
       </div>

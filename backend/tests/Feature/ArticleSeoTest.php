@@ -176,6 +176,56 @@ class ArticleSeoTest extends TestCase
     {
         $this->get('/inspiracje')->assertRedirect('/portfolio');
         $this->get('/inspiracje?lang=en')->assertRedirect('/portfolio?lang=en');
+        $this->get('/inspiracje/crm')->assertRedirect('/portfolio/crm');
+    }
+
+    public function test_inspiration_detail_has_unique_canonical_and_body(): void
+    {
+        $pl = $this->get('/portfolio/crm');
+        $pl->assertOk();
+        $pl->assertSee('<title>System CRM / zarządzanie klientami — inspiracja | GESOFT</title>', false);
+        $pl->assertSee('rel="canonical" href="https://gesoft.pl/portfolio/crm"', false);
+        $pl->assertSee('hreflang="en" href="https://gesoft.pl/portfolio/crm?lang=en"', false);
+        $pl->assertSee('zarządzanie bazą klientów', false);
+        $pl->assertSee('CreativeWork', false);
+        $pl->assertSee('property="og:image" content="https://gesoft.pl/portfolio/crm.png"', false);
+
+        $en = $this->get('/portfolio/crm?lang=en');
+        $en->assertOk();
+        $en->assertSee('<title>CRM / Customer Management System — inspiration | GESOFT</title>', false);
+        $en->assertSee('rel="canonical" href="https://gesoft.pl/portfolio/crm?lang=en"', false);
+        $en->assertSee('lang="en"', false);
+    }
+
+    public function test_unknown_inspiration_is_404(): void
+    {
+        $this->get('/portfolio/nie-ma-takiego')->assertNotFound();
+        $this->get('/portfolio/nie-ma-takiego')->assertSee('noindex, nofollow', false);
+    }
+
+    public function test_portfolio_query_projekt_redirects_to_path(): void
+    {
+        $this->get('/portfolio?projekt=crm')->assertRedirect('/portfolio/crm')->assertStatus(301);
+        $this->get('/portfolio?projekt=crm&lang=en')->assertRedirect('/portfolio/crm?lang=en')->assertStatus(301);
+    }
+
+    public function test_inspirations_listing_links_to_detail_pages(): void
+    {
+        $pl = $this->get('/portfolio');
+        $pl->assertOk();
+        $pl->assertSee('https://gesoft.pl/portfolio/crm', false);
+        $pl->assertSee('CollectionPage', false);
+        $pl->assertSee('System CRM / zarządzanie klientami', false);
+    }
+
+    public function test_sitemap_lists_inspiration_pages(): void
+    {
+        $path = app(\App\Services\Content\SitemapWriter::class)->write();
+        $xml = (string) file_get_contents($path);
+
+        $this->assertStringContainsString('https://gesoft.pl/portfolio/crm</loc>', $xml);
+        $this->assertStringContainsString('https://gesoft.pl/portfolio/transport</loc>', $xml);
+        $this->assertStringContainsString('href="https://gesoft.pl/portfolio/crm?lang=en"', $xml);
     }
 
     public function test_admin_is_noindex(): void

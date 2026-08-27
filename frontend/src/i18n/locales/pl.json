@@ -679,6 +679,7 @@
     "noProjects": "Brak projektów w tej kategorii.",
     "technologiesUsed": "Stack technologiczny",
     "wantSimilar": "Chcę taki projekt",
+    "related": "Podobne inspiracje",
     "mobileBackendNote": "Aplikacja mobilna wymaga backendu — serwera API (Laravel), który zarządza danymi, logiką biznesową i komunikacją z bazą danych. Budujemy zarówno aplikację Android jak i backend w jednym projekcie.",
     "cta": {
       "title": "Widzisz coś podobnego do Twojego pomysłu?",

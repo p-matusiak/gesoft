@@ -5,329 +5,14 @@
     <link>https://gesoft.pl/artykuly</link>
     <description><![CDATA[Artykuły dla właścicieli firm: procesy, oprogramowanie i kiedy własne IT ma sens.]]></description>
     <language>pl-pl</language>
-    <lastBuildDate>Thu, 27 Aug 2026 21:55:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 22:23:23 +0000</lastBuildDate>
     <atom:link href="https://gesoft.pl/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[Rejestr korespondencji w kancelarii po wyroku NSA: e-US, e-Doręczenia i adres z pełnomocnictwa]]></title>
-      <link>https://gesoft.pl/artykuly/rejestr-korespondencji-kancelaria-e-us</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/rejestr-korespondencji-kancelaria-e-us</guid>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[NSA w składzie 7 sędziów: pismo w e-Urzędzie Skarbowym jest doręczone dopiero po faktycznym pobraniu, nie po 14 dniach na koncie. Kancelaria liczy terminy od kanału, daty odbioru i adresu z pełnomocnictwa.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Czek Turystyczny bez Booking.com: rezerwacja bezpośrednia i kalendarz pokoi]]></title>
-      <link>https://gesoft.pl/artykuly/rezerwacja-bezposrednia-czek-turystyczny-pensjonat</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/rezerwacja-bezposrednia-czek-turystyczny-pensjonat</guid>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Warmińsko-mazurski Czek Turystyczny: 300 zł, minimum dwa noclegi, rezerwacja tylko bezpośrednio w obiekcie. Lista w połowie września, pierwszy nabór 29 września. Pensjonat bez własnego kalendarza nie przyjmie kodu.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Ewidencja instalacji fotowoltaicznych po Moje IRE: karta montażu, zgłoszenie OSD i CSIRE]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-instalacji-pv-moje-ire-csire</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-instalacji-pv-moje-ire-csire</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[21 sierpnia 2026 r. portal Moje IRE otworzył klientom dane z CSIRE: umowę, licznik i pomiary. Instalator OZE nie jest użytkownikiem tego systemu. Potrzebuje karty instalacji, która zestawia zgłoszenie do operatora z numerami urządzeń, zanim klient porówna ofertę z eksportem z CSIRE.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Kalendarz rezerwacji w salonie a umowy B2B: 30 pytań PIP i pierwsze interpretacje]]></title>
-      <link>https://gesoft.pl/artykuly/kalendarz-rezerwacji-salon-b2b-pip</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/kalendarz-rezerwacji-salon-b2b-pip</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[18 sierpnia 2026 r. PIP podała pierwsze liczby po reformie umów cywilnoprawnych: 121 poleceń i siedem interpretacji GIP. 25 sierpnia Business Insider zestawił 30 pytań samokontroli. W salonie fryzjerskim i kosmetycznym te pytania schodzą na fotel, godziny w kalendarzu i to, kto wystawia fakturę.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Zaliczki do 10. dnia miesiąca: ewidencja zaliczek i uchwał we wspólnocie po projekcie UD312]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-zaliczek-uchwal-wspolnota-ud312</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-zaliczek-uchwal-wspolnota-ud312</guid>
-      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[18 sierpnia 2026 r. Infor opisał projekt UD312: zaliczki na media i odpady do 10. dnia miesiąca, liczniki jako część wspólna, głosowanie elektroniczne i sprawozdanie zarządu do końca kwietnia. Na 17 sierpnia wersja 2.0 leży w wykazie prac rządu. Zarządca potrzebuje ewidencji, która ogarnie te pola, zanim tekst trafi do Dziennika Ustaw i do pierwszego zebrania.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Kary KSeF od 1 stycznia 2027 r. Ewidencja faktur w biurze rachunkowym]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-faktur-ksef-kary-2027</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-faktur-ksef-kary-2027</guid>
-      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ministerstwo Finansów potwierdziło w odpowiedzi na interpelację, że administracyjne kary za KSeF ruszą 1 stycznia 2027 r. i mogą sięgnąć 100% VAT z faktury. Biuro rachunkowe potrzebuje ewidencji numeru KSeF, trybu offline24 i uprawnień, zanim naczelnik urzędu skarbowego zapyta o konkretny dokument.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Zakaz zdjęć dzieci w żłobku po podpisie noweli: ewidencja wizerunku, szkoleń i rejestru]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-zlobka-zakaz-wizerunku</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-zlobka-zakaz-wizerunku</guid>
-      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Prezydent podpisał nowelizację ustawy o opiece nad dziećmi do lat 3. Żłobek, klub dziecięcy i punkt opieki dziennej nie opublikują wizerunku dziecka publicznie, nawet za zgodą rodzica. Ten tekst opisuje, co ma trzymać program dla żłobka: zdjęcia, szkolenia opiekunów, limity grupy i dane do rejestru.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Recepty refundowane od 13 września 2026: czas kuracji i dawkowanie w programie do gabinetu]]></title>
-      <link>https://gesoft.pl/artykuly/program-do-gabinetu-recepty-refundowane-p1</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-do-gabinetu-recepty-refundowane-p1</guid>
-      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Centrum e-Zdrowia włączy 13 września 2026 r. blokujące reguły walidacji dla recept refundowanych. Bez czasu kuracji, strukturalnego dawkowania i opakowania zgodnego z RPL recepta nie wejdzie do P1. Ten tekst opisuje pola, które ma trzymać program do gabinetu lekarskiego, zanim kolejka w poczekalni stanie na komunikacie błędu.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Plan ogólny od 1 września 2026: ewidencja inwestycji i decyzji WZ w firmie budowlanej]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-inwestycji-decyzji-wz-plan-ogolny</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-inwestycji-decyzji-wz-plan-ogolny</guid>
-      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[17 sierpnia 2026 r. „Rzeczpospolita” opisała szturm na urzędy o wuzetki przed 31 sierpnia. Forsal dodał 19 sierpnia dane Ministerstwa Rozwoju i Technologii z początku miesiąca: plan ogólny uchwaliło ok. 19 proc. gmin. Po 1 września, w gminie bez planu ogólnego i bez miejscowego planu zagospodarowania, nowy wniosek o warunki zabudowy nie ruszy. Ten tekst pokazuje, jakie pola ma trzymać ewidencja inwestycji i decyzji WZ, zanim ekipa wjedzie na działkę, a księgowa wystawi fakturę zaliczkową.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Zakaz handlu w niedziele po wyroku SN: grafik sklepu, magazynu i e-sklepu]]></title>
-      <link>https://gesoft.pl/artykuly/grafik-niedziel-handlowych-sklep-magazyn</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/grafik-niedziel-handlowych-sklep-magazyn</guid>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[21 sierpnia 2026 r. PIP potwierdziła, że kącik czytelniczy nie zwalnia marketu z zakazu. Najbliższa niedziela handlowa wypada 30 sierpnia. Reszta niedziel w tym roku — poza grudniem — jest objęta zakazem, także dla magazynu i inwentaryzacji. Ten tekst opisuje, jaki grafik niedziel handlowych utrzyma rozróżnienie sklepu, hurtowni i sklepu internetowego, gdy inspektor zapyta, kto i na jakiej podstawie był na hali.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[API BDO od 1 stycznia 2027: ewidencja KPO, która nie padnie na starym endpoincie]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-kpo-api-bdo-2027</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-kpo-api-bdo-2027</guid>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[21 sierpnia 2026 r. IOŚ–PIB ogłosił na bdo.mos.gov.pl zmiany API KPO i KPOK od 1 stycznia 2027 r.: endpointy, enumy statusów, pole roku, środki transportu, powody odrzucenia. Dzień wcześniej zapowiedziano serwis BDO.gov 25 sierpnia 19:00–22:00. Firma wywożąca odpady nie potrzebuje slajdu o GOZ. Potrzebuje mostu ze zlecenia do urzędu, który przeżyje nowy kontrakt HTTP.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Zakaz ruchu powyżej 12 ton: ewidencja wyjątków, która nie kłamie dyspozytorowi w piątek o 18:00]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-wyjatkow-zakaz-ruchu-12-ton</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-wyjatkow-zakaz-ruchu-12-ton</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[21 sierpnia 2026 r. weszło w życie rozporządzenie Ministra Infrastruktury (Dz. U. poz. 1110): trzy nowe wyjątki od zakazu ruchu zestawów powyżej 12 ton — obce siły zbrojne, cywilny przewóz sprzętu wojskowego oraz nauka jazdy i egzamin bez handlowego ładunku. Tydzień wcześniej resort przypomniał godziny wokół 15 sierpnia. Firma TSL nie potrzebuje slajdu o compliance. Potrzebuje ewidencji wyjątków i kłódki w dyspozytorni.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Upał w kuchni i na sali: ewidencja temperatury, przerw i napojów, która przeżyje kontrolę PIP]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-temperatury-przerw-horeca-pip</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-temperatury-przerw-horeca-pip</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[11 sierpnia 2026 r. Państwowa Inspekcja Pracy podała pierwsze efekty kontroli pracy w upalne dni: ok. 300 skarg do 7 sierpnia, lokale gastronomiczne na liście zgłoszeń, pomiary powyżej 30°C, a niekiedy 35°C. Restauracja, catering i hotelowa kuchnia nie potrzebują slajdu o BHP. Potrzebują ewidencji temperatury, przerw, napojów i grafiku, której nie wstyd otworzyć inspektorowi.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Kontrola PIP umów cywilnoprawnych w agencji: ewidencja zleceń, która przeżyje inspekcję]]></title>
-      <link>https://gesoft.pl/artykuly/ewidencja-umow-cywilnoprawnych-pip-agencja</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ewidencja-umow-cywilnoprawnych-pip-agencja</guid>
+      <title><![CDATA[Oprogramowanie dla firmy transportowej: jedna prawda o zleceniu, aucie i dokumencie]]></title>
+      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej</guid>
       <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[18 sierpnia 2026 r. Państwowa Inspekcja Pracy podała pierwsze liczby po 8 lipca: 690 skarg, ponad 100 kontroli, 121 pisemnych poleceń i 201 dobrowolnych zmian zlecenia w umowę o pracę. Agencja zatrudnienia nie potrzebuje kolejnego slajdu o compliance. Potrzebuje ewidencji umów cywilnoprawnych, godzin i poleceń, której nie wstyd pokazać inspektorowi.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[System rezerwacji online dla usług lokalnych — kalendarz, który pracuje za Ciebie]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Fryzjer, fizjo, warsztat, sala, doradca — ten sam ból: telefon w trakcie pracy i no-show. System rezerwacji online przyjmuje zapisy 24/7, pilnuje zasobów i przypomina klientowi, zanim zapomni.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[System sprzedaży biletów online na wydarzenia — bez prowizji platformy biletowej]]></title>
-      <link>https://gesoft.pl/artykuly/system-sprzedazy-biletow-online</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-sprzedazy-biletow-online</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Going, Eventim i podobne biorą prowizję od biletu i trzymają Twoją publiczność. Własny system biletów na koncert, konferencję, mecz amatorski albo warsztat zostawia marżę i bazę maili, na którą masz zgodę.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Aplikacja dla firmy sprzątającej: grafiki obiektów, checklisty, zdjęcia po sprzątaniu]]></title>
-      <link>https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ekipa nie wypełni Excela po ośmiu obiektach. Aplikacja sprzątania pokazuje dzisiejszą listę, checklistę toalet i zdjęcie po pracy — klient B2B widzi protokół, a Ty wiesz, która umowa jeszcze ma marżę.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla przedszkola i żłobka: zapisy, obecności, opłaty, aplikacja dla rodzica]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Rodzic pyta na grupie, czy dziecko jadło obiad. Dyrekcja goni za czesnym w Excelu. System przedszkola zbiera rekrutację, listę obecności i komunikację — z rygorem RODO, jakiego wymaga karta dziecka.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Oprogramowanie dla szkoły jazdy: zapisy na kurs, jazdy, płatności, WORD]]></title>
-      <link>https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Kursant nie wie, ile jazd mu zostało. Instruktor układa grafik w głowie. Biuro goni za ratą. System szkoły jazdy spina teorię, godziny na placu i egzamin — zamiast trzech Exceli i grupy na Facebooku.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[System rezerwacji online dla myjni samochodowej i detailingu]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Stanowisko detailingowe to 2–8 godzin, których nie sprzedasz dwa razy. Kolejka na Messengerze i „wpadnę po pracy” kończą się pustym boksem i pretensjami. Kalendarz online z depozytem i SMS-em pilnuje rampy tak samo, jak fotela u fryzjera.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla gabinetu weterynaryjnego: karty pacjentów, szczepienia, terminy]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[W lecznicy pacjent ma kilka zwierząt, historię szczepień i leków, a właściciel zapisuje się o 22:00. Gotowce (VetFile, Veterinaro, lecznica.eu) bywają darmowe na start. Własny system ma sens, gdy protokół, magazyn leków i drugi oddział nie mieszczą się w abonamencie.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Wizytówka Google czy własna strona internetowa? Czego potrzebuje lokalna firma w 2026]]></title>
-      <link>https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Profil Google Business jest obowiązkowy, jeśli ktoś wpisuje „fryzjer obok”. Nie zastąpi strony, na której stoi kalendarz, cennik i zgoda RODO. Facebook nie jest Twoją bazą klientów — algorytm może schować post z dnia na dzień.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[KSeF 2026 w aplikacji firmowej: kogo dotyczy obowiązek i jak spiąć faktury z panelem]]></title>
-      <link>https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Od 1 lutego 2026 r. KSeF jest obowiązkowy dla dużych podatników (sprzedaż 2024 r. ponad 200 mln zł brutto), od 1 kwietnia 2026 r. — dla pozostałych firm. Gotowy program księgowy bywa wystarczający. Własny panel B2B, CRM albo hurtownia musi umieć wystawić fakturę ustrukturyzowaną, nie PDF-a w mailu.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[No-show: ile kosztuje pusta godzina w salonie, gabinecie i restauracji]]></title>
-      <link>https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Fryzjerzy i salony beauty w zestawieniach branżowych tracą średnio ok. 14–15% wizyt na no-show, gabinety medyczne bywają w okolicach 18%, a restauracje bez depozytu — często 5–20% rezerwacji. To nie „pech”. To brak przypomnienia, zaliczki i listy rezerwowej.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Ile naprawdę kosztuje prowizja Glovo, Pyszne.pl i Uber Eats? Policz, zanim oddasz kolejny miesiąc]]></title>
-      <link>https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Branżowe zestawienia na 2026 rok podają prowizje aggregatów w widełkach od ok. 10–15% (odbiór / własny kurier) do 25–35% przy dostawie kurierem platformy. Przy 40 zamówieniach dziennie to nie „kilka złotych” — to pensja kucharza albo cały czynsz.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Aplikacja dla pomocy drogowej i lawety: zlecenia na mapie, status, zdjęcia]]></title>
-      <link>https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Dyspozytor w słuchawce, kierowca lawety nie wie, które zlecenie jest bliżej, klient dzwoni „gdzie jesteście”. Aplikacja: pin na mapie, ETA, zdjęcia holowania, płatność. Android w kabinie, panel na bazie — nie grupa na WhatsAppie.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla pralni chemicznej i pralni wodnej: przyjęcie, status, odbiór, dowóz]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-pralni</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-pralni</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Klient pyta „czy garnitur już jest”. Personel szuka woreczka po numerze z karteczki. System pralni: przyjęcie ze zdjęciem, status SMS, płatność przy odbiorze albo online, trasa odbioru z firm — zamiast zeszytu i trzech telefonów dziennie od tego samego hotelu.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[System rezerwacji sali zabaw i urodzin dla dzieci: sale, pakiety, depozyt]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Sobota o 15:00 to jeden slot, nie „jakoś się zmieści druga grupa”. Sala zabaw żyje z urodzin i weekendów. Kalendarz sal, pakiet (animator, tort, godziny) i zadatek — zamiast Facebooka i dwóch rezerwacji na tę samą salę.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla komisu samochodowego: stoisko, rezerwacje aut, prowizja, umowa]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-komisu-samochodowego</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-komisu-samochodowego</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Komis to nie ogłoszenie na OLX. To umowa z właścicielem, prowizja, rezerwacja z zadatkiem i historia, kto oglądał Vina. Excel myli „nasze” z „na komis” i nie pilnuje, które auto już ma umowę przedwstępną.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program do wypożyczalni sprzętu: rezerwacje, kaucje, zwroty, uszkodzenia]]></title>
-      <link>https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Narty, rowery, narzędzia, bagażniki, suknie, nagłośnienie — ten sam problem: rzecz nie może wyjść dwa razy w ten sam weekend. Excel nie pilnuje kaucji, serwisu i spóźnionego zwrotu. System rezerwacji zasobu z depozytem i protokołem zdjęć.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[System rezerwacji dla fizjoterapeuty: gabinet, seria zabiegów, gabinet domowy]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Fizjo sprzedaje serię 5–10 wizyt i stół, nie „wolną godzinę”. Pacjent znika po trzecim zabiegu, a dojazd do domu miesza grafik. Kalendarz z serią, gabinetem i dojazdem plus SMS — zamiast dwóch kalendarzy Google i grupowego WhatsAppa.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla dietetyka: wizyty, jadłospisy, pomiary, panel pacjenta]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-dietetyka</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-dietetyka</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Poradnia dietetyczna żyje z serii, nie z jednorazowej konsultacji. Excel z kcal i PDF na maila giną przy trzecim pacjencie tego samego dnia. System: kalendarz, karta, jadłospis, waga z aplikacji — albo pacjent „zgubił plik” i nie wraca.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[System rezerwacji dla studia tatuażu: depozyt, zgody, portfolio artysty]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Sesja 4–8 godzin i projekt, który artysta przygotował wieczorem. No-show bez depozytu to strata całego dnia. Kalendarz z zaliczką, formularzem zgody i zdjęciem referencyjnym jest narzędziem studia, nie „fajną stroną”.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla groomera i salonu dla psów: rezerwacje, karty zwierząt, SMS]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-groomera</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-groomera</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Grooming to nie „strzyżenie psa w 30 minut”. Rasy, agresja, kąpiel + trym + pazury to 2–4 godziny stołu. Kalendarz online, karta psa i depozyt na sobotę — albo Messenger i no-show, który zjada cały boks.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla cateringu dietetycznego i diety pudełkowej: zamówienia, diety, trasy]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Dieta pudełkowa to nie sklep z 20 produktami. To warianty kcal, pominięte dni, alergeny, produkcja na jutro i kurier z 40 adresami. Gotowe systemy (MasterLife CRM, x-catering, SOT) bywają OK. Własna aplikacja — gdy Twoja dieta i logistyka nie mieszczą się w szablonie.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla logopedy: rezerwacja wizyt, karty dzieci, ćwiczenia, płatności]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-logopedy</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-logopedy</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Gabinet logopedyczny żyje z serii i z rodziców, którzy pytają o postępy. Zeszyt i grupa na Messengerze nie pilnują obecności, zadań domowych i rat. Program dla logopedy: kalendarz, karta dziecka, panel rodzica, SMS, pakiety zajęć.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Aplikacja dla firmy fotowoltaicznej i instalatora OZE: leady, montaże, serwis]]></title>
-      <link>https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Fotowoltaika, pompy ciepła i magazyny energii to lejek + ekipa na dachu + serwis za 2 lata. Excel nie pilnuje pozwoleń, dostawy paneli i protokołu. Aplikacja dla instalatora PV: CRM, harmonogram montażu, checklista na telefonie, serwis w terenie.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla optyka i salonu optycznego: wizyty, recepty, zamówienia oprawek]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Salon optyczny to gabinet + magazyn + warsztat. Recepta, oprawki, soczewki i odbiór okularów giną między zeszytem a hurtownią. Program dla optyka: e-rejestracja badania wzroku, karta klienta, status zamówienia i SMS „okulary gotowe”.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[System rezerwacji escape room: pokoje, sloty, depozyt, bilety online]]></title>
-      <link>https://gesoft.pl/artykuly/system-rezerwacji-escape-room</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-escape-room</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Escape room sprzedaje konkretną godzinę w konkretnym pokoju. Dwie rezerwacje na „Szpital 18:00” to katastrofa. System rezerwacji escape room, kalendarz pokoi, sprzedaż biletów online i zadatek — zamiast Messengera i Excela.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla OSP i klubu sportowego: składki, grafik, sprzęt, ewidencja]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ochotnicza straż pożarna i klub sportowy bolą tym samym: rejestr członków, składki, dyżur i kalendarz obiektu. Program dla OSP i oprogramowanie klubu zamiast Excela i Facebooka.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla zarządcy nieruchomości: usterki, obchody, TBS, aplikacja administratora]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Wspólnota, TBS i kamienica nie zmieszczą się w Excelu po piątym adresie. Program dla zarządcy nieruchomości trzyma kartę budynku, zgłoszenia usterkowe i obchody — z aplikacją dla administratora w piwnicy bez zasięgu.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla stowarzyszenia i fundacji: członkowie, składki, OPP, portal]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Zarząd nie szuka „CRM-u z półki”. Szuka rejestru członków, składek, portalu i porządku przed walnym oraz sprawozdaniem. Program dla stowarzyszenia i oprogramowanie dla fundacji — zamiast Excela, grupy na Messengerze i trzech prawd o tej samej osobie.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Oprogramowanie dla spółdzielni mieszkaniowej: ewidencja, media, portal, uchwały]]></title>
-      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Rada spółdzielni nie kupuje „systemu IT”. Kupuje jedną prawdę o lokalu, zaliczce, funduszu remontowym i zgłoszeniu. Oprogramowanie dla spółdzielni mieszkaniowej zamiast trzech Exceli, zeszytu konserwatora i skrzynki prezesa.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla wspólnoty mieszkaniowej: zaliczki, media, uchwały i portal mieszkańców]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Wspólnota powstaje z mocy prawa, nie z Excela. Program dla wspólnoty mieszkaniowej spina kartotekę lokali, zaliczki, rozliczanie mediów, uchwały i portal dla mieszkańców. Gotowy SaaS bywa wystarczający. Własny system — gdy proces, marka albo liczba nieruchomości nie mieszczą się w szablonie. Program nie zastępuje obowiązków licencjonowanego zarządcy.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Program dla agencji zatrudnienia: ATS, ewidencja pracowników tymczasowych, godziny, RODO]]></title>
-      <link>https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Nie kupujecie ATS z doliny. Kupujecie jedną kartę kandydata i pracownika tymczasowego, która przeżyje kontrolę PIP i żądanie dostępu RODO. Program dla agencji zatrudnienia zamiast Excela, Telegrama i trzech niepołączonych SaaS-ów.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Oprogramowanie dla biura rachunkowego: portal klienta, KSeF, e-Doręczenia]]></title>
-      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Nie kupujecie silnika VAT. Kupujecie jedną teczkę klienta, która nie ginie między mailem, WhatsAppem i pendrive’em. Oprogramowanie dla biura rachunkowego to portal, obieg i skrzynka — nie kolejny program księgowy.]]></description>
+      <description><![CDATA[Dyspozytor nie kupuje „systemu IT”. Kupuje jedną prawdę o zleceniu, pojeździe, kierowcy i dokumencie. Oprogramowanie dla firmy transportowej zamiast Excela, grupy WhatsApp i trzech wersji frachtu.]]></description>
     </item>
     <item>
       <title><![CDATA[BDO i ewidencja odpadów w firmie: KPO, KEO i panel, który nie kłamie przy WIOŚ]]></title>
@@ -337,11 +22,228 @@
       <description><![CDATA[Nie kupujecie zielonego certyfikatu. Kupujecie jedną kartę odpadu i KPO, która nie kłamie przy kontroli WIOŚ. Oficjalne BDO jest obowiązkowe — GESOFT go nie zastępuje. Budujemy warstwę operacyjną: magazyn na terenie, waga, zdjęcie, przekazanie, przypomnienie i eksport pod konto MOS.]]></description>
     </item>
     <item>
-      <title><![CDATA[Oprogramowanie dla firmy transportowej: jedna prawda o zleceniu, aucie i dokumencie]]></title>
-      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej</link>
-      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-firmy-transportowej</guid>
+      <title><![CDATA[Oprogramowanie dla biura rachunkowego: portal klienta, KSeF, e-Doręczenia]]></title>
+      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-biura-rachunkowego</guid>
       <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Dyspozytor nie kupuje „systemu IT”. Kupuje jedną prawdę o zleceniu, pojeździe, kierowcy i dokumencie. Oprogramowanie dla firmy transportowej zamiast Excela, grupy WhatsApp i trzech wersji frachtu.]]></description>
+      <description><![CDATA[Nie kupujecie silnika VAT. Kupujecie jedną teczkę klienta, która nie ginie między mailem, WhatsAppem i pendrive’em. Oprogramowanie dla biura rachunkowego to portal, obieg i skrzynka — nie kolejny program księgowy.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla agencji zatrudnienia: ATS, ewidencja pracowników tymczasowych, godziny, RODO]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-agencji-zatrudnienia</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Nie kupujecie ATS z doliny. Kupujecie jedną kartę kandydata i pracownika tymczasowego, która przeżyje kontrolę PIP i żądanie dostępu RODO. Program dla agencji zatrudnienia zamiast Excela, Telegrama i trzech niepołączonych SaaS-ów.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla wspólnoty mieszkaniowej: zaliczki, media, uchwały i portal mieszkańców]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-wspolnoty-mieszkaniowej</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Wspólnota powstaje z mocy prawa, nie z Excela. Program dla wspólnoty mieszkaniowej spina kartotekę lokali, zaliczki, rozliczanie mediów, uchwały i portal dla mieszkańców. Gotowy SaaS bywa wystarczający. Własny system — gdy proces, marka albo liczba nieruchomości nie mieszczą się w szablonie. Program nie zastępuje obowiązków licencjonowanego zarządcy.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Oprogramowanie dla spółdzielni mieszkaniowej: ewidencja, media, portal, uchwały]]></title>
+      <link>https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-dla-spoldzielni-mieszkaniowej</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Rada spółdzielni nie kupuje „systemu IT”. Kupuje jedną prawdę o lokalu, zaliczce, funduszu remontowym i zgłoszeniu. Oprogramowanie dla spółdzielni mieszkaniowej zamiast trzech Exceli, zeszytu konserwatora i skrzynki prezesa.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla stowarzyszenia i fundacji: członkowie, składki, OPP, portal]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-stowarzyszenia-i-fundacji</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Zarząd nie szuka „CRM-u z półki”. Szuka rejestru członków, składek, portalu i porządku przed walnym oraz sprawozdaniem. Program dla stowarzyszenia i oprogramowanie dla fundacji — zamiast Excela, grupy na Messengerze i trzech prawd o tej samej osobie.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla zarządcy nieruchomości: usterki, obchody, TBS, aplikacja administratora]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-zarzadcy-nieruchomosci</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Wspólnota, TBS i kamienica nie zmieszczą się w Excelu po piątym adresie. Program dla zarządcy nieruchomości trzyma kartę budynku, zgłoszenia usterkowe i obchody — z aplikacją dla administratora w piwnicy bez zasięgu.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla OSP i klubu sportowego: składki, grafik, sprzęt, ewidencja]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-osp-i-klubu-sportowego</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Ochotnicza straż pożarna i klub sportowy bolą tym samym: rejestr członków, składki, dyżur i kalendarz obiektu. Program dla OSP i oprogramowanie klubu zamiast Excela i Facebooka.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[System rezerwacji escape room: pokoje, sloty, depozyt, bilety online]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-escape-room</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-escape-room</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Escape room sprzedaje konkretną godzinę w konkretnym pokoju. Dwie rezerwacje na „Szpital 18:00” to katastrofa. System rezerwacji escape room, kalendarz pokoi, sprzedaż biletów online i zadatek — zamiast Messengera i Excela.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla optyka i salonu optycznego: wizyty, recepty, zamówienia oprawek]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-optyka-salon-optyczny</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Salon optyczny to gabinet + magazyn + warsztat. Recepta, oprawki, soczewki i odbiór okularów giną między zeszytem a hurtownią. Program dla optyka: e-rejestracja badania wzroku, karta klienta, status zamówienia i SMS „okulary gotowe”.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Aplikacja dla firmy fotowoltaicznej i instalatora OZE: leady, montaże, serwis]]></title>
+      <link>https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-dla-firmy-fotowoltaicznej</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Fotowoltaika, pompy ciepła i magazyny energii to lejek + ekipa na dachu + serwis za 2 lata. Excel nie pilnuje pozwoleń, dostawy paneli i protokołu. Aplikacja dla instalatora PV: CRM, harmonogram montażu, checklista na telefonie, serwis w terenie.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla logopedy: rezerwacja wizyt, karty dzieci, ćwiczenia, płatności]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-logopedy</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-logopedy</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Gabinet logopedyczny żyje z serii i z rodziców, którzy pytają o postępy. Zeszyt i grupa na Messengerze nie pilnują obecności, zadań domowych i rat. Program dla logopedy: kalendarz, karta dziecka, panel rodzica, SMS, pakiety zajęć.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla cateringu dietetycznego i diety pudełkowej: zamówienia, diety, trasy]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-cateringu-dietetycznego</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Dieta pudełkowa to nie sklep z 20 produktami. To warianty kcal, pominięte dni, alergeny, produkcja na jutro i kurier z 40 adresami. Gotowe systemy (MasterLife CRM, x-catering, SOT) bywają OK. Własna aplikacja — gdy Twoja dieta i logistyka nie mieszczą się w szablonie.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla groomera i salonu dla psów: rezerwacje, karty zwierząt, SMS]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-groomera</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-groomera</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Grooming to nie „strzyżenie psa w 30 minut”. Rasy, agresja, kąpiel + trym + pazury to 2–4 godziny stołu. Kalendarz online, karta psa i depozyt na sobotę — albo Messenger i no-show, który zjada cały boks.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[System rezerwacji dla studia tatuażu: depozyt, zgody, portfolio artysty]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-studio-tatuazu</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Sesja 4–8 godzin i projekt, który artysta przygotował wieczorem. No-show bez depozytu to strata całego dnia. Kalendarz z zaliczką, formularzem zgody i zdjęciem referencyjnym jest narzędziem studia, nie „fajną stroną”.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla dietetyka: wizyty, jadłospisy, pomiary, panel pacjenta]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-dietetyka</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-dietetyka</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Poradnia dietetyczna żyje z serii, nie z jednorazowej konsultacji. Excel z kcal i PDF na maila giną przy trzecim pacjencie tego samego dnia. System: kalendarz, karta, jadłospis, waga z aplikacji — albo pacjent „zgubił plik” i nie wraca.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[System rezerwacji dla fizjoterapeuty: gabinet, seria zabiegów, gabinet domowy]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-fizjoterapeuta</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Fizjo sprzedaje serię 5–10 wizyt i stół, nie „wolną godzinę”. Pacjent znika po trzecim zabiegu, a dojazd do domu miesza grafik. Kalendarz z serią, gabinetem i dojazdem plus SMS — zamiast dwóch kalendarzy Google i grupowego WhatsAppa.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program do wypożyczalni sprzętu: rezerwacje, kaucje, zwroty, uszkodzenia]]></title>
+      <link>https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-do-wypozyczalni-sprzetu</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Narty, rowery, narzędzia, bagażniki, suknie, nagłośnienie — ten sam problem: rzecz nie może wyjść dwa razy w ten sam weekend. Excel nie pilnuje kaucji, serwisu i spóźnionego zwrotu. System rezerwacji zasobu z depozytem i protokołem zdjęć.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla komisu samochodowego: stoisko, rezerwacje aut, prowizja, umowa]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-komisu-samochodowego</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-komisu-samochodowego</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Komis to nie ogłoszenie na OLX. To umowa z właścicielem, prowizja, rezerwacja z zadatkiem i historia, kto oglądał Vina. Excel myli „nasze” z „na komis” i nie pilnuje, które auto już ma umowę przedwstępną.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[System rezerwacji sali zabaw i urodzin dla dzieci: sale, pakiety, depozyt]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-sala-zabaw</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Sobota o 15:00 to jeden slot, nie „jakoś się zmieści druga grupa”. Sala zabaw żyje z urodzin i weekendów. Kalendarz sal, pakiet (animator, tort, godziny) i zadatek — zamiast Facebooka i dwóch rezerwacji na tę samą salę.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla pralni chemicznej i pralni wodnej: przyjęcie, status, odbiór, dowóz]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-pralni</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-pralni</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Klient pyta „czy garnitur już jest”. Personel szuka woreczka po numerze z karteczki. System pralni: przyjęcie ze zdjęciem, status SMS, płatność przy odbiorze albo online, trasa odbioru z firm — zamiast zeszytu i trzech telefonów dziennie od tego samego hotelu.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Aplikacja dla pomocy drogowej i lawety: zlecenia na mapie, status, zdjęcia]]></title>
+      <link>https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-pomoc-drogowa-laweta</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Dyspozytor w słuchawce, kierowca lawety nie wie, które zlecenie jest bliżej, klient dzwoni „gdzie jesteście”. Aplikacja: pin na mapie, ETA, zdjęcia holowania, płatność. Android w kabinie, panel na bazie — nie grupa na WhatsAppie.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Ile naprawdę kosztuje prowizja Glovo, Pyszne.pl i Uber Eats? Policz, zanim oddasz kolejny miesiąc]]></title>
+      <link>https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/ile-kosztuje-prowizja-glovo-pyszne-uber-eats</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Branżowe zestawienia na 2026 rok podają prowizje aggregatów w widełkach od ok. 10–15% (odbiór / własny kurier) do 25–35% przy dostawie kurierem platformy. Przy 40 zamówieniach dziennie to nie „kilka złotych” — to pensja kucharza albo cały czynsz.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[No-show: ile kosztuje pusta godzina w salonie, gabinecie i restauracji]]></title>
+      <link>https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/no-show-ile-kosztuje-pusta-godzina</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Fryzjerzy i salony beauty w zestawieniach branżowych tracą średnio ok. 14–15% wizyt na no-show, gabinety medyczne bywają w okolicach 18%, a restauracje bez depozytu — często 5–20% rezerwacji. To nie „pech”. To brak przypomnienia, zaliczki i listy rezerwowej.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[KSeF 2026 w aplikacji firmowej: kogo dotyczy obowiązek i jak spiąć faktury z panelem]]></title>
+      <link>https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/ksef-obowiazkowy-w-aplikacji-firmowej</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Od 1 lutego 2026 r. KSeF jest obowiązkowy dla dużych podatników (sprzedaż 2024 r. ponad 200 mln zł brutto), od 1 kwietnia 2026 r. — dla pozostałych firm. Gotowy program księgowy bywa wystarczający. Własny panel B2B, CRM albo hurtownia musi umieć wystawić fakturę ustrukturyzowaną, nie PDF-a w mailu.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Wizytówka Google czy własna strona internetowa? Czego potrzebuje lokalna firma w 2026]]></title>
+      <link>https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/google-wizytowka-czy-strona-internetowa</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Profil Google Business jest obowiązkowy, jeśli ktoś wpisuje „fryzjer obok”. Nie zastąpi strony, na której stoi kalendarz, cennik i zgoda RODO. Facebook nie jest Twoją bazą klientów — algorytm może schować post z dnia na dzień.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla gabinetu weterynaryjnego: karty pacjentów, szczepienia, terminy]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-gabinetu-weterynaryjnego</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[W lecznicy pacjent ma kilka zwierząt, historię szczepień i leków, a właściciel zapisuje się o 22:00. Gotowce (VetFile, Veterinaro, lecznica.eu) bywają darmowe na start. Własny system ma sens, gdy protokół, magazyn leków i drugi oddział nie mieszczą się w abonamencie.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[System rezerwacji online dla myjni samochodowej i detailingu]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-myjnia-samochodowa</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Stanowisko detailingowe to 2–8 godzin, których nie sprzedasz dwa razy. Kolejka na Messengerze i „wpadnę po pracy” kończą się pustym boksem i pretensjami. Kalendarz online z depozytem i SMS-em pilnuje rampy tak samo, jak fotela u fryzjera.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Oprogramowanie dla szkoły jazdy: zapisy na kurs, jazdy, płatności, WORD]]></title>
+      <link>https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-szkola-jazdy</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Kursant nie wie, ile jazd mu zostało. Instruktor układa grafik w głowie. Biuro goni za ratą. System szkoły jazdy spina teorię, godziny na placu i egzamin — zamiast trzech Exceli i grupy na Facebooku.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program dla przedszkola i żłobka: zapisy, obecności, opłaty, aplikacja dla rodzica]]></title>
+      <link>https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-dla-przedszkola-i-zlobka</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Rodzic pyta na grupie, czy dziecko jadło obiad. Dyrekcja goni za czesnym w Excelu. System przedszkola zbiera rekrutację, listę obecności i komunikację — z rygorem RODO, jakiego wymaga karta dziecka.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Aplikacja dla firmy sprzątającej: grafiki obiektów, checklisty, zdjęcia po sprzątaniu]]></title>
+      <link>https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-dla-firmy-sprzatajacej</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Ekipa nie wypełni Excela po ośmiu obiektach. Aplikacja sprzątania pokazuje dzisiejszą listę, checklistę toalet i zdjęcie po pracy — klient B2B widzi protokół, a Ty wiesz, która umowa jeszcze ma marżę.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[System sprzedaży biletów online na wydarzenia — bez prowizji platformy biletowej]]></title>
+      <link>https://gesoft.pl/artykuly/system-sprzedazy-biletow-online</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-sprzedazy-biletow-online</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Going, Eventim i podobne biorą prowizję od biletu i trzymają Twoją publiczność. Własny system biletów na koncert, konferencję, mecz amatorski albo warsztat zostawia marżę i bazę maili, na którą masz zgodę.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[System rezerwacji online dla usług lokalnych — kalendarz, który pracuje za Ciebie]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-online-dla-uslug</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Fryzjer, fizjo, warsztat, sala, doradca — ten sam ból: telefon w trakcie pracy i no-show. System rezerwacji online przyjmuje zapisy 24/7, pilnuje zasobów i przypomina klientowi, zanim zapomni.]]></description>
     </item>
     <item>
       <title><![CDATA[System rezerwacji stolików online dla restauracji — mniej telefonów, więcej gości]]></title>
@@ -356,6 +258,104 @@
       <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-online-salon-fryzjerski</guid>
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
       <description><![CDATA[Klientka, która nie dodzwoni się w sobotę, umówi się u konkurencji. Kalendarz online przyjmuje zapisy 24/7, przypomina SMS-em i pilnuje, kto jest wolny — fryzjer strzyże, zamiast odbierać telefon. Mniej no-show, więcej foteli w robocie.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Menu QR i zamówienia do stolika: szybsza obsługa, wyższy rachunek]]></title>
+      <link>https://gesoft.pl/artykuly/menu-qr-zamowienia-do-stolika</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/menu-qr-zamowienia-do-stolika</guid>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Gość skanuje kod, widzi aktualną kartę, zamawia i dopłaca bez czekania na kelnera. Kuchnia dostaje ticket od razu. Ty nie drukujesz 200 kart po każdej zmianie ceny i nie oddajesz prowizji platformie.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program do salonu kosmetycznego: rezerwacje, karty zabiegów i magazyn]]></title>
+      <link>https://gesoft.pl/artykuly/program-do-salonu-kosmetycznego</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-do-salonu-kosmetycznego</guid>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Gabinet urody żyje z powrotów i z historii skóry, nie z jednorazowej wizyty. Oprogramowanie dla salonu kosmetycznego trzyma kartę klienta, protokół zabiegu, zgodę i kolejny termin — zamiast segregatora i pamięci kosmetyczki. Mniej no-show na slotach 60–90 minut.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Własny system zamówień online dla restauracji — bez prowizji Pyszne i Glovo]]></title>
+      <link>https://gesoft.pl/artykuly/wlasny-system-zamowien-online-restauracja</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/wlasny-system-zamowien-online-restauracja</guid>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Aggregator zabiera 20–30% od każdego zamówienia i trzyma Twojego klienta u siebie. Własna strona zamówień, płatność i dowóz zostawiają marżę w lokalu i budują bazę, której nikt Ci nie wyłączy.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[System umawiania wizyt online dla gabinetu lekarskiego i przychodni]]></title>
+      <link>https://gesoft.pl/artykuly/system-umawiania-wizyt-gabinet-lekarski</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-umawiania-wizyt-gabinet-lekarski</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Rejestracja telefoniczna pęka rano, a po południu linie milczą. E-rejestracja przyjmuje wizyty 24/7, obcina no-show i zostawia recepcji czas na pacjentów, którzy naprawdę muszą zadzwonić. Dane zdrowotne — privacy by design, nie naklejka RODO.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program do warsztatu samochodowego: zlecenia, historia auta, części]]></title>
+      <link>https://gesoft.pl/artykuly/program-do-warsztatu-samochodowego</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-do-warsztatu-samochodowego</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Zeszyt przyjęć i SMS-y „auto gotowe” nie skalują się przy trzecim stanowisku. Oprogramowanie dla warsztatu trzyma zlecenie od przyjęcia do faktury, historię VIN i magazyn części — mechanik wie, co robić, a klient nie dzwoni co godzinę.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Audyt bezpieczeństwa aplikacji PHP: co sprawdzamy, zanim będzie za późno]]></title>
+      <link>https://gesoft.pl/artykuly/audyt-bezpieczenstwa-aplikacji-php</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/audyt-bezpieczenstwa-aplikacji-php</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Większość wycieków w małych i średnich firmach dotyczy starych paneli PHP, o których wszyscy wiedzą, że działa. Audyt nie jest oskarżeniem programisty — to lista ryzyk, które da się zamknąć, zanim ktoś je wykorzysta.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Program lojalnościowy dla restauracji i kawiarni, który naprawdę wraca gościa]]></title>
+      <link>https://gesoft.pl/artykuly/program-lojalnosciowy-dla-restauracji</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/program-lojalnosciowy-dla-restauracji</guid>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Papierowa pieczątka ginie. Aplikacja aggregatora punktuje u nich, nie u Ciebie. Własny program lojalnościowy — punkty, pieczątki, kupony urodzinowe — trzyma gościa w Twoim lokalu i daje powód, żeby zamówić drugi raz.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Oprogramowanie dla gabinetu stomatologicznego: terminy, plan leczenia, fotel]]></title>
+      <link>https://gesoft.pl/artykuly/oprogramowanie-gabinet-stomatologiczny</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/oprogramowanie-gabinet-stomatologiczny</guid>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[W dentystyce pusta godzina na fotelu boli bardziej niż w większości usług. Program dla gabinetu stomatologicznego pilnuje grafiku, planu leczenia, zaliczek i przypomnień o kontroli — żeby fotel zarabiał, a pacjent wracał. Średni no-show w dentystyce to ok. 12%.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[System karnetów i rezerwacji zajęć dla siłowni i klubu fitness]]></title>
+      <link>https://gesoft.pl/artykuly/system-karnetow-i-zajec-silownia</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-karnetow-i-zajec-silownia</guid>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Excel z wejściami psuje się w godzinę szczytu. Aplikacja klubu pokazuje ważność karnetu, wolne miejsca na yodze i przypomina o wygasającym abonamencie — zanim klient przepadnie do sieciówki. Churn liczy się w pierwszych 90 dniach, nie w grudniu.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[System rezerwacji online dla hotelu i pensjonatu bez prowizji Booking.com]]></title>
+      <link>https://gesoft.pl/artykuly/system-rezerwacji-online-hotel-pensjonat</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/system-rezerwacji-online-hotel-pensjonat</guid>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Booking i Airbnb biorą prowizję i ustawiają Cię obok dwudziestu innych obiektów. Własny silnik rezerwacji na stronie hotelu zostawia gościa u Ciebie: kalendarz pokoi, zaliczka, sezon i kanał, którego nikt nie wyłączy.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[CRM dla kancelarii prawnej: sprawy, terminy, czas pracy, rozliczenia]]></title>
+      <link>https://gesoft.pl/artykuly/crm-dla-kancelarii-prawnej</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/crm-dla-kancelarii-prawnej</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Sprawa w mailu, terminy w kalendarzu Google, czas w Excelu, faktura w innym programie. CRM dla kancelarii zbiera klienta, sprawę i billable hours w jednym miejscu — z uprawnieniami, których wymaga tajemnica zawodowa.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Panel B2B dla hurtowni: indywidualne cenniki, zamówienia, stany]]></title>
+      <link>https://gesoft.pl/artykuly/panel-b2b-dla-hurtowni</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/panel-b2b-dla-hurtowni</guid>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Handlowiec w Excelu, stany w magazynie, zamówienie na maila o 21:00. Panel B2B dla kontrahentów przyjmuje zamówienia z ich ceną, limitem kredytu i realnym stanem — bez telefonu do biura i bez pomyłek w rabacie.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[CRM i rezerwacje mieszkań dla dewelopera i biura nieruchomości]]></title>
+      <link>https://gesoft.pl/artykuly/crm-nieruchomosci-dla-dewelopera</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/crm-nieruchomosci-dla-dewelopera</guid>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Excel z ofertą dezaktualizuje się po pierwszym telefonie. CRM nieruchomości pokazuje, które lokale są wolne, zarezerwowane i sprzedane, kto prowadzi klienta i jaki jest etap umowy — bez trzech prawd w trzech plikach.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Aplikacja dla serwisu terenowego: zlecenia, raport z wizyty, części w aucie]]></title>
+      <link>https://gesoft.pl/artykuly/aplikacja-dla-serwisu-terenowego</link>
+      <guid isPermaLink="true">https://gesoft.pl/artykuly/aplikacja-dla-serwisu-terenowego</guid>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Ekipa w terenie nie będzie wypełniać Excela po powrocie. Aplikacja serwisanta pokazuje dzisiejsze zlecenia, nawigację, checklistę i zdjęcia z wizyty — biuro widzi status na żywo, klient dostaje protokół bez czekania na papier.]]></description>
     </item>
   </channel>
 </rss>

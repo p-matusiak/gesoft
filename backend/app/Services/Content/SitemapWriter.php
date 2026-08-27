@@ -7,6 +7,7 @@ class SitemapWriter
     public function __construct(
         private ArticleRepository $articles,
         private RssFeed $rss,
+        private InspirationCatalog $inspirations,
     ) {
     }
 
@@ -29,6 +30,15 @@ class SitemapWriter
             $page['changefreq'],
             $page['priority']
         ), $static);
+
+        foreach ($this->inspirations->keys() as $key) {
+            $urls[] = $this->urlXml(
+                'https://gesoft.pl/portfolio/'.$key,
+                '2026-01-20',
+                'monthly',
+                '0.7'
+            );
+        }
 
         foreach ($this->articles->all() as $article) {
             $urls[] = $this->urlXml(

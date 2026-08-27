@@ -157,7 +157,7 @@ function setJsonLd(data) {
 
 export function useSeo() {
   const route = useRoute()
-  const { locale } = useI18n()
+  const { locale, t, te } = useI18n()
 
   const updateSeo = () => {
     const path = route.path
@@ -171,6 +171,7 @@ export function useSeo() {
     let seoKey = routeToSeoKey[path]
     let config = seoKey ? seoConfig[seoKey]?.[lang] : null
     let article = null
+    let inspiration = null
 
     if (path === '/artykuly' && route.query.kategoria) {
       const labels = {
@@ -201,6 +202,29 @@ export function useSeo() {
       }
     }
 
+    const inspirationMatch = path.match(/^\/portfolio\/([A-Za-z0-9_-]+)$/)
+    if (inspirationMatch) {
+      const key = inspirationMatch[1]
+      const titleKey = `portfolio.projects.${key}.title`
+      if (!te(titleKey)) {
+        return
+      }
+      const title = t(titleKey)
+      const description = t(`portfolio.projects.${key}.description`)
+      seoKey = 'inspiration'
+      inspiration = {
+        key,
+        title,
+        description,
+        image: `/portfolio/${key.toLowerCase()}.png`
+      }
+      config = {
+        title: lang === 'pl' ? `${title} — inspiracja | GESOFT` : `${title} — inspiration | GESOFT`,
+        description,
+        keywords: `${title}, inspiracje, GESOFT`
+      }
+    }
+
     if (!config) {
       return
     }
@@ -222,7 +246,8 @@ export function useSeo() {
     setMetaTag('og:description', config.description, true)
     setMetaTag('og:type', article ? 'article' : 'website', true)
     setMetaTag('og:url', localeUrl(path, lang), true)
-    setMetaTag('og:image', `${BASE_URL}/og-image.png`, true)
+    const ogImage = inspiration ? `${BASE_URL}${inspiration.image}` : `${BASE_URL}/og-image.png`
+    setMetaTag('og:image', ogImage, true)
     setMetaTag('og:site_name', 'GESOFT', true)
     setMetaTag('og:locale', lang === 'pl' ? 'pl_PL' : 'en_US', true)
     if (article) {
@@ -236,7 +261,7 @@ export function useSeo() {
     setMetaTag('twitter:card', 'summary_large_image')
     setMetaTag('twitter:title', config.title)
     setMetaTag('twitter:description', config.description)
-    setMetaTag('twitter:image', `${BASE_URL}/og-image.png`)
+    setMetaTag('twitter:image', ogImage)
 
     // Canonical URL — EN must self-canonicalise (?lang=en), not point at Polish
     setLinkTag('canonical', localeUrl(path, lang))
@@ -378,6 +403,19 @@ export function useSeo() {
           'name': article.title,
           'item': `${BASE_URL}${path}`
         })
+      } else if (seoKey === 'inspiration' && inspiration) {
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          'position': 2,
+          'name': lang === 'pl' ? 'Inspiracje' : 'Inspirations',
+          'item': `${BASE_URL}/portfolio`
+        })
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          'position': 3,
+          'name': inspiration.title,
+          'item': `${BASE_URL}${path}`
+        })
       } else {
         breadcrumbItems.push({
           '@type': 'ListItem',
@@ -412,6 +450,18 @@ export function useSeo() {
           'headline': item.title,
           'url': localeUrl('/artykuly/' + item.slug, lang)
         }))
+      })
+    }
+
+    if (seoKey === 'inspiration' && inspiration) {
+      jsonLd['@graph'].push({
+        '@type': 'CreativeWork',
+        '@id': `${localeUrl(path, lang)}/#work`,
+        'name': inspiration.title,
+        'description': inspiration.description,
+        'image': ogImage,
+        'url': localeUrl(path, lang),
+        'inLanguage': lang === 'pl' ? 'pl-PL' : 'en-US'
       })
     }
 
@@ -484,7 +534,7 @@ export function useSeo() {
   }
 
   // Watch for route and locale changes
-  watch([() => route.path, () => route.params.slug, () => route.query.kategoria, locale], updateSeo, { immediate: true })
+  watch([() => route.path, () => route.params.slug, () => route.params.key, () => route.query.kategoria, locale], updateSeo, { immediate: true })
 
   onMounted(() => {
     updateSeo()

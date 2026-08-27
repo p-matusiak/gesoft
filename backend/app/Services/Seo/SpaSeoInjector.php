@@ -3,14 +3,17 @@
 namespace App\Services\Seo;
 
 use App\Services\Content\ArticleRepository;
+use App\Services\Content\InspirationCatalog;
 use Illuminate\Http\Request;
 
 class SpaSeoInjector
 {
     private const BASE_URL = 'https://gesoft.pl';
 
-    public function __construct(private ArticleRepository $articles)
-    {
+    public function __construct(
+        private ArticleRepository $articles,
+        private InspirationCatalog $inspirations,
+    ) {
     }
 
     public function inject(string $html, Request $request): array
@@ -36,6 +39,10 @@ class SpaSeoInjector
         $html = $this->replaceMeta($html, 'og:description', $seo['description'], true);
         $html = $this->replaceMeta($html, 'og:type', $seo['ogType'], true);
         $html = $this->replaceMeta($html, 'og:url', $seo['url'], true);
+        if (! empty($seo['image'])) {
+            $html = $this->replaceMeta($html, 'og:image', $seo['image'], true);
+            $html = $this->replaceMeta($html, 'twitter:image', $seo['image']);
+        }
         $html = $this->replaceMeta($html, 'twitter:title', $seo['title']);
         $html = $this->replaceMeta($html, 'twitter:description', $seo['description']);
         $html = $this->replaceLink($html, 'canonical', $seo['url']);
@@ -69,6 +76,14 @@ class SpaSeoInjector
 
         if ($path === '/artykuly') {
             return $this->listingSeo($this->baseSeo($path, $locale), $locale, is_string($category) ? $category : null);
+        }
+
+        if (preg_match('#^/portfolio/([A-Za-z0-9_-]+)$#', $path, $matches)) {
+            return $this->inspirationSeo($matches[1], $locale);
+        }
+
+        if ($path === '/portfolio') {
+            return $this->portfolioListingSeo($locale);
         }
 
         if ($this->isPublicPage($path)) {
@@ -158,6 +173,105 @@ class SpaSeoInjector
         ])->render();
 
         return $defaults;
+    }
+
+    private function portfolioListingSeo(string $locale): array
+    {
+        $defaults = $this->baseSeo('/portfolio', $locale);
+        $inspirations = $this->inspirations->all($locale);
+
+        $defaults['jsonLd'] = [
+            '@context' => 'https://schema.org',
+            '@type' => 'CollectionPage',
+            'name' => $defaults['title'],
+            'description' => $defaults['description'],
+            'url' => $this->localeUrl('/portfolio', $locale),
+            'inLanguage' => $locale === 'en' ? 'en-US' : 'pl-PL',
+            'hasPart' => array_map(fn (array $item) => [
+                '@type' => 'CreativeWork',
+                'name' => $item['title'],
+                'url' => $this->localeUrl('/portfolio/'.$item['key'], $locale),
+            ], $inspirations),
+        ];
+
+        $defaults['noscript'] = view('seo.noscript-portfolio', [
+            'title' => $defaults['title'],
+            'description' => $defaults['description'],
+            'inspirations' => $inspirations,
+            'locale' => $locale,
+        ])->render();
+
+        return $defaults;
+    }
+
+    private function inspirationSeo(string $key, string $locale): array
+    {
+        $inspiration = $this->inspirations->find($key, $locale);
+        $path = '/portfolio/'.$key;
+
+        if (! $inspiration) {
+            return [
+                'title' => $locale === 'en' ? 'Inspiration not found | GESOFT' : 'Nie znaleziono inspiracji | GESOFT',
+                'description' => $locale === 'en'
+                    ? 'This inspiration does not exist or has been moved.'
+                    : 'Ta inspiracja nie istnieje albo została przeniesiona.',
+                'keywords' => 'GESOFT',
+                'path' => $path,
+                'url' => $this->localeUrl($path, $locale),
+                'ogType' => 'website',
+                'robots' => 'noindex, nofollow',
+                'status' => 404,
+                'jsonLd' => $this->organizationJsonLd($locale),
+                'noscript' => view('seo.noscript-missing', ['locale' => $locale])->render(),
+            ];
+        }
+
+        $title = $locale === 'en'
+            ? $inspiration['title'].' — inspiration | GESOFT'
+            : $inspiration['title'].' — inspiracja | GESOFT';
+        $description = $inspiration['description'] !== ''
+            ? $inspiration['description']
+            : ($locale === 'en'
+                ? 'Project example from GESOFT: '.$inspiration['title']
+                : 'Przykład projektu GESOFT: '.$inspiration['title']);
+        $url = $this->localeUrl($path, $locale);
+        $image = self::BASE_URL.$inspiration['image'];
+
+        return [
+            'title' => $title,
+            'description' => $description,
+            'keywords' => $inspiration['title'].', inspiracje, GESOFT',
+            'path' => $path,
+            'url' => $url,
+            'ogType' => 'website',
+            'image' => $image,
+            'robots' => 'index, follow',
+            'status' => 200,
+            'jsonLd' => [
+                '@context' => 'https://schema.org',
+                '@type' => 'WebPage',
+                'name' => $inspiration['title'],
+                'headline' => $title,
+                'description' => $description,
+                'url' => $url,
+                'inLanguage' => $locale === 'en' ? 'en-US' : 'pl-PL',
+                'image' => $image,
+                'isPartOf' => [
+                    '@type' => 'WebSite',
+                    'name' => 'GESOFT',
+                    'url' => self::BASE_URL,
+                ],
+                'about' => [
+                    '@type' => 'CreativeWork',
+                    'name' => $inspiration['title'],
+                    'description' => $description,
+                ],
+            ],
+            'noscript' => view('seo.noscript-inspiration', [
+                'inspiration' => $inspiration,
+                'locale' => $locale,
+            ])->render(),
+        ];
     }
 
     private function articleSeo(array $defaults, string $slug, string $locale): array
