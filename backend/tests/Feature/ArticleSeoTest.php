@@ -6,6 +6,27 @@ use Tests\TestCase;
 
 class ArticleSeoTest extends TestCase
 {
+    public function test_rss_feed_lists_published_articles(): void
+    {
+        $response = $this->get('/rss.xml');
+
+        $response->assertOk();
+        $response->assertHeader('Content-Type', 'application/rss+xml; charset=UTF-8');
+        $response->assertSee('<rss version="2.0"', false);
+        $response->assertSee('GESOFT — artykuły', false);
+        $response->assertSee('/artykuly/system-rezerwacji-stolikow-online-restauracja', false);
+        $response->assertSee('https://gesoft.pl/rss.xml', false);
+    }
+
+    public function test_english_rss_feed_uses_english_titles(): void
+    {
+        $response = $this->get('/rss-en.xml');
+
+        $response->assertOk();
+        $response->assertSee('GESOFT articles', false);
+        $response->assertSee('lang=en', false);
+    }
+
     public function test_article_listing_injects_seo_and_noscript_index(): void
     {
         $response = $this->get('/artykuly');
@@ -114,6 +135,75 @@ class ArticleSeoTest extends TestCase
         $response->assertSee('lang="en"', false);
         $response->assertSee('hreflang="pl"', false);
         $response->assertSee('hreflang="en"', false);
+    }
+
+    public function test_static_pages_have_self_canonical_and_language_pair(): void
+    {
+        $pl = $this->get('/o-nas');
+        $pl->assertOk();
+        $pl->assertSee('rel="canonical" href="https://gesoft.pl/o-nas"', false);
+        $pl->assertSee('hreflang="en" href="https://gesoft.pl/o-nas?lang=en"', false);
+        $pl->assertSee('<title>O nas - GESOFT | Paweł Matusiak</title>', false);
+
+        $en = $this->get('/o-nas?lang=en');
+        $en->assertOk();
+        $en->assertSee('rel="canonical" href="https://gesoft.pl/o-nas?lang=en"', false);
+        $en->assertSee('property="og:url" content="https://gesoft.pl/o-nas?lang=en"', false);
+        $en->assertSee('hreflang="pl" href="https://gesoft.pl/o-nas"', false);
+        $en->assertSee('<title>About - GESOFT | Paweł Matusiak</title>', false);
+        $en->assertSee('lang="en"', false);
+
+        $homeEn = $this->get('/?lang=en');
+        $homeEn->assertOk();
+        $homeEn->assertSee('rel="canonical" href="https://gesoft.pl/?lang=en"', false);
+    }
+
+    public function test_inspirations_page_has_self_canonical(): void
+    {
+        $pl = $this->get('/portfolio');
+        $pl->assertOk();
+        $pl->assertSee('rel="canonical" href="https://gesoft.pl/portfolio"', false);
+        $pl->assertSee('hreflang="en" href="https://gesoft.pl/portfolio?lang=en"', false);
+        $pl->assertSee('<title>Inspiracje - GESOFT | Przykłady projektów</title>', false);
+
+        $en = $this->get('/portfolio?lang=en');
+        $en->assertOk();
+        $en->assertSee('rel="canonical" href="https://gesoft.pl/portfolio?lang=en"', false);
+        $en->assertSee('<title>Inspirations - GESOFT | Project Examples</title>', false);
+    }
+
+    public function test_polish_inspiracje_url_redirects_to_portfolio(): void
+    {
+        $this->get('/inspiracje')->assertRedirect('/portfolio');
+        $this->get('/inspiracje?lang=en')->assertRedirect('/portfolio?lang=en');
+    }
+
+    public function test_admin_is_noindex(): void
+    {
+        $response = $this->get('/admin');
+
+        $response->assertOk();
+        $response->assertSee('noindex, nofollow', false);
+    }
+
+    public function test_english_article_canonical_is_self_not_polish(): void
+    {
+        $slug = 'oprogramowanie-dla-firmy-transportowej';
+        $plUrl = 'https://gesoft.pl/artykuly/'.$slug;
+        $enUrl = $plUrl.'?lang=en';
+
+        $en = $this->get('/artykuly/'.$slug.'?lang=en');
+        $en->assertOk();
+        $en->assertSee('rel="canonical" href="'.$enUrl.'"', false);
+        $en->assertSee('property="og:url" content="'.$enUrl.'"', false);
+        $en->assertSee('hreflang="en" href="'.$enUrl.'"', false);
+        $en->assertSee('hreflang="pl" href="'.$plUrl.'"', false);
+
+        $pl = $this->get('/artykuly/'.$slug);
+        $pl->assertOk();
+        $pl->assertSee('rel="canonical" href="'.$plUrl.'"', false);
+        $pl->assertDontSee('rel="canonical" href="'.$enUrl.'"', false);
+        $pl->assertSee('hreflang="en" href="'.$enUrl.'"', false);
     }
 
     public function test_transport_article_cites_gitd_and_sent(): void

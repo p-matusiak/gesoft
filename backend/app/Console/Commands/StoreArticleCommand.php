@@ -89,7 +89,7 @@ class StoreArticleCommand extends Command
             'source' => 'generated',
             'topic_key' => $data['topic_key'] ?? null,
             'published_at' => $data['publishedAt'] ?? now('Europe/Warsaw')->toDateString(),
-            'read_time' => max(20, (int) ceil($chars / 1800)),
+            'read_time' => max(8, (int) ceil($chars / 1500)),
             'related_projects' => $data['relatedProjects'] ?? [],
             'related_slugs' => $data['relatedSlugs'] ?? [],
             'pl' => $pl,

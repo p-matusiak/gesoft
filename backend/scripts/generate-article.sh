@@ -23,10 +23,18 @@ fi
   echo "grok=$GROK_BIN topic=${ARTICLE_TOPIC:-auto}"
 
   CATALOG="$(docker exec gesoft-app php artisan articles:catalog)"
+  VOICE="$ROOT/backend/resources/prompts/article-voice.md"
   COMBINED="$(mktemp)"
   {
     cat "$PROMPT_BASE"
     echo
+    if [[ -f "$VOICE" ]]; then
+      echo
+      echo "----- zasady stylu i redakcji (stosuj od szkicu, redakcja obowiązkowa przed zapisem) -----"
+      echo
+      cat "$VOICE"
+      echo
+    fi
     echo "## Katalog z bazy (artykuły, branże, ostatnie tematy)"
     echo
     echo '```json'
@@ -43,7 +51,7 @@ fi
     --prompt-file "$COMBINED" \
     --yolo \
     --no-auto-update \
-    --max-turns 120 \
+    --max-turns 140 \
     --output-format json
 
   rm -f "$COMBINED"

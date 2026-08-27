@@ -106,10 +106,10 @@ class GrokClient
         $payload = [
             'model' => $model,
             'messages' => [
-                ['role' => 'system', 'content' => 'Jesteś starszym copywriterem SEO GESOFT. Piszesz poprawną polszczyzną, bez zmyślonych statystyk.'],
+                ['role' => 'system', 'content' => 'Jesteś reporterem i redaktorem branżowym GESOFT. Piszesz jak artykuły na bielsko.info: krótki lead, krótkie akapity, fakty i daty, trzecia osoba, czytelna polszczyzna. To artykuł ekspercki, nie reklama SEO. Bez zmyślonych dat i kar. GESOFT dopiero tam, gdzie wynika z problemu.'],
                 ['role' => 'user', 'content' => $prompt],
             ],
-            'temperature' => 0.4,
+            'temperature' => 0.55,
             'max_tokens' => $maxTokens,
         ];
 

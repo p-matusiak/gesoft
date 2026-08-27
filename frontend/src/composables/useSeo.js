@@ -11,24 +11,24 @@ const seoConfig = {
   home: {
     pl: {
       title: 'GESOFT — aplikacje webowe i Android dla firm | wycena 24h',
-      description: 'Software house Pawła Matusiaka. Aplikacje Laravel i Vue.js, Android, rezerwacje, KSeF. Bezpłatna wycena w 24 godziny, 6 miesięcy gwarancji.',
+      description: 'GESOFT projektuje i wdraża aplikacje Laravel i Vue.js, Android, rezerwacje i KSeF. Bezpłatna wycena w 24 godziny, 6 miesięcy gwarancji.',
       keywords: 'aplikacje webowe, oprogramowanie dla firm, Laravel, Vue.js, Android, KSeF, system rezerwacji, GESOFT, wycena'
     },
     en: {
       title: 'GESOFT — web and Android apps for companies | quote in 24h',
-      description: 'Paweł Matusiak’s software house. Laravel and Vue.js apps, Android, bookings, KSeF. Free quote within 24 hours, 6-month warranty.',
+      description: 'GESOFT designs and ships Laravel and Vue.js apps, Android, bookings and KSeF. Free quote within 24 hours, 6-month warranty.',
       keywords: 'web applications, software for companies, Laravel, Vue.js, Android, KSeF, booking system, GESOFT, quote'
     }
   },
   about: {
     pl: {
       title: 'O nas - GESOFT | Paweł Matusiak',
-      description: 'Jednoosobowy software house Pawła Matusiaka. Aplikacje Laravel i Vue.js, Android, wycena w 24 godziny, 6 miesięcy gwarancji.',
+      description: 'GESOFT — software house. Projektujemy i wdrażamy aplikacje Laravel, Vue.js i Android. Wycena w 24 godziny, 6 miesięcy gwarancji.',
       keywords: 'o nas, GESOFT, zespół, doświadczenie, firma programistyczna, web development'
     },
     en: {
       title: 'About - GESOFT | Paweł Matusiak',
-      description: 'Paweł Matusiak’s one-person software house. Laravel and Vue.js apps, Android, quote in 24 hours, 6-month warranty.',
+      description: 'GESOFT software house. We design and ship Laravel, Vue.js and Android apps. Quote in 24 hours, 6-month warranty.',
       keywords: 'about us, GESOFT, team, experience, software company, web development'
     }
   },
@@ -116,6 +116,11 @@ function setMetaTag(name, content, isProperty = false) {
   }
 
   element.setAttribute('content', content)
+}
+
+function localeUrl(path, lang) {
+  const url = `${BASE_URL}${path}`
+  return lang === 'en' ? `${url}${url.includes('?') ? '&' : '?'}lang=en` : url
 }
 
 function setLinkTag(rel, href, hreflang = null) {
@@ -216,7 +221,7 @@ export function useSeo() {
     setMetaTag('og:title', config.title, true)
     setMetaTag('og:description', config.description, true)
     setMetaTag('og:type', article ? 'article' : 'website', true)
-    setMetaTag('og:url', `${BASE_URL}${path}`, true)
+    setMetaTag('og:url', localeUrl(path, lang), true)
     setMetaTag('og:image', `${BASE_URL}/og-image.png`, true)
     setMetaTag('og:site_name', 'GESOFT', true)
     setMetaTag('og:locale', lang === 'pl' ? 'pl_PL' : 'en_US', true)
@@ -233,13 +238,13 @@ export function useSeo() {
     setMetaTag('twitter:description', config.description)
     setMetaTag('twitter:image', `${BASE_URL}/og-image.png`)
 
-    // Canonical URL
-    setLinkTag('canonical', `${BASE_URL}${path}`)
+    // Canonical URL — EN must self-canonicalise (?lang=en), not point at Polish
+    setLinkTag('canonical', localeUrl(path, lang))
 
     // Hreflang tags
-    setLinkTag('alternate', `${BASE_URL}${path}`, 'pl')
-    setLinkTag('alternate', `${BASE_URL}${path}?lang=en`, 'en')
-    setLinkTag('alternate', `${BASE_URL}${path}`, 'x-default')
+    setLinkTag('alternate', localeUrl(path, 'pl'), 'pl')
+    setLinkTag('alternate', localeUrl(path, 'en'), 'en')
+    setLinkTag('alternate', localeUrl(path, 'pl'), 'x-default')
 
     // JSON-LD Structured Data
     const jsonLd = {
@@ -284,8 +289,8 @@ export function useSeo() {
         // WebPage
         {
           '@type': 'WebPage',
-          '@id': `${BASE_URL}${path}/#webpage`,
-          'url': `${BASE_URL}${path}`,
+          '@id': `${localeUrl(path, lang)}/#webpage`,
+          'url': localeUrl(path, lang),
           'name': config.title,
           'description': config.description,
           'isPartOf': {
@@ -403,9 +408,9 @@ export function useSeo() {
         'inLanguage': lang === 'pl' ? 'pl-PL' : 'en-US',
         'blogPost': listed.map((item) => ({
           '@type': 'BlogPosting',
-          '@id': `${BASE_URL}/artykuly/${item.slug}/#article`,
+          '@id': `${localeUrl('/artykuly/' + item.slug, lang)}/#article`,
           'headline': item.title,
-          'url': `${BASE_URL}/artykuly/${item.slug}`
+          'url': localeUrl('/artykuly/' + item.slug, lang)
         }))
       })
     }
@@ -413,7 +418,7 @@ export function useSeo() {
     if (seoKey === 'article' && article) {
       jsonLd['@graph'].push({
         '@type': 'BlogPosting',
-        '@id': `${BASE_URL}${path}/#article`,
+        '@id': `${localeUrl(path, lang)}/#article`,
         'headline': article.title,
         'description': article.seoDescription,
         'datePublished': article.publishedAt,
@@ -427,7 +432,7 @@ export function useSeo() {
           '@id': `${BASE_URL}/#organization`
         },
         'mainEntityOfPage': {
-          '@id': `${BASE_URL}${path}/#webpage`
+          '@id': `${localeUrl(path, lang)}/#webpage`
         },
         'keywords': article.keywords
       })
@@ -436,7 +441,7 @@ export function useSeo() {
       if (articleFaqs.length) {
         jsonLd['@graph'].push({
           '@type': 'FAQPage',
-          '@id': `${BASE_URL}${path}/#faq`,
+          '@id': `${localeUrl(path, lang)}/#faq`,
           'mainEntity': articleFaqs.map((item) => ({
             '@type': 'Question',
             'name': item.q,

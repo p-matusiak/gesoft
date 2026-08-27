@@ -48,24 +48,71 @@ class SpaSeoInjector
 
     private function resolve(string $path, string $locale, mixed $category): ?array
     {
-        $defaults = $this->pageSeo('/artykuly', $locale);
-        $defaults['path'] = $path;
-        $defaults['url'] = self::BASE_URL.$path;
-        $defaults['ogType'] = 'website';
-        $defaults['robots'] = 'index, follow';
-        $defaults['status'] = 200;
-        $defaults['jsonLd'] = $this->organizationJsonLd($locale);
-        $defaults['noscript'] = $this->defaultNoscript($locale);
-
-        if ($path === '/artykuly') {
-            return $this->listingSeo($defaults, $locale, is_string($category) ? $category : null);
+        if (str_starts_with($path, '/admin')) {
+            return [
+                'title' => 'GESOFT',
+                'description' => '',
+                'keywords' => 'GESOFT',
+                'path' => $path,
+                'url' => $this->localeUrl('/', 'pl'),
+                'ogType' => 'website',
+                'robots' => 'noindex, nofollow',
+                'status' => 200,
+                'jsonLd' => $this->organizationJsonLd($locale),
+                'noscript' => $this->defaultNoscript($locale),
+            ];
         }
 
         if (preg_match('#^/artykuly/([a-z0-9-]+)$#', $path, $matches)) {
-            return $this->articleSeo($defaults, $matches[1], $locale);
+            return $this->articleSeo($this->baseSeo('/artykuly', $locale, $path), $matches[1], $locale);
         }
 
-        return null;
+        if ($path === '/artykuly') {
+            return $this->listingSeo($this->baseSeo($path, $locale), $locale, is_string($category) ? $category : null);
+        }
+
+        if ($this->isPublicPage($path)) {
+            return $this->baseSeo($path, $locale);
+        }
+
+        return [
+            'title' => $locale === 'en' ? 'Page not found | GESOFT' : 'Nie znaleziono strony | GESOFT',
+            'description' => $locale === 'en'
+                ? 'This page does not exist or has been moved.'
+                : 'Ta strona nie istnieje albo została przeniesiona.',
+            'keywords' => 'GESOFT',
+            'path' => $path,
+            'url' => $this->localeUrl($path, $locale),
+            'ogType' => 'website',
+            'robots' => 'noindex, nofollow',
+            'status' => 404,
+            'jsonLd' => $this->organizationJsonLd($locale),
+            'noscript' => view('seo.noscript-missing', ['locale' => $locale])->render(),
+        ];
+    }
+
+    private function baseSeo(string $seoPath, string $locale, ?string $canonicalPath = null): array
+    {
+        $path = $canonicalPath ?? $seoPath;
+        $copy = $this->pageSeo($seoPath, $locale);
+
+        return [
+            'title' => $copy['title'],
+            'description' => $copy['description'],
+            'keywords' => $copy['keywords'],
+            'path' => $path,
+            'url' => $this->localeUrl($path, $locale),
+            'ogType' => 'website',
+            'robots' => 'index, follow',
+            'status' => 200,
+            'jsonLd' => $this->organizationJsonLd($locale),
+            'noscript' => $this->defaultNoscript($locale),
+        ];
+    }
+
+    private function isPublicPage(string $path): bool
+    {
+        return in_array($path, ['/', '/o-nas', '/uslugi', '/technologie', '/portfolio', '/kontakt', '/artykuly'], true);
     }
 
     private function listingSeo(array $defaults, string $locale, ?string $category): array
@@ -92,7 +139,7 @@ class SpaSeoInjector
             '@type' => 'Blog',
             'name' => $defaults['title'],
             'description' => $defaults['description'],
-            'url' => self::BASE_URL.'/artykuly',
+            'url' => $this->localeUrl('/artykuly', $locale),
             'inLanguage' => $locale === 'en' ? 'en-US' : 'pl-PL',
             'publisher' => ['@type' => 'Organization', 'name' => 'GESOFT', 'url' => self::BASE_URL],
             'blogPost' => array_map(fn (array $article) => [
@@ -131,7 +178,7 @@ class SpaSeoInjector
         }
 
         $article = $this->articles->localized($raw, $locale);
-        $url = self::BASE_URL.'/artykuly/'.$slug;
+        $url = $this->localeUrl('/artykuly/'.$slug, $locale);
 
         $defaults['title'] = $article['seoTitle'] ?? $article['title'];
         $defaults['description'] = $article['seoDescription'] ?? $article['excerpt'] ?? '';
@@ -201,8 +248,28 @@ class SpaSeoInjector
     {
         $pages = [
             '/' => [
-                'pl' => ['title' => 'GESOFT — aplikacje webowe i Android dla firm | wycena 24h', 'description' => 'Software house Pawła Matusiaka. Aplikacje Laravel i Vue.js, Android, rezerwacje, KSeF. Bezpłatna wycena w 24 godziny, 6 miesięcy gwarancji.', 'keywords' => 'aplikacje webowe, oprogramowanie dla firm, Laravel, Vue.js, Android, KSeF, GESOFT'],
-                'en' => ['title' => 'GESOFT — web and Android apps for companies | quote in 24h', 'description' => 'Paweł Matusiak’s software house. Laravel and Vue.js apps, Android, bookings, KSeF. Free quote within 24 hours, 6-month warranty.', 'keywords' => 'web applications, software for companies, Laravel, Vue.js, Android, KSeF, GESOFT'],
+                'pl' => ['title' => 'GESOFT — aplikacje webowe i Android dla firm | wycena 24h', 'description' => 'GESOFT projektuje i wdraża aplikacje Laravel i Vue.js, Android, rezerwacje i KSeF. Bezpłatna wycena w 24 godziny, 6 miesięcy gwarancji.', 'keywords' => 'aplikacje webowe, oprogramowanie dla firm, Laravel, Vue.js, Android, KSeF, GESOFT'],
+                'en' => ['title' => 'GESOFT — web and Android apps for companies | quote in 24h', 'description' => 'GESOFT designs and ships Laravel and Vue.js apps, Android, bookings and KSeF. Free quote within 24 hours, 6-month warranty.', 'keywords' => 'web applications, software for companies, Laravel, Vue.js, Android, KSeF, GESOFT'],
+            ],
+            '/o-nas' => [
+                'pl' => ['title' => 'O nas - GESOFT | Paweł Matusiak', 'description' => 'GESOFT — software house. Projektujemy i wdrażamy aplikacje Laravel, Vue.js i Android. Wycena w 24 godziny, 6 miesięcy gwarancji.', 'keywords' => 'o nas, GESOFT, zespół, doświadczenie, firma programistyczna, web development'],
+                'en' => ['title' => 'About - GESOFT | Paweł Matusiak', 'description' => 'GESOFT software house. We design and ship Laravel, Vue.js and Android apps. Quote in 24 hours, 6-month warranty.', 'keywords' => 'about us, GESOFT, team, experience, software company, web development'],
+            ],
+            '/uslugi' => [
+                'pl' => ['title' => 'Usługi - GESOFT | Strony, aplikacje, sklepy, CRM', 'description' => 'Kompleksowe usługi webowe: strony internetowe, aplikacje webowe, sklepy e-commerce, systemy CRM/ERP, integracje API, fotografia, filmowanie dronem.', 'keywords' => 'usługi, strony internetowe, aplikacje webowe, sklepy online, CRM, ERP, API, fotografia, dron, SEO'],
+                'en' => ['title' => 'Services - GESOFT | Websites, Apps, E-commerce, CRM', 'description' => 'Comprehensive web services: websites, web applications, e-commerce stores, CRM/ERP systems, API integrations, photography, drone footage.', 'keywords' => 'services, websites, web applications, online stores, CRM, ERP, API, photography, drone, SEO'],
+            ],
+            '/technologie' => [
+                'pl' => ['title' => 'Technologie - GESOFT | Laravel, Vue.js, PHP, MySQL', 'description' => 'Poznaj technologie, których używamy: Laravel, Vue.js 3, PHP 8, MySQL 8, TailwindCSS, Docker, Redis, Nginx. Sprawdzone i wydajne rozwiązania.', 'keywords' => 'technologie, Laravel, Vue.js, PHP, MySQL, TailwindCSS, Docker, Redis, Nginx, stack technologiczny'],
+                'en' => ['title' => 'Technologies - GESOFT | Laravel, Vue.js, PHP, MySQL', 'description' => 'Discover our tech stack: Laravel, Vue.js 3, PHP 8, MySQL 8, TailwindCSS, Docker, Redis, Nginx. Proven and efficient solutions.', 'keywords' => 'technologies, Laravel, Vue.js, PHP, MySQL, TailwindCSS, Docker, Redis, Nginx, tech stack'],
+            ],
+            '/portfolio' => [
+                'pl' => ['title' => 'Inspiracje - GESOFT | Przykłady projektów', 'description' => 'Przykłady projektów które możemy zbudować: systemy CRM, sklepy internetowe, aplikacje webowe, strony firmowe, aplikacje mobilne Android.', 'keywords' => 'inspiracje, przykłady projektów, CRM, sklepy internetowe, aplikacje webowe, aplikacje Android, strony firmowe'],
+                'en' => ['title' => 'Inspirations - GESOFT | Project Examples', 'description' => 'Project examples we can build: CRM systems, e-commerce stores, web applications, corporate websites, Android mobile apps.', 'keywords' => 'inspirations, project examples, CRM, e-commerce, web apps, Android apps, corporate websites'],
+            ],
+            '/kontakt' => [
+                'pl' => ['title' => 'Kontakt - GESOFT | Napisz do nas', 'description' => 'Skontaktuj się z nami! Opisz swój projekt, a my przygotujemy bezpłatną wycenę. Email: biuro@gesoft.pl, Tel: +48 517 123 374.', 'keywords' => 'kontakt, GESOFT, wycena, projekt, email, telefon, formularz kontaktowy'],
+                'en' => ['title' => 'Contact - GESOFT | Get in Touch', 'description' => 'Contact us! Describe your project and we will prepare a free quote. Email: biuro@gesoft.pl, Phone: +48 517 123 374.', 'keywords' => 'contact, GESOFT, quote, project, email, phone, contact form'],
             ],
             '/artykuly' => [
                 'pl' => ['title' => 'Artykuły: system rezerwacji, restauracja, salon, gabinet | GESOFT', 'description' => 'Artykuły dla właścicieli firm: system rezerwacji stolików, zamówienia online bez prowizji, program do salonu, e-rejestracja, warsztat, panel B2B.', 'keywords' => 'system rezerwacji online, program do restauracji, salon fryzjerski, gabinet lekarski, panel B2B, oprogramowanie na zamówienie, GESOFT'],
@@ -301,12 +368,23 @@ class SpaSeoInjector
         return str_replace('</head>', '    '.$tag."\n    </head>", $html);
     }
 
-    private function replaceHreflang(string $html, string $path): string
+    private function localeUrl(string $path, string $locale): string
     {
         $url = self::BASE_URL.($path === '/' ? '/' : $path);
-        $html = (string) preg_replace('/<link rel="alternate" hreflang="pl" href="[^"]*">/', '<link rel="alternate" hreflang="pl" href="'.e($url).'">', $html, 1);
-        $html = (string) preg_replace('/<link rel="alternate" hreflang="en" href="[^"]*">/', '<link rel="alternate" hreflang="en" href="'.e($url).'?lang=en">', $html, 1);
-        $html = (string) preg_replace('/<link rel="alternate" hreflang="x-default" href="[^"]*">/', '<link rel="alternate" hreflang="x-default" href="'.e($url).'">', $html, 1);
+        if ($locale === 'en') {
+            $url .= (str_contains($url, '?') ? '&' : '?').'lang=en';
+        }
+
+        return $url;
+    }
+
+    private function replaceHreflang(string $html, string $path): string
+    {
+        $pl = $this->localeUrl($path, 'pl');
+        $en = $this->localeUrl($path, 'en');
+        $html = (string) preg_replace('/<link rel="alternate" hreflang="pl" href="[^"]*">/', '<link rel="alternate" hreflang="pl" href="'.e($pl).'">', $html, 1);
+        $html = (string) preg_replace('/<link rel="alternate" hreflang="en" href="[^"]*">/', '<link rel="alternate" hreflang="en" href="'.e($en).'">', $html, 1);
+        $html = (string) preg_replace('/<link rel="alternate" hreflang="x-default" href="[^"]*">/', '<link rel="alternate" hreflang="x-default" href="'.e($pl).'">', $html, 1);
 
         return $html;
     }

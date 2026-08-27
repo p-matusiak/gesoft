@@ -10,21 +10,21 @@
   },
   "hero": {
     "badge": "GESOFT · Paweł Matusiak",
-    "title": "System dla Twojej firmy. Jeden programista od wyceny do wdrożenia.",
-    "subtitle": "Aplikacje webowe, panele, rezerwacje, KSeF i Android. Piszesz jak jest — dostajesz wycenę w 24 godziny, bez pośrednika i bez ukrytych godzin.",
+    "title": "Projektujemy i wdrażamy systemy dla Twojej firmy.",
+    "subtitle": "Aplikacje webowe, panele, rezerwacje, KSeF i Android. Opisujesz potrzeby — w 24 godziny wracamy z wyceną, bez ukrytych godzin.",
     "cta": "Opisz projekt",
     "ctaSecondary": "Zobacz przykłady",
     "stackLine": "Laravel, Vue.js, Android — bez eksperymentów na Twoim budżecie.",
     "trust": [
       "Wycena w 24 godziny",
       "6 miesięcy gwarancji",
-      "Rozmawiasz od razu z programistą"
+      "Rozmawiasz z zespołem, który projektuje i wdraża"
     ]
   },
   "home": {
     "work": {
       "title": "Przykłady systemów",
-      "subtitle": "To inspiracje zakresu, nie katalog gotowców. Każdy projekt wyceniam pod Twoje procesy.",
+      "subtitle": "To inspiracje zakresu, nie katalog gotowców. Każdy projekt wyceniamy pod Twoje procesy.",
       "viewAll": "Wszystkie inspiracje"
     },
     "process": {
@@ -33,30 +33,30 @@
       "steps": [
         {
           "title": "Opisujesz problem",
-          "description": "Mail, telefon albo formularz. W 24 godziny wracam z propozycją zakresu i ceną netto — albo mówię wprost, że to nie mój temat."
+          "description": "Mail, telefon albo formularz. W 24 godziny wracamy z propozycją zakresu i ceną netto — albo mówimy wprost, że to nie nasz temat."
         },
         {
-          "title": "Buduję i pokazuję postęp",
+          "title": "Projektujemy, kodujemy i pokazujemy postęp",
           "description": "Widzisz kolejne etapy, nie gotowiec w ostatnim tygodniu. Harmonogram ustalamy przed startem i trzymamy się go."
         },
         {
-          "title": "Wdrażam i zostaję na gwarancji",
+          "title": "Wdrażamy i zostajemy na gwarancji",
           "description": "Uruchomienie, krótkie wdrożenie i 6 miesięcy na błędy. Kod i dostęp zostają u Ciebie."
         }
       ]
     },
     "promises": [
       {
-        "title": "14 dni na zaliczkę",
-        "description": "Jeśli w pierwszych dwóch tygodniach współpraca nie zaskoczy — zwracam zaliczkę."
+        "title": "Jasne zasady płatności",
+        "description": "Zaliczka uruchamia prace i nie podlega zwrotowi. Harmonogram wpłat zapisujemy w umowie."
       },
       {
-        "title": "Termin z konsekwencją",
-        "description": "Za każdy dzień opóźnienia z mojej winy: 5% rabatu od umówionej kwoty."
+        "title": "Termin z ustalonym zakresem",
+        "description": "Dotrzymujemy uzgodnionego harmonogramu. Zmiana zakresu to nowa wycena i nowy termin, nie darmowe poprawki."
       },
       {
-        "title": "Cena z oferty jest ceną",
-        "description": "Wycena po analizie jest wiążąca. Bez dopłat za „nieprzewidziane godziny”."
+        "title": "Wycena po analizie",
+        "description": "Po opisie wymagań podajemy cenę netto. Dodatkowe prace ruszają dopiero po Twojej akceptacji."
       }
     ],
     "topics": [
@@ -164,17 +164,17 @@
       "title": "O GESOFT",
       "title1": "O",
       "title2": "nas",
-      "subtitle": "Jednoosobowy software house Pawła Matusiaka. Aplikacje webowe, panele i Android — bez pośrednika."
+      "subtitle": "Software house GESOFT. Projektujemy, kodujemy i wdrażamy aplikacje webowe, panele i Android. Firmę reprezentuje Paweł Matusiak."
     },
     "factsTitle": "Jak to wygląda w praktyce",
     "facts": [
       {
-        "title": "Jeden programista",
-        "description": "Nie ma account managera ani rotacji zespołu. Od wyceny do wdrożenia rozmawiasz ze mną."
+        "title": "Bezpośredni kontakt",
+        "description": "Od wyceny do wdrożenia rozmawiasz z osobami, które projektują, kodują i wdrażają — bez przekazywania sprawy między działami."
       },
       {
         "title": "Laravel, Vue.js, Android",
-        "description": "Tych technologii używam na co dzień. Nie eksperymentuję nowym frameworkiem na Twoim budżecie."
+        "description": "Tych technologii używamy na co dzień. Nie eksperymentujemy nowym frameworkiem na Twoim budżecie."
       },
       {
         "title": "Kod i dostęp zostają u Ciebie",
@@ -182,11 +182,11 @@
       }
     ],
     "story": {
-      "title": "Kto robi projekty",
+      "title": "O firmie",
       "titleHighlight": "historia",
       "content1": "GESOFT powstał z pasji do tworzenia solidnego oprogramowania. Specjalizujemy się w Laravel, Vue.js i natywnym Androidzie - technologiach, które znamy dogłębnie.",
       "content2": "Każdy projekt traktujemy indywidualnie. Zanim napiszemy pierwszą linię kodu - rozumiemy problem biznesowy, który rozwiązujemy.",
-      "content3": "Działamy jako jednoosobowy software house - jeden dedykowany programista na projekt oznacza pełną odpowiedzialność i bezpośrednią komunikację.",
+      "content3": "Projektujemy, kodujemy i wdrażamy. Firmę reprezentuje Paweł Matusiak. Klient ma bezpośredni kontakt z zespołem odpowiedzialnym za projekt.",
       "codePassion": "Kod z pasją",
       "codePassionDesc": "Każda linia kodu jest pisana z dbałością o jakość i wydajność. Używamy najlepszych praktyk i nowoczesnych technologii."
     },
@@ -246,7 +246,7 @@
     },
     "cta": {
       "title": "Napisz, nad czym się zastanawiasz.",
-      "subtitle": "Dostaniesz wycenę w 24 godziny albo szczerą odpowiedź, że to nie mój temat.",
+      "subtitle": "Dostaniesz wycenę w 24 godziny albo szczerą odpowiedź, że to nie nasz temat.",
       "button": "Napisz do nas"
     }
   },
@@ -385,7 +385,7 @@
     },
     "cta": {
       "title": "Potrzebujesz wyceny?",
-      "subtitle": "Opisz zakres. W 24 godziny wracam z ceną netto albo mówię, że to nie mój temat.",
+      "subtitle": "Opisz zakres. W 24 godziny wracamy z ceną netto albo mówimy, że to nie nasz temat.",
       "button": "Wyślij zapytanie"
     },
     "deployment": {
@@ -464,9 +464,9 @@
       }
     ],
     "mainStack": {
-      "title": "Czego używam",
+      "title": "Czego używamy",
       "titleHighlight": "stack technologiczny",
-      "subtitle": "Nie mieszam stosów. Łatwiej utrzymać, łatwiej rozwinąć, łatwiej oddać kod."
+      "subtitle": "Nie mieszamy stosów. Łatwiej utrzymać, łatwiej rozwinąć, łatwiej oddać kod."
     },
     "devops": {
       "title": "DevOps i",
@@ -476,8 +476,8 @@
     "why": {
       "title": "Dlaczego ten stack",
       "titleHighlight": "ten stack?",
-      "subtitle": "Znam go od lat. Koszt utrzymania jest przewidywalny, a kolejny programista nie musi się uczyć eksperymentu.",
-      "note": "Nie obiecuję „najnowszego frameworka roku”. Obiecuję kod, który da się rozwijać po wdrożeniu.",
+      "subtitle": "Znamy go od lat. Koszt utrzymania jest przewidywalny, a kolejny zespół nie musi się uczyć eksperymentu.",
+      "note": "Nie obiecujemy „najnowszego frameworka roku”. Obiecujemy kod, który da się rozwijać po wdrożeniu.",
       "performance": {
         "title": "Wydajność",
         "description": "PHP 8.3 z JIT, Vue 3 z Proxy-based reactivity, MySQL 8 z optymalizatorem zapytań - każdy element jest zoptymalizowany."
@@ -658,7 +658,7 @@
     },
     "cta": {
       "title": "Masz już konkretny problem do ogarnięcia?",
-      "subtitle": "Napisz, co ma działać. Powiem, czy Laravel i Android wystarczą, czy lepiej wziąć gotowy program.",
+      "subtitle": "Napisz, co ma działać. Powiemy, czy Laravel i Android wystarczą, czy lepiej wziąć gotowy program.",
       "button": "Opisz projekt"
     }
   },
@@ -996,17 +996,17 @@
   "contact": {
     "header": {
       "title": "Kontakt",
-      "subtitle": "Opisz, co Cię blokuje. W 24 godziny wracam z wyceną albo szczerą odpowiedzią."
+      "subtitle": "Opisz, co Cię blokuje. W 24 godziny wracamy z wyceną albo szczerą odpowiedzią."
     },
     "success": {
       "title": "Wiadomość wyszła.",
-      "body": "Odezwę się w ciągu 24 godzin w dniach roboczych. Sprawdź też folder spam.",
+      "body": "Odezwiemy się w ciągu 24 godzin w dniach roboczych. Sprawdź też folder spam.",
       "sentTo": "Potwierdzenie poszło na",
       "ok": "OK"
     },
     "form": {
       "title": "Napisz",
-      "replyNote": "Odpowiadam na wszystkie wiadomości w ciągu 24 godzin w dniach roboczych.",
+      "replyNote": "Odpowiadamy na wszystkie wiadomości w ciągu 24 godzin w dniach roboczych.",
       "email": "Adres email",
       "emailPlaceholder": "jan{'@'}przyklad.pl",
       "emailRequired": "Adres email jest wymagany.",
@@ -1037,15 +1037,15 @@
     "faq": {
       "title": "Najczęstsze pytania",
       "q1": "Jak długo trwa realizacja?",
-      "a1": "Prosta strona to zwykle 2–4 tygodnie, aplikacja webowa 1–3 miesiące. Po analizie podaję konkretny harmonogram.",
+      "a1": "Prosta strona to zwykle 2–4 tygodnie, aplikacja webowa 1–3 miesiące. Po analizie podajemy konkretny harmonogram.",
       "q2": "Co po wdrożeniu?",
-      "a2": "Każdy projekt ma 6 miesięcy gwarancji na błędy. Utrzymanie i rozwój wyceniam osobno, jeśli są potrzebne.",
+      "a2": "Każdy projekt ma 6 miesięcy gwarancji na błędy. Utrzymanie i rozwój wyceniamy osobno, jeśli są potrzebne.",
       "q3": "Jakie technologie?",
       "a3": "Laravel, Vue.js i natywny Android. Do tego MySQL albo PostgreSQL, Redis i Docker — gdy są naprawdę potrzebne.",
       "q4": "Od jakiej kwoty?",
       "a4": "Od 2 500 zł netto za stronę-wizytówkę. Reszta po opisie zakresu. Wycena w 24 godziny.",
       "q5": "Gdzie zobaczę przykłady?",
-      "a5": "W zakładce Inspiracje są przykłady zakresu, nie katalog gotowców. Każdy projekt i tak wyceniam pod Twoje procesy.",
+      "a5": "W zakładce Inspiracje są przykłady zakresu, nie katalog gotowców. Każdy projekt i tak wyceniamy pod Twoje procesy.",
       "q6": "Czy jest umowa?",
       "a6": "Tak. Na życzenie też NDA. Kod i dostęp po odbiorze zostają u Ciebie."
     }
@@ -1154,7 +1154,7 @@
         "Zaawansowana architektura",
         "Priorytetowe wsparcie",
         "Pełna dokumentacja techniczna",
-        "Bezpośredni kontakt z programistą"
+        "Bezpośredni kontakt z zespołem projektowym"
       ],
       "cta": "Umów konsultację"
     },
@@ -1166,12 +1166,12 @@
     "subtitle": "Konkretne zobowiązania, nie hasła marketingowe.",
     "items": {
       "satisfaction": {
-        "title": "Gwarancja satysfakcji",
-        "description": "Jeśli nie spełnimy Twoich oczekiwań w pierwszych 14 dniach - zwrócimy zaliczkę."
+        "title": "Zasady płatności",
+        "description": "Zaliczka uruchamia prace i nie podlega zwrotowi. Harmonogram wpłat jest w umowie."
       },
       "deadline": {
         "title": "Gwarancja terminu",
-        "description": "Dotrzymujemy ustalonych terminów. Za każdy dzień opóźnienia z naszej winy - 5% rabatu."
+        "description": "Dotrzymujemy uzgodnionego harmonogramu. Zmiana zakresu oznacza nową wycenę i nowy termin."
       },
       "quality": {
         "title": "6 miesięcy gwarancji",

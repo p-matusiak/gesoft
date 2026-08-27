@@ -1,12 +1,23 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-200" role="navigation" aria-label="Nawigacja główna" :class="[
-    isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200' : 'bg-white border-b border-gray-100'
-  ]">
+  <nav
+    class="fixed top-0 left-0 right-0 z-50 transition-transform duration-200 ease-out"
+    role="navigation"
+    aria-label="Nawigacja główna"
+    :class="[
+      isHidden ? '-translate-y-full lg:translate-y-0' : 'translate-y-0',
+      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200' : 'bg-white border-b border-gray-100'
+    ]"
+  >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <!-- Logo -->
+      <div class="flex items-center justify-between py-1.5 sm:py-2">
         <router-link to="/" class="flex items-center">
-          <img src="/logo.png" alt="GESOFT - Strony i aplikacje webowe" class="h-6 sm:h-7 md:h-8 w-auto" width="160" height="32" />
+          <img
+            src="/logo.png"
+            alt="GESOFT - Strony i aplikacje webowe"
+            class="h-10 sm:h-11 lg:h-12 w-auto"
+            width="240"
+            height="48"
+          />
         </router-link>
 
         <!-- Desktop Navigation -->
@@ -68,7 +79,7 @@
         <!-- Mobile Menu Button -->
         <button
           @click="isMobileMenuOpen = !isMobileMenuOpen"
-          class="lg:hidden p-2 text-gray-700 hover:text-brand-600"
+          class="lg:hidden p-1.5 -mr-1.5 text-gray-700 hover:text-brand-600"
           :aria-expanded="isMobileMenuOpen"
           aria-controls="mobile-menu"
           aria-label="Otwórz menu nawigacji"
@@ -135,7 +146,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from 'vue-router'
 
@@ -144,8 +155,10 @@ const route = useRoute()
 const router = useRouter()
 
 const isScrolled = ref(false)
+const isHidden = ref(false)
 const isMobileMenuOpen = ref(false)
 const isLangMenuOpen = ref(false)
+let lastScrollY = 0
 
 const currentLocale = computed(() => locale.value)
 
@@ -179,7 +192,22 @@ const changeLocale = (newLocale) => {
 }
 
 const handleScroll = () => {
-  isScrolled.value = window.scrollY > 50
+  const y = window.scrollY
+  isScrolled.value = y > 8
+
+  if (isMobileMenuOpen.value || y < 16) {
+    isHidden.value = false
+    lastScrollY = y
+    return
+  }
+
+  const delta = y - lastScrollY
+  if (delta > 6) {
+    isHidden.value = true
+  } else if (delta < -6) {
+    isHidden.value = false
+  }
+  lastScrollY = y
 }
 
 const handleClickOutside = (event) => {
@@ -188,8 +216,17 @@ const handleClickOutside = (event) => {
   }
 }
 
+watch(
+  () => route.fullPath,
+  () => {
+    isHidden.value = false
+    isMobileMenuOpen.value = false
+  }
+)
+
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
+  lastScrollY = window.scrollY
+  window.addEventListener('scroll', handleScroll, { passive: true })
   document.addEventListener('click', handleClickOutside)
 })
 

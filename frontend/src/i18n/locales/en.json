@@ -10,15 +10,15 @@
   },
   "hero": {
     "badge": "GESOFT · Paweł Matusiak",
-    "title": "Software for your company. One developer from quote to launch.",
-    "subtitle": "Web apps, admin panels, bookings, KSeF and Android. You describe the problem — you get a quote within 24 hours, no account manager in between.",
+    "title": "We design and ship systems for your company.",
+    "subtitle": "Web apps, admin panels, bookings, KSeF and Android. You describe the need — we come back with a quote within 24 hours, no hidden hours.",
     "cta": "Describe your project",
     "ctaSecondary": "See examples",
     "stackLine": "Laravel, Vue.js, Android — no experiments on your budget.",
     "trust": [
       "Quote within 24 hours",
       "6-month warranty",
-      "You talk to the developer"
+      "You talk to the team that designs and ships"
     ]
   },
   "home": {
@@ -33,30 +33,30 @@
       "steps": [
         {
           "title": "You describe the problem",
-          "description": "Email, phone or the form. Within 24 hours I come back with a scope and a net price — or I say straight that it is not my work."
+          "description": "Email, phone or the form. Within 24 hours we come back with a scope and a net price — or we say straight that it is not our work."
         },
         {
-          "title": "I build and show progress",
+          "title": "We design, code and show progress",
           "description": "You see stages along the way, not a surprise in the last week. We agree the timeline before we start and we keep it."
         },
         {
-          "title": "I launch and stay on warranty",
+          "title": "We launch and stay on warranty",
           "description": "Go-live, a short handover and 6 months for defects. The code and access stay with you."
         }
       ]
     },
     "promises": [
       {
-        "title": "14 days on the deposit",
-        "description": "If the first two weeks do not work out, I refund the deposit."
+        "title": "Clear payment terms",
+        "description": "A deposit starts the work and is non-refundable. The payment schedule is in the contract."
       },
       {
-        "title": "Deadline with a consequence",
-        "description": "For every day of delay on my side: 5% off the agreed amount."
+        "title": "Deadline for the agreed scope",
+        "description": "We keep the agreed timeline. A change of scope means a new quote and a new date, not free extra work."
       },
       {
-        "title": "The quoted price is the price",
-        "description": "The quote after analysis is binding. No extras for “unforeseen hours”."
+        "title": "Quote after analysis",
+        "description": "After we know the requirements we give a net price. Extra work starts only after you approve it."
       }
     ],
     "topics": [
@@ -147,7 +147,7 @@
       ]
     },
     "cta": {
-      "title": "Tell me what is slowing the company down.",
+      "title": "Tell us what is slowing the company down.",
       "subtitle": "You get a quote within 24 hours — or an honest answer that a ready-made product is the better fit.",
       "button": "Send inquiry",
       "phone": "or call: +48 517 123 374"
@@ -164,17 +164,17 @@
       "title": "About GESOFT",
       "title1": "About",
       "title2": "us",
-      "subtitle": "Paweł Matusiak’s one-person software house. Web apps, admin panels and Android — no account manager in between."
+      "subtitle": "GESOFT software house. We design, code and ship web apps, admin panels and Android. The company is represented by Paweł Matusiak."
     },
     "factsTitle": "How it works in practice",
     "facts": [
       {
-        "title": "One developer",
-        "description": "No account manager and no rotating team. From quote to launch you talk to me."
+        "title": "Direct contact",
+        "description": "From quote to launch you talk to the people who design, code and ship — no hand-offs between departments."
       },
       {
         "title": "Laravel, Vue.js, Android",
-        "description": "These are the tools I use every day. I do not try a new framework on your budget."
+        "description": "These are the tools we use every day. We do not try a new framework on your budget."
       },
       {
         "title": "The code stays with you",
@@ -182,11 +182,11 @@
       }
     ],
     "story": {
-      "title": "Who builds the projects",
+      "title": "About the company",
       "titleHighlight": "story",
       "content1": "GESOFT was born from a passion for building solid software. We specialize in Laravel, Vue.js and native Android - technologies we know in depth.",
       "content2": "We treat each project individually. Before writing the first line of code - we understand the business problem we're solving.",
-      "content3": "We operate as a focused software house - a dedicated developer per project means full accountability and direct communication.",
+      "content3": "We design, code and ship. The company is represented by Paweł Matusiak. Clients have direct contact with the team responsible for the project.",
       "codePassion": "Code with passion",
       "codePassionDesc": "Every line of code is written with care for quality and performance. We use best practices and modern technologies."
     },
@@ -246,7 +246,7 @@
     },
     "cta": {
       "title": "Write what you are stuck on.",
-      "subtitle": "You get a quote within 24 hours, or an honest answer that this is not my work.",
+      "subtitle": "You get a quote within 24 hours, or an honest answer that this is not our work.",
       "button": "Contact us"
     }
   },
@@ -464,9 +464,9 @@
       }
     ],
     "mainStack": {
-      "title": "What I use",
+      "title": "What we use",
       "titleHighlight": "tech stack",
-      "subtitle": "I do not mix stacks. Easier to maintain, easier to extend, easier to hand over."
+      "subtitle": "We do not mix stacks. Easier to maintain, easier to extend, easier to hand over."
     },
     "devops": {
       "title": "DevOps and",
@@ -476,8 +476,8 @@
     "why": {
       "title": "Why this stack",
       "titleHighlight": "stack?",
-      "subtitle": "I have used it for years. Maintenance cost is predictable, and the next developer does not have to learn an experiment.",
-      "note": "I do not promise “this year’s hottest framework”. I promise code that can still be extended after launch.",
+      "subtitle": "We have used it for years. Maintenance cost is predictable, and the next team does not have to learn an experiment.",
+      "note": "We do not promise “this year’s hottest framework”. We promise code that can still be extended after launch.",
       "performance": {
         "title": "Performance",
         "description": "PHP 8.3 with JIT, Vue 3 with Proxy-based reactivity, MySQL 8 with query optimizer - every element is optimized."
@@ -658,7 +658,7 @@
     },
     "cta": {
       "title": "Already have a concrete problem to solve?",
-      "subtitle": "Write what needs to work. I will say whether Laravel and Android are enough, or a ready-made product is the better fit.",
+      "subtitle": "Write what needs to work. We will say whether Laravel and Android are enough, or a ready-made product is the better fit.",
       "button": "Describe your project"
     }
   },
@@ -996,17 +996,17 @@
   "contact": {
     "header": {
       "title": "Contact",
-      "subtitle": "Describe what is blocking you. Within 24 hours I come back with a quote or an honest answer."
+      "subtitle": "Describe what is blocking you. Within 24 hours we come back with a quote or an honest answer."
     },
     "success": {
       "title": "Message sent.",
-      "body": "I will reply within 24 hours on business days. Check spam as well.",
+      "body": "We will reply within 24 hours on business days. Check spam as well.",
       "sentTo": "Confirmation went to",
       "ok": "OK"
     },
     "form": {
       "title": "Write",
-      "replyNote": "I reply to every message within 24 hours on business days.",
+      "replyNote": "We reply to every message within 24 hours on business days.",
       "email": "Email address",
       "emailPlaceholder": "john{'@'}example.com",
       "emailRequired": "Email address is required.",
@@ -1037,7 +1037,7 @@
     "faq": {
       "title": "Common questions",
       "q1": "How long does it take?",
-      "a1": "A simple site is usually 2–4 weeks, a web app 1–3 months. After the analysis I give a concrete timeline.",
+      "a1": "A simple site is usually 2–4 weeks, a web app 1–3 months. After the analysis we give a concrete timeline.",
       "q2": "What happens after launch?",
       "a2": "Every project has 6 months of warranty for defects. Maintenance and further work are quoted separately if needed.",
       "q3": "Which technologies?",
@@ -1154,7 +1154,7 @@
         "Advanced architecture",
         "Priority support",
         "Full technical documentation",
-        "Direct contact with the developer"
+        "Direct contact with the project team"
       ],
       "cta": "Schedule consultation"
     },
@@ -1166,12 +1166,12 @@
     "subtitle": "Concrete commitments, not marketing slogans.",
     "items": {
       "satisfaction": {
-        "title": "Satisfaction guarantee",
-        "description": "If we don't meet your expectations in the first 14 days - we'll refund the deposit."
+        "title": "Payment terms",
+        "description": "A deposit starts the work and is non-refundable. The payment schedule is in the contract."
       },
       "deadline": {
         "title": "Deadline guarantee",
-        "description": "We meet agreed deadlines. For each day of delay on our side - 5% discount."
+        "description": "We keep the agreed timeline. A change of scope means a new quote and a new date."
       },
       "quality": {
         "title": "6 months warranty",

@@ -67,7 +67,147 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly?lang=en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly"/>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/rss.xml</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/rss.xml"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/rss.xml?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/rss.xml"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/rejestr-korespondencji-kancelaria-e-us</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/rejestr-korespondencji-kancelaria-e-us"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/rejestr-korespondencji-kancelaria-e-us?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/rejestr-korespondencji-kancelaria-e-us"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/rezerwacja-bezposrednia-czek-turystyczny-pensjonat</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/rezerwacja-bezposrednia-czek-turystyczny-pensjonat"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/rezerwacja-bezposrednia-czek-turystyczny-pensjonat?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/rezerwacja-bezposrednia-czek-turystyczny-pensjonat"/>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ewidencja-instalacji-pv-moje-ire-csire</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ewidencja-instalacji-pv-moje-ire-csire"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ewidencja-instalacji-pv-moje-ire-csire?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ewidencja-instalacji-pv-moje-ire-csire"/>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/kalendarz-rezerwacji-salon-b2b-pip</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/kalendarz-rezerwacji-salon-b2b-pip"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/kalendarz-rezerwacji-salon-b2b-pip?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/kalendarz-rezerwacji-salon-b2b-pip"/>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ewidencja-zaliczek-uchwal-wspolnota-ud312</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ewidencja-zaliczek-uchwal-wspolnota-ud312"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ewidencja-zaliczek-uchwal-wspolnota-ud312?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ewidencja-zaliczek-uchwal-wspolnota-ud312"/>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ewidencja-faktur-ksef-kary-2027</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ewidencja-faktur-ksef-kary-2027"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ewidencja-faktur-ksef-kary-2027?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ewidencja-faktur-ksef-kary-2027"/>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-dla-zlobka-zakaz-wizerunku</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-dla-zlobka-zakaz-wizerunku"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-dla-zlobka-zakaz-wizerunku?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-dla-zlobka-zakaz-wizerunku"/>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/program-do-gabinetu-recepty-refundowane-p1</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/program-do-gabinetu-recepty-refundowane-p1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/program-do-gabinetu-recepty-refundowane-p1?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/program-do-gabinetu-recepty-refundowane-p1"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ewidencja-inwestycji-decyzji-wz-plan-ogolny</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ewidencja-inwestycji-decyzji-wz-plan-ogolny"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ewidencja-inwestycji-decyzji-wz-plan-ogolny?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ewidencja-inwestycji-decyzji-wz-plan-ogolny"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/grafik-niedziel-handlowych-sklep-magazyn</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/grafik-niedziel-handlowych-sklep-magazyn"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/grafik-niedziel-handlowych-sklep-magazyn?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/grafik-niedziel-handlowych-sklep-magazyn"/>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ewidencja-kpo-api-bdo-2027</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ewidencja-kpo-api-bdo-2027"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ewidencja-kpo-api-bdo-2027?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ewidencja-kpo-api-bdo-2027"/>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ewidencja-wyjatkow-zakaz-ruchu-12-ton</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ewidencja-wyjatkow-zakaz-ruchu-12-ton"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ewidencja-wyjatkow-zakaz-ruchu-12-ton?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ewidencja-wyjatkow-zakaz-ruchu-12-ton"/>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/artykuly/ewidencja-temperatury-przerw-horeca-pip</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly/ewidencja-temperatury-przerw-horeca-pip"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly/ewidencja-temperatury-przerw-horeca-pip?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly/ewidencja-temperatury-przerw-horeca-pip"/>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

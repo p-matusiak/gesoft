@@ -4,8 +4,10 @@ namespace App\Services\Content;
 
 class SitemapWriter
 {
-    public function __construct(private ArticleRepository $articles)
-    {
+    public function __construct(
+        private ArticleRepository $articles,
+        private RssFeed $rss,
+    ) {
     }
 
     public function write(): string
@@ -18,6 +20,7 @@ class SitemapWriter
             ['loc' => 'https://gesoft.pl/portfolio', 'lastmod' => '2026-01-20', 'changefreq' => 'weekly', 'priority' => '0.8'],
             ['loc' => 'https://gesoft.pl/kontakt', 'lastmod' => '2026-01-20', 'changefreq' => 'monthly', 'priority' => '0.9'],
             ['loc' => 'https://gesoft.pl/artykuly', 'lastmod' => now()->toDateString(), 'changefreq' => 'weekly', 'priority' => '0.8'],
+            ['loc' => 'https://gesoft.pl/rss.xml', 'lastmod' => now()->toDateString(), 'changefreq' => 'daily', 'priority' => '0.5'],
         ];
 
         $urls = array_map(fn (array $page) => $this->urlXml(
@@ -49,6 +52,8 @@ class SitemapWriter
         if (is_dir(dirname($frontend))) {
             file_put_contents($frontend, $xml);
         }
+
+        $this->rss->write();
 
         return $public;
     }

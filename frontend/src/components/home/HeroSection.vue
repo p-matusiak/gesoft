@@ -1,12 +1,12 @@
 <template>
-  <section class="relative bg-white pt-28 pb-16 sm:pt-32 sm:pb-20 border-b border-gray-200">
+  <section class="relative bg-white pt-16 pb-16 sm:pt-20 sm:pb-20 lg:pt-24 border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl">
         <p class="text-sm font-medium text-brand-600 mb-4">
           {{ $t('hero.badge') }}
         </p>
 
-        <h1 class="font-heading font-bold text-gray-900 text-[1.85rem] sm:text-[2.35rem] md:text-[2.85rem] leading-[1.15] mb-5">
+        <h1 class="heading-1 text-gray-900 mb-5">
           {{ $t('hero.title') }}
         </h1>
 

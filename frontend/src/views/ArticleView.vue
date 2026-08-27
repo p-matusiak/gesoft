@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20">
+  <div class="pt-12 sm:pt-14 lg:pt-16">
     <template v-if="article">
       <ArticleHero :article="article" />
       <ArticleBody :content="article.content" />

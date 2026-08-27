@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20">
+  <div class="pt-12 sm:pt-14 lg:pt-16">
     <PageHeader
       :title="$t('articles.header.title')"
       :subtitle="$t('articles.header.subtitle')"

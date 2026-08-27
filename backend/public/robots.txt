@@ -13,3 +13,6 @@ Disallow: /api/
 
 # Sitemap (wszystkie artykuły + strony)
 Sitemap: https://gesoft.pl/sitemap.xml
+
+# RSS (nowe artykuły)
+# https://gesoft.pl/rss.xml
