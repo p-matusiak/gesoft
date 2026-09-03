@@ -10,7 +10,7 @@
   },
   "hero": {
     "badge": "GESOFT · Paweł Matusiak",
-    "title": "We design and ship systems for your company.",
+    "title": "Custom web applications and systems for companies",
     "subtitle": "Web apps, admin panels, bookings, KSeF and Android. You describe the need — we come back with a quote within 24 hours, no hidden hours.",
     "cta": "Describe your project",
     "ctaSecondary": "See examples",
@@ -996,8 +996,8 @@
   },
   "contact": {
     "header": {
-      "title": "Contact",
-      "subtitle": "Describe what is blocking you. Within 24 hours we come back with a quote or an honest answer."
+      "title": "Contact GESOFT",
+      "subtitle": "Describe a web application, a company system or an Android app. Within 24 hours we come back with a quote or an honest answer."
     },
     "success": {
       "title": "Message sent.",
@@ -1074,6 +1074,8 @@
     "toc": "In this article",
     "readMore": "Read more",
     "related": "Related articles",
+    "relatedService": "Related service",
+    "by": "Author",
     "relatedProjects": "Systems we can build",
     "relatedProjectsSubtitle": "Examples from GESOFT inspirations — open a card to see scope and stack.",
     "viewAllProjects": "All inspirations",
@@ -1095,8 +1097,15 @@
   "footer": {
     "description": "We build web applications (Laravel + Vue.js) and mobile apps (Android). Clean code, clear process, honest pricing.",
     "quickLinks": "Quick links",
+    "services": "Services",
     "contact": "Contact",
     "copyright": "All rights reserved."
+  },
+  "author": {
+    "role": "Founder / software developer, GESOFT",
+    "bio1": "Designs and ships Laravel, Vue.js and Android applications for companies: bookings, B2B panels, CRM, KSeF and field apps.",
+    "bio2": "From quote to launch the client talks to the people who design and code. After handover the code stays with the client. 6-month warranty on defects.",
+    "articles": "Articles"
   },
   "common": {
     "learnMore": "Learn more"

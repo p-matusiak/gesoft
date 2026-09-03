@@ -12,6 +12,9 @@
           <p class="text-gray-700 mb-4 leading-relaxed">{{ $t('about.story.content1') }}</p>
           <p class="text-gray-700 mb-4 leading-relaxed">{{ $t('about.story.content2') }}</p>
           <p class="text-gray-700 leading-relaxed">{{ $t('about.story.content3') }}</p>
+          <p class="text-gray-700 mt-4">
+            <router-link to="/autor/pawel-matusiak" class="font-semibold text-brand-600 hover:text-brand-700">Paweł Matusiak</router-link>
+          </p>
         </div>
       </div>
     </section>

@@ -3,6 +3,15 @@
     <template v-if="article">
       <ArticleHero :article="article" />
       <ArticleBody :content="article.content" />
+      <section v-if="relatedService" class="py-10 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="text-sm font-semibold text-brand-600 mb-2">{{ $t('articles.relatedService') }}</p>
+          <router-link :to="'/uslugi/' + relatedService.slug" class="text-xl font-bold text-gray-900 hover:text-brand-600">
+            {{ relatedService.h1 }}
+          </router-link>
+          <p class="text-gray-600 mt-2 max-w-2xl">{{ relatedService.lead }}</p>
+        </div>
+      </section>
       <SectionCta
         variant="brand"
         :title="$t('articles.cta.title')"
@@ -38,6 +47,7 @@ import SectionCta from '@/components/common/SectionCta.vue'
 import { fetchArticle } from '@/composables/useArticles'
 import { useSeo } from '@/composables/useSeo'
 import { getProjectsByKeys } from '@/data/projects'
+import { findService, serviceSlugForArticle } from '@/data/services'
 
 const route = useRoute()
 const { t, locale } = useI18n()
@@ -69,6 +79,13 @@ const categoryLabelKeys = {
   ecommerce: 'portfolio.filters.ecommerce',
   crm: 'portfolio.filters.crm'
 }
+
+const relatedService = computed(() => {
+  if (!article.value) {
+    return null
+  }
+  return findService(serviceSlugForArticle(article.value), locale.value)
+})
 
 const relatedProjectCards = computed(() => {
   if (!article.value?.relatedProjects?.length) return []

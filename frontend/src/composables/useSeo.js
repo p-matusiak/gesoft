@@ -3,6 +3,7 @@ import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getArticleFaqs } from '@/data/articles-format'
 import { getCachedArticle, getCachedArticles } from '@/composables/useArticles'
+import { findService } from '@/data/services'
 
 const BASE_URL = 'https://gesoft.pl'
 
@@ -199,6 +200,31 @@ export function useSeo() {
         title: article.seoTitle,
         description: article.seoDescription,
         keywords: article.keywords
+      }
+    }
+
+    const serviceMatch = path.match(/^\/uslugi\/([a-z0-9-]+)$/)
+    if (serviceMatch) {
+      const service = findService(serviceMatch[1], lang)
+      if (!service) {
+        return
+      }
+      seoKey = 'service'
+      config = {
+        title: service.seoTitle,
+        description: service.description,
+        keywords: service.keywords
+      }
+    }
+
+    if (path === '/autor/pawel-matusiak') {
+      seoKey = 'author'
+      config = {
+        title: lang === 'pl' ? 'Paweł Matusiak — założyciel GESOFT' : 'Paweł Matusiak — founder, GESOFT',
+        description: lang === 'pl'
+          ? 'Paweł Matusiak projektuje i wdraża aplikacje Laravel, Vue.js i Android w GESOFT.'
+          : 'Paweł Matusiak designs and ships Laravel, Vue.js and Android applications at GESOFT.',
+        keywords: 'Paweł Matusiak, GESOFT, Laravel, Vue.js, Android'
       }
     }
 
@@ -401,6 +427,32 @@ export function useSeo() {
           '@type': 'ListItem',
           'position': 3,
           'name': article.title,
+          'item': `${BASE_URL}${path}`
+        })
+      } else if (seoKey === 'service') {
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          'position': 2,
+          'name': lang === 'pl' ? 'Usługi' : 'Services',
+          'item': `${BASE_URL}/uslugi`
+        })
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          'position': 3,
+          'name': config.title,
+          'item': `${BASE_URL}${path}`
+        })
+      } else if (seoKey === 'author') {
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          'position': 2,
+          'name': lang === 'pl' ? 'O nas' : 'About',
+          'item': `${BASE_URL}/o-nas`
+        })
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          'position': 3,
+          'name': 'Paweł Matusiak',
           'item': `${BASE_URL}${path}`
         })
       } else if (seoKey === 'inspiration' && inspiration) {

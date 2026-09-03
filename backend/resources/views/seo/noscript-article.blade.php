@@ -5,8 +5,19 @@
         <a href="https://gesoft.pl/artykuly">{{ $locale === 'en' ? 'Articles' : 'Artykuły' }}</a>
     </nav>
     <h1>{{ $article['title'] }}</h1>
-    <p><time datetime="{{ $article['publishedAt'] ?? '' }}">{{ $article['publishedAt'] ?? '' }}</time></p>
+    <p>
+        {{ $locale === 'en' ? 'Author' : 'Autor' }}:
+        <a href="https://gesoft.pl/autor/pawel-matusiak">Paweł Matusiak</a>
+        ·
+        <time datetime="{{ $article['publishedAt'] ?? '' }}">{{ $article['publishedAt'] ?? '' }}</time>
+    </p>
     <p>{{ $article['excerpt'] ?? '' }}</p>
     {!! $bodyHtml !!}
+    @if (! empty($relatedService))
+        <p>
+            {{ $locale === 'en' ? 'Related service:' : 'Powiązana usługa:' }}
+            <a href="https://gesoft.pl/uslugi/{{ $relatedService['slug'] }}">{{ $relatedService['h1'] }}</a>
+        </p>
+    @endif
     <p><a href="https://gesoft.pl/kontakt">{{ $locale === 'en' ? 'Describe your project' : 'Opisz projekt' }}</a></p>
 </article>

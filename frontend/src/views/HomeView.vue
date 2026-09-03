@@ -2,6 +2,26 @@
   <div>
     <HeroSection />
 
+    <section class="py-16 sm:py-20 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-10">
+          <h2 class="section-title">{{ $t('nav.services') }}</h2>
+          <p class="text-gray-600 text-base sm:text-lg">{{ $t('home.services.subtitle') }}</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <router-link
+            v-for="item in serviceLinks"
+            :key="item.slug"
+            :to="'/uslugi/' + item.slug"
+            class="block border border-gray-200 rounded-lg p-6 hover:border-brand-600 hover:shadow-sm transition-all"
+          >
+            <h3 class="heading-3 text-gray-900 mb-2">{{ item.navLabel }}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">{{ item.lead }}</p>
+          </router-link>
+        </div>
+      </div>
+    </section>
+
     <section class="py-16 sm:py-20 bg-gray-50 border-b border-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mb-10">
@@ -192,6 +212,7 @@ import ProjectCard from '@/components/common/ProjectCard.vue'
 import ArticleCard from '@/components/articles/ArticleCard.vue'
 import { fetchArticles } from '@/composables/useArticles'
 import { getProjectsByKeys } from '@/data/projects'
+import { serviceList } from '@/data/services'
 
 const FEATURED_KEYS = ['restaurant', 'invoicing', 'transport']
 
@@ -231,4 +252,5 @@ const featuredProjects = computed(() => {
 const processSteps = computed(() => tm('home.process.steps'))
 const promiseItems = computed(() => tm('home.promises'))
 const industryTopics = computed(() => tm('home.topics'))
+const serviceLinks = computed(() => serviceList(locale.value))
 </script>

@@ -27,7 +27,11 @@
           <ul class="space-y-2" role="list">
             <li><router-link to="/" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.home') }}</router-link></li>
             <li><router-link to="/o-nas" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.about') }}</router-link></li>
+            <li><router-link to="/autor/pawel-matusiak" class="text-gray-600 hover:text-brand-600 transition-colors">Paweł Matusiak</router-link></li>
             <li><router-link to="/uslugi" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.services') }}</router-link></li>
+            <li v-for="item in serviceLinks" :key="item.slug">
+              <router-link :to="'/uslugi/' + item.slug" class="text-gray-600 hover:text-brand-600 transition-colors">{{ item.navLabel }}</router-link>
+            </li>
             <li><router-link to="/portfolio" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.portfolio') }}</router-link></li>
             <li><router-link to="/artykuly" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.articles') }}</router-link></li>
             <li><router-link to="/kontakt" class="text-gray-600 hover:text-brand-600 transition-colors">{{ $t('nav.contact') }}</router-link></li>
@@ -101,6 +105,10 @@
 
 <script setup>
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { serviceList } from '@/data/services'
 
+const { locale } = useI18n()
 const currentYear = computed(() => new Date().getFullYear())
+const serviceLinks = computed(() => serviceList(locale.value))
 </script>

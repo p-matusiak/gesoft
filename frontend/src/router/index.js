@@ -21,6 +21,18 @@ const routes = [
     meta: { title: 'Usługi - GESOFT' }
   },
   {
+    path: '/uslugi/:slug',
+    name: 'service',
+    component: () => import('@/views/ServiceView.vue'),
+    meta: { title: 'Usługi - GESOFT' }
+  },
+  {
+    path: '/autor/pawel-matusiak',
+    name: 'author',
+    component: () => import('@/views/AuthorView.vue'),
+    meta: { title: 'Paweł Matusiak - GESOFT' }
+  },
+  {
     path: '/technologie',
     name: 'technologies',
     component: () => import('@/views/TechnologiesView.vue'),

@@ -67,9 +67,19 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/artykuly"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/artykuly?lang=en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/artykuly"/>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/autor/pawel-matusiak</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/autor/pawel-matusiak"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/autor/pawel-matusiak?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/autor/pawel-matusiak"/>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
@@ -77,9 +87,79 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/rss.xml"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/rss.xml?lang=en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/rss.xml"/>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/uslugi/aplikacje-webowe</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/uslugi/aplikacje-webowe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/uslugi/aplikacje-webowe?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/uslugi/aplikacje-webowe"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/uslugi/oprogramowanie-na-zamowienie</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/uslugi/oprogramowanie-na-zamowienie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/uslugi/oprogramowanie-na-zamowienie?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/uslugi/oprogramowanie-na-zamowienie"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/uslugi/aplikacje-android</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/uslugi/aplikacje-android"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/uslugi/aplikacje-android?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/uslugi/aplikacje-android"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/uslugi/laravel-vue</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/uslugi/laravel-vue"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/uslugi/laravel-vue?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/uslugi/laravel-vue"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/uslugi/integracje-api</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/uslugi/integracje-api"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/uslugi/integracje-api?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/uslugi/integracje-api"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/uslugi/systemy-b2b</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/uslugi/systemy-b2b"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/uslugi/systemy-b2b?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/uslugi/systemy-b2b"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://gesoft.pl/uslugi/strony-internetowe</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://gesoft.pl/uslugi/strony-internetowe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gesoft.pl/uslugi/strony-internetowe?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gesoft.pl/uslugi/strony-internetowe"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>

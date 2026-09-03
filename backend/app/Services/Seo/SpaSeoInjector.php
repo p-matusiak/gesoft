@@ -4,6 +4,7 @@ namespace App\Services\Seo;
 
 use App\Services\Content\ArticleRepository;
 use App\Services\Content\InspirationCatalog;
+use App\Services\Content\ServiceCatalog;
 use Illuminate\Http\Request;
 
 class SpaSeoInjector
@@ -13,6 +14,7 @@ class SpaSeoInjector
     public function __construct(
         private ArticleRepository $articles,
         private InspirationCatalog $inspirations,
+        private ServiceCatalog $services,
     ) {
     }
 
@@ -86,6 +88,14 @@ class SpaSeoInjector
             return $this->portfolioListingSeo($locale);
         }
 
+        if (preg_match('#^/uslugi/([a-z0-9-]+)$#', $path, $matches)) {
+            return $this->serviceSeo($matches[1], $locale);
+        }
+
+        if ($path === '/autor/pawel-matusiak') {
+            return $this->authorSeo($locale);
+        }
+
         if ($this->isPublicPage($path)) {
             return $this->baseSeo($path, $locale);
         }
@@ -121,13 +131,27 @@ class SpaSeoInjector
             'robots' => 'index, follow',
             'status' => 200,
             'jsonLd' => $this->organizationJsonLd($locale),
-            'noscript' => $this->defaultNoscript($locale),
+            'noscript' => $this->pageNoscript($seoPath, $locale),
         ];
     }
 
     private function isPublicPage(string $path): bool
     {
         return in_array($path, ['/', '/o-nas', '/uslugi', '/technologie', '/portfolio', '/kontakt', '/artykuly'], true);
+    }
+
+    private function pageNoscript(string $path, string $locale): string
+    {
+        $services = $this->services->all($locale);
+
+        return match ($path) {
+            '/' => view('seo.noscript-home', ['locale' => $locale, 'services' => $services])->render(),
+            '/kontakt' => view('seo.noscript-contact', ['locale' => $locale])->render(),
+            '/o-nas' => view('seo.noscript-about', ['locale' => $locale])->render(),
+            '/uslugi' => view('seo.noscript-services', ['locale' => $locale, 'services' => $services])->render(),
+            '/technologie' => view('seo.noscript-technologies', ['locale' => $locale])->render(),
+            default => $this->defaultNoscript($locale),
+        };
     }
 
     private function listingSeo(array $defaults, string $locale, ?string $category): array
@@ -274,6 +298,112 @@ class SpaSeoInjector
         ];
     }
 
+    private function serviceSeo(string $slug, string $locale): array
+    {
+        $service = $this->services->find($slug, $locale);
+        $path = '/uslugi/'.$slug;
+
+        if (! $service) {
+            return [
+                'title' => $locale === 'en' ? 'Service not found | GESOFT' : 'Nie znaleziono usługi | GESOFT',
+                'description' => $locale === 'en'
+                    ? 'This service page does not exist or has been moved.'
+                    : 'Ta strona usługi nie istnieje albo została przeniesiona.',
+                'keywords' => 'GESOFT',
+                'path' => $path,
+                'url' => $this->localeUrl($path, $locale),
+                'ogType' => 'website',
+                'robots' => 'noindex, nofollow',
+                'status' => 404,
+                'jsonLd' => $this->organizationJsonLd($locale),
+                'noscript' => view('seo.noscript-missing', ['locale' => $locale])->render(),
+            ];
+        }
+
+        $url = $this->localeUrl($path, $locale);
+        $relatedArticles = [];
+        foreach ($service['relatedArticles'] ?? [] as $articleSlug) {
+            $raw = $this->articles->find((string) $articleSlug);
+            if ($raw) {
+                $relatedArticles[] = $this->articles->localized($raw, $locale);
+            }
+        }
+
+        $faq = $service['faq'] ?? [];
+        $serviceLd = [
+            '@type' => 'Service',
+            'name' => $service['h1'],
+            'description' => $service['description'],
+            'url' => $url,
+            'provider' => $this->organizationJsonLd($locale),
+            'areaServed' => 'PL',
+        ];
+        $jsonLd = [
+            '@context' => 'https://schema.org',
+            '@graph' => [$this->organizationJsonLd($locale), $serviceLd],
+        ];
+        if ($faq !== []) {
+            $jsonLd['@graph'][] = [
+                '@type' => 'FAQPage',
+                'mainEntity' => array_map(fn (array $item) => [
+                    '@type' => 'Question',
+                    'name' => $item['q'],
+                    'acceptedAnswer' => ['@type' => 'Answer', 'text' => $item['a']],
+                ], $faq),
+            ];
+        }
+
+        return [
+            'title' => $service['seoTitle'],
+            'description' => $service['description'],
+            'keywords' => $service['keywords'],
+            'path' => $path,
+            'url' => $url,
+            'ogType' => 'website',
+            'robots' => 'index, follow',
+            'status' => 200,
+            'jsonLd' => $jsonLd,
+            'noscript' => view('seo.noscript-service', [
+                'service' => $service,
+                'relatedArticles' => $relatedArticles,
+                'locale' => $locale,
+            ])->render(),
+        ];
+    }
+
+    private function authorSeo(string $locale): array
+    {
+        $path = '/autor/pawel-matusiak';
+        $title = $locale === 'en'
+            ? 'Paweł Matusiak — founder, GESOFT'
+            : 'Paweł Matusiak — założyciel GESOFT';
+        $description = $locale === 'en'
+            ? 'Paweł Matusiak designs and ships Laravel, Vue.js and Android applications at GESOFT.'
+            : 'Paweł Matusiak projektuje i wdraża aplikacje Laravel, Vue.js i Android w GESOFT.';
+        $articles = array_slice($this->articles->listed($locale), 0, 20);
+
+        return [
+            'title' => $title,
+            'description' => $description,
+            'keywords' => 'Paweł Matusiak, GESOFT, Laravel, Vue.js, Android',
+            'path' => $path,
+            'url' => $this->localeUrl($path, $locale),
+            'ogType' => 'profile',
+            'robots' => 'index, follow',
+            'status' => 200,
+            'jsonLd' => [
+                '@context' => 'https://schema.org',
+                '@type' => 'ProfilePage',
+                'mainEntity' => $this->personJsonLd($locale),
+                'url' => $this->localeUrl($path, $locale),
+            ],
+            'noscript' => view('seo.noscript-author', [
+                'locale' => $locale,
+                'articles' => $articles,
+            ])->render(),
+        ];
+    }
+
     private function articleSeo(array $defaults, string $slug, string $locale): array
     {
         $raw = $this->articles->find($slug);
@@ -308,7 +438,7 @@ class SpaSeoInjector
             'dateModified' => $article['updatedAt'] ?? $article['publishedAt'] ?? null,
             'inLanguage' => $locale === 'en' ? 'en-US' : 'pl-PL',
             'image' => self::BASE_URL.'/og-image.png',
-            'author' => ['@type' => 'Organization', 'name' => 'GESOFT Paweł Matusiak'],
+            'author' => $this->personJsonLd($locale),
             'publisher' => [
                 '@type' => 'Organization',
                 'name' => 'GESOFT',
@@ -353,6 +483,7 @@ class SpaSeoInjector
             'article' => $article,
             'bodyHtml' => $this->blocksToHtml($article['content'] ?? [], $locale),
             'locale' => $locale,
+            'relatedService' => $this->services->relatedForArticle($article, $locale),
         ])->render();
 
         return $defaults;
@@ -389,6 +520,10 @@ class SpaSeoInjector
                 'pl' => ['title' => 'Artykuły: system rezerwacji, restauracja, salon, gabinet | GESOFT', 'description' => 'Artykuły dla właścicieli firm: system rezerwacji stolików, zamówienia online bez prowizji, program do salonu, e-rejestracja, warsztat, panel B2B.', 'keywords' => 'system rezerwacji online, program do restauracji, salon fryzjerski, gabinet lekarski, panel B2B, oprogramowanie na zamówienie, GESOFT'],
                 'en' => ['title' => 'Articles: booking systems, restaurants, salons, clinics | GESOFT', 'description' => 'Articles for business owners: table booking, commission-free online orders, salon software, clinic e-registration, workshops, B2B portals.', 'keywords' => 'online booking system, restaurant software, hair salon, medical clinic, B2B portal, custom software, GESOFT'],
             ],
+            '/autor/pawel-matusiak' => [
+                'pl' => ['title' => 'Paweł Matusiak — założyciel GESOFT', 'description' => 'Paweł Matusiak projektuje i wdraża aplikacje Laravel, Vue.js i Android w GESOFT.', 'keywords' => 'Paweł Matusiak, GESOFT, Laravel, Vue.js'],
+                'en' => ['title' => 'Paweł Matusiak — founder, GESOFT', 'description' => 'Paweł Matusiak designs and ships Laravel, Vue.js and Android applications at GESOFT.', 'keywords' => 'Paweł Matusiak, GESOFT, Laravel, Vue.js'],
+            ],
         ];
 
         return $pages[$path][$locale] ?? $pages['/'][$locale];
@@ -403,9 +538,32 @@ class SpaSeoInjector
             'legalName' => 'GESOFT Paweł Matusiak',
             'url' => self::BASE_URL,
             'logo' => self::BASE_URL.'/logo.png',
+            'email' => 'biuro@gesoft.pl',
+            'telephone' => '+48-517-123-374',
+            'taxID' => '9372553467',
+            'address' => [
+                '@type' => 'PostalAddress',
+                'addressCountry' => 'PL',
+            ],
+            'founder' => $this->personJsonLd($locale),
             'description' => $locale === 'en'
-                ? 'Professional website and web application development'
-                : 'Profesjonalne tworzenie stron i aplikacji webowych',
+                ? 'Custom web applications, Laravel, Vue.js and Android for companies'
+                : 'Dedykowane aplikacje webowe, Laravel, Vue.js i Android dla firm',
+        ];
+    }
+
+    private function personJsonLd(string $locale): array
+    {
+        return [
+            '@type' => 'Person',
+            'name' => 'Paweł Matusiak',
+            'url' => $this->localeUrl('/autor/pawel-matusiak', $locale),
+            'jobTitle' => $locale === 'en' ? 'Founder / software developer' : 'Założyciel / programista',
+            'worksFor' => [
+                '@type' => 'Organization',
+                'name' => 'GESOFT',
+                'url' => self::BASE_URL,
+            ],
         ];
     }
 

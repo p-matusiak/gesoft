@@ -172,6 +172,61 @@ class ArticleSeoTest extends TestCase
         $en->assertSee('<title>Inspirations - GESOFT | Project Examples</title>', false);
     }
 
+    public function test_homepage_noscript_has_sales_copy_not_javascript_stub(): void
+    {
+        $home = $this->get('/');
+        $home->assertOk();
+        $home->assertSee('Dedykowane aplikacje webowe i systemy dla firm', false);
+        $home->assertSee('/uslugi/aplikacje-webowe', false);
+        $home->assertSee('/uslugi/oprogramowanie-na-zamowienie', false);
+        $home->assertDontSee('Ta strona wymaga włączonego JavaScript', false);
+
+        $contact = $this->get('/kontakt');
+        $contact->assertOk();
+        $contact->assertSee('<h1>Kontakt z GESOFT</h1>', false);
+        $contact->assertSee('biuro@gesoft.pl', false);
+        $contact->assertDontSee('Ta strona wymaga włączonego JavaScript', false);
+    }
+
+    public function test_service_landing_has_unique_canonical_and_body(): void
+    {
+        $pl = $this->get('/uslugi/aplikacje-webowe');
+        $pl->assertOk();
+        $pl->assertSee('<title>Aplikacje webowe na zamówienie dla firm | GESOFT</title>', false);
+        $pl->assertSee('rel="canonical" href="https://gesoft.pl/uslugi/aplikacje-webowe"', false);
+        $pl->assertSee('Dedykowane aplikacje webowe dla firm', false);
+        $pl->assertSee('FAQPage', false);
+        $pl->assertSee('/artykuly/ile-kosztuje-aplikacja-laravel', false);
+
+        $en = $this->get('/uslugi/aplikacje-webowe?lang=en');
+        $en->assertOk();
+        $en->assertSee('<title>Custom web applications for companies | GESOFT</title>', false);
+        $en->assertSee('rel="canonical" href="https://gesoft.pl/uslugi/aplikacje-webowe?lang=en"', false);
+    }
+
+    public function test_author_page_and_article_link_to_service(): void
+    {
+        $author = $this->get('/autor/pawel-matusiak');
+        $author->assertOk();
+        $author->assertSee('<title>Paweł Matusiak — założyciel GESOFT</title>', false);
+        $author->assertSee('ProfilePage', false);
+
+        $article = $this->get('/artykuly/ile-kosztuje-aplikacja-laravel');
+        $article->assertOk();
+        $article->assertSee('/autor/pawel-matusiak', false);
+        $article->assertSee('/uslugi/', false);
+    }
+
+    public function test_sitemap_lists_service_and_author_pages(): void
+    {
+        $path = app(\App\Services\Content\SitemapWriter::class)->write();
+        $xml = (string) file_get_contents($path);
+
+        $this->assertStringContainsString('https://gesoft.pl/uslugi/aplikacje-webowe</loc>', $xml);
+        $this->assertStringContainsString('https://gesoft.pl/uslugi/oprogramowanie-na-zamowienie</loc>', $xml);
+        $this->assertStringContainsString('https://gesoft.pl/autor/pawel-matusiak</loc>', $xml);
+    }
+
     public function test_polish_inspiracje_url_redirects_to_portfolio(): void
     {
         $this->get('/inspiracje')->assertRedirect('/portfolio');

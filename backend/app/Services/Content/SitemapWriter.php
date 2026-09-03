@@ -8,6 +8,7 @@ class SitemapWriter
         private ArticleRepository $articles,
         private RssFeed $rss,
         private InspirationCatalog $inspirations,
+        private ServiceCatalog $services,
     ) {
     }
 
@@ -21,6 +22,7 @@ class SitemapWriter
             ['loc' => 'https://gesoft.pl/portfolio', 'lastmod' => '2026-01-20', 'changefreq' => 'weekly', 'priority' => '0.8'],
             ['loc' => 'https://gesoft.pl/kontakt', 'lastmod' => '2026-01-20', 'changefreq' => 'monthly', 'priority' => '0.9'],
             ['loc' => 'https://gesoft.pl/artykuly', 'lastmod' => now()->toDateString(), 'changefreq' => 'weekly', 'priority' => '0.8'],
+            ['loc' => 'https://gesoft.pl/autor/pawel-matusiak', 'lastmod' => '2026-01-20', 'changefreq' => 'monthly', 'priority' => '0.6'],
             ['loc' => 'https://gesoft.pl/rss.xml', 'lastmod' => now()->toDateString(), 'changefreq' => 'daily', 'priority' => '0.5'],
         ];
 
@@ -30,6 +32,15 @@ class SitemapWriter
             $page['changefreq'],
             $page['priority']
         ), $static);
+
+        foreach ($this->services->keys() as $slug) {
+            $urls[] = $this->urlXml(
+                'https://gesoft.pl/uslugi/'.$slug,
+                '2026-09-03',
+                'monthly',
+                '0.9'
+            );
+        }
 
         foreach ($this->inspirations->keys() as $key) {
             $urls[] = $this->urlXml(

@@ -10,7 +10,7 @@
   },
   "hero": {
     "badge": "GESOFT · Paweł Matusiak",
-    "title": "Projektujemy i wdrażamy systemy dla Twojej firmy.",
+    "title": "Dedykowane aplikacje webowe i systemy dla firm",
     "subtitle": "Aplikacje webowe, panele, rezerwacje, KSeF i Android. Opisujesz potrzeby — w 24 godziny wracamy z wyceną, bez ukrytych godzin.",
     "cta": "Opisz projekt",
     "ctaSecondary": "Zobacz przykłady",
@@ -996,8 +996,8 @@
   },
   "contact": {
     "header": {
-      "title": "Kontakt",
-      "subtitle": "Opisz, co Cię blokuje. W 24 godziny wracamy z wyceną albo szczerą odpowiedzią."
+      "title": "Kontakt z GESOFT",
+      "subtitle": "Opisz projekt aplikacji webowej, systemu dla firmy albo Androida. W 24 godziny wracamy z wyceną albo szczerą odpowiedzią."
     },
     "success": {
       "title": "Wiadomość wyszła.",
@@ -1074,6 +1074,8 @@
     "toc": "W tym artykule",
     "readMore": "Czytaj dalej",
     "related": "Powiązane artykuły",
+    "relatedService": "Powiązana usługa",
+    "by": "Autor",
     "relatedProjects": "Takie systemy możemy zbudować",
     "relatedProjectsSubtitle": "Przykłady z inspiracji GESOFT — kliknij kartę, żeby zobaczyć zakres i stack.",
     "viewAllProjects": "Wszystkie inspiracje",
@@ -1095,8 +1097,15 @@
   "footer": {
     "description": "Tworzymy aplikacje webowe (Laravel + Vue.js) i mobilne (Android). Solidny kod, przejrzysty proces, uczciwe wyceny.",
     "quickLinks": "Szybkie linki",
+    "services": "Usługi",
     "contact": "Kontakt",
     "copyright": "Wszelkie prawa zastrzeżone."
+  },
+  "author": {
+    "role": "Założyciel / programista, GESOFT",
+    "bio1": "Projektuje i wdraża aplikacje Laravel, Vue.js i Android dla firm: rezerwacje, panele B2B, CRM, KSeF i aplikacje terenowe.",
+    "bio2": "Od wyceny do wdrożenia klient rozmawia z osobami, które projektują i kodują. Kod po odbiorze zostaje u klienta. 6 miesięcy na błędy.",
+    "articles": "Artykuły"
   },
   "common": {
     "learnMore": "Dowiedz się więcej"

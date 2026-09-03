@@ -1,0 +1,656 @@
+{
+  "aplikacje-webowe": {
+    "pl": {
+      "navLabel": "Aplikacje webowe",
+      "seoTitle": "Aplikacje webowe na zamówienie dla firm | GESOFT",
+      "h1": "Dedykowane aplikacje webowe dla firm",
+      "description": "Projektujemy aplikacje webowe w Laravel i Vue.js: panele, rezerwacje, CRM, B2B i integracje. Wycena w 24 godziny, kod zostaje u Ciebie.",
+      "keywords": "aplikacje webowe, aplikacje webowe na zamówienie, dedykowane aplikacje webowe, tworzenie aplikacji webowych, GESOFT",
+      "lead": "Budujemy aplikacje webowe pod konkretny proces firmy, nie pod katalog funkcji. Laravel i Vue.js tam, gdzie panel, kolejki, uprawnienia i integracje mają działać latami.",
+      "sections": [
+        {
+          "title": "Jaki problem rozwiązuje własna aplikacja",
+          "text": "Gotowy program kończy się, gdy macie wyjątki: inne stawki, inny obieg dokumentu, inny magazyn, inny sposób rozliczeń. Wtedy ludzie wracają do Excela i maila. Własna aplikacja webowa spina te wyjątki w jeden obieg, który widać na ekranie, a nie w głowie jednej osoby."
+        },
+        {
+          "title": "Dla kogo to robimy",
+          "text": "Dla firm, które już wiedzą, czego im brakuje w codziennej pracy: rezerwacji, zamówień, panelu klienta, raportu, którego nikt nie klei ręcznie. Nie startujemy od slajdów. Najpierw opisujecie proces — potem mówimy, czy to w ogóle ma sens jako custom."
+        },
+        {
+          "title": "Jakie systemy budujemy",
+          "items": [
+            "Panele B2B i strefy klienta",
+            "Systemy rezerwacji i kalendarze zasobów",
+            "Obieg zamówień, statusów i dokumentów",
+            "Aplikacje z kolejkami, uprawnieniami i raportami",
+            "Część publiczna plus zaplecze, z którego korzysta zespół"
+          ]
+        },
+        {
+          "title": "Integracje i stack",
+          "text": "Łączymy aplikację z tym, co już macie: KSeF, płatności, kurierzy, SMS, kalendarz, ERP. Backend Laravel, interfejs Vue.js, baza MySQL albo PostgreSQL. Android dokładamy, gdy praca dzieje się w terenie, a nie przy biurku."
+        },
+        {
+          "title": "Proces i cena",
+          "text": "Opisujecie problem. W 24 godziny wracamy z zakresem i ceną netto albo mówimy, że lepiej wziąć gotowiec. Harmonogram wpłat jest w umowie. Kod i dostęp po odbiorze zostają u Was. 6 miesięcy na błędy. Widełki zależą od integracji i ról — orientacyjnie od kilkunastu tysięcy złotych netto wzwyż, po analizie, nie z cennika slajdów."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy każda firma potrzebuje własnej aplikacji webowej?",
+          "a": "Nie. Jeśli proces mieści się w gotowym programie, zwykle taniej i szybciej jest go wziąć. Custom ma sens, gdy wyjątki zjadają czas albo prowizje platform."
+        },
+        {
+          "q": "W jakim stacku pracujecie?",
+          "a": "Laravel, Vue.js, MySQL albo PostgreSQL. Android natywnie, gdy potrzebny jest telefon w terenie. Nie mieszamy frameworków na jednym budżecie."
+        },
+        {
+          "q": "Kto jest właścicielem kodu?",
+          "a": "Po opłaceniu odbioru kod i repozytorium zostają u Was. Możecie iść dalej z nami albo z kimś innym."
+        }
+      ],
+      "relatedArticles": ["ile-kosztuje-aplikacja-laravel", "system-rezerwacji-online-dla-uslug", "wordpress-vs-laravel"],
+      "relatedInspirations": ["booking", "restaurant", "medical"]
+    },
+    "en": {
+      "navLabel": "Web applications",
+      "seoTitle": "Custom web applications for companies | GESOFT",
+      "h1": "Custom web applications for companies",
+      "description": "We design web apps in Laravel and Vue.js: admin panels, bookings, CRM, B2B and integrations. Quote in 24 hours, you keep the code.",
+      "keywords": "web applications, custom web apps, bespoke web software, Laravel Vue, GESOFT",
+      "lead": "We build web applications around a real company process, not a feature catalogue. Laravel and Vue.js where panels, queues, permissions and integrations have to last.",
+      "sections": [
+        {
+          "title": "What a custom web app actually solves",
+          "text": "Off-the-shelf software stops when you have exceptions: different rates, a different document flow, a warehouse nobody modelled. People fall back to Excel and email. A custom web app puts those exceptions on one screen."
+        },
+        {
+          "title": "Who this is for",
+          "text": "Companies that already know what is missing: bookings, orders, a client portal, a report nobody should stitch by hand. We do not start from slides. You describe the process — then we say whether custom is even the right move."
+        },
+        {
+          "title": "What we build",
+          "items": [
+            "B2B portals and client areas",
+            "Booking systems and resource calendars",
+            "Order, status and document workflows",
+            "Apps with queues, roles and reports",
+            "A public site plus the back office the team actually uses"
+          ]
+        },
+        {
+          "title": "Integrations and stack",
+          "text": "We connect to what you already run: KSeF, payments, couriers, SMS, calendars, ERP. Laravel backend, Vue.js UI, MySQL or PostgreSQL. Android when the work happens in the field."
+        },
+        {
+          "title": "Process and price",
+          "text": "You describe the problem. Within 24 hours we come back with scope and a net price, or we say a ready-made tool is better. Payment schedule is in the contract. After handover the code is yours. 6-month warranty. Ranges depend on integrations and roles — typically from tens of thousands PLN net, after analysis."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does every company need a custom web app?",
+          "a": "No. If a ready-made product covers the process, buy it. Custom makes sense when exceptions or platform fees eat the week."
+        },
+        {
+          "q": "What stack do you use?",
+          "a": "Laravel, Vue.js, MySQL or PostgreSQL. Native Android when a phone in the field is part of the job."
+        },
+        {
+          "q": "Who owns the code?",
+          "a": "After paid handover, the repository is yours. Stay with us or take it elsewhere."
+        }
+      ],
+      "relatedArticles": ["ile-kosztuje-aplikacja-laravel", "system-rezerwacji-online-dla-uslug", "wordpress-vs-laravel"],
+      "relatedInspirations": ["booking", "restaurant", "medical"]
+    }
+  },
+  "oprogramowanie-na-zamowienie": {
+    "pl": {
+      "navLabel": "Oprogramowanie na zamówienie",
+      "seoTitle": "Oprogramowanie na zamówienie dla firm | GESOFT",
+      "h1": "Dedykowane oprogramowanie dla firm",
+      "description": "Oprogramowanie na zamówienie, gdy gotowy program nie ogarnia procesu. Szczerze: Excel, SaaS albo custom. Wycena w 24 godziny.",
+      "keywords": "oprogramowanie na zamówienie, dedykowane oprogramowanie dla firm, custom software, GESOFT",
+      "lead": "Nie sprzedajemy „systemu dla każdego”. Najpierw sprawdzamy, czy problem da się zamknąć gotowym programem. Custom robimy wtedy, gdy wyjątki są droższe niż napisanie własnego obiegu.",
+      "sections": [
+        {
+          "title": "Gotowy program, Excel czy własne oprogramowanie",
+          "text": "SaaS wygrywa, gdy proces jest standardowy. Excel wygrywa przy trzech osobach i jednym pliku. Własne oprogramowanie wygrywa, gdy ten sam plik krąży między działami, psuje się przy urlopie i nikt nie wie, która wersja jest prawdziwa."
+        },
+        {
+          "title": "Dla kogo",
+          "text": "Produkcja, handel, usługi, biura, które już próbowały gotowca i uderzają w ścianę uprawnień, raportów albo integracji. Opisujecie dzień pracy. My mówimy, czy pisać system, czy zostać przy tym, co jest."
+        },
+        {
+          "title": "Co zwykle wchodzi w zakres",
+          "items": [
+            "Jedna baza zamiast kilku arkuszy",
+            "Role i uprawnienia zamiast hasła w mailu",
+            "Statusy, które widać bez dzwonienia",
+            "Integracja z fakturami, magazynem, kurierem albo KSeF",
+            "Raport, którego nikt nie składa w piątek po południu"
+          ]
+        },
+        {
+          "title": "Jak liczymy",
+          "text": "Cena netto po opisie procesu, nie z pakietu marketingowego. Zaliczka uruchamia pracę. Zmiana zakresu to nowa wycena, nie darmowe poprawki. Kod po odbiorze jest Wasz."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kiedy custom się nie opłaca?",
+          "a": "Gdy rynek ma dobry program branżowy i Wasze wyjątki da się w nim skonfigurować. Wtedy mówimy to wprost."
+        },
+        {
+          "q": "Czy migrujecie dane z Excela?",
+          "a": "Tak, jeśli da się je oczyścić. Czasem najpierw trzeba uporządkować arkusz, zanim cokolwiek wdrażać."
+        },
+        {
+          "q": "Ile trwa pierwsze wdrożenie?",
+          "a": "Prosty obieg — tygodnie. System z integracjami i rolami — miesiące. Termin zapisujemy przed startem."
+        }
+      ],
+      "relatedArticles": ["gotowy-program-czy-oprogramowanie-na-zamowienie", "ile-kosztuje-aplikacja-laravel", "panel-b2b-dla-hurtowni"],
+      "relatedInspirations": ["crm", "invoicing", "inventory"]
+    },
+    "en": {
+      "navLabel": "Custom software",
+      "seoTitle": "Custom software for companies | GESOFT",
+      "h1": "Custom software for companies",
+      "description": "Bespoke software when a ready-made tool cannot cover the process. Honest call: Excel, SaaS or custom. Quote in 24 hours.",
+      "keywords": "custom software, bespoke software for companies, dedicated software, GESOFT",
+      "lead": "We do not sell a system for everyone. First we check whether a ready-made product is enough. We write custom software when exceptions cost more than a dedicated workflow.",
+      "sections": [
+        {
+          "title": "Ready-made, Excel or custom",
+          "text": "SaaS wins when the process is standard. Excel wins with three people and one file. Custom wins when that file hops between teams, breaks on holiday and nobody knows which version is true."
+        },
+        {
+          "title": "Who this is for",
+          "text": "Trade, services and offices that already tried a packaged tool and hit a wall of permissions, reports or integrations. You describe a working day. We say whether to write a system or stay put."
+        },
+        {
+          "title": "What usually goes into scope",
+          "items": [
+            "One database instead of several spreadsheets",
+            "Roles instead of a password in email",
+            "Statuses you can see without calling",
+            "Links to invoices, stock, couriers or KSeF",
+            "A report nobody compiles on Friday afternoon"
+          ]
+        },
+        {
+          "title": "How we price it",
+          "text": "Net price after we understand the process. A deposit starts the work. Scope change means a new quote. After handover the code is yours."
+        }
+      ],
+      "faq": [
+        {
+          "q": "When is custom a bad idea?",
+          "a": "When a decent industry tool exists and your exceptions fit its settings. We say that outright."
+        },
+        {
+          "q": "Do you migrate Excel data?",
+          "a": "Yes, if it can be cleaned. Sometimes the sheet needs order before any build."
+        },
+        {
+          "q": "How long is the first release?",
+          "a": "A simple flow: weeks. Integrations and roles: months. The date is set before we start."
+        }
+      ],
+      "relatedArticles": ["gotowy-program-czy-oprogramowanie-na-zamowienie", "ile-kosztuje-aplikacja-laravel", "panel-b2b-dla-hurtowni"],
+      "relatedInspirations": ["crm", "invoicing", "inventory"]
+    }
+  },
+  "aplikacje-android": {
+    "pl": {
+      "navLabel": "Aplikacje Android",
+      "seoTitle": "Aplikacje Android dla firm | GESOFT",
+      "h1": "Aplikacje Android dla firm",
+      "description": "Natywne aplikacje Android (Kotlin) z backendem Laravel: serwis terenowy, magazyn, transport, powiadomienia. Wycena w 24 godziny.",
+      "keywords": "aplikacje Android dla firm, aplikacja mobilna na zamówienie, Kotlin, Laravel API, GESOFT",
+      "lead": "Telefon w terenie nie zastąpi procesu. Aplikacja Android ma zbierać status, zdjęcie, podpis i lokalizację, a serwer Laravel ma trzymać prawdę o zleceniu.",
+      "sections": [
+        {
+          "title": "Kiedy telefon, a nie tylko panel",
+          "text": "Serwisant, magazynier, kierowca, ekipa sprzątająca — ludzie, którzy nie siedzą przy komputerze. Aplikacja ma działać offline na tyle, na ile da się to uczciwie zrobić, i dogrywać dane, gdy wraca sieć."
+        },
+        {
+          "title": "Co budujemy razem z backendem",
+          "items": [
+            "Zlecenia i statusy na mapie",
+            "Checklista, zdjęcia, podpis na miejscu",
+            "Powiadomienia push, gdy zlecenie nie może czekać",
+            "Panel biurowy w Laravel, z którego widać to samo co na telefonie",
+            "Publikacja w Google Play, gdy jest potrzebna"
+          ]
+        },
+        {
+          "title": "Czego nie obiecujemy",
+          "text": "Jednej aplikacji „na iOS i Androida tanio”, która jest opakowaną stroną. Robimy natywny Android. iOS tylko gdy naprawdę wchodzi w zakres i wycenę — nie jako dopisek."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy aplikacja mobilna działa bez serwera?",
+          "a": "Krótko: nie jako system firmowy. Telefon pokazuje dane, backend je trzyma, łączy i rozlicza."
+        },
+        {
+          "q": "Czy robicie też iPhone?",
+          "a": "Android jest domyślny. iOS wyceniamy osobno, gdy jest w wymaganiach, nie „przy okazji”."
+        },
+        {
+          "q": "Jak wygląda publikacja w Google Play?",
+          "a": "Konto deweloperskie, podpis, polityki. Możemy przeprowadzić, jeśli konto jest Wasze."
+        }
+      ],
+      "relatedArticles": ["aplikacja-dla-serwisu-terenowego", "aplikacja-pomoc-drogowa-laweta", "aplikacja-dla-firmy-sprzatajacej"],
+      "relatedInspirations": ["fieldService", "delivery", "warehousemobile"]
+    },
+    "en": {
+      "navLabel": "Android apps",
+      "seoTitle": "Android apps for companies | GESOFT",
+      "h1": "Android applications for companies",
+      "description": "Native Android apps (Kotlin) with a Laravel backend: field service, warehouse, transport, push. Quote in 24 hours.",
+      "keywords": "Android apps for companies, custom mobile app, Kotlin, Laravel API, GESOFT",
+      "lead": "A phone does not replace a process. The Android app captures status, photo, signature and location. The Laravel server keeps the source of truth.",
+      "sections": [
+        {
+          "title": "When a phone beats a desktop panel",
+          "text": "Field techs, warehouse staff, drivers, cleaning crews — people who are not at a desk. The app should work offline as far as that is honest, and sync when the network returns."
+        },
+        {
+          "title": "What we ship with the backend",
+          "items": [
+            "Jobs and statuses on a map",
+            "Checklists, photos, on-site signature",
+            "Push when a job cannot wait",
+            "A Laravel office panel that shows the same truth",
+            "Google Play publishing when you need it"
+          ]
+        },
+        {
+          "title": "What we will not promise",
+          "text": "A cheap “iOS and Android” wrapper of a website. We build native Android. iOS only when it is in scope and in the quote."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can a company app live on the phone alone?",
+          "a": "Not as a real system. The phone displays data; the backend stores, links and bills it."
+        },
+        {
+          "q": "Do you also build iPhone apps?",
+          "a": "Android is the default. iOS is a separate quote when it is a requirement."
+        },
+        {
+          "q": "What about Google Play?",
+          "a": "Developer account, signing, policies. We can walk it through if the account is yours."
+        }
+      ],
+      "relatedArticles": ["aplikacja-dla-serwisu-terenowego", "aplikacja-pomoc-drogowa-laweta", "aplikacja-dla-firmy-sprzatajacej"],
+      "relatedInspirations": ["fieldService", "delivery", "warehousemobile"]
+    }
+  },
+  "laravel-vue": {
+    "pl": {
+      "navLabel": "Laravel i Vue.js",
+      "seoTitle": "Software house Laravel i Vue.js | GESOFT",
+      "h1": "Aplikacje Laravel i Vue.js",
+      "description": "Software house Laravel: panele, API, uprawnienia, kolejki, Vue.js na froncie. Bezpieczeństwo, utrzymanie, kod do przekazania.",
+      "keywords": "software house Laravel, Laravel Vue, aplikacje Laravel, GESOFT",
+      "lead": "Laravel i Vue.js to nasz codzienny stack, nie eksperyment na zleceniu. Panele, API, kolejki, role — rzeczy, które da się utrzymać po wdrożeniu.",
+      "sections": [
+        {
+          "title": "Dlaczego ten stack",
+          "text": "PHP i Laravel są w Polsce łatwe do utrzymania. Vue.js dobrze znosi koszyki, kalendarze i pulpity. Kolejny zespół nie musi uczyć się niszowego frameworka, żeby poprawić formularz."
+        },
+        {
+          "title": "Co robimy w tym stacku",
+          "items": [
+            "CRM i panele administracyjne",
+            "API REST dla Androida i integracji",
+            "Kolejki, cache, uprawnienia",
+            "Audyt i utwardzenie istniejącej aplikacji Laravel",
+            "Przeniesienie z WordPressa, gdy strona udaje system"
+          ]
+        },
+        {
+          "title": "Bezpieczeństwo bez haseł z slajdów",
+          "text": "CSRF, XSS, SQL, 2FA, logi, aktualizacje. Pisaliśmy o tym w artykułach, bo to jest część roboty, nie dodatek. NDA na życzenie."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy bierzcie cudzy kod Laravel do rozwoju?",
+          "a": "Tak, po krótkim audycie. Czasem taniej jest poprawić to, co jest, niż pisać od zera."
+        },
+        {
+          "q": "Vue 3 czy coś innego na froncie?",
+          "a": "Vue 3. Inny frontend tylko gdy już jest i ma zostać — wtedy wyceniamy utrzymanie, nie „przepiszemy przy okazji”."
+        },
+        {
+          "q": "Czy robicie WordPress?",
+          "a": "Nie jako system firmowy. Strona-wizytówka to inna rozmowa niż panel z rolami i kolejkami."
+        }
+      ],
+      "relatedArticles": ["dlaczego-laravel-na-aplikacje-biznesowe", "bezpieczenstwo-aplikacji-laravel", "laravel-vue-crm-panele"],
+      "relatedInspirations": ["crm", "projectMgmt", "helpdesk"]
+    },
+    "en": {
+      "navLabel": "Laravel and Vue.js",
+      "seoTitle": "Laravel and Vue.js software house | GESOFT",
+      "h1": "Laravel and Vue.js applications",
+      "description": "Laravel software house: admin panels, APIs, roles, queues, Vue.js on the front. Security, maintenance, code you can hand over.",
+      "keywords": "Laravel software house, Laravel Vue, Laravel apps, GESOFT",
+      "lead": "Laravel and Vue.js are the stack we use every day, not an experiment on your job. Panels, APIs, queues, roles — things you can maintain after launch.",
+      "sections": [
+        {
+          "title": "Why this stack",
+          "text": "PHP and Laravel are straightforward to keep alive in Poland. Vue.js holds up for carts, calendars and dashboards. The next team should not need a niche framework to fix a form."
+        },
+        {
+          "title": "What we do in it",
+          "items": [
+            "CRM and admin panels",
+            "REST APIs for Android and integrations",
+            "Queues, cache, permissions",
+            "Audit and hardening of an existing Laravel app",
+            "Moving off WordPress when a brochure site pretends to be a system"
+          ]
+        },
+        {
+          "title": "Security without slide-deck slogans",
+          "text": "CSRF, XSS, SQL, 2FA, logs, updates. We write about this because it is the job, not an add-on. NDA on request."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Will you take over someone else’s Laravel code?",
+          "a": "Yes, after a short audit. Sometimes fixing what exists is cheaper than a rewrite."
+        },
+        {
+          "q": "Vue 3 or something else?",
+          "a": "Vue 3. Another front-end only if it already exists and must stay — then we quote maintenance, not a silent rewrite."
+        },
+        {
+          "q": "Do you build WordPress systems?",
+          "a": "Not as company software. A brochure site is a different conversation from roles and queues."
+        }
+      ],
+      "relatedArticles": ["dlaczego-laravel-na-aplikacje-biznesowe", "bezpieczenstwo-aplikacji-laravel", "laravel-vue-crm-panele"],
+      "relatedInspirations": ["crm", "projectMgmt", "helpdesk"]
+    }
+  },
+  "integracje-api": {
+    "pl": {
+      "navLabel": "Integracje API",
+      "seoTitle": "Integracje API i systemów dla firm | GESOFT",
+      "h1": "Integracje API dla firm",
+      "description": "Łączymy systemy firmy: KSeF, płatności, kurierzy, ERP, SMS, magazyn. REST, webhooki, kolejki Laravel. Wycena w 24 godziny.",
+      "keywords": "integracje API, integracje systemów, KSeF, REST API, GESOFT",
+      "lead": "Integracja ma sprawić, że faktura, paczka albo rezerwacja nie wymaga drugiego wklepywania. Nie rysujemy „szyny ESB”. Spinamy konkretne API, które już macie albo musicie mieć.",
+      "sections": [
+        {
+          "title": "Co najczęściej spinamy",
+          "items": [
+            "KSeF i faktury",
+            "Płatności (Przelewy24, Stripe i podobne)",
+            "Kurierzy i statusy przesyłek",
+            "SMS, e-mail, kalendarz",
+            "ERP, hurtownia, magazyn, giełda ładunków"
+          ]
+        },
+        {
+          "title": "Jak to trzymamy, żeby nie padało w nocy",
+          "text": "Kolejki Laravel, ponowienia, logi, idempotencja tam, gdzie dostawca lubi wysłać webhook dwa razy. Dokumentacja endpointów, które wystawiamy na zewnątrz."
+        },
+        {
+          "title": "Czego potrzebujemy na start",
+          "text": "Dostęp do środowiska testowego dostawcy, przykładowe payloady, kto po Waszej stronie ogarnia konta. Bez tego wycena jest zgadywaniem — i nie zgadujemy."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy zintegrujecie dowolne API?",
+          "a": "Jeśli ma dokumentację i środowisko testowe. Zamknięte, nieudokumentowane SOAP z lat 90. wyceniamy jako osobne ryzyko."
+        },
+        {
+          "q": "KSeF w istniejącej aplikacji?",
+          "a": "Tak, jeśli aplikacja wystawia faktury. Zakres zależy od tego, czy jesteście obowiązkowi i jak dziś idzie numeracja."
+        },
+        {
+          "q": "Webhook czy polling?",
+          "a": "Webhook, gdy dostawca go ma i da się zweryfikować. Inaczej kolejka i odpytywanie, z limitem, żeby nie zabić API."
+        }
+      ],
+      "relatedArticles": ["ksef-obowiazkowy-w-aplikacji-firmowej", "panel-b2b-dla-hurtowni", "wlasny-system-zamowien-online-restauracja"],
+      "relatedInspirations": ["invoicing", "wholesale", "transport"]
+    },
+    "en": {
+      "navLabel": "API integrations",
+      "seoTitle": "API and system integrations for companies | GESOFT",
+      "h1": "API integrations for companies",
+      "description": "We connect company systems: KSeF, payments, couriers, ERP, SMS, warehouse. REST, webhooks, Laravel queues. Quote in 24 hours.",
+      "keywords": "API integrations, system integration, KSeF, REST API, GESOFT",
+      "lead": "An integration should stop a second round of typing for an invoice, parcel or booking. We do not draw an ESB slide. We wire the APIs you already have or must have.",
+      "sections": [
+        {
+          "title": "What we usually connect",
+          "items": [
+            "KSeF and invoicing",
+            "Payments (Przelewy24, Stripe and similar)",
+            "Couriers and shipment status",
+            "SMS, email, calendar",
+            "ERP, wholesale, warehouse, freight exchanges"
+          ]
+        },
+        {
+          "title": "How we keep it from dying at night",
+          "text": "Laravel queues, retries, logs, idempotency where a vendor likes to fire a webhook twice. Docs for any API we expose."
+        },
+        {
+          "title": "What we need to start",
+          "text": "Test credentials, sample payloads, and who on your side owns the vendor accounts. Without that a quote is a guess — and we do not guess."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Will you integrate any API?",
+          "a": "If it has docs and a test environment. Undocumented 1990s SOAP is a separate risk in the quote."
+        },
+        {
+          "q": "KSeF inside an existing app?",
+          "a": "Yes, if the app issues invoices. Scope depends on whether you are in the mandate and how numbering works today."
+        },
+        {
+          "q": "Webhook or polling?",
+          "a": "Webhook when the vendor has one we can verify. Otherwise a queued poll with a limit so we do not kill their API."
+        }
+      ],
+      "relatedArticles": ["ksef-obowiazkowy-w-aplikacji-firmowej", "panel-b2b-dla-hurtowni", "wlasny-system-zamowien-online-restauracja"],
+      "relatedInspirations": ["invoicing", "wholesale", "transport"]
+    }
+  },
+  "systemy-b2b": {
+    "pl": {
+      "navLabel": "Systemy B2B i CRM",
+      "seoTitle": "Systemy B2B i CRM na zamówienie | GESOFT",
+      "h1": "Platformy B2B i CRM na zamówienie",
+      "description": "Panele B2B, CRM i obieg zamówień pod Wasz cennik i role. Laravel, Vue.js. Wycena w 24 godziny.",
+      "keywords": "system B2B na zamówienie, CRM na zamówienie, panel B2B, GESOFT",
+      "lead": "CRM z pudełka kończy się na Waszych rabatach, wielu magazynach albo obiegu, którego handlowiec nie kliknie. Wtedy panel B2B ma odzwierciedlać cennik i uprawnienia, a nie odwrotnie.",
+      "sections": [
+        {
+          "title": "Co zwykle jest w takim systemie",
+          "items": [
+            "Konta kontrahentów i opiekunów",
+            "Cenniki, rabaty, limity kredytowe",
+            "Zamówienia, statusy, dokumenty",
+            "Magazyn albo podgląd stanów z ERP",
+            "Raporty, których nie składa się w Excelu w niedzielę"
+          ]
+        },
+        {
+          "title": "CRM, ERP czy panel zamówień",
+          "text": "Nie wdrażamy „pełnego ERP”, jeśli potrzebujecie przyjmowania zamówień i wglądu w salda. Mówimy, który kawałek pisać, a który zostawić w programie księgowym."
+        },
+        {
+          "title": "Integracje",
+          "text": "Faktury, KSeF, kurier, płatność odroczona, czasem giełda albo baselinker. Każde API to osobna linia w wycenie, nie drobiazg."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy zastąpicie Comarch / Subiekta?",
+          "a": "Rzadko w całości. Częściej panel dla handlu i klientów, a księgowość zostaje tam, gdzie jest."
+        },
+        {
+          "q": "Ile trwa panel B2B?",
+          "a": "Prosty katalog i koszyk B2B — tygodnie. Cenniki per kontrahent, stany i dokumenty — miesiące."
+        },
+        {
+          "q": "Czy handlowiec musi mieć aplikację w telefonie?",
+          "a": "Jeśli pracuje w terenie — tak, jako Android plus ten sam backend. Nie jako osobny system."
+        }
+      ],
+      "relatedArticles": ["panel-b2b-dla-hurtowni", "crm-dla-kancelarii-prawnej", "crm-nieruchomosci-dla-dewelopera"],
+      "relatedInspirations": ["wholesale", "crm", "inventory"]
+    },
+    "en": {
+      "navLabel": "B2B and CRM",
+      "seoTitle": "Custom B2B platforms and CRM | GESOFT",
+      "h1": "Custom B2B platforms and CRM",
+      "description": "B2B portals, CRM and order flow around your price lists and roles. Laravel, Vue.js. Quote in 24 hours.",
+      "keywords": "custom B2B system, custom CRM, B2B portal, GESOFT",
+      "lead": "Boxed CRM dies on your discounts, extra warehouses or a flow sales will not click. A B2B panel should follow the price list and permissions, not the other way around.",
+      "sections": [
+        {
+          "title": "What usually sits in the system",
+          "items": [
+            "Accounts for buyers and account managers",
+            "Price lists, discounts, credit limits",
+            "Orders, statuses, documents",
+            "Stock, or a live view from ERP",
+            "Reports that do not get built in Excel on Sunday"
+          ]
+        },
+        {
+          "title": "CRM, ERP or an order portal",
+          "text": "We do not install a “full ERP” if you need order intake and balances. We say which slice to write and which to leave in accounting software."
+        },
+        {
+          "title": "Integrations",
+          "text": "Invoices, KSeF, couriers, deferred payment, sometimes a marketplace. Each API is a line in the quote, not a footnote."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Will you replace Comarch or Subiekt?",
+          "a": "Rarely as a whole. More often a portal for sales and buyers, with bookkeeping left where it is."
+        },
+        {
+          "q": "How long is a B2B panel?",
+          "a": "A simple catalogue and B2B cart: weeks. Per-buyer prices, stock and documents: months."
+        },
+        {
+          "q": "Does the sales rep need a phone app?",
+          "a": "If they work in the field — yes, Android on the same backend. Not a second system."
+        }
+      ],
+      "relatedArticles": ["panel-b2b-dla-hurtowni", "crm-dla-kancelarii-prawnej", "crm-nieruchomosci-dla-dewelopera"],
+      "relatedInspirations": ["wholesale", "crm", "inventory"]
+    }
+  },
+  "strony-internetowe": {
+    "pl": {
+      "navLabel": "Strony internetowe",
+      "seoTitle": "Strony internetowe dla firm | GESOFT",
+      "h1": "Strony internetowe dla firm",
+      "description": "Strony firmowe z CMS, SEO i formularzem. Laravel, nie motyw z katalogu. Wycena od 2 500 zł netto, w 24 godziny.",
+      "keywords": "strony internetowe dla firm, strona firmowa, CMS, SEO, GESOFT",
+      "lead": "Strona firmowa ma dać się znaleźć, dać się edytować i nie udawać aplikacji, której nie ma. Wizytówka Google nie zastąpi własnego adresu, gdy chcecie oferty, bloga albo rezerwacji.",
+      "sections": [
+        {
+          "title": "Co jest w stronie, a co już jest systemem",
+          "text": "Kilka podstron, CMS, formularz, SEO — to strona. Logowanie klientów, statusy, płatności — to aplikacja. Mówimy, po której stronie bariery jesteście, zanim ktoś kupi „stronę z panelem”, który nic nie liczy."
+        },
+        {
+          "title": "Zakres",
+          "items": [
+            "Strona responsywna, zwykle do kilkunastu podstron",
+            "CMS do treści, które naprawdę zmieniacie",
+            "Formularz, analityka, podstawowe SEO",
+            "SSL, hosting na start, jeśli go potrzebujecie",
+            "Blog, wielojęzyczność, sklep — gdy są w wycenie, nie „w cenie pakietu”"
+          ]
+        },
+        {
+          "title": "Cena",
+          "text": "Wizytówka od ok. 2 500 zł netto. Rozbudowana strona albo mały CMS — od ok. 6 000 zł netto. Dokładna kwota po liczbie podstron i integracjach. WordPress tylko gdy naprawdę ma zostać; systemy firmowe robimy w Laravelu."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wystarczy wizytówka Google?",
+          "a": "Do znalezienia lokalu — często tak. Do oferty, bloga, rezerwacji albo własnej domeny — nie."
+        },
+        {
+          "q": "Czy strona jest pod SEO?",
+          "a": "Tytuły, opisy, adresy, szybkość, dane strukturalne w rozsądnym zakresie. Pozycji w Google nikt uczciwy nie gwarantuje w umowie na stronę."
+        },
+        {
+          "q": "Kto potem edytuje treści?",
+          "a": "Wy, z panelu. Szkolenie krótkie, na tym co naprawdę klikacie, nie na 40 modułach."
+        }
+      ],
+      "relatedArticles": ["google-wizytowka-czy-strona-internetowa", "sklep-internetowy-dla-lokalnego-biznesu", "wordpress-vs-laravel"],
+      "relatedInspirations": ["corporate", "clinicweb", "lawweb"]
+    },
+    "en": {
+      "navLabel": "Websites",
+      "seoTitle": "Company websites | GESOFT",
+      "h1": "Websites for companies",
+      "description": "Company sites with CMS, SEO and a contact form. Laravel, not a catalogue theme. From PLN 2,500 net, quote in 24 hours.",
+      "keywords": "company websites, business website, CMS, SEO, GESOFT",
+      "lead": "A company website should be findable, editable and honest about not being an app. A Google Business Profile does not replace your own domain when you need an offer, a blog or bookings.",
+      "sections": [
+        {
+          "title": "Where a website ends and a system starts",
+          "text": "A handful of pages, a CMS, a form, SEO — that is a website. Client logins, statuses, payments — that is an application. We say which side of the line you are on before anyone buys a “site with a panel” that calculates nothing."
+        },
+        {
+          "title": "Scope",
+          "items": [
+            "Responsive site, usually up to a dozen pages",
+            "A CMS for the copy you actually change",
+            "Form, analytics, basic SEO",
+            "SSL and starter hosting if you need it",
+            "Blog, extra languages, a shop — when they are in the quote"
+          ]
+        },
+        {
+          "title": "Price",
+          "text": "A brochure site from about PLN 2,500 net. A larger site or small CMS from about PLN 6,000 net. The exact figure follows page count and integrations. WordPress only if it must stay; company systems are Laravel."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is a Google Business Profile enough?",
+          "a": "To be found on the map — often yes. For an offer, a blog, bookings or your own domain — no."
+        },
+        {
+          "q": "Is the site built for SEO?",
+          "a": "Titles, descriptions, URLs, speed, structured data in a sensible range. Nobody honest guarantees rankings in a brochure-site contract."
+        },
+        {
+          "q": "Who edits the copy later?",
+          "a": "You, from the panel. A short walkthrough of what you actually click, not 40 modules."
+        }
+      ],
+      "relatedArticles": ["google-wizytowka-czy-strona-internetowa", "sklep-internetowy-dla-lokalnego-biznesu", "wordpress-vs-laravel"],
+      "relatedInspirations": ["corporate", "clinicweb", "lawweb"]
+    }
+  }
+}

@@ -9,7 +9,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
           <article v-for="service in services" :key="service.id">
-            <h2 class="heading-3 text-gray-900 mb-2">{{ $t(service.titleKey) }}</h2>
+            <h2 class="heading-3 text-gray-900 mb-2">
+              <router-link v-if="service.to" :to="service.to" class="hover:text-brand-600">{{ $t(service.titleKey) }}</router-link>
+              <span v-else>{{ $t(service.titleKey) }}</span>
+            </h2>
             <p class="text-gray-600 text-sm sm:text-base mb-4 leading-relaxed">{{ $t(service.descKey) }}</p>
             <ul class="space-y-2">
               <li v-for="(feature, index) in $tm(service.featuresKey)" :key="index" class="text-gray-700 text-sm">
@@ -93,12 +96,12 @@ import PageCta from '@/components/common/PageCta.vue'
 const { tm } = useI18n()
 
 const services = [
-  { id: 1, titleKey: 'services.items.websites.title', descKey: 'services.items.websites.description', featuresKey: 'services.items.websites.features' },
-  { id: 2, titleKey: 'services.items.webapps.title', descKey: 'services.items.webapps.description', featuresKey: 'services.items.webapps.features' },
-  { id: 3, titleKey: 'services.items.ecommerce.title', descKey: 'services.items.ecommerce.description', featuresKey: 'services.items.ecommerce.features' },
-  { id: 4, titleKey: 'services.items.crm.title', descKey: 'services.items.crm.description', featuresKey: 'services.items.crm.features' },
-  { id: 5, titleKey: 'services.items.android.title', descKey: 'services.items.android.description', featuresKey: 'services.items.android.features' },
-  { id: 6, titleKey: 'services.items.api.title', descKey: 'services.items.api.description', featuresKey: 'services.items.api.features' },
+  { id: 1, titleKey: 'services.items.websites.title', descKey: 'services.items.websites.description', featuresKey: 'services.items.websites.features', to: '/uslugi/strony-internetowe' },
+  { id: 2, titleKey: 'services.items.webapps.title', descKey: 'services.items.webapps.description', featuresKey: 'services.items.webapps.features', to: '/uslugi/aplikacje-webowe' },
+  { id: 3, titleKey: 'services.items.ecommerce.title', descKey: 'services.items.ecommerce.description', featuresKey: 'services.items.ecommerce.features', to: '/uslugi/aplikacje-webowe' },
+  { id: 4, titleKey: 'services.items.crm.title', descKey: 'services.items.crm.description', featuresKey: 'services.items.crm.features', to: '/uslugi/systemy-b2b' },
+  { id: 5, titleKey: 'services.items.android.title', descKey: 'services.items.android.description', featuresKey: 'services.items.android.features', to: '/uslugi/aplikacje-android' },
+  { id: 6, titleKey: 'services.items.api.title', descKey: 'services.items.api.description', featuresKey: 'services.items.api.features', to: '/uslugi/integracje-api' },
   { id: 7, titleKey: 'services.items.support.title', descKey: 'services.items.support.description', featuresKey: 'services.items.support.features' },
   { id: 8, titleKey: 'services.items.photography.title', descKey: 'services.items.photography.description', featuresKey: 'services.items.photography.features' },
   { id: 9, titleKey: 'services.items.drone.title', descKey: 'services.items.drone.description', featuresKey: 'services.items.drone.features' },

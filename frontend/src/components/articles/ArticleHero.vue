@@ -17,6 +17,10 @@
           </time>
           <span class="text-sm text-gray-400" aria-hidden="true">·</span>
           <span class="text-sm text-gray-500">{{ article.readTime }} {{ $t('articles.readTime') }}</span>
+          <span class="text-sm text-gray-400" aria-hidden="true">·</span>
+          <router-link to="/autor/pawel-matusiak" class="text-sm text-gray-700 hover:text-brand-600">
+            {{ $t('articles.by') }}: Paweł Matusiak
+          </router-link>
         </div>
       </div>
     </template>
